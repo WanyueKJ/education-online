@@ -1,0 +1,385 @@
+body{
+    background: #FAFAFA;
+}
+
+.teachers_content{
+    width: 875px;
+    margin: 0 auto;
+    clear: both;
+    overflow: hidden;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.teachers_content .left{
+    float: left;
+    width: 140px;
+    background: #fff;
+    padding-bottom: 20px;
+}
+.teachers_content .left .top{
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    background: #38DAA6;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+}
+.teachers_content .left .li{
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px 0 15px 0;
+    display: inline-block;
+}
+
+.teachers_content .right{
+    float: right;
+    width: 725px;
+    background: #fff;
+}
+.teachers_content .right .tips{
+    text-align: center;
+    margin-top: 35px;
+    font-size: 16px;
+}
+.teachers_content .right .tips .leftimg{
+    width: 20px;
+    margin-right: 8px;
+}
+.teachers_content .right .tips .rightimg{
+    width: 20px;
+    margin-left: 7px;
+}
+.teachers_content .right .tit{
+    text-align: center;
+    margin-top: 10px;
+    color: #969696;
+    padding-bottom: 10px;
+}
+.teachers_content .right .mess{
+    clear: both;
+    overflow: hidden;
+    width: 95.6%;
+    margin: 0 auto;
+    padding: 10px;
+    padding-bottom: 25px;
+}
+.teachers_content .right .mess .li{
+    width: 24%;
+    float: left;
+    height: 190px;
+    box-shadow: 0px 5px 28px -9px #ddd;
+    margin-top: 20px;
+}
+.teachers_content .right .mess .li:nth-of-type(4n){
+    margin-left: 1.33%;
+}
+.teachers_content .right .mess .li:nth-of-type(4n-1){
+    margin-left: 1.33%;
+}
+.teachers_content .right .mess .li:nth-of-type(4n-2){
+    margin-left: 1.33%;
+}
+.teachers_content .right .mess .li .avatar{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background: #ddd;
+    border-radius: 50px;
+    margin-top: 22px;
+}
+.teachers_content .right .mess .li .avatar .img1{
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: 5px;
+}
+.teachers_content .right .mess .li .avatar .img2{
+    width: 17px;
+    position: relative;
+    bottom: 6px;
+    left: 33px;
+}
+
+.teachers_content .right .mess .li .name{
+    text-align: center;
+    margin-top: 12px;
+    font-size: 13px;
+    height: 19px;
+}
+.teachers_content .right .mess .li .lskd{
+    text-align: center;
+    margin-top: 5px;
+    height: 22px;
+}
+.teachers_content .right .mess .li .lskd .iden{
+    padding: 2px 5px 2px 5px;
+    background: #ddd;
+    display: inline-block;
+    color: #fff;
+    border-radius: 3px;
+    transform: scale(0.8);
+}
+
+.teachers_content .right .mess .li .bottom{
+    display: flex;
+    margin-top: 20px;
+}
+.teachers_content .right .mess .li .bottom .a1{
+    flex: 1;
+    text-align: center;
+    display: inline-block;
+    color: #38DAA6;
+}
+.teachers_content .right .mess .li .bottom .a1_0{
+    flex: 1;
+    text-align: center;
+    display: inline-block;
+    color: #969696;
+}
+.teachers_content .right .mess .li .bottom .a2{
+    flex: 1;
+    text-align: center;
+    display: inline-block;
+    color: #969696;
+}
+
+.teachers_content .look_more{
+    width: 120px;
+    height: 35px;
+    border: 1px solid #9e9a9a;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 15px;
+    color: #9e9a9a;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/*****教师详情页面***/
+.detail_teacher{
+    margin-top: 100px;
+}
+.detail_teacher .top{
+    background: #fff;
+    height: 130px;
+    width: 835px;
+    margin: 0 auto;
+}
+.detail_teacher .top .avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    float: left;
+    margin-top: 35px;
+    margin-left: 40px;
+}
+.detail_teacher .top .content{
+    float: left;
+    margin-top: 45px;
+    margin-left: 15px;
+}
+.name{
+
+}
+.detail_teacher .top .content .text1{
+    font-size: 14px;
+}
+.detail_teacher .top .content .text2{
+    color: #fff;
+    padding: 1px 5px 3px 5px;
+    border-radius: 3px;
+    transform: scale(0.67);
+    display: inline-block;
+}
+.detail_teacher .top .content .fans{
+    color: #969696;
+    margin-top: 4px;
+}
+.detail_teacher .top .attent{
+    float: right;
+    margin-right: 50px;
+    margin-top: 48px;
+    font-size: 14px;
+}
+.detail_teacher .top .attent .attented{
+    color: #969696;
+}
+
+
+
+.detail_teacher .bcontent{
+    width: 835px;
+    margin: 0 auto;
+    background: #fff;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+}
+.detail_teacher .bcontent .nav{
+    display: flex;
+    height: 40px;
+    font-size: 14px;
+}
+.detail_teacher .bcontent .nav .text{
+    flex: 1;
+    text-align: center;
+    line-height: 40px;
+}
+.detail_teacher .bcontent .tip{
+    padding-left: 5px;
+    border-left: 3px solid #38DAA6;
+    height: 14px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.detail_teacher .bcontent .tip text{
+    position: relative;
+    bottom: 3px;
+    left: 2px;
+}
+.detail_teacher .bcontent .detail{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.detail_teacher .bcontent .classlist{
+    width: 95%;
+    margin: 0 auto;
+}
+.detail_teacher .bcontent .li{
+    border: 1px solid #EBEBEB;
+    margin-top: 15px;
+    height: 120px;
+}
+.detail_teacher .bcontent .li .thumbdiv{
+    width: 130px;
+    height: 90px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.detail_teacher .bcontent .li .thumbdiv .tips{
+    display: inline-block;
+    padding: 3px 10px 3px 10px;
+    background: #000;
+    color: #fff;
+    border-radius: 0 0 10px 0;
+    font-size: 10px;
+    opacity: 0.6;
+    transform: scale(0.8);
+    position: relative;
+    bottom: 2px;
+    right: 4px;
+}
+
+.detail_teacher .bcontent .li .mess{
+    float: left;
+    width: 530px;
+    margin-top: 15px;
+    margin-left: 20px;
+    height: 90px;
+}
+.detail_teacher .bcontent .li .mess .des{
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.detail_teacher .bcontent .li .mess .msg{
+    margin-top: 8px;
+    height: 18px;
+}
+.detail_teacher .bcontent .li .mess .msg .text1{
+    color: #969696;
+}
+.detail_teacher .bcontent .li .mess .msg .text2{
+    margin-left: 20px;
+}
+.detail_teacher .bcontent .li .mess .msg .text2 .book{
+    width: 12px;
+    position: relative;
+    top: 1px;
+}
+.detail_teacher .bcontent .li .mess .msg .text2 .tips{
+    color: #38E1AB;
+    margin-left: 5px;
+}
+.detail_teacher .bcontent .li .mess .bottom{
+    margin-top: 13px;
+    width: 190px;
+}
+.detail_teacher .bcontent .li .mess .bottom .img1{
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+}
+.detail_teacher .bcontent .li .mess .bottom .name{
+    position: relative;
+    bottom: 8px;
+    left: 10px;
+}
+.detail_teacher .bcontent .li .mess .bottom .img2{
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    margin-left: 8px;
+}
+.detail_teacher .bcontent .li .mess .bottom .mian{
+    font-size: 14px;
+    color: #38E1AB;
+    position: relative;
+    float: right;
+}
+.detail_teacher .bcontent .li .mess .bottom .mi{
+    font-size: 14px;
+    color: #1B8CFF;
+    position: relative;
+    float: right;
+}
+.detail_teacher .bcontent .li .mess .bottom .money{
+    font-size: 14px;
+    color: #FF1B20;
+    position: relative;
+    float: right;
+}
+
+.detail_teacher .look_more{
+    width: 120px;
+    height: 35px;
+    border: 1px solid #9e9a9a;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 15px;
+    color: #9e9a9a;
+    margin-top: 20px;
+}
+
+
+
+.b_fff{
+    background: #fff;
+    color: #000;
+}
+.b_f6f6{
+    background: #F6F6F6;
+    color: #646464;
+}

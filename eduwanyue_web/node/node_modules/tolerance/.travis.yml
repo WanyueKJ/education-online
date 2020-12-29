@@ -1,0 +1,15 @@
+before_script: "npm install --dev"
+
+language: node_js
+node_js:
+  - 0.6
+  - 0.8
+  - 0.10
+
+branches:
+  only:
+    - master
+
+notifications:
+  email:
+    - adriano@raiano.ch

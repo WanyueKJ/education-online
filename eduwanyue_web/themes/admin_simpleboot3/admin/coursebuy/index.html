@@ -1,0 +1,66 @@
+<include file="public@header" />
+<style>
+.table img{
+    width:50px;
+}
+</style>
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:url('course/index',['sort'=>$courseinfo['sort']])}">课程列表</a></li>
+			<li class="active"><a >列表</a></li>
+		</ul>
+        <form class="well form-inline margin-top-20">
+            课程名称：{$courseinfo['name']}
+            <br>
+            <br>
+             购买人数： {$nums}   <if condition="$courseinfo['paytype'] eq 1">&nbsp;&nbsp;&nbsp;&nbsp;总价格：{$total}</if>
+        </form>
+        
+        <form class="well form-inline margin-top-20" method="post" action="{:url('Coursebuy/index')}">
+
+            付费时间：
+            <input class="form-control js-bootstrap-date" name="start_time" id="start_time" value="{:input('request.start_time')}" aria-invalid="false" style="width: 110px;"> - 
+            <input class="form-control js-bootstrap-date" name="end_time" id="end_time" value="{:input('request.end_time')}" aria-invalid="false" style="width: 110px;">
+                
+            用户ID：
+            <input class="form-control" type="text" name="uid" style="width: 200px;" value="{:input('request.uid')}"
+                   placeholder="请输入用户ID">
+                   
+            <input type="hidden" name="courseid" value="{$courseinfo['id']}"/>
+            <input type="submit" class="btn btn-primary" value="搜索"/>
+            <a class="btn btn-danger" href="{:url('Coursebuy/index',['courseid'=>$courseinfo['id']])}">清空</a>
+        </form>
+        
+		<form method="post" class="js-ajax-form" action="" method="post">
+			<table class="table table-hover table-bordered table-list">
+				<thead>
+					<tr>
+						<th>用户</th>
+                        <th>价格</th>
+                        <if condition="$courseinfo['sort'] eq 1">
+                        <th>学习进度</th>
+                        </if>
+                        <th>时间</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="list" item="vo">
+					<tr>
+						<td>{$vo['userinfo']['user_nickname']} ({$vo['userinfo']['id']})</td>
+						<td><if condition="$vo['money'] gt 0">{$vo['money']}</if></td>
+                        <if condition="$courseinfo['sort'] eq 1">
+                        <td>{$vo['lessons']}/{$courseinfo['lessons']}</td>
+                        </if>
+                        <td>{$vo['paytime']}</td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+
+		</form>
+	</div>
+	<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>

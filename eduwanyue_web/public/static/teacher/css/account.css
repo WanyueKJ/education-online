@@ -1,0 +1,50 @@
+
+.a_bd .a_bd_c .a_bd_c_t{
+    padding-left:35px;
+    height:60px;
+    line-height:60px;
+    font-size:16px;
+    background:#F5F5F5;
+    border:1px solid #F0F0F0;
+}
+.a_bd .a_bd_c .a_bd_c_line{
+    height:60px;
+    line-height:60px;
+    font-size:16px;
+    border:1px solid #F0F0F0;
+    border-top:none;
+}
+.a_bd .a_bd_c .a_bd_c_line .a_bd_c_line_l{
+    float:left;
+    padding-left:35px;
+    width:30%;
+    height:60px;
+    color:#969696;
+    
+    -moz-box-sizing: border-box;  /*Firefox3.5+*/
+	-webkit-box-sizing: border-box; /*Safari3.2+*/
+	-o-box-sizing: border-box; /*Opera9.6*/
+	-ms-box-sizing: border-box; /*IE8*/
+	box-sizing: border-box;
+    
+}
+.a_bd .a_bd_c .a_bd_c_line .a_bd_c_line_c{
+    float:left;
+    width:50%;
+    height:60px;
+}
+.a_bd .a_bd_c .a_bd_c_line .a_bd_c_line_c img{
+    width:40px;
+    height:40px;
+    vertical-align:middle;
+    border-radius:50%;
+}
+.a_bd .a_bd_c .a_bd_c_line .a_bd_c_line_r{
+    float:left;
+    width:20%;
+    height:60px;
+    color:#38DAA6;
+}
+.a_bd .a_bd_c .a_bd_c_line .a_bd_c_line_r span{
+    cursor:pointer;
+}

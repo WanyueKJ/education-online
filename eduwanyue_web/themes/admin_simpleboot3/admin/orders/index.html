@@ -1,0 +1,102 @@
+<include file="public@header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a >列表</a></li>
+
+		</ul>
+		<form class="well form-inline margin-top-20" method="post" action="{:url('orders/index')}">
+            支付状态：
+			<select class="form-control" name="status">
+				<option value="">全部</option>
+                <volist name="status" id="v">
+                    <option value="{$key}" <if condition="input('request.status') neq '' && input('request.status') eq $key">selected</if>>{$v}</option>
+                </volist>
+			</select>
+            
+            支付方式：
+			<select class="form-control" name="type">
+				<option value="">全部</option>
+                <volist name="type" id="v">
+                    <option value="{$key}" <if condition="input('request.type') neq '' && input('request.type') eq $key">selected</if>>{$v}</option>
+                </volist>
+			</select>
+            
+			提交时间：
+			<input class="form-control js-bootstrap-date" name="start_time" id="start_time" value="{:input('request.start_time')}" aria-invalid="false" style="width: 110px;"> - 
+            <input class="form-control js-bootstrap-date" name="end_time" id="end_time" value="{:input('request.end_time')}" aria-invalid="false" style="width: 110px;">
+			用户ID： 
+            <input class="form-control" type="text" name="uid" style="width: 200px;" value="{:input('request.uid')}"
+                   placeholder="请输入用户ID">
+            关键字： 
+            <input class="form-control" type="text" name="keyword" style="width: 200px;" value="{:input('request.keyword')}"
+                   placeholder="请输入订单号、三方订单号">
+			<input type="submit" class="btn btn-primary" value="搜索">
+		</form>				
+		<form method="post" class="js-ajax-form" >
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>会员</th>
+                        <th>价格</th>
+						<th>订单号</th>
+						<th>三方订单号</th>
+						<th>收货信息</th>
+						<th>支付方式</th>
+						<th>状态</th>
+						<th>提交时间</th>
+						<th>支付时间</th>
+						<th>{:lang('ACTIONS')}</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="lists" item="vo">
+					<tr>
+						<td>{$vo.id}</td>
+						<td>{$vo['userinfo']['user_nickname']} ({$vo['uid']})</td>	
+						<td>{$vo['money']}</td>
+						<td>{$vo['orderno']}</td>
+						<td>{$vo['trade_no']}</td>
+                        
+						<td>
+                            <if condition="$vo['issend'] neq '-1'" >
+                            收货人：{$vo['addr_name']}<br>
+                            电话：{$vo['addr_mobile']}<br>
+                            地址：{$vo['addr_province']} {$vo['addr_city']} {$vo['addr_area']}  {$vo['addr']}<br>
+                            </if>
+                        </td>
+						
+						<td>{$type[$vo['type']]}</td>
+						<td>{$status[$vo['status']]}</td>
+						<td>{:date('Y-m-d H:i:s',$vo['addtime'])}</td>						
+						<td>
+						 <if condition="$vo['status'] eq '0'" >
+						    待支付
+						 <else/>
+                            {:date('Y-m-d H:i:s',$vo['paytime'])}
+						 </if>						
+						 </td>
+
+						<td>
+                            <a class="btn btn-xs btn-info" href='{:url("orders/goods",array("orderno"=>$vo["orderno"]))}'>商品详情</a>
+                            
+							<if condition="$vo['issend'] eq '0'" >
+                            <a class="btn btn-xs btn-danger js-ajax-dialog-btn" href="{:url('orders/setSend',array('id'=>$vo['id']))}" >标记发货</a>
+							</if>
+                            
+                            
+							<!-- <a class="btn btn-xs btn-danger js-ajax-delete" href="{:url('orders/del',array('id'=>$vo['id']))}">{:lang('DELETE')}</a> -->
+						</td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+			<div class="pagination">{$page}</div>
+
+		</form>
+	</div>
+	<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>

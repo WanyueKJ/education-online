@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$site_info.site_name|default=''}</title>
+    <include file="public@head"/>
+    <include file="student/public@head"/>
+    <link href="__STATIC__/student/css/index.css" rel="stylesheet" type="text/css">
+    <link href="__STATIC__/student/css/guanyu.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        .check_nav {
+            color: #38DAA6;
+        }
+
+    </style>
+</head>
+<body>
+<include file="student/public@header"/>
+<include file="student/public@grade"/>
+<include file="student/public@login"/>
+
+
+<div class="banner guanyu_banner_wrap">
+    <div class="guan_banner_title">一万岳科技一</div>
+    <div class="guan_banner_title_bottom">
+        <div>服务上乘</div>
+        <span class="guan_banner_dian"></span>
+        <div>用户为本</div>
+    </div>
+</div>
+
+<!--了解万岳-->
+<div class="body liaojie_body">
+
+    <div class="guanyu_left">
+        <div class="guan_we">关于我们</div>
+        <div class="guan_nav_title">
+            <a href="javascript:;" class="liaojie_a check_nav">了解万岳</a>
+        </div>
+        <div class="guan_nav_title">
+            <a href="javascript:;" class="lianxi_we">联系我们</a>
+        </div>
+        <div class="guan_nav_title">
+            <a href="javascript:;" class="how_buy">如何购买</a>
+        </div>
+    </div>
+
+    <!--了解万岳详情-->
+    <div class="info_right">
+        <div class="right_liaojie">
+            <div class="info_right_wrap">
+                <span class="left_dian info_right_dian"></span>
+                <div class="info_right_title">了解万岳</div>
+                <span class="right_dian info_right_dian"></span>
+            </div>
+
+            <div class="info_right_content">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;山东万岳信息科技有限公司 是一家以在线教育系统、企业内训系统、视频会议系统、</p>
+                <p>知识付费系统为主要业务的软件产品研发互联网科技公司，后又推出直播带货系统和</p>
+                <p>商城系统，致力为用户提供专业全面的在线教育、企业内训、视频会议等领域的解决</p>
+                <p>方案，满足用户多元化需求。</p>
+            </div>
+        </div>
+
+        <!-- 联系我们-->
+        <div class="right_lianxi_we" style="display: none;">
+            <div class="info_right_wrap">
+                <span class="left_dian info_right_dian"></span>
+                <div class="info_right_title">联系我们</div>
+                <span class="right_dian info_right_dian"></span>
+            </div>
+
+            <div class="info_lian_bottom_wrap">
+                <div class="left_map">
+                    <img src="__STATIC__/images/right_map.png" alt="">
+                </div>
+
+                <div class="right_lian_info">
+                    <p> 联系QQ：2415408120</p>
+                    <p>官方QQ群：995910672</p>
+                    <p>公司地址：</p>
+                    <p>山东省泰安市泰山区万达营销中心1702号</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--如何购买-->
+        <div class="right_buy" style="display: none;">
+            <div class="info_right_wrap">
+                <span class="left_dian info_right_dian"></span>
+                <div class="info_right_title">如何购买</div>
+                <span class="right_dian info_right_dian"></span>
+            </div>
+
+            <div class="info_lian_bottom_wrap">
+                <div class="left_map">
+                    <img src="__STATIC__/images/right_map.png" alt="">
+                </div>
+
+                <div class="right_lian_info">
+                    <p> 联系QQ：2415408120</p>
+                    <p>官方QQ群：995910672</p>
+                    <p>公司地址：</p>
+                    <p>山东省泰安市泰山区万达营销中心1702号</p>
+                </div>
+
+            </div>
+        </div>
+
+        <input class="flag" type="hidden" name="flag" value="{:input('flag')}">
+
+    </div>
+
+
+</div>
+
+<include file="student/public@footer"/>
+<include file="student/public@scripts"/>
+<script>
+    var isBackLog = '{$isBackLog}';
+</script>
+<script src="__STATIC__/student/js/index.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+        var flag = $(".flag").val();
+        if (flag == 1) {
+            $(".liaojie_a").addClass("check_nav");
+            $(".lianxi_we").removeClass("check_nav");
+            $(".how_buy").removeClass("check_nav");
+        } else if(flag == 2) {
+            $(".lianxi_we").addClass("check_nav");
+            $(".liaojie_a").removeClass("check_nav");
+            $(".how_buy").removeClass("check_nav");
+        } else if(flag == 3) {
+            $(".how_buy").addClass("check_nav");
+            $(".lianxi_we").removeClass("check_nav");
+            $(".liaojie_a").removeClass("check_nav");
+        }
+
+    });
+
+    $(".liaojie_a").click(function () {
+
+        $(".right_liaojie").show();
+        $(".right_lianxi_we").hide();
+        $(".right_buy").hide();
+        $(this).addClass("check_nav");
+        $(".lianxi_we").removeClass("check_nav");
+        $(".how_buy").removeClass("check_nav");
+
+    });
+
+    $(".lianxi_we").click(function () {
+
+       $(".right_lianxi_we").show();
+       $(".right_liaojie").hide();
+       $(".right_buy").hide();
+       $(this).addClass("check_nav");
+       $(".liaojie_a").removeClass("check_nav");
+       $(".how_buy").removeClass("check_nav");
+
+    });
+
+
+    $(".how_buy").click(function () {
+
+        $(".right_buy").show();
+        $(".right_liaojie").hide();
+        $(".right_lianxi_we").hide();
+        $(this).addClass("check_nav");
+        $(".liaojie_a").removeClass("check_nav");
+        $(".lianxi_we").removeClass("check_nav");
+
+    });
+
+
+
+</script>
+
+
+</body>
+</html>

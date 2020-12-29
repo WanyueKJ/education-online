@@ -1,0 +1,18 @@
+
+<script type="text/javascript">
+    var uid='{$uid}';
+    var token='{$token}';
+    var baseSize = 100;
+    function setRem () {
+        var scale = document.documentElement.clientWidth / 750;
+        document.documentElement.style.fontSize = (baseSize * Math.min(scale, 3)) + 'px';
+    }
+    setRem();
+    window.onresize = function () {
+        setRem();
+    }
+</script>
+<script src="__STATIC__/js/jquery.js"></script>
+<script src="__STATIC__/js/layer/layer.js"></script>
+
+

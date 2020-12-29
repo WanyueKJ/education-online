@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$site_info.site_name|default=''}</title>
+    <include file="public@head"/>
+    <include file="student/public@head"/>
+    <link href="__STATIC__/student/css/teachers.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <include file="student/public@header"/>
+    <include file="student/public@grade"/>
+    <include file="student/public@login"/>
+
+    <div class="detail_teacher">
+        <div class="top">
+            <img class="avatar" src="{$info['avatar'] ?: ''}">
+            <div class="content">
+                <div class="name">
+                    <text class="text1">{$info['user_nickname'] ?: ''}</text>
+                    <if condition="isset($info['identitys']) && $info['identitys'] neq []">
+                        <text class="text2" style="background: {$info['identitys'][0]['colour']};">{$info['identitys'][0]['name']}</text>
+                    </if>
+                </div>
+                <div class="fans">学员 {$info['fans'] ?: ''}</div>
+            </div>
+            <div class="attent">
+                <if condition="isset($info['isattent']) && $info['isattent'] eq 0">
+                    <a href="javascript:void(0)" style="color: #38DAA6;" class="attented">+ 关注</a>
+                <else/>
+                    <a href="javascript:void(0)" class="attented">已关注</a>
+                </if>
+                
+            </div>
+        </div>
+        <div class="bcontent">
+            <div class="nav">
+                <a class="text js b_fff" href="javascript:void(0);">简历</a>
+                <a class="text bhkc b_f6f6" href="javascript:void(0);">课程</a>
+            </div>
+            <div class="info">
+                <div class="tip">
+                    <text>毕业院校</text>
+                </div>
+                <div class="detail">
+                    {$info.school ?: ''}
+                </div>
+                <div class="tip">
+                    <text>教育经历</text>
+                </div>
+                <div class="detail">
+                    {$info.experience ?: ''}
+                </div>
+                <div class="tip">
+                    <text>教学特点</text>
+                </div>
+                <div class="detail">
+                    {$info.feature ?: ''}
+                </div>
+            </div>
+            <div class="classlist none">
+                <volist name="$lesslist" id="item">
+                    <div class="li" data-courseid="{$item.id}" data-sort="{$item.sort}">
+                        <div class="thumbdiv" style="background: url({$item.thumb}) no-repeat;background-size: cover;">
+                            <div class="tips">
+                                <if condition="$item.sort eq 0">
+                                    内容
+                                <elseif condition="$item.sort eq 1" />
+                                    课程
+                                <else/>
+                                    直播
+                                </if>
+                                
+                            </div>
+                        </div>
+                        <div class="mess">
+                            <div class="des">{$item.name}</div>
+                            <div class="msg">
+                                <text class="text1">{$item.lesson}</text>
+                                <if condition="$item.ismaterial eq 1">
+                                    <text class="text2">
+                                        <img class="book" src="__STATIC__/student/images/index/book.png">
+                                        <text class="tips">含教材</text>
+                                    </text>
+                                </if>
+                            </div>
+                            <div class="bottom">
+                                <img class="img1" src="{$item.avatar}">
+                                <text class="name">{$item.user_nickname}</text>
+
+                                <if condition="$item.paytype eq 0">
+                                    <text class="mian">免费</text>
+                                <elseif condition="$item.paytype eq 1"/>
+                                    <text class="money">￥{$item.payval}</text>
+                                <else/>
+                                    <text class="mi">密码</text>
+                                </if>
+                            </div>
+                        </div>
+                    </div>
+                </volist>
+
+
+                <if condition="$isMore eq 1">
+                    <div class="look_more"><a style="color:#9e9a9a" href="javacript:void(0);">查看更多...</a></div>
+                </if>
+            </div>
+        </div>
+    </div>
+
+    
+    <include file="student/public@footer"/>
+    <include file="student/public@scripts"/>
+    <script type="text/javascript">
+        var touid ="{$touid}";//老师id
+        page = 1;//页码
+    </script>
+    <script src="__STATIC__/student/js/teachers.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+jsondate
+--------
+
+Date deserialization for JSON.parse
+
+
+Installing
+----------
+
+  npm install jsondate
+  
+
+Usage
+-----
+  
+  // Patches JSON.parse
+  require('jsondate')()
+  
+  // or just the function:
+  var data = require('jsondate').parse(json_object)

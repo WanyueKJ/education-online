@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="my_html">
+<head>
+    <meta charset="UTF-8">
+    <title>{$site_info.site_name|default=''}</title>
+
+    <link rel="stylesheet" href="__STATIC__/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__STATIC__/student/css/mine/index.css">
+    <include file="public@head"/>
+    <include file="student/public@head"/>
+
+</head>
+<body class="my_body">
+
+<include file="student/public@header"/>
+<include file="student/public@grade"/>
+<include file="student/public@login"/>
+
+<div class="my_container">
+    <include file="student/mine/public@left"/>
+
+
+    <div class="my_right">
+        <div class="my_right_top">
+            <div class="my_right_title">我的消息</div>
+        </div>
+        <div class="my_right_button">
+            <div class="message_nav">
+                <a href="javascript:void(0)" class="nav_li">
+                    系统消息
+                    <div class="heng"></div>
+                </a>
+                <a href="javascript:void(0)" class="nav_li">
+                    课程动态
+                    <div class="heng none"></div>
+                </a>
+                <a href="javascript:void(0)" class="nav_li">
+                    讲师动态
+                    <div class="heng none"></div>
+                </a>
+            </div>
+            <div class="nav_li_list">
+                <volist name="$syslist" id="item">
+                    <div class="content_li">
+                        <div class="date">{$item.addtime}</div>
+                        <div class="content">{$item.content}</div>
+                    </div>
+                </volist>
+            </div>
+            <div class="nav_li_list none">
+                <volist name="$classlist" id="item">
+                    <div class="content_li">
+                        <div class="date">{$item.addtime}</div>
+                        <div class="content">{$item.content}</div>
+                    </div>
+                </volist>
+            </div>
+            <div class="nav_li_list none">
+                <volist name="$teacherlist" id="item">
+                    <div class="content_li">
+                        <div class="date">{$item.addtime}</div>
+                        <div class="content">{$item.content}</div>
+                    </div>
+                </volist>
+            </div>
+        </div>
+    </div>
+</div>
+
+<include file="student/public@footer"/>
+<include file="student/public@scripts"/>
+
+<script>
+    var page = 1;//页码
+</script>
+
+<script src="__STATIC__/student/js/mine/index.js"></script>
+
+</body>
+</html>
