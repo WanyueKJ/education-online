@@ -1,4 +1,4 @@
-<div align=center><img src="http://qiniugw.sdwanyue.com/logo_b.png" width="590" height="212"/></div>
+<div align=center><img src="http://qiniugw.sdwanyue.com/github_big_logo.png" width="590" height="212"/></div>
 
 
 ### 项目说明（如果对你有用，请给个star！）
@@ -34,7 +34,7 @@
     12.无需安装, clone下来即可直接使用, 完全100%真开源；
 ```
 ### 功能展示
- ![展示图](/readme/images/function_all.png "展示图.png")
+ ![展示图](http://qiniugw.sdwanyue.com/github_big_function_all.png "展示图.png")
  
 
 ### 前台主要功能介绍
@@ -133,23 +133,23 @@
   
   ### 页面展示
   
-  ![展示图](/readme/images/function1111.png "展示图.png")
-  ![展示图](/readme/images/function2222.png "展示图.png")
-  ![展示图](/readme/images/function3333.png "展示图.png")
+  ![展示图](http://qiniugw.sdwanyue.com/github_big_function1111.png "展示图.png")
+  ![展示图](http://qiniugw.sdwanyue.com/github_big_function2222.png "展示图.png")
+  ![展示图](http://qiniugw.sdwanyue.com/github_big_function3333.png "展示图.png")
   
   #### 统计页面
-  ![展示图](/readme/images/user_anal.png "展示图.png")
-  ![展示图](/readme/images/商品分析.png "展示图.png")
-  ![展示图](/readme/images/deal_anal.png "展示图.png")
-  ![展示图](/readme/images/data_view.png "展示图.png")
+  ![展示图](http://qiniugw.sdwanyue.com/github_big_user_anal.png "展示图.png")
+  ![展示图](http://qiniugw.sdwanyue.com/github_big_商品分析.png "展示图.png")
+  ![展示图](http://qiniugw.sdwanyue.com/github_big_deal_anal.png "展示图.png")
+  ![展示图](http://qiniugw.sdwanyue.com/github_big_data_view.png "展示图.png")
   
     
   #### 直播课页面
-  ![展示图](/readme/images/live_student.png "展示图.png")
-  ![展示图](/readme/images/live_yuyin_student.png "展示图.png")
+  ![展示图](http://qiniugw.sdwanyue.com/github_big_live_student.png "展示图.png")
+  ![展示图](http://qiniugw.sdwanyue.com/github_big_live_yuyin_student.png "展示图.png")
   
   #### 功能对比
-  ![展示图](/readme/images/gongneng_list1.png "展示图.png")
+  ![展示图](http://qiniugw.sdwanyue.com/github_big_gongneng_list1.png "展示图.png")
   
 
 ### 商业合作
@@ -162,7 +162,7 @@
 ### 联系我们（加客服经理微信或QQ，免费获取sql脚本）
 
 <div style='height: 130px'>
-    <img class="kefu_weixin" style="float:left;" src="/readme/images/weixinlianxi.png" width="602" height="123"/>
+    <img class="kefu_weixin" style="float:left;" src="http://qiniugw.sdwanyue.com/github_big_weixinlianxi.png" width="602" height="123"/>
     <div style="float:left;">
         <p>QQ：2415408120</p>
         <p>QQ群：995910672</p>
@@ -173,6 +173,6 @@
 > QQ群：995910672
 
 
-![展示图](/readme/images/公众号.png "展示图.png")
+![展示图](http://qiniugw.sdwanyue.com/github_big_公众号.png "展示图.png")
 
 
