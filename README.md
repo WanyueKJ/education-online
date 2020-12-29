@@ -170,7 +170,7 @@
 </div>
 
 <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=JShAyXeoKqg2lWFEUSElxELImhjeMG4y&jump_from=webapi">
-    <img border="0" src="http://qiniugw.sdwanyue.com/github_big_group.png" alt="万岳在线教育讨论群" title="万岳在线教育讨论群">
+    <img border="0" src="http://qiniugw.sdwanyue.com/github_big_group_a.png" alt="万岳在线教育讨论群" title="万岳在线教育讨论群">
 </a> 可加
 
 > QQ群：995910672
