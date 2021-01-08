@@ -15,7 +15,7 @@
 ### Uni-app版地址
    - 接口框架地址: 本项目根目录下phalapi目录
    - 仓库地址: <a target="_blank" href="https://gitee.com/WanYueKeJi/wanyue_education_uniapp">点击此处</a>
-   ![展示图](https://qiniugw.sdwanyue.com/git_eq.png "展示图.png") 
+   ![展示图](https://qiniugw.sdwanyue.com/git_eq.png"展示图.png") 
    
 ### 项目介绍
 万岳在线教育经过对教育市场的长期调研，综合当下各大线上教培机构对于教育平台的功能需求，着重于用户体验，自主研发了一套集知识付费、直播授课、网校建设等功能为一体的万岳在线教育系统，满足用户对于公开课、大班课、小班课、职业培训等多种线上教学活动的场景需求。
