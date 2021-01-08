@@ -14,8 +14,6 @@ namespace App\Api;
 use PhalApi\Api;
 use App\Domain\Teacher as Domain_Teacher;
 
-header("Access-Control-Allow-Origin: *");
-
 /**
  * 讲师
  */
@@ -137,6 +135,7 @@ class Teacher extends Api {
 
         $domain = new Domain_Teacher();
 		$res = $domain->getHome($uid,$touid);
+        
 
 		return $res;
 	}

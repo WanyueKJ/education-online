@@ -26,7 +26,7 @@
         <div class="layui-page-content">
             <div class="layui-card">
                 <div class="layui-card-body">
-                    <form class="layui-form js-ajax-form" role="form" action="" method="post" wid110>
+                    <form class="layui-form js-ajax-form" role="form" action="{:url('setting/configpripost')}" method="post" wid110>
                         <div class="layui-tab-content" id="tabBody">
 
                             <div class="layui-tab-item layui-show">
@@ -257,27 +257,28 @@
                                 <div class="layui-form-item">
                                     <label for="input-chatserver" class="layui-form-label">聊天服务器带端口</label>
                                     <div class="layui-input-block">
-                                        <input type="text" class="layui-input" id="input-chatserver" disabled="disabled" name="options[chatserver]" value="http://域名:19967">  格式：http://域名(:端口) 或者 http://IP(:端口)
+                                        <input type="text" class="layui-input" id="input-chatserver" name="options[chatserver]" value="{$config['chatserver']|default=''}">  格式：http://域名(:端口) 或者 http://IP(:端口)
                                     </div>
                                 </div>
                                 <div class="layui-form-item">
                                     <label for="input-sound_appid" class="layui-form-label">声网Appid</label>
                                     <div class="layui-input-block">
-                                        <input type="text" class="layui-input" id="input-sound_appid" disabled="disabled" name="options[sound_appid]" value="">
+                                        <input type="text" class="layui-input" id="input-sound_appid"  name="options[sound_appid]" value="{$config['sound_appid']|default=''}">
                                     </div>
                                 </div>
 
                                 <div class="layui-form-item">
                                     <label for="input-agora_api_id" class="layui-form-label">声网api 客户ID</label>
                                     <div class="layui-input-block">
-                                        <input type="text" class="layui-input" id="input-agora_api_id" disabled="disabled" name="options[agora_api_id]" value="">声网后台 ->右上角->RESTful API
+                                        <input type="text" class="layui-input" id="input-sound_appid"  name="options[sound_appid]" value="{$config['agora_api_id']|default=''}">
+                                        声网后台 ->右上角->RESTful API
                                     </div>
                                 </div>
 
                                 <div class="layui-form-item">
                                     <label for="input-agora_api_key" class="layui-form-label">声网api 客户证书</label>
                                     <div class="layui-input-block">
-                                        <input type="text" class="layui-input" disabled="disabled" id="input-agora_api_key" name="options[agora_api_key]" value="">声网后台 ->右上角->RESTful API
+                                        <input type="text" class="layui-input" id="input-agora_api_key" name="options[agora_api_key]" value="{$config['agora_api_key']|default=''}">声网后台 ->右上角->RESTful API
                                     </div>
                                 </div>
                                 <p style="width:1117px;margin-left: 140px; font-weight:bold;">

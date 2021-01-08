@@ -14,17 +14,7 @@ class Cart extends NotORM {
 
 		return $rs;
 	}
-
-    /* 数量 */
-    public function getNums($where) {
-
-        $nums=\PhalApi\DI()->notorm->cart
-            ->where($where)
-            ->count();
-
-        return $nums;
-    }
-
+    
     /* 添加订单商品 */
 	public function addOrderGood($data) {
 		

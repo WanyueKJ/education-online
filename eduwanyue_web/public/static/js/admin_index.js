@@ -12,27 +12,51 @@
     getPayTableData(current_range);
 
 
-    $("#range-input").change(function () {
+    // $("#range-input").change(function () {
 
-        var range = this.value;
-        // 切换日期, 调用接口更新展示框数据
-        updateUserData(range);
+    //     var range = this.value;
+    //     // 切换日期, 调用接口更新展示框数据
+    //     updateUserData(range);
 
-        /* 更新echarts数据*/
-        arr_x = getTimeX(range); //更新x轴时间单位数组
-        getEchartsData(arr_x); //获取并填充数据
+    //     /* 更新echarts数据*/
+    //     arr_x = getTimeX(range); //更新x轴时间单位数组
+    //     getEchartsData(arr_x); //获取并填充数据
 
-    });
-
+    // });
+    
 
     /*付费用户表格*/
-    $("#range-pay-input").change(function () {
-        var pay_range = this.value;
-        //获取付费用户表格数据
-        getPayTableData(pay_range);
+    // $("#range-pay-input").change(function () {
+    //     var pay_range = this.value;
+    //     //获取付费用户表格数据
+    //     getPayTableData(pay_range);
 
-    });
+    // });
+    layui.use(['layer', 'laydate'], function() {
+        var laydate = layui.laydate;
+        laydate.render({
+            elem: '#range-input'
+            ,done: function(value, date, endDate){
+                var range = value;
+                // 切换日期, 调用接口更新展示框数据
+                updateUserData(range);
 
+                /* 更新echarts数据*/
+                arr_x = getTimeX(range); //更新x轴时间单位数组
+                getEchartsData(arr_x); //获取并填充数据
+            }
+          });
+
+          laydate.render({
+            elem: '#range-pay-input'
+            ,done: function(value, date, endDate){
+                var pay_range = value;
+                //获取付费用户表格数据
+
+                getPayTableData(pay_range);
+            }
+          });
+    })
 
     /**
      * 更新用户分析数据(方框区域)
@@ -352,5 +376,8 @@
 
     }
 
-
+    window.onresize = () => {
+        let barchart = echarts.getInstanceByDom(document.getElementById('echarts_basic'));
+        barchart.resize();
+    }
 })()

@@ -1,4 +1,8 @@
 .bd_income_echarts {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box;
+
     width: 50%;
     height: 500px;
     padding: 30px 30px;
@@ -54,12 +58,13 @@
     padding-top: 39px;
     width: 48%;
     float: left;
+    margin: 0 auto;
 }
 
 .bd .right_list ul li {
     list-style: none;
-    width: 303px;
-    height: 194px;
+    min-width: 37%;
+    height: 140px;
     margin-right: 10px;
     margin-bottom: 38px;
     padding: 22px;
@@ -89,11 +94,11 @@
 /*问号区域*/
 .icon-title {
     display: inline-block;
-    width: 50%;
+    width: 78%;
 }
 .icon-wenhao {
     display: inline-block;
-    width: 48%;
+    width: 18%;
     text-align: right;
 }
 
@@ -113,7 +118,7 @@
 }
 
 .basic_list_yunying ul li {
-    height: 238px;
+    height: 200px;
     width: 301px;
     float: left;
     margin-right: 15px;
@@ -128,7 +133,7 @@
 }
 
 .basic_list_yunying ul li .basic_list_c {
-    margin-top: 38px;
+    margin-top: 15px;
 }
 
 .basic_list_yunying .basic_list_n span {

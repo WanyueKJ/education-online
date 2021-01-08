@@ -157,6 +157,7 @@ class AdminPageController extends AdminBaseController
         $alias              = $routeModel->getUrl('portal/Page/index', ['id' => $id]);
         $post['post_alias'] = $alias;
         $this->assign('page_theme_files', $pageThemeFiles);
+
         $this->assign('post', $post);
 
         return $this->fetch();

@@ -35,12 +35,13 @@
                 <form class="js-ajax-form" action="{:url('public/doLogin')}" method="post">
                     <div class="form-group">
                         <input type="text" id="input_username" class="form-control" name="username"
-                               placeholder="{:lang('USERNAME_OR_EMAIL')}" value="demo" title="{:lang('USERNAME_OR_EMAIL')}" data-rule-required="true" data-msg-required="">
+                               placeholder="{:lang('USERNAME_OR_EMAIL')}" title="{:lang('USERNAME_OR_EMAIL')}"
+                               value="{:cookie('admin_username')}" data-rule-required="true" data-msg-required="">
                     </div>
 
                     <div class="form-group">
                         <input type="password" id="input_password" class="form-control" name="password"
-                               placeholder="{:lang('PASSWORD')}" value="123456" title="{:lang('PASSWORD')}" data-rule-required="true"
+                               placeholder="{:lang('PASSWORD')}" title="{:lang('PASSWORD')}" data-rule-required="true"
                                data-msg-required="">
                     </div>
 

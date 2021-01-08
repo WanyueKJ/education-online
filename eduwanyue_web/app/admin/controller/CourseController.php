@@ -376,14 +376,6 @@ class CourseController extends AdminBaseController
         $this->success('', '', $list);
     }
 
-    /* 科目分类 */
-    protected function getClass(){
-        $list = Db::name('course_class')
-            ->order("list_order asc")
-            ->column('*','id');
-        return $list;
-    }
-
     /**
      * 课程添加
      * @return mixed
@@ -624,11 +616,6 @@ class CourseController extends AdminBaseController
             $this->error("信息错误");
         }
 
-        $data['userinfo']=getUserInfo($data['uid']);
-        if($data['tutoruid']){
-            $data['tutorinfo']=getUserInfo($data['tutoruid']);
-        }
-
         $this->assign('data', $data);
 
         $sort = $data['sort'];
@@ -638,8 +625,6 @@ class CourseController extends AdminBaseController
         } else {
             $this->assign('types', $this->getTypes());
         }
-
-        $this->assign('classs', $this->getClass());
 
         $this->assign([
             'sort'       => $sort,

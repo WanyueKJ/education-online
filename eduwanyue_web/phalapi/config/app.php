@@ -23,7 +23,7 @@ return array(
 
     /* redis信息 */
     'REDIS_HOST' => "127.0.0.1",
-    'REDIS_AUTH' => "123456",
+    'REDIS_AUTH' => "redis",
     'REDIS_PORT' => "6379",
     
     /* 接口签名key */

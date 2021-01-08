@@ -26,8 +26,6 @@ var chat_interval={};
 // redis 链接
 var clientRedis  = redis.createClient(config['REDISPORT'],config['REDISHOST']);
 clientRedis.auth(config['REDISPASS']);
-
-//html监听(直播间)
 var server = https.createServer(options, function(req, res) {
 
     res.writeHead(200, {
@@ -46,7 +44,7 @@ var io = socketio.listen(server,{
 
 
 io.on('connection', function(socket) {
-    console.log("服务端连接成功");
+
     var interval;
 
     //进入房间
@@ -55,62 +53,74 @@ io.on('connection', function(socket) {
             return !1;
         }
 
-        console.log("进入房间");
-        console.log(data);
         userid=data.uid;
+        clientRedis.get(data.token,function(error,res){
+            if(error){
+                return;
+            }else if(res==null){
+                console.log("[获取token失败]"+data.uid);
+            }else{
+                if(res != null){
 
-        socket.token   = data.token;
-        socket.roomnum = data.roomnum;
-        socket.stream = data.stream;
-        socket.nickname = data.nickname;
-        socket.avatar = data.avatar;
-        socket.sign = data.sign;
-        socket.usertype   = data.usertype;
-        socket.uid     = data.uid;
-        socket.reusing = 0;
-        //加入房间
-        socket.join(data.stream);
-        sockets[userid] = socket;
-        socket.emit('conn',['ok']);
+                    var userInfo = evalJson(res);
+                    if(userInfo['id'] == data.uid ){
+                        //获取验证token
+                        socket.token   = data.token;
+                        socket.roomnum = data.roomnum;
+                        socket.stream = data.stream;
+                        socket.nickname = userInfo['user_nickname'];
+                        socket.avatar = userInfo['avatar'];
+                        socket.sign = Number(userInfo['sign']);
+                        socket.usertype   = parseInt(userInfo['usertype']);
+                        socket.uid     = data.uid;
+                        socket.reusing = 0;
 
-        //如果房间号和用户id相同, 则是老师进入直播间
-        if(socket.roomnum==socket.uid){
-            setLiveStatus(socket.uid,socket.stream,1);
-        }
+                        socket.join(data.stream);
+                        sockets[userid] = socket;
+                        socket.emit('conn',['ok']);
 
-        if(socket.usertype ==0){ //学生
-            var data_obj={
-                "msg":[
-                    {
-                        "_method_":"SendMsg",
-                        "action":"0",
-                        "ct":{
-                            "uid":''+ socket.uid,
-                            "user_nickname":''+ socket.nickname,
-                            "avatar": socket.avatar,
-                            "usertype": ''+ socket.usertype,
-                        },
-                        "msgtype":"0"
+                        if(socket.roomnum==socket.uid){
+                            setLiveStatus(socket.uid,socket.stream,1);
+                        }
+
+                        if( socket.usertype ==0 ){
+                            var data_obj={
+                                "msg":[
+                                    {
+                                        "_method_":"SendMsg",
+                                        "action":"0",
+                                        "ct":{
+                                            "uid":''+userInfo['id'],
+                                            "user_nickname":''+userInfo['user_nickname'],
+                                            "avatar":userInfo['avatar'],
+                                            "usertype":''+userInfo['usertype']
+                                        },
+                                        "msgtype":"0"
+                                    }
+                                ],
+                                "retcode":"000000",
+                                "retmsg":"OK"
+                            };
+                            process_msg(io,socket.stream,JSON.stringify(data_obj));
+                            if(socket.stream){
+                                clientRedis.zadd('user_'+socket.stream,socket.sign,userInfo['id']);
+                            }
+                        }
+
+                        return;
+                    }else{
+                        socket.disconnect();
                     }
-                ],
-                "retcode":"000000",
-                "retmsg":"OK"
-            };
-            process_msg(io,socket.stream,JSON.stringify(data_obj));
-            if(socket.stream){
-                clientRedis.zadd('user_'+socket.stream,socket.sign,socket.uid);
+                }
             }
-        }
 
-        return;
+            socket.emit('conn',['no']);
+        });
+
 
     });
 
-
-    //接收消息
     socket.on('broadcast',function(data){
-        console.log(data);
-        console.log("接收广播");
 
         if(socket.token != undefined){
             var dataObj  = typeof data == 'object'?data:evalJson(data);
@@ -294,7 +304,6 @@ function evalJson(data){
 }
 
 function process_msg(io,roomnum,data){
-
     if(!chat_history[roomnum]){
         chat_history[roomnum]=[];
     }
@@ -311,7 +320,6 @@ function process_msg(io,roomnum,data){
 
 function send_msg(io,roomnum){
     var data=chat_history[roomnum].splice(0,chat_history[roomnum].length);
-
     io.sockets.in(roomnum).emit("broadcastingListen", data);
 }
 

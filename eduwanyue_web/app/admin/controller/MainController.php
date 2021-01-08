@@ -619,6 +619,7 @@ class MainController extends AdminBaseController
     {
         $range   = strtotime(input('range')) ?? time();
         $day_end = mktime(0, 0, 0, date('m', $range), date('d', $range) + 1, date('Y', $range)) - 1; //23:59:59
+
         //昨天
         $yesterday_start = mktime(0, 0, 0, date('m', $range), date('d', $range) - 1, date('Y', $range));
         $yesterday_end   = mktime(0, 0, 0, date('m', $range), date('d', $range), date('Y', $range)) - 1;

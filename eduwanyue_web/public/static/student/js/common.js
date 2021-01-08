@@ -128,6 +128,7 @@ $(function(){
 
     //退出登录
     $('#logout').click(function(){
+        
         $.ajax({
             url:'/student/Login/logout',
             type:'POST',

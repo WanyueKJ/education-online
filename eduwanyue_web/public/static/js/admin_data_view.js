@@ -11,18 +11,33 @@
     getEchartsData(arr_x);//获取并填充数据
 
 
-    $("#range-yun-input").change(function () {
-        var range = this.value;
-        // 切换日期, 调用接口更新下方运营概况展示框数据
-        updateYunData(range);
+    // $("#range-yun-input").change(function () {
+    //     var range = this.value;
+    //     // 切换日期, 调用接口更新下方运营概况展示框数据
+    //     updateYunData(range);
 
-        /* 更新echarts数据*/
-        arr_x = getTimeX(range); //更新x轴时间单位数组
-        getEchartsData(arr_x); //获取并填充数据
+    //     /* 更新echarts数据*/
+    //     arr_x = getTimeX(range); //更新x轴时间单位数组
+    //     getEchartsData(arr_x); //获取并填充数据
 
-    });
+    // });
 
+    layui.use(['layer', 'laydate'], function() {
+        var laydate = layui.laydate;
+        laydate.render({
+            elem: '#range-yun-input'
+            ,done: function(value, date, endDate){
+                var range = value;
+               // 切换日期, 调用接口更新下方运营概况展示框数据
+                updateYunData(range);
 
+                /* 更新echarts数据*/
+                arr_x = getTimeX(range); //更新x轴时间单位数组
+                getEchartsData(arr_x); //获取并填充数据
+            }
+          });
+
+    })
 
 
     /**

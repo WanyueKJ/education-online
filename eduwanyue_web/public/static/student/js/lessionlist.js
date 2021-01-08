@@ -11,7 +11,7 @@
          }
      }
      if (flag > 0) {
-
+         
          $('.zhibo-info').removeClass('active');
          $('.zhibo-info').find('a').removeClass('white');
          $('.neirong-info').addClass('active');
@@ -19,6 +19,7 @@
          chooselb(4);
      } else if (urlArr.length > 1 && (urlArr[1] != "/") && (urlArr[1] != "?")) {
         chooselb(3); //选课中心默认显示直播分类
+        
     } else {
         // 首页显示所有分类
         chooselb(99);
@@ -88,7 +89,7 @@
             chooselb(id);
         }
     })
-
+    
 
     //点击查看更多
     $('.less_list').on('click','.look_more',function(){
@@ -234,7 +235,7 @@
                 layer.msg('网路错误');
             },
             success:function(data){
-
+                
                 var dabanData = {
                     'data': {
                         'lesslist':[]
@@ -254,11 +255,12 @@
                         neiData.data.lesslist.push(less[index]);
                     }
                 }
-
+                
                 if (location == 'index') {
                     dabanData.data.lesslist = dabanData.data.lesslist.slice(0, 8);
                     neiData.data.lesslist = neiData.data.lesslist.slice(0, 8);
                 }
+                
                 var lesshtml = replaceHtml(dabanData);
                 $('.less_list ul').html(lesshtml);
 

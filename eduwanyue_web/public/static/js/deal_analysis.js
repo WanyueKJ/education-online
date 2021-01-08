@@ -6,13 +6,25 @@
     getEchartsData(current_range);//获取并填充数据
 
 
-    $("#range-input").change(function () {
-        var range = this.value;
-        /* 更新echarts数据*/
-        getEchartsData(range); //获取并填充数据
+    // $("#range-input").change(function () {
+    //     var range = this.value;
+    //     /* 更新echarts数据*/
+    //     getEchartsData(range); //获取并填充数据
 
-    });
+    // });
 
+    layui.use(['layer', 'laydate'], function() {
+        var laydate = layui.laydate;
+        laydate.render({
+            elem: '#range-input'
+            ,done: function(value, date, endDate){
+                var range = value;
+                getEchartsData(range); //获取并填充数据
+
+            }
+          });
+
+    })
 
 
 

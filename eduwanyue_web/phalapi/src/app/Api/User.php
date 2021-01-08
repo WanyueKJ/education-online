@@ -14,8 +14,6 @@ namespace App\Api;
 use PhalApi\Api;
 use App\Domain\User as Domain_User;
 
-header("Access-Control-Allow-Origin: *");
-
 /**
  * 用户信息
  */
@@ -25,7 +23,7 @@ class User extends Api {
             'getBaseInfo' => array(
                 'ios_version' => array('name' => 'ios_version', 'type' => 'string', 'default'=>'', 'desc' => 'IOS版本号'),
             ),
-
+            
             'upUserInfo' => array(
                 'fields' => array('name' => 'fields', 'type' => 'string', 'default'=>'', 'desc' => '修改信息json串'),
             ),
@@ -73,7 +71,6 @@ class User extends Api {
 		}
 		return $rs;
 	}
-
     
 	/**
 	 * 获取用户信息
@@ -138,70 +135,6 @@ class User extends Api {
 
 		return $rs;
 	}
-
-
-    /**
-     * 上传图片
-     */
-    public function uploadImg()
-    {
-
-        $uid=\App\checkNull($this->uid);
-        $token=\App\checkNull($this->token);
-
-        $checkToken=\App\checkToken($uid,$token);
-        if($checkToken==700){
-            $rs['code'] = $checkToken;
-            $rs['msg'] = \PhalApi\T('您的登陆状态失效，请重新登陆！');
-            return $rs;
-        }
-
-
-        if(!empty($_FILES['file'])){
-            //获取扩展名
-            $pathinfo  = pathinfo($_FILES['file']['name']);
-            $exename = strtolower($pathinfo['extension']);
-
-
-            if($exename != 'png' && $exename != 'jpg' && $exename != 'gif'){
-                exit('不允许的扩展名');
-            }
-            $imageSavePath = date('Ymd') . '/' . md5(uniqid(rand())).'.'.$exename;
-
-            if (false === $this->checkPath(dirname($imageSavePath))) {
-                exit('路径错误');
-            }
-
-            if(move_uploaded_file($_FILES['file']['tmp_name'], $imageSavePath)){
-
-                $upPath = $_SERVER['SERVER_NAME'] . '/api/' . $imageSavePath;
-                echo json_encode(['path' => $upPath], JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES);
-                exit;
-            }
-        }
-
-    }
-
-
-    /**
-     * 检查目录是否可写
-     * @access protected
-     * @param  string   $path    目录
-     * @return boolean
-     */
-    protected function checkPath($path)
-    {
-        if (is_dir($path)) {
-            return true;
-        }
-
-        if (mkdir($path, 0755, true)) {
-            return true;
-        }
-
-        return false;
-    }
-
     
     /**
 	 * 更新基本信息

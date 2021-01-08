@@ -14,8 +14,6 @@ namespace App\Api;
 use PhalApi\Api;
 use App\Domain\Course as Domain_Course;
 
-header("Access-Control-Allow-Origin: *");
-
 /**
  * 课程
  */
@@ -535,39 +533,4 @@ class Course extends Api
 
         return $res;
     }
-
-    /**
-     * 我的课程
-     * @desc 用于获取我的课程
-     * @return int code 操作码，0表示成功
-     * @return array info 同其他课程列表
-     * @return string info[].payval
-     * @return string msg 提示信息
-     */
-    public function getMyCourse() {
-        $rs = array('code' => 0, 'msg' => '', 'info' => array());
-
-        $uid=\App\checkNull($this->uid);
-        $token=\App\checkNull($this->token);
-        $type=\App\checkNull($this->type);
-        $keyword=\App\checkNull($this->keyword);
-        $p=\App\checkNull($this->p);
-
-        $checkToken=\App\checkToken($uid,$token);
-        if($checkToken==700){
-            $rs['code'] = $checkToken;
-            $rs['msg'] = \PhalApi\T('您的登陆状态失效，请重新登陆！');
-            return $rs;
-        }
-
-
-        $domain = new Domain_Course();
-        $list = $domain->getMyCourse($uid,$type,$keyword,$p);
-
-        $rs['info']=$list;
-
-        return $rs;
-    }
-
-
 }

@@ -231,6 +231,7 @@ $(function(){
                                     layer.msg('网路错误');
                                 },
                                 success:function(data){
+                                    console.log(3333);
                                     layer.msg(data.data.msg);
                                     if(data.data.code == 0){
                                         ifbuy = 1;

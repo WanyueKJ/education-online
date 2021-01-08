@@ -116,14 +116,14 @@
                         <div class="form-group">
                             <label for="input-wx_appid_pc" class="col-sm-2 control-label">PC-微信登录appid</label>
                             <div class="col-md-6 col-sm-10">
-                                <input type="text" class="form-control" id="input-wx_appid_pc" name="options[wx_appid_pc]" value="{$config['wx_appid_pc']|default=''}">  PC 微信登录appid（微信开放平台网页应用 APPID）
+                                <input type="text" class="form-control" id="input-wx_appid_pc" name="options[wx_appid_pc]" value="{$config['wx_appid_pc']|default=''}">  PC 微信登录appid（微信开放平台网页应用 APPID） 
                             </div>
                         </div>
                         
                         <div class="form-group">
                             <label for="input-wx_appsecret_pc" class="col-sm-2 control-label">PC-微信登录appsecret</label>
                             <div class="col-md-6 col-sm-10">
-                                <input type="text" class="form-control" id="input-wx_appsecret_pc" name="options[wx_appsecret_pc]" value="{$config['wx_appsecret_pc']|default=''}">  PC 微信登录appsecret（微信开放平台网页应用 AppSecret）
+                                <input type="text" class="form-control" id="input-wx_appsecret_pc" name="options[wx_appsecret_pc]" value="{$config['wx_appsecret_pc']|default=''}">  PC 微信登录appsecret（微信开放平台网页应用 AppSecret） 
                             </div>
                         </div>
                         
@@ -141,7 +141,7 @@
                         <div class="form-group">
                             <label for="input-aliapp_partner" class="col-sm-2 control-label">支付宝合作者身份ID</label>
                             <div class="col-md-6 col-sm-10">
-                                <input type="text" class="form-control" id="input-aliapp_partner" name="options[aliapp_partner]" value="{$config['aliapp_partner']|default=''}">
+                                <input type="text" class="form-control" id="input-aliapp_partner" name="options[aliapp_partner]" value="{$config['aliapp_partner']|default=''}"> 
                             </div>
                         </div>
                         
@@ -239,28 +239,28 @@
                         <div class="form-group">
                             <label for="input-chatserver" class="col-sm-2 control-label">聊天服务器带端口</label>
                             <div class="col-md-6 col-sm-10">
-                                <input type="text" class="form-control" id="input-chatserver" name="options[chatserver]" value="http://域名:19967">  格式：http://域名(:端口) 或者 http://IP(:端口)
+                                <input type="text" class="form-control" id="input-chatserver" disabled="disabled" name="options[chatserver]" value="http://域名:19967">  格式：http://域名(:端口) 或者 http://IP(:端口)
                             </div>
                         </div>
                         <div <if condition="config('type') neq 0">style="display:none;"</if> >
                             <div class="form-group">
                                 <label for="input-sound_appid" class="col-sm-2 control-label">声网Appid</label>
                                 <div class="col-md-6 col-sm-10">
-                                    <input type="text" class="form-control" id="input-sound_appid" name="options[sound_appid]" value="">
+                                    <input type="text" class="form-control" id="input-sound_appid" disabled="disabled" name="options[sound_appid]" value="">
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label for="input-agora_api_id" class="col-sm-2 control-label">声网api 客户ID</label>
                                 <div class="col-md-6 col-sm-10">
-                                    <input type="text" class="form-control" id="input-agora_api_id" name="options[agora_api_id]" value="">声网后台 ->右上角->RESTful API
+                                    <input type="text" class="form-control" id="input-agora_api_id" disabled="disabled" name="options[agora_api_id]" value="">声网后台 ->右上角->RESTful API
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label for="input-agora_api_key" class="col-sm-2 control-label">声网api 客户证书</label>
                                 <div class="col-md-6 col-sm-10">
-                                    <input type="text" class="form-control" id="input-agora_api_key" name="options[agora_api_key]" value="">声网后台 ->右上角->RESTful API
+                                    <input type="text" class="form-control" disabled="disabled" id="input-agora_api_key" name="options[agora_api_key]" value="">声网后台 ->右上角->RESTful API
                                 </div>
                             </div>
                             <p style="width:1117px; margin: 10px auto; font-weight:bold;">
@@ -287,7 +287,7 @@
                         
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-primary js-ajax-submit" data-refresh="0">
+                                <button type="submit" disabled="disabled" class="btn btn-primary js-ajax-submit" data-refresh="0">
                                     {:lang('SAVE')}
                                 </button>
                             </div>

@@ -12,9 +12,6 @@ namespace App\Api;
 
 use PhalApi\Api;
 use App\Domain\Cart as Domain_Cart;
-
-header("Access-Control-Allow-Origin: *");
-
 /**
  * 购物车
  */

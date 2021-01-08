@@ -12,7 +12,7 @@
 				<label for="input-name" class="col-sm-2 control-label"><span class="form-required">*</span>层级</label>
 				<div class="col-md-6 col-sm-10">
                     <input type="hidden" name="pid" id="pid" value="{$data['pid']}">
-					<select class="form-control">
+					<select class="form-control" disabled>
                         <option value="0">作为一级</option>
                         <volist name="classs" id="v">
                         <option value="{$v['id']}" <eq name="data['pid']" value="$v['id']">selected</eq> >{$v['name']}</option>

@@ -5,18 +5,17 @@ body {
 
 .wrap {
     height: 100%;
-    padding: 20px 0px 0 !important;
+    /*padding: 20px 0px 0 !important;*/
 }
 
 .statistics {
-    min-width: 1713px;
+    min-width: 1000px;
     height: 100%;
     margin: 0 auto;
-    padding: 60px 30px 40px;
 }
 
 .statistics .dropdown_list ul {
-    height: 40px;
+    height: 50px;
 }
 
 .statistics .dropdown_list li {
@@ -71,7 +70,7 @@ body {
     line-height: 44px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 28px;
+    /*margin-top: 28px;*/
     background-color: #FAFAFA;
 }
 
@@ -84,13 +83,14 @@ body {
     font-weight: bold;
     font-size: 18px;
     width: 136px;
-    margin-right: 1293px;
+    /*margin-right: 1293px;*/
     border-left: 1px solid #38E1AB;
     padding-left: 8px;
 }
 
 /*搜索框*/
 #search-date {
+    float: right;
     width: 135px;
     height: 35px;
     line-height: 35px;
@@ -113,23 +113,28 @@ body {
 
 .dropdown_list ul li a {
     color: #646464;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 
 
 /*统计框区域*/
 .basic_list {
-    margin-top: 35px;
-    padding-left: 20px;
-    padding-right: 20px;
+    /*padding-left: 20px;*/
+    /*padding-right: 20px;*/
 }
 
 .basic_list ul {
-    padding-left: 0;
+    padding: 0 20px;
+    display: -webkit-flex;
+    display: flex;
+    justify-content:space-between;
 }
 
 .basic_list ul li {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box;
     list-style: none;
     width: 303px;
     height: 155px;
@@ -137,6 +142,7 @@ body {
     padding: 22px;
     border: 1px solid #F0F0F0;
     display: inline-block;
+    margin-top: 20px;
 }
 
 .basic_list ul li:nth-child(5) {
@@ -170,6 +176,7 @@ body {
     padding-left: 15px;
     margin-top: 5px;
     border: 1px solid #F0F0F0;
+    float: right;
 }
 
 #search-pay-date input {
@@ -180,9 +187,10 @@ body {
 }
 
 .pay-users {
-    width: 1473px;
-    margin: 35px auto;
+    width: calc(100% - 40px);
+    margin: 20px 20px;
     border: none;
+    padding: 0 20px;
 }
 
 .pay-users thead tr {
@@ -198,8 +206,9 @@ body {
 }
 
 .pay-users tbody tr td {
-    border-left: none;
-    border-right: none;
+    /* border-left: none;
+    border-right: none; */
+    padding-left: 10px;
 }
 
 /*图标*/
@@ -226,10 +235,20 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -4px;
-    width: 32px;
-    height: 3px;
-    background-color: #4CE88E;
+    bottom: 7px;
+    width: auto;
+    height: 2px;
+    background-color: #2d8cf0;
     margin: 0 auto;
 
+}
+
+#tabHeader{
+    margin-left: 20px;
+}
+#echarts_basic {
+    margin-top: 20px;
+}
+.pay-user-wrap{
+    margin-top: 20px;
 }

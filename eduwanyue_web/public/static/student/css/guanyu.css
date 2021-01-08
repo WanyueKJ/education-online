@@ -1,4 +1,5 @@
 
+
 .guanyu_banner_wrap {
     background: url("../../images/guanyu_banner.png");
     height: 362px;
@@ -43,6 +44,7 @@
     color: #ffffff;
     float: left;
 }
+
 
 .liaojie_body {
     width: 999px !important;
