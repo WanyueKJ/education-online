@@ -1,0 +1,117 @@
+<include file="public@header"/>
+<link rel="stylesheet" href="__TMPL__/public/assets/css/animation.css">
+
+</head>
+<body>
+<div class="layui-fluid">
+    <div class="layui-row">
+        <div class="layui-page-header">
+            <div class="layui-card">
+                <div class="layui-page-header-content">
+                    <div class="layui-card-body">
+                        <div class="layui-ui-page-header-title" >
+                            {:lang('ADMIN_PLUGIN_INDEX')}<span class="layui-badge-rim page-content">ThinkCMF系统插件安装及管理</span>
+                        </div>
+                    </div>
+                    <div class="layui-tab layui-tab-brief">
+                        <ul class="layui-tab-title layui-nav" id="tabHeader">
+                            <li class="layui-this layui-nav-item"><a href="{:url('Plugin/index')}">{:lang('ADMIN_PLUGIN_INDEX')}</a></li>
+                            <li class="layui-nav-item"><a href="http://www.thinkcmf.com/appstore/plugin.html" target="_blank">插件市场</a></li>
+                            <li class="layui-nav-item"><a href="http://www.thinkcmf.com/faq.html?url=https://www.kancloud.cn/thinkcmf/faq/493510" target="_blank">插件安装<i class="fa fa-question-circle"></i></a></li>
+                            <li class="layui-nav-item"><a href="http://www.thinkcmf.com/topic/index/index/cat/9.html" target="_blank">插件交流</a></li>
+                            <li class="layui-nav-item"><a href="https://www.kancloud.cn/thinkcmf/doc5_1/957872" target="_blank">插件文档</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-page-content">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <form method="post" class="layui-form js-ajax-form">
+                        <php>
+                            $status=array("1"=>'开启',"0"=>'禁用',"3"=>'未安装');
+                        </php>
+                        <table class="layui-table" lay-even lay-skin="nob" lay-size="lg">
+                            <thead>
+                            <tr style="border: none;">
+                                <th>插件名称</th>
+                                <th>插件标识</th>
+                                <th>描述</th>
+                                <th>作者</th>
+                                <th>状态</th>
+                                <th width="260">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <foreach name="plugins" item="vo">
+                                <tr>
+                                    <td>{$vo.title}</td>
+                                    <td>{$vo.name}</td>
+                                    <td>{$vo.description}</td>
+                                    <td>{$vo.author}</td>
+                                    <td>
+                                        <if condition="$vo['status']==1">
+                                        <span class="layui-badge-dot layui-bg-function" style="margin-right: 6px;"></span>    {$status[$vo['status']]}
+                                            <elseif condition="$vo['status']==0">
+                                                <span  class="layui-badge-dot layui-bg-abnormal" style="margin-right: 6px;"></span >    {$status[$vo['status']]}
+                                                <else/>
+                                                <span class="layui-badge-dot layui-bg-default" style="margin-right: 6px;"></span >    {$status[$vo['status']]}
+                                        </if>
+                                    </td>
+                                    <td>
+                                        <if condition="$vo['status']==3">
+                                            <a class="nobtn js-ajax-dialog-btn"
+                                               href="{:url('plugin/install',array('name'=>$vo['name']))}"
+                                               data-msg="确定安装该插件吗？"><i class="icon-icon layui-icon-md-download"></i>  安装</a>
+                                            <else/>
+                                            <php>$config=json_decode($vo['config'],true);</php>
+                                            <if condition="!empty($config)">
+                                                <empty name="config.custom_config">
+                                                    <a class="nobtn" href="javascript:admin.openIframeLayer('{:url('plugin/setting',array('id'=>$vo['id']))}','设置',{area:['640px','50%'],end:function(){location.reload();}});">设置</a>
+                                                    <else/>
+                                                    <a class="nobtn" href="{:cmf_plugin_url($vo['name'].'://AdminIndex/setting')}">设置</a>
+                                                </empty>
+                                                <else/>
+                                                <a class="nobtn disabled" href="javascript:;">设置</a>
+                                            </if>
+                                            <div class="new-divider new-divider-vertical"></div>
+                                            <if condition="!empty($vo['has_admin'])">
+                                                <a class="nobtn"
+                                                   href="javascript:admin.openIframeLayer('{:cmf_plugin_url($vo['name'].'://AdminIndex/index')}','{$vo.title}',{area:['640px','50%'],end:function(){location.reload();}});">管理</a>
+                                                <else/>
+                                                <a class="nobtn disabled" href="javascript:;">管理</a>
+                                            </if>
+                                            <div class="new-divider new-divider-vertical"></div>
+                                            <a class="nobtn js-ajax-dialog-btn"
+                                               href="{:url('plugin/update',array('name'=>$vo['name']))}"
+                                               data-msg="确定更新该插件吗？">更新</a>
+                                            <div class="new-divider new-divider-vertical"></div>
+                                            <if condition="$vo['status']==0">
+                                                <a class="nobtn js-ajax-dialog-btn"
+                                                   href="{:url('plugin/toggle',array('id'=>$vo['id'],'enable'=>1))}"
+                                                   data-msg="确定启用该插件吗？">启用</a>
+                                                <else/>
+                                                <a class="nobtn js-ajax-dialog-btn"
+                                                   href="{:url('plugin/toggle',array('id'=>$vo['id'],'disable'=>1))}"
+                                                   data-msg="确定禁用该插件吗？">禁用</a>
+                                            </if>
+                                            <div class="new-divider new-divider-vertical"></div>
+                                            <a class="nobtn js-ajax-dialog-btn"
+                                               href="{:url('plugin/uninstall',array('id'=>$vo['id']))}"
+                                               data-msg="确定卸载该插件吗？">卸载</a>
+                                        </if>
+                                    </td>
+                                </tr>
+                            </foreach>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>

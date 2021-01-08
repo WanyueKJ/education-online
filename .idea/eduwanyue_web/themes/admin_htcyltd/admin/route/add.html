@@ -1,0 +1,71 @@
+<include file="public@header"/>
+<style>
+    html{background-color: #fff}
+</style>
+</head>
+<body>
+<form method="post" class="layui-form js-ajax-form" action="{:url('route/addPost')}" style="padding: 20px 30px 0 0;">
+    <div class="layui-form-item">
+        <label for="input-full_url" class="layui-form-label"><span class="form-required">*</span>原始网址</label>
+        <div class="layui-input-inline">
+            <input type="text" class="layui-input" id="input-full_url" required lay-verify="required" name="full_url">
+        </div>
+        <div class="layui-input-inline layui-btn-container" style="width: auto;">
+            <a href="javascript:doSelectUrl();" class="layui-btn layui-btn-primary" style="border: 1px dashed #e2e2e2;">
+                <i class="layui-icon layui-icon-addition" style="color: #1E9FFF;"></i>选择规则
+            </a>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label for="input-url" class="layui-form-label"><span class="form-required">*</span>显示网址</label>
+        <div class="layui-input-block">
+            <input type="text" class="layui-input" id="input-url" required lay-verify="required" name="url">
+            <div class="layui-form-mid layui-word-aux">
+            <p class="help-block">
+                <span id="url-vars"></span>
+                url格式一般为list/:param1/:param2或 list-&lt;param1&gt;-&lt;param2&gt;
+            </p>
+        </div>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label for="input-status" class="layui-form-label">是否启用</label>
+        <div class="layui-input-inline">
+            <select class="form-control" name="status" id="input-status">
+                <option value="1">启用</option>
+                <option value="0">禁用</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button type="submit" class="layui-btn js-ajax-submit js-close" id="js-ajax-submit">{:lang('SAVE')}</button>
+        </div>
+    </div>
+</form>
+<script type="text/javascript" src="__STATIC__/js/admin.js"></script>
+<script>
+    function doSelectUrl() {
+        var selectedCategoriesId = $('#js-categories-id-input').val();
+        admin.openIframeLayer("{:url('Route/select')}?ids=" + selectedCategoriesId, '请选择URL', {
+            offset: 'auto',
+            area: ['95%', '90%'],
+            btn: ['确定', '取消'],
+            yes: function (index, layero) {
+
+                var iframeWin   = window[layero.find('iframe')[0]['name']];
+                var selectedUrl = iframeWin.confirm();
+
+                if (selectedUrl) {
+                    $('#input-full_url').val(selectedUrl.action);
+                    $('#input-url').val(selectedUrl.url);
+                    var helpBlock = selectedUrl.vars ? "URL参数有" + selectedUrl.vars + ',' : '';
+                    $('#url-vars').text(helpBlock);
+                }
+                layer.close(index); //如果设定了yes回调，需进行手工关闭
+            }
+        });
+    }
+</script>
+</body>
+</html>

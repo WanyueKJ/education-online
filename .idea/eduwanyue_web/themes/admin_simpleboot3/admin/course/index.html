@@ -1,0 +1,158 @@
+<include file="public@header" />
+<style>
+.table img{
+    width:50px;
+}
+</style>
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a >列表</a></li>
+			<li><a href="{:url('course/add',['sort'=>$sort])}">添加</a></li>
+		</ul>
+        <form class="well form-inline margin-top-20" method="post" action="{:url('course/index')}">
+            上架状态：
+            <select class="form-control" name="status">
+                <option value="">全部</option>
+                <volist name="status" id="v">
+                <option value="{$key}" <if condition="input('request.status') neq '' && input('request.status') eq $key">selected</if>>{$v}</option>
+                </volist>
+            </select>
+            
+            年级：
+            <select class="form-control" name="gradeid">
+                <option value="">全部</option>
+                <volist name="grade" id="v">
+                <option value="{$v['id']}" <if condition="input('request.gradeid') neq '' && input('request.gradeid') eq $v['id']">selected</if>>{$v['name']}</option>
+                </volist>
+            </select>
+
+            获取方式：
+            <select class="form-control" name="paytype">
+                <option value="">全部</option>
+                <volist name="paytypes" id="v">
+                <option value="{$key}" <if condition="input('request.paytype') neq '' && input('request.paytype') eq $key">selected</if>>{$v}</option>
+                </volist>
+            </select>
+            <if condition="$sort neq 1 && $sort neq 3">
+            内容形式：
+            <select class="form-control" name="type">
+                <option value="">全部</option>
+                <volist name="types" id="v">
+                <option value="{$key}" <if condition="input('request.type') neq '' && input('request.type') eq $key">selected</if>>{$v}</option>
+                </volist>
+            </select>
+            </if>
+            发布时间：
+            <input class="form-control js-bootstrap-date" name="start_time" id="start_time" value="{:input('request.start_time')}" aria-invalid="false" style="width: 110px;"> - 
+            <input class="form-control js-bootstrap-date" name="end_time" id="end_time" value="{:input('request.end_time')}" aria-invalid="false" style="width: 110px;">
+                
+            用户ID：
+            <input class="form-control" type="text" name="uid" style="width: 200px;" value="{:input('request.uid')}"
+                   placeholder="请输入用户ID">
+            关键字：
+            <input class="form-control" type="text" name="keyword" style="width: 200px;" value="{:input('request.keyword')}"
+                   placeholder="标题">
+            <input type="hidden" name="sort" value="{$sort}"/>
+            <input type="submit" class="btn btn-primary" value="搜索"/>
+            <a class="btn btn-danger" href="{:url('course/index',['sort'=>$sort])}">清空</a>
+        </form>
+		<form method="post" class="js-ajax-form" action="{:url('course/listOrder')}">
+            <div class="table-actions">
+                <button class="btn btn-primary btn-sm js-ajax-submit" type="submit">{:lang('SORT')}</button>
+            </div>
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+                        
+                        <th width="50">{:lang('SORT')}</th>
+						<th>ID</th>
+						<th>讲师</th>
+						<th>学级</th>
+						<th>科目</th>
+                        <if condition="$sort neq 1 && $sort neq 3">
+                        <th>内容形式</th>
+                        </if>
+						<th>标题</th>
+						<th>封面</th>
+						<th>获取</th>
+                        <if condition="$sort eq 1">
+                        <th>课时数</th>
+                        </if>
+						<th>学习人数</th>
+						<th>状态</th>
+						<th>上架时间</th>
+                        <if condition="$sort eq 2 || $sort eq 3">
+                        <th>开播时间</th>
+                        <th>结束时间</th>
+                        </if>
+						<th>时间</th>
+						<th align="center">{:lang('ACTIONS')}</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="list" item="vo">
+					<tr>
+                        <td>
+                            <input name="list_orders[{$vo.id}]" class="input-order" type="text" value="{$vo.list_order}">
+                        </td>
+						<td>{$vo['id']}</td>
+						<td>{$vo['userinfo']['user_nickname']} ({$vo['userinfo']['id']})</td>
+						<td>{$grade[$vo['gradeid']]['name']|default=''}</td>
+						<td>{$classs[$vo['classid']]['name']|default=''}</td>
+                        <if condition="$sort neq 1 && $sort neq 3">
+						<td>{$types[$vo['type']]|default=''}</td>
+                        </if>
+						<td>{$vo['name']}</td>
+						<td><if condition="$vo['thumb']"><img src="{$vo['thumb']}"></if></td>
+                        <td>
+                            <if condition="$vo['paytype'] eq 0">
+                                免费
+                            <else/>
+                                {$paytypes[$vo['paytype']]} / {$vo['payval']}
+                            </if>
+                        </td>
+                        <if condition="$sort eq 1">
+                        <td>{$vo['lessons']}</td>
+                        </if>
+                        <td>{$vo['views']}</td>
+                        <td>{$status[$vo['status']]}</td>
+                        <td>
+                            {:date('Y-m-d H:i:s',$vo['shelvestime'])}
+                        </td>
+                        
+                        <if condition="$sort eq 2 || $sort eq 3">
+                        <td>{:date('Y-m-d H:i:s',$vo['starttime'])}</td>
+                        <td>{:date('Y-m-d H:i:s',$vo['endtime'])}</td>
+                        </if>
+                        <td>{:date('Y-m-d H:i:s',$vo['addtime'])}</td>
+						<td>
+                            <if condition="$vo['sort'] eq 1">
+                            <a class="btn btn-xs btn-info" href='{:url("lesson/index",array("courseid"=>$vo["id"]))}'>课时管理</a>
+                            </if>
+                            
+                            <a class="btn btn-xs btn-info" href='{:url("coursebuy/index",array("courseid"=>$vo["id"]))}'>购买详情</a>
+                            
+                            <if condition="$vo['status'] gt 0">
+                            <a class="btn btn-xs btn-warning js-ajax-dialog-btn" href="{:url("course/setstatus",array("id"=>$vo["id"],"status"=>"-2"))}">下架</a>
+                            <else/>
+                            <a class="btn btn-xs btn-warning js-ajax-dialog-btn" href="{:url("course/setstatus",array("id"=>$vo["id"],'status'=>'1'))}">上架</a>
+                            </if>
+                            <a class="btn btn-xs btn-primary" href='{:url("course/edit",array("id"=>$vo["id"]))}'>{:lang('EDIT')}</a>
+							<a class="btn btn-xs btn-danger js-ajax-delete" href="{:url('course/del',array('id'=>$vo['id']))}" <if condition="$vo['views'] gt 0">data-msg="已有{$vo['views']}人学习，确定要删除么？"</if>>{:lang('DELETE')}</a>
+						</td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+            <div class="table-actions">
+                <button class="btn btn-primary btn-sm js-ajax-submit" type="submit">{:lang('SORT')}</button>
+            </div>
+			<div class="pagination">{$page}</div>
+
+		</form>
+	</div>
+	<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>

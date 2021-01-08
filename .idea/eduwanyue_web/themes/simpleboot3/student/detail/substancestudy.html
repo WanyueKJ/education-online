@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$site_info.site_name|default=''}</title>
+    <include file="public@head"/>
+    <include file="student/public@head"/>
+    <link href="__STATIC__/student/css/detail.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <include file="student/public@header"/>
+    <include file="student/public@grade"/>
+    <include file="student/public@login"/>
+
+    <div class="substancestudy_top">
+        <if condition="$info['type'] eq 1"> <!--图文-->
+            <img class="thumb" src="{$info['thumb']}">
+        <elseif condition="$info['type'] eq 2" /><!--视频-->
+            <video height="375" width="800"   id="myVideo"  controls="controls"  preload="auto">
+                <source src="{$info['url']}" type="video/mp4">
+            </video>
+        <else/><!--音频-->
+            <audio id="myAudio" controls="controls">
+                <source src="{$info['url']}" type="audio/mpeg" />
+            </audio>
+        </if>
+    </div>
+
+
+    <div class="substancestudy_content <if condition='$info.type == 1 && $info.paytype==1 && $info.ifbuy==0 && $info.trialtype!=0'>opacity_yes</if>">
+        {$info['content']}
+    </div>
+
+    <if condition="$info['type'] == 1 && $info['paytype']==1 && $info['ifbuy']==0 && $info['trialtype']!=0">
+        <div class="lock_title">
+            <a style="color: #FF1B20;" href="javascript:void(0)">购买后可查看完整内容</a>
+        </div>
+    </if>
+
+    <include file="student/public@footer"/>
+    <include file="student/public@scripts"/>
+    <script>
+        var courseid = "{$info['id']}"; //课程id
+        var star = 0;//星级
+        var page = 1;//页码
+        var type = "{$info['type']}";//类型
+
+        var paytype = "{$info['paytype']}";//是否付费  0免费 1收费  2密码
+        var ifbuy = "{$info['ifbuy']}";//是否支付了
+        var trialtype = "{$info['trialtype']}";//是否可以试学
+        var trialval = "{$info['trialval']}";//试学值
+
+        var totalmoney = "{$info['payval']}";//价格
+        var name_t = "{$info['name']}";//名字
+
+        //检测试看功能
+        if(type == 2 && paytype==1 && ifbuy==0 && trialtype!=0){
+            var isTanc = false;
+            //获取视频DOM元素
+            var myVideo = document.getElementById("myVideo");
+
+            //使用事件监听方式捕捉事件， 此事件可作为实时监测video 播放状态
+            myVideo.addEventListener("timeupdate",function(){
+                var timeDisplay;
+                //用秒数来显示当前播放进度
+                timeDisplay = Math.floor(myVideo.currentTime);
+                //当视频播放到 4s的时候做处理
+                if(timeDisplay >= trialval){
+                        //处理代码
+                        myVideo.currentTime=trialval;//移动到大于10秒自动返回
+                        myVideo.pause();
+                        if(isTanc == false){
+                            confirms('试看结束');
+                            isTanc = true;
+                        }
+                }else{
+                    isTanc = false;
+                }
+            },false);  
+            
+            //进度条移动事件
+            myVideo.addEventListener('seeking', function(e) {
+				//移动到大于10秒自动返回
+				if(Math.floor(myVideo.currentTime)>=trialval){
+                    myVideo.currentTime=trialval;
+                    if(isTanc == false){
+                        confirms('试看结束');
+                        isTanc = true;
+                    }
+				}else{
+                    isTanc = false;
+                }
+            })
+            
+
+        }else if(type == 1 && paytype==1 && ifbuy==0 && trialtype!=0){
+            var h=$('.substancestudy_content').height();
+            var h_n=h*trialval*0.01;
+            $('.substancestudy_content').height(h_n);
+            $('.substancestudy_content').removeClass('opacity_yes');
+        }
+
+
+        $('.lock_title').click(function(){
+            confirms('是否去购买？');
+        })
+
+
+
+
+
+
+        function confirms(title){
+            //询问框
+            layer.confirm(title, {
+                btn: ['去购买','取消'] //按钮
+            }, function(){
+                window.open("/student/detail/buy?courseid="+courseid+"&type=0&method=0&totalmoney="+totalmoney+"&name="+name_t+"&ismaterial=0");  
+            }, function(){
+          
+            });
+        }
+
+    </script>
+    <script src="__STATIC__/student/js/detail.js"></script>
+</body>
+</html>

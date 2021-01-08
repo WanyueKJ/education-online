@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>讲师登录 {$site_info.site_name|default=''}</title>
+    <include file="public@head"/>
+    <link href="__STATIC__/teacher/css/login.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="t_logo">
+        <img src='__STATIC__/teacher/images/logo.png'> {$site_info.site_name|default=''}
+    </div>
+    <div class="t_login clearfix">
+        <div class="t_login_l">
+            <div class="title">{$site_info.site_name|default=''}</div>
+            <div class="des">在线教育，我们更专业！</div>
+        </div>
+        <div class="t_login_r">
+            <div class="t_login_b t_login_b_l">
+                <div class="t_login_tab">
+                    <ul>
+                        <li class="on">密码登录</li>
+                        <li>验证码登录</li>
+                    </ul>
+                </div>
+                <div class="t_login_tab_bd">
+                    <div class="t_login_input">
+                        <input type="text" id="js_l_name" placeholder="请输入手机号" value="13866666666">
+                    </div>
+                    
+                    <div class="t_login_input">
+                        <input type="password" id="js_l_pass" placeholder="请输入密码" value="123456">
+                    </div>
+                    
+                    <div class="t_login_tip">
+                        <span class="js_l_forget">忘记密码</span>
+                    </div>
+                    
+                    <div class="t_login_btn js_login_l">
+                        登录
+                    </div>
+                    
+                </div>
+                
+                <div class="t_login_tab_bd hide">
+                    <div class="t_login_input">
+                        <input type="text" id="js_m_name" placeholder="请输入手机号">
+                    </div>
+                    
+                    <div class="t_login_input t_login_c">
+                        <input type="text" id="js_m_code" placeholder="请输入验证码">
+                        <span id="js_m_getcode">获取验证码</span>
+                    </div>
+                    
+                    <div class="t_login_tip">
+                        <span class="js_l_forget">忘记密码</span>
+                    </div>
+                    
+                    <div class="t_login_btn js_login_m">
+                        登录
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="t_login_b t_login_b_f hide">
+                <div class="t_login_tab">
+                    <ul>
+                        <li>重置密码</li>
+                    </ul>
+                </div>
+                <div class="t_login_tab_bd">
+                    <div class="t_login_input">
+                        <input type="text" id="js_f_name" placeholder="请输入手机号">
+                    </div>
+                    
+                    <div class="t_login_input t_login_c">
+                        <input type="text" id="js_f_code" placeholder="请输入验证码">
+                        <span id="js_f_getcode">获取验证码</span>
+                    </div>
+                    
+                    <div class="t_login_input">
+                        <input type="password" id="js_f_pass" placeholder="请设置密码">
+                    </div>
+                    
+                    <div class="t_login_tip">
+                        <span class="js_l_login">立刻登录</span>
+                    </div>
+                    
+                    <div class="t_login_btn js_login_f">
+                        确定
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="t_login_t">
+                <ul>
+                    <if condition="in_array('wx',$configpri['login_type'])">
+                    <li>
+                        <a href="/teacher/login/weixin">
+                            <div class="td_i">
+                                <img src="__STATIC__/teacher/images/wx.png">
+                            </div>
+                            <div class="td_t">
+                                微信登录
+                            </div>
+                        </a>
+                    </li>
+                    </if>
+                    <if condition="in_array('QQ',$configpri['login_type'])">
+                    <li>
+                        <a href="/teacher/login/qq">
+                            <div class="td_i">
+                                <img src="__STATIC__/teacher/images/qq.png">
+                            </div>
+                            <div class="td_t">
+                                QQ登录
+                            </div>
+                        </a>
+                    </li>
+                    </if>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="t_copyright">
+        {:nl2br($site_info.copyright)}
+    </div>
+    <script src="__STATIC__/teacher/js/login.js"></script>
+</body>
+</html>

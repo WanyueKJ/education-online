@@ -1,0 +1,46 @@
+<include file="public@header"/>
+<style>
+    html{background-color: #fff}
+</style>
+</head>
+<body>
+<form method="post" class="layui-form js-ajax-form" action="{:url('route/editPost')}" style="padding: 20px 30px 0 0;">
+    <div class="layui-form-item">
+        <label for="input-full_url" class="layui-form-label">原始网址<span class="form-required">*</span></label>
+        <div class="layui-input-block">
+            <input type="text" class="layui-input" id="input-full_url" required lay-verify="required" name="full_url" value="{$full_url}">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label for="input-url" class="layui-form-label">显示网址<span class="form-required">*</span></label>
+        <div class="layui-input-block">
+            <input type="text" class="layui-input" id="input-url" required lay-verify="required" name="url" value="{$url}">
+            <div class="layui-form-mid layui-word-aux">
+                <p class="help-block">
+                    <span id="url-vars"></span>
+                    url格式一般为list/:param1/:param2或 list-&lt;param1&gt;-&lt;param2&gt;
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label for="input-status" class="layui-form-label">是否启用</label>
+        <div class="layui-input-inline">
+            <select class="layui-input" name="status" id="input-status">
+                <option value="1">启用</option>
+                <php>$status_selected=$status?"":"selected";</php>
+                <option value="0" {$status_selected}>禁用</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <input type="hidden" name="id" value="{$id}">
+            <button type="submit" class="layui-btn js-ajax-submit js-close" id="js-ajax-submit">{:lang('SAVE')}</button>
+        </div>
+    </div>
+</form>
+<script type="text/javascript" src="__STATIC__/js/admin.js"></script>
+</body>
+</html>

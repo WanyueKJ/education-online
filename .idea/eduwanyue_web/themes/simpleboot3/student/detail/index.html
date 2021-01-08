@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$site_info.site_name|default=''}</title>
+    <include file="public@head"/>
+    <include file="student/public@head"/>
+    <link href="__STATIC__/student/css/detail.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <include file="student/public@header"/>
+    <include file="student/public@grade"/>
+    <include file="student/public@login"/>
+    <include file="student/public@addr"/>
+
+    <div class="detail_tc">
+        <div class="top">
+            <div class="content">
+                <img class="thumb" src="{$info.thumb}">
+                <div class="msg">
+                    <div class="des">{$info.name}</div>
+                    <div class="msgnum">
+                        <text>{$info.nums}课程</text>
+                        <text> | </text>
+                        <text>{$info.views}人在学</text>
+                    </div>
+                    <div class="tmsg">
+                        <if condition="$info['courses'] neq []">
+                            <span class="msg0">
+                                <img src="{$info['courses'][0]['avatar']}">
+                                <text>{$info['courses'][0]['user_nickname']}</text>
+                            </span>
+                        </if>
+                    </div>
+                    <if condition="$info.isbuy eq 1">
+                        <div class="money">已付费</div>
+                    <else/>
+                        <div class="money">￥<text>{$info.price}</text></div>
+                        <if condition="$info.iscart eq 1"><button class="yCart">已加购物车</button><else/><button data-id="{$info.id}" class="addCart">加入购物车</button></if><button class="goBuy">立即购买</button>
+                    </if>
+
+                </div>
+            </div>
+        </div>
+        <div class="bcontent">
+            <div class="nav">
+                <a class="text js b_fff" href="javascript:void(0);">介绍</a>
+                <a class="text bhkc b_f6f6" href="javascript:void(0);">包含课程</a>
+            </div>
+            <div class="tip">
+                <text>套餐介绍</text>
+            </div>
+            <div class="detail">
+                {$info.content}
+            </div>
+            <div class="classlist none">
+                <volist name="$info['courses']" id="item">
+                    <a href="/student/detail/class?id={$item['id']}">
+                        <div class="li">
+                            <div class="thumbdiv" style="background: url({$item.thumb}) no-repeat;background-size: cover;">
+                                <div class="tips">课程</div>
+                            </div>
+                            <div class="mess">
+                                <div class="des">{$item.name}</div>
+                                <div class="msg">
+                                    <text class="text1">{$item.lesson}</text>
+                                    <if condition="$item.ismaterial eq 1">
+                                        <text class="text2">
+                                            <img class="book" src="__STATIC__/student/images/index/book.png">
+                                            <text class="tips">含教材</text>
+                                        </text>
+                                    </if>
+                                </div>
+                                <div class="bottom">
+                                    <img class="img1" src="{$item.avatar}">
+                                    <text class="name">{$item.user_nickname}</text>
+    
+                                    <if condition="$item.paytype eq 0">
+                                        <text class="mian">免费</text>
+                                    <elseif condition="$item.paytype eq 1"/>
+                                        <text class="money">￥{$item.payval}</text>
+                                    <else/>
+                                        <text class="mi">密码</text>
+                                    </if>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </volist>
+            </div>
+        </div>
+    </div>
+
+    
+    <include file="student/public@footer"/>
+    <include file="student/public@scripts"/>
+    <script src="__STATIC__/student/js/pick-pcc.min.1.0.1.js"></script>
+    <script>
+        $(".pick-area1").pickArea();
+    </script>
+    <script>
+        var courseid = "{$info['id']}"; //套餐id
+        var type = 1;//0课程 1套餐
+        var method = 0;//0直接购买 1购物车
+        var totalmoney = "{$info.price}";//价格
+        var name = "{$info.name}";//名称
+        var ismaterial =  "{$info['ismaterial']}"; //是否含有教材
+    </script>
+    <script src="__STATIC__/student/js/detail.js"></script>
+</body>
+</html>

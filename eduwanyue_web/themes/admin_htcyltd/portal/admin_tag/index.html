@@ -1,0 +1,70 @@
+<include file="public@header"/>
+</head>
+<body>
+<div class="layui-fluid">
+    <div class="layui-row">
+        <div class="layui-page-header">
+            <div class="layui-card">
+                <div class="layui-page-header-content">
+                    <div class="layui-card-body">
+                        <div class="layui-ui-page-header-title" >
+                            文章标签<span class="layui-badge-rim page-content">设置网站的数据参数及其它设置</span>
+                        </div>
+                    </div>
+                    <div class="layui-tab layui-tab-brief">
+                        <ul class="layui-tab-title">
+                            <li class="active"><a href="{:url('AdminTag/index')}">标签管理</a></li>
+                            <li><a href="javascript:admin.openIframeLayer('{:url('AdminTag/add')}','添加标签',{btn: ['保存','关闭'],area:['640px','50%'],end:function(){location.reload();}});">添加标签</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-page-content">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <form method="post" class="layui-form js-ajax-form">
+                        <table class="layui-table" id="menus-table" lay-even lay-skin="nob" lay-size="lg">
+                            <thead>
+                            <tr>
+                                <th width="50">ID</th>
+                                <th>标签名称</th>
+                                <th>状态</th>
+                                <th width="112">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <foreach name="tags" item="vo">
+                                <tr>
+                                    <td>{$vo.id}</td>
+                                    <td>{$vo.name}</td>
+                                    <td>
+                                        <if condition="$vo['status'] eq 1">
+                                            <span class="layui-badge-dot layui-bg-function" style="margin-right: 6px;"></span>已启用
+                                            <else />
+                                            <span class="layui-badge-dot layui-bg-abnormal" style="margin-right: 6px;"></span>已禁用
+                                        </if>
+                                    </td>
+                                    <td>
+                                        <if condition="$vo['status'] eq 1">
+                                            <a class="layui-bo layui-bo-small layui-bo-waring js-ajax-dialog-btn" href="{:url('AdminTag/upStatus',['id'=>$vo['id'],'status'=>0])}">禁用</a>
+                                            <else/>
+                                            <a class="layui-bo layui-bo-small layui-bo-succes js-ajax-dialog-btn" href="{:url('AdminTag/upStatus',['id'=>$vo['id'] ,'status'=>1])}">启用</a>
+                                        </if>
+                                        <div class="new-divider new-divider-vertical"></div>
+                                        <a class="layui-bo layui-bo-small layui-bo-close js-ajax-delete" href="{:url('AdminTag/delete',['id'=>$vo['id']])}">删除</a>
+                                    </td>
+                                </tr>
+                            </foreach>
+                            </tbody>
+                        </table>
+                    </form>
+                    <div class="pagination">{$page}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>

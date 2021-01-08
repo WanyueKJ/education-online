@@ -1,0 +1,107 @@
+.index_top{
+    margin-bottom:20px;
+    padding:40px 0;
+    height:80px;
+    background:#fff;
+    border-radius:5px;
+    
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+.index_top .t_bd{
+    float:left;
+    width:50%;
+    height:80px;
+    line-height:40px;
+    text-align:center;
+    
+    -moz-box-sizing: border-box;  /*Firefox3.5+*/
+	-webkit-box-sizing: border-box; /*Safari3.2+*/
+	-o-box-sizing: border-box; /*Opera9.6*/
+	-ms-box-sizing: border-box; /*IE8*/
+	box-sizing: border-box;
+}
+.index_top .t_bd:first-child{
+    border-right:2px solid #F5F5F5;
+}
+.index_top .t_bd .t_bd_t{
+    font-size:18px;
+}
+.index_top .t_bd .t_bd_d{
+    font-size:24px;
+    font-weight:bold;
+}
+.index_bottom{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.index_left{
+    width:60%;
+    min-height:420px;
+    background:#fff;
+    border-radius:5px;
+}
+.index_left .i_l_t{
+    padding-left:30px;
+    line-height:80px;
+    font-size:22px;
+    font-weight:bold;
+}
+.index_left .i_l_bd{}
+.index_left .i_l_bd ul{}
+.index_left .i_l_bd ul li{
+    float:left;
+    margin-bottom:30px;
+    width:33%;
+    text-align:center;
+}
+.index_left .i_l_bd ul li .li_img{}
+.index_left .i_l_bd ul li .li_img img{
+    width:80px;
+    height:80px;
+}
+.index_left .i_l_bd ul li .li_t{
+    line-height:50px;
+    color:#323232;
+    font-size:20px;
+}
+
+
+.index_right{
+    float:left;
+    margin-left:20px;
+    flex:1;
+    min-height:420px;
+    background:#fff;
+    border-radius:5px;
+}
+.index_right .i_r_t{
+    padding-left:30px;
+    line-height:80px;
+    font-size:22px;
+    font-weight:bold;
+}
+.index_right .i_r_list{
+    padding-left:30px;
+}
+.index_right .i_r_list ul{}
+.index_right .i_r_list ul li{
+    height:30px;
+    line-height:30px;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.index_right .i_r_list ul li a{
+    color:#323232;
+    font-size:18px;
+}
+.index_right .i_r_list ul li a:hover{
+    color:#323232;
+}
+
+
+

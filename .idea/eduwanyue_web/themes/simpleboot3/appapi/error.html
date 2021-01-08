@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <include file="appapi@head"/>
+    <title>{$site_info.site_name|default=''}</title>
+    <style type="text/css">
+        body{text-align:center}
+        img{width: 1.4rem;margin: 1.2rem auto 0.3rem;}
+        .title2{padding:0 0.4rem;color: #323232;font-size: 0.3em;text-align: center;}
+    </style>
+</head>
+<body>
+     <img src="__STATIC__/appapi/images/error.jpg">
+     <div class="title2">{$reason}</div>
+     
+     <include file="appapi@footer"/>
+     <include file="appapi@scripts"/>
+</body>
+</html>

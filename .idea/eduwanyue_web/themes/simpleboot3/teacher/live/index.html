@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>我的大班课 {$site_info.site_name|default=''}</title>
+    <include file="public@head"/>
+    <include file="teacher/public@head"/>
+    <link href="__STATIC__/teacher/css/live.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="t_contain">
+        <include file="teacher/public@header"/>
+        <div class="t_contain_bd">
+            <include file="teacher/public@left_menu"/>
+            <div class="t_right clearfix">
+                <div class="l_bd">
+                    <div class="l_bd_t">我的大班课</div>
+                    <div class="l_bd_f">
+                        <form class="well form-inline margin-top-20" method="post" action="{:url('live/index')}">
+                        <select name="type" id="type" class="select">
+                            <option value="">全部类型</option>
+                            <volist name="type" id="v">
+                            <option value="{$key}" <if condition="input('request.type') neq '' && input('request.type') eq $key">selected</if>>{$v}</option>
+                            </volist>
+                        </select>
+                        
+                        <select name="islive" id="islive" class="select">
+                            <option value="">全部状态</option>
+                            <volist name="islive" id="v">
+                            <option value="{$key}" <if condition="input('request.islive') neq '' && input('request.islive') eq $key">selected</if>>{$v}</option>
+                            </volist>
+                        </select>
+                        
+                       <input class="form-control js-date" name="starttime" id="starttime" value="{:input('request.starttime')}" aria-invalid="false" style="width: 140px;" placeholder="开播时间">
+                       
+                       <input class="form-control" type="text" name="keyword" style="width: 120px;" value="{:input('request.keyword')}" placeholder="搜索">
+                       
+                        <input type="submit" class="btn" id="f_sub" value="筛选">
+                        </form>
+                    </div>
+                    <div class="l_bd_l">
+                        <div class="l_bd_l_l">
+                            <ul>
+                                <li class="l_bd_l_l_f">
+                                    <div class="l_bd_l_l_n">名称</div>
+                                    <div class="l_bd_l_l_t">学级</div>
+                                    <div class="l_bd_l_l_t">直播类型</div>
+                                    <div class="l_bd_l_l_t">内容类型</div>
+                                    <div class="l_bd_l_l_s">状态</div>
+                                    <div class="l_bd_l_l_time">开播时间</div>
+                                    <div class="l_bd_l_l_t">我的身份</div>
+                                    <div class="l_bd_l_l_c">操作</div>
+                                </li>
+                                <volist name="list" id="v">
+                                <li>
+                                    <div class="l_bd_l_l_n">
+                                        <div class="l_bd_l_l_n_i">
+                                            <img src="{$v['thumb']}">
+                                        </div>
+                                        <div class="l_bd_l_l_n_f">
+                                            <div class="l_bd_l_l_n_f_n">{$v['name']}</div>
+                                            <div class="l_bd_l_l_n_f_m l_bd_l_l_n_f_m_{$v['paytype']}">{$v['pay_val']}</div>
+                                        </div>
+                                    </div>
+                                    <div class="l_bd_l_l_t">{$grade[$v['gradeid']]['name']}</div>
+                                    <div class="l_bd_l_l_t">{$classs[$v['classid']]['name'] ?: ''}</div>
+                                    <div class="l_bd_l_l_t">{$v['type_s']}</div>
+                                    <div class="l_bd_l_l_s l_bd_l_l_s_{$v['islive']}"><span></span>{$v['live_s']}</div>
+                                    <div class="l_bd_l_l_time">{$v['live_time']}</div>
+                                    <div class="l_bd_l_l_t">{$v['user_type']}</div>
+                                    <div class="l_bd_l_l_c">
+                                        <!-- <a class="btn_a" href=''>详情</a>
+                                        -  -->
+                                        <if condition="$v['islive'] neq 2">
+                                        <a class="btn_a" target="_blank" href='{:url("liveing/index",array("courseid"=>$v["id"]))}'>进入授课</a>
+                                        </if>
+                                    </div>
+                                </li>
+                                </volist>
+                            </ul>
+                        </div>
+                        <div class="l_bd_list_p">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <include file="teacher/public@footer"/>
+    <include file="teacher/public@scripts"/>
+
+</body>
+</html>

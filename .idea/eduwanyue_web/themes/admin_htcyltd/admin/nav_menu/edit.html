@@ -1,0 +1,145 @@
+<include file="public@header"/>
+<style>
+    fieldset{border: 0;}
+    html{background-color: #fff}
+</style>
+</head>
+<body>
+	<div class="layui-row js-check-wrap">
+<div class="layui-side" style="background: #f5f7f9;">
+    <ul class="layui-if-menu">
+        <li><i class="icon-icon layui-icon-md-filing"></i><a href="{:url('NavMenu/index',['nav_id'=>$nav_id])}">导航菜单</a></li>
+        <li><i class="icon-icon layui-icon-md-add-circle"></i><a href="{:url('NavMenu/add',['nav_id'=>$nav_id])}">添加菜单</a></li>
+    	<li class="layui-this"><i class="icon-icon layui-icon-ios-create"></i><a>{:lang('ADMIN_MENU_EDIT')}</a></li>
+    </ul>
+</div>
+<div class="layui-body" style="padding: 15px 25px 0 15px;">
+    <div class="layui-tab-item layui-show">
+		  <form method="post" class="layui-form js-ajax-form" action="{:url('NavMenu/editPost')}">
+	        <fieldset>
+	            <div class="layui-form-item">
+	                <label class="layui-form-label">上级</label>
+	                <div class="layui-input-inline">
+	                    <select name="parent_id" class="layui-input">
+	                        <option value="0">/</option>
+	                        {$nav_trees}
+	                    </select>
+	                </div>
+	            </div>
+	            <div class="layui-form-item">
+	                <label class="layui-form-label"><span class="form-required">*</span>地址</label>
+	                <div class="layui-input-block">
+	                    <div class="layui-input-inline" style="width: 300px;">
+	                        <div class="layui-inline">
+	                            <input type="radio" id="external-link-radio">
+	                        </div>
+	                        <div class="layui-inline">
+	                            <input type="text" class="layui-input" name="href" id="external-link-input">
+	                        </div>
+	                    </div>
+	                    <div class="layui-input-inline" style="width: 300px;">
+	                        <div class="layui-inline">
+	                            <input type="radio" id="select-href-radio">
+	                        </div>
+	                        <div class="layui-inline">
+	                            <select name="href" id="select-href" class="layui-input">
+	                                <option value="{:base64_encode('home')}" data-name="首页">首页</option>
+	                                <foreach name="navs" item="vo">
+	                                    <optgroup label="{$vo.name}">
+	                                        {$vo.html}
+	                                    </optgroup>
+	                                </foreach>
+	                            </select>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="layui-form-item">
+	                <label class="layui-form-label"><span class="form-required">*</span>菜单名称</label>
+	                <div class="layui-input-block">
+	                    <input type="text" class="layui-input" name="name" id="name-input" value="{$name}">
+	                </div>
+	            </div>
+	            <div class="layui-form-item">
+	                <label class="layui-form-label">打开方式</label>
+	                <div class="layui-input-inline">
+	                    <select name="target" class="layui-input">
+	                        <option value="">默认方式</option>
+	                        <option {$target=='_blank'?'selected':''} value="_blank">新窗口打开</option>
+	                    </select>
+	                </div>
+	            </div>
+	            <div class="layui-form-item">
+	                <label class="layui-form-label">图标</label>
+	                <div class="layui-input-inline">
+	                    <input type="text" class="layui-input" name="icon" value="{$icon}">
+	                </div>
+	            </div>
+	            <div class="layui-form-item">
+	                <label class="layui-form-label">显示</label>
+	                <div class="layui-input-inline">
+	                    <select name="status" class="layui-input">
+	                        <option value="1">显示</option>
+	                        <php>$status_selected=empty($status)?"selected":"";</php>
+	                        <option value="0" {$status_selected}>隐藏</option>
+	                    </select>
+	                </div>
+	            </div>
+	        </fieldset>
+	        <div class="layui-form-item">
+	            <div class="layui-input-block">
+	            <input type="hidden" name="id" value="{$id}">
+	            <input type="hidden" name="nav_id" value="{$nav_id}">
+	            <button type="submit" class="layui-btn js-ajax-submit">{:lang("SAVE")}</button>
+	            <a class="layui-btn layui-btn-primary" href="{:url('NavMenu/index',['nav_id'=>$nav_id])}">返回</a>
+	            </div>
+	        </div>
+	    </form>
+	</div>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+<script>
+
+    $(function () {
+        $("#select-href,#select-href-radio").click(function () {
+            checkChange(2);
+        });
+
+        $("#select-href").change(function () {
+            var $this = $(this);
+            var label = $this.find("option[value='" + $this.val() + "']").data('name');
+            $('#name-input').val(label);
+        });
+
+        $("#external-link-input,#external-link-radio").click(function () {
+            checkChange(1);
+        });
+
+        var opt = $("#select-href option[value='" + '{$href}' + "']");
+        if (opt.length > 0) {
+            opt.prop('selected', true);
+            checkChange(2);
+        } else {
+            checkChange(1);
+            $('#external-link-input').val('{$href}');
+        }
+
+        function checkChange(i) {
+            if (i == 1) {
+                //自动输入url
+                $('#external-link-input').attr('name', 'external_href');
+                $('#select-href').removeAttr('name');
+                $('#select-href-radio').prop('checked', false);
+                $('#external-link-radio').prop('checked', true);
+            } else {
+                //选择链接url
+                $('#select-href').attr('name', 'href');
+                $('#external-link-input').removeAttr('name');
+                $('#select-href-radio').prop('checked', true);
+                $('#external-link-radio').prop('checked', false);
+            }
+        }
+    });
+</script>
+</body>
+</html>

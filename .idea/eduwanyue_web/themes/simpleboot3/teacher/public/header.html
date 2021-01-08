@@ -1,0 +1,18 @@
+
+<div class="t_header">
+    <div class="t_header_logo">
+        <img src="/logo.png"> {$site_info.site_name|default=''}
+    </div>
+    <div class="t_header_c">
+        <span class="t_header_c_img"></span>
+        <div class="t_header_c_bd">
+            <ul>
+                <li><a href="/teacher/index/index">回到首页</a></li>
+                <li><a href="javascript:void()" class="js_logout">退出登录</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="t_header_u">
+        <img src="{$userinfo['avatar']}"> {$userinfo['user_nickname']}
+    </div>
+</div>

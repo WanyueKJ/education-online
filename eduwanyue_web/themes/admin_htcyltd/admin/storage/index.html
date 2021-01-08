@@ -1,0 +1,51 @@
+<include file="public@header"/>
+</head>
+<body>
+<div class="layui-fluid">
+    <div class="layui-row">
+        <div class="layui-page-header">
+            <div class="layui-card">
+                <div class="layui-page-header-content">
+                    <div class="layui-card-body">
+                        <div class="layui-ui-page-header-title" >
+                            {:lang('ADMIN_STORAGE_INDEX')}<span class="layui-badge-rim page-content">设置网站上传文件的存储空间</span>
+                        </div>
+                    </div>
+                    <div class="layui-tab layui-tab-brief">
+                        <ul class="layui-tab-title" id="tabHeader">
+                            <li class="layui-this"><a href="{:url('storage/index')}">{:lang('ADMIN_STORAGE_INDEX')}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-page-content">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <form method="post" class="layui-form js-ajax-form" action="{:url('storage/settingPost')}">
+                        <div class="layui-tab-content">
+                            <div class="layui-form-item">
+                                <label for="input-type" class="layui-form-label">存储类型</label>
+                                <div class="layui-input-inline">
+                                    <select class="form-control" name="type" id="input-type">
+                                        <foreach name="storages" item="vo">
+                                            <php>$type_selected=isset($type)&&$type==$key?"selected":"";</php>
+                                            <option value="{$key}" {$type_selected}>{$vo.name}</option>
+                                        </foreach>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <div class="layui-input-block">
+                                    <button type="submit" class="layui-btn js-ajax-submit" data-refresh="0">{:lang('SAVE')}</button>
+                                </div>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>

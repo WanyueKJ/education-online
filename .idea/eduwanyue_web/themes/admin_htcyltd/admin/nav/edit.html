@@ -1,0 +1,37 @@
+<include file="public@header"/>
+<style>
+    html{background-color: #fff}
+</style>
+</head>
+<body>
+<form method="post" class="layui-form js-ajax-form" action="{:url('nav/editPost')}" style="padding: 20px 30px 0 0;">
+    <div class="layui-form-item">
+        <label class="layui-form-label"><span class="form-required">*</span>名称</label>
+        <div class="layui-input-inline">
+            <input type="hidden" name="id" value="{$id}">
+            <input type="text" class="layui-input" required lay-verify="required" name="name" value="{$name}">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">备注</label>
+        <div class="layui-input-block">
+            <textarea class="layui-textarea" name="remark" >{$remark}</textarea>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">主菜单</label>
+        <div class="layui-input-inline">
+            <php>$strMainMenuChecked=$is_main?"checked":"";</php>
+            <input type="checkbox" name="is_main" lay-skin="switch" value="1"  lay-text="是|否" {$strMainMenuChecked} >
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button type="submit" class="layui-btn js-ajax-submit js-close" id="js-ajax-submit">{:lang("SAVE")}</button>
+        </div>
+    </div>
+</form>
+
+<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>

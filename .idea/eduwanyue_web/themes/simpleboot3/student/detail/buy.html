@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$site_info.site_name|default=''}</title>
+    <include file="public@head"/>
+    <include file="student/public@head"/>
+    <link href="__STATIC__/student/css/detail.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <include file="student/public@header"/>
+    <include file="student/public@grade"/>
+    <include file="student/public@login"/>
+
+
+    <div class="detail_buy_top">
+        <div class="detail_buy_top_name">
+            课程名称：{$name}
+        </div>
+        <div class="detail_buy_top_tip">支付金额:<text class="detail_buy_top_tip_m">￥<text class="detail_buy_top_tip_f">{$totalmoney}</text></text></div>
+    </div>
+
+    <div class="detail_buy_content">
+        <ul>
+            <volist name="$paylist" id="item">
+                <li data-id="{$item.id}" data-name="{$item.name}">
+                    <img class="detail_buy_content_img" src="{$item.thumb}">
+                    <text class="detail_buy_content_text">
+                        {$item.name}
+                        <div class="detail_buy_content_text_heng none"></div>
+                    </text>
+                </li>
+            </volist>
+        </ul>
+
+        <div class="detail_buy_content_tips none">打开<text>微信</text>扫一扫，扫描下方二维码完成支付</div>
+        <img class="detail_buy_content_tips_img none" style="display: block;margin: 0 auto;" src="">
+
+    </div>
+
+
+    <include file="student/public@footer"/>
+    <include file="student/public@scripts"/>
+    <script>
+        var courseid = "{$courseid}"; //课程id
+        var type = "{$type}"; 
+        var method = "{$method}";
+        var totalmoney = "{$totalmoney}";
+        var name = "{$name}";
+        var ismaterial =  "{$ismaterial}";
+    </script>
+    <script src="__STATIC__/student/js/detail.js"></script>
+</body>
+</html>

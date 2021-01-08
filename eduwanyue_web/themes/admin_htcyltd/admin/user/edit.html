@@ -1,0 +1,43 @@
+<include file="public@header" />
+<style>html {background-color: #ffffff;}</style>
+</head>
+<body>
+<form method="post" class="layui-form js-ajax-form" action="{:url('User/editPost')}" style="padding: 20px 30px 0 0;">
+	<div class="layui-form-item">
+		<label for="input-user_login" class="layui-form-label"><span class="form-required">*</span>{:lang('USERNAME')}</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input" required lay-verify="required" id="input-user_login" name="user_login" value="{$user_login}">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label for="input-user_pass" class="layui-form-label"><span class="form-required">*</span>{:lang('PASSWORD')}</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input" required lay-verify="required" id="input-user_pass" name="user_pass" value="" placeholder="******">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label for="input-user_email" class="layui-form-label"><span class="form-required">*</span>{:lang('EMAIL')}</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input" required lay-verify="required" id="input-user_email" name="user_email" value="{$user_email}">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label for="input-user_email" class="layui-form-label"><span class="form-required">*</span>{:lang('ROLE')}</label>
+		<div class="layui-input-block">
+			<foreach name="roles" item="vo">
+				<php>$role_id_checked=in_array($vo['id'],$role_ids)?"checked":"";</php>
+				<input value="{$vo.id}" type="checkbox" name="role_id[]" title="{$vo.name}" {$role_id_checked} <if condition="cmf_get_current_admin_id() neq 1 && $vo['id'] eq 1">disabled="true"</if>>
+			</foreach>
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<input type="hidden" name="id" value="{$id}" />
+			<button type="submit" class="layui-btn js-ajax-submit js-close" id="js-ajax-submit">{:lang('SAVE')}</button>
+		</div>
+	</div>
+</form>
+
+<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>

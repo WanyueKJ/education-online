@@ -1,0 +1,89 @@
+<include file="public@header"/>
+</head>
+<body>
+<div class="layui-fluid">
+    <div class="layui-row">
+        <div class="layui-page-header">
+            <div class="layui-card">
+                <div class="layui-page-header-content">
+                    <div class="layui-card-body">
+                        <div class="layui-ui-page-header-title" >
+                            模板管理<span class="layui-badge-rim page-content">管理网站前台的主题模板</span>
+                        </div>
+                    </div>
+                    <div class="layui-tab layui-tab-brief">
+                        <ul class="layui-tab-title">
+                            <li class="layui-this"><a href="{:url('theme/index')}">所有模板</a></li>
+                            <li><a href="{:url('theme/install')}">安装模板</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-page-content">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <form method="post" class="layui-form js-ajax-form">
+                        <php> $status=array("1"=>lang('DISPLAY'),"0"=>lang('HIDDEN'));</php>
+                        <table class="layui-table" lay-even lay-skin="nob" lay-size="lg">
+                            <thead>
+                            <tr>
+                                <th>模板</th>
+                                <th>模板名称</th>
+                                <th>版本号</th>
+                                <th>语言</th>
+                                <th>作者</th>
+                                <th>模板描述</th>
+                                <th width="336">{:lang('ACTIONS')}</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <foreach name="themes" item="vo">
+                                <tr>
+                                    <td>
+                                        {$vo.theme}
+                                        <eq name="vo.theme" value="$default_theme">
+                                            <span class="layui-badge layui-bg-remind">当前启用</span>
+                                        </eq>
+                                    </td>
+                                    <td>{$vo.name}</td>
+                                    <td><span class="layui-badge layui-bg-remind">{$vo.version}</span></td>
+                                    <td>{$vo.lang}</td>
+                                    <td>{$vo.author}</td>
+                                    <td>{$vo.description}</td>
+                                    <td>
+                                        <a class="layui-bo layui-bo-small layui-bo-waring" href="{:url('Theme/design',['theme'=>$vo.theme])}" target="_blank">设计</a>
+                                        <div class="new-divider new-divider-vertical"></div>
+                                        <a class="layui-bo layui-bo-small layui-bo-waring" href="javascript:admin.openIframeLayer('{:url('theme/files',array('theme'=>$vo['theme']))}','{$vo.name}文件列表',{area:['80%','70%'],end:function(){location.reload();}});">文件列表</a>
+                                        <div class="new-divider new-divider-vertical"></div>
+                                        <a class="layui-bo layui-bo-small layui-bo-succes js-ajax-dialog-btn" href="{:url('theme/update',array('theme'=>$vo['theme']))}"
+                                           data-msg="确定更新此模板吗？">更新</a>
+                                        <div class="new-divider new-divider-vertical"></div>
+                                        <if condition="$vo.theme == $default_theme">
+                                            <span class="layui-bo layui-bo-small layui-bo-primary layui-btn-disabled" color="#cccccc">启用</span>
+                                            <else/>
+                                            <a class="layui-bo layui-bo-small layui-bo-checked js-ajax-dialog-btn" href="{:url('theme/active',array('theme'=>$vo['theme']))}"
+                                               data-msg="确定使用此模板吗？">启用</a>
+                                        </if>
+                                        <div class="new-divider new-divider-vertical"></div>
+                                        <if condition="$vo.theme == $default_theme">
+                                            <span class="layui-bo layui-bo-small layui-bo-primary layui-btn-disabled">卸载</span>
+                                            <else/>
+                                            <a class="layui-bo layui-bo-small layui-bo-close js-ajax-dialog-btn" href="{:url('theme/uninstall',array('theme'=>$vo['theme']))}"
+                                               data-msg="您设置的模板数据将被删除，<br>确定卸载此模板吗？">卸载</a>
+                                        </if>
+
+                                    </td>
+                                </tr>
+                            </foreach>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>

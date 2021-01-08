@@ -1,0 +1,74 @@
+<include file="public@header" />
+</head>
+<body>
+<div class="layui-fluid">
+	<div class="layui-row">
+		<div class="layui-page-header">
+			<div class="layui-card">
+				<div class="layui-page-header-content">
+					<div class="layui-card-body">
+						<div class="layui-ui-page-header-title" >
+							后台菜单<span class="layui-badge-rim page-content">后台管理网站菜单管理及设置</span>
+						</div>
+					</div>
+					<div class="layui-tab layui-tab-brief">
+						<ul class="layui-tab-title">
+							<li><a href="{:url('Menu/index')}">后台菜单</a></li>
+							<li><a href="javascript:admin.openIframeLayer('{:url('Menu/add')}','添加菜单',{btn: ['添加','关闭'],area:['720px', '600px'],end:function(){}});">添加菜单</a></li>
+							<li class="layui-this"><a href="{:url('Menu/lists')}">所有菜单</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrap js-check-wrap">
+			<div class="layui-page-content">
+				<div class="layui-card">
+					<div class="layui-card-body js-check-wrap">
+						<form class="layui-form js-ajax-form" action="{:url('menu/listorders')}" method="post">
+							<div class="layui-bg-alert layui-bg-remind">
+								<i class="icon-icon layui-icon-md-information-circle"></i>
+								<span>请在开发人员指导下进行以下操作！</span>
+							</div>
+							<div class="layui-btn-container">
+								<a class="layui-btn layui-btn-sm layui-bg-orange js-ajax-dialog-btn" href="{:url('menu/exportMenuLang')}" data-msg="您确定生成菜单多语言包吗？请确保应用目录下lang目录可写！">生成菜单多语言包</a>
+								<a class="layui-btn layui-btn-sm" href="javascript:admin.openIframeLayer('{:url('menu/getactions')}','导入新菜单',{area:['720px', '600px'],end:function(){location.reload();}});">导入新菜单</a>
+							</div>
+							<table class="layui-table" lay-even="" lay-skin="nob" lay-size="lg">
+								<thead>
+								<tr>
+									<th width="50">ID</th>
+									<th>菜单英文名称</th>
+									<th width="50">状态</th>
+									<th width="112">管理操作</th>
+								</tr>
+								</thead>
+								<foreach name="menus" item="vo">
+									<tr>
+										<td>{$vo.id}</td>
+										<td>{$vo.name}:{$vo.app}/{$vo.controller}/{$vo.action}</td>
+										<td>
+											<empty name="vo.status">
+												<span class="layui-badge-dot layui-bg-abnormal" style="margin-right: 6px;"></span>隐藏
+												<else/>
+												<span class="layui-badge-dot layui-bg-function" style="margin-right: 6px;"></span>显示
+											</empty>
+										</td>
+										<td>
+											<a class="layui-bo layui-bo-small layui-bo-checked" href="javascript:admin.openIframeLayer('{:url('menu/edit',array('id'=>$vo['id']))}','编辑菜单',{btn: ['保存','关闭'],area:['720px', '600px'],end:function(){}});">编辑</a>
+											<div class="new-divider new-divider-vertical"></div>
+											<a class="layui-bo layui-bo-small layui-bo-close js-ajax-delete" href="{:url('menu/delete',array('id'=>$vo['id']))}">删除</a>
+										</td>
+									</tr>
+								</foreach>
+							</table>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>

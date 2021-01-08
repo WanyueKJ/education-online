@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$site_info.site_name|default=''}</title>
+    <include file="public@head"/>
+    <include file="student/public@head"/>
+    <link href="__STATIC__/student/css/detail.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <include file="student/public@header"/>
+    <include file="student/public@grade"/>
+    <include file="student/public@login"/>
+    <include file="student/public@addr"/>
+
+    <div class="detail_live">
+        <div class="top">
+            <div class="content">
+                <div class="thumb" style="background: url({$info.thumb}) no-repeat;background-size: cover;">
+                    <div class="zhe">
+
+                        <if condition="$info.islive eq 0">
+                            <button>直播还未开始</button>
+                        <elseif condition="$info.islive eq 1"/>
+                            <button>正在直播</button>
+                        <else/>
+                            <if condition="$info.sort eq 1">
+                                <button>观看回放</button>
+                            <else/>
+                                <button>直播结束</button>
+                            </if>
+                        </if>
+                        
+                    </div>
+                </div>
+                <div class="msg">
+                    <div class="des">{$info.name}</div>
+                    <div class="msgnum">
+                        <text>{$info.lesson}</text>
+                        <text> | </text>
+                        <text>{$info.views}人在学</text>
+                    </div>
+                    <div class="tmsg">
+                        
+                        <span class="msg0">
+                            <img src="{$info['userinfo']['avatar']}">
+                            <span>
+                                <div class="avatar">{$info['userinfo']['user_nickname']}</div>
+                                <div class="tip">主讲老师</div>
+                            </span>
+                            
+                        </span>
+                        <if condition="$info['tutor'] neq []">
+                            <span class="msg1">
+                                <img src="{$info['tutor'][0]['avatar']}">
+                                <span>
+                                    <div class="avatar">{$info['tutor'][0]['user_nickname']}</div>
+                                    <div class="tip">辅导老师</div>
+                                </span>
+                            </span>
+                        </if>
+                    </div>
+                    <if condition="$info.ifbuy eq 1">
+                        <div class="money">已付费</div>
+
+                        <!-- <if condition="$info.islive eq 1 || ($info.sort eq 1 && $info.islive eq 2)">
+                            <button class="enterlive">进入直播间</button>
+                        </if> -->
+                        <button class="enterlive">进入直播间</button>
+                    <else/>
+                        <if condition="$info.paytype eq 0">
+                            <div class="mian">{$info.payval}</div>
+                        <elseif condition="$info.paytype eq 1" />
+                            <div class="money">￥<text>{$info.payval}</text></div>
+                        <else/>
+                            <div class="mi">{$info.payval}</div>
+                        </if>
+                        
+                        <if condition="$info.paytype eq 1 && $info.ifbuy eq 0">
+                            <button class="goBuy">立即购买</button>
+                        </if>
+                        <if condition="($info.paytype eq 1 && $info.ifbuy eq 1) || $info.paytype eq 0 || $info.paytype eq 2">
+
+                            <button class="enterlive">进入直播间</button>
+                           
+                        </if>
+                        
+                    </if>
+
+                </div>
+            </div>
+        </div>
+        <div class="bcontent">
+            <div class="nav">
+                <a class="text js b_fff" href="javascript:void(0);">介绍</a>
+            </div>
+            <div class="area1">
+                <div class="tip">
+                    <text>直播介绍</text>
+                </div>
+                <div class="detail">
+                    {$info.info}
+                </div>
+                <div class="tip">
+                    <text>讲师介绍</text>
+                </div>
+                <div class="teacherinfo">
+                    <a href="/student/teachers/detail?touid={$info['userinfo']['id']}"><img class="avatar" src="{$info['userinfo']['avatar']}"></a>
+                    <div class="info">
+                        <div class="name">
+                            <text>{$info['userinfo']['user_nickname']}</text>
+                            <text class="text1">主讲老师</text>
+                        </div>
+                        <div class="textarea1">
+                            {$info['userinfo']['experience']}
+                        </div>
+                    </div>
+                </div>
+                    <if condition="$info['tutor'] neq []">
+                    <div class="teacherinfo">
+                        <a href="/student/teachers/detail?touid={$info['tutor'][0]['id']}"><img class="avatar" src="{$info['tutor'][0]['avatar']}"></a>
+                        <div class="info">
+                            <div class="name">
+                                <text>{$info['tutor'][0]['user_nickname']}</text>
+                                <text class="text1">辅导老师</text>
+                            </div>
+                            <div class="textarea1">
+                                {$info['tutor'][0]['experience']}
+                            </div>
+                        </div>
+                    </div>
+                </if>
+            </div>
+            <div class="area3 none">
+
+            </div>
+
+        </div>
+    </div>
+
+    
+    <div class="common_zhe none">
+
+    </div>
+    <include file="student/public@footer"/>
+    <include file="student/public@scripts"/>
+    <script src="__STATIC__/student/js/pick-pcc.min.1.0.1.js"></script>
+    <script>
+        $(".pick-area1").pickArea();
+    </script>
+    <script type="text/javascript">
+        var courseid = "{$info['id']}"; //课程id
+        var liveuid = "{$info['uid']}";//老师id
+        var star = 0;//星级
+        var page = 1;//分页
+        var type = 0;//0课程 1套餐
+        var method = 0;//0直接购买 1购物车
+        var totalmoney = "{$info.payval}";//价格
+        var name = "{$info.name}";//名称
+        var ismaterial =  "{$info['ismaterial']}"; //是否含有教材
+        var paytype =  "{$info['paytype']}"; //
+        var ifbuy =  "{$info['ifbuy']}"; //
+
+    </script>
+    <script src="__STATIC__/student/js/detail.js"></script>
+</body>
+</html>
