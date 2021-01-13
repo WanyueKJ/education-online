@@ -590,7 +590,7 @@ layui.use(['layer', 'form', 'laydate'], function() {
             laydate.render({
                 elem: this,
                 type: 'datetime',
-                format: 'yyyy-MM-dd HH:mm'
+                format: 'yyyy-MM-dd HH:mm:ss'
             });
         });
     }

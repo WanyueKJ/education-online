@@ -279,51 +279,51 @@
 <script>
     $(function(){
         layui.use(['layer'], function(){
-        var layer = layui.layer
-        
-        $('#icon-wenhao').mouseover(function(){
-            var that = this;
-            layer.tips('0点截至当前时间，系统所有页面被访问的次数，1个人在统计时间内访问多次记为1次', that,{tips: 1,time:100*1000});
-        })
-        $('#icon-wenhao_2').mouseover(function(){
-            var that = this;
-            layer.tips('0点截至当前时间，结算成功的用户数，1人多次结算记为1人', that,{tips: 1,time:100*1000});
-        })
-        $('#icon-wenhao_3').mouseover(function(){
-            var that = this;
-            layer.tips('0点截至当前时间，系统所有页面被访问的次数，1个人在统计时间内访问多次记为多次', that,{tips: 1,time:100*1000});
-        })
-        $('#icon-wenhao_4').mouseover(function(){
-            var that = this;
-            layer.tips('0点截至当前时间，成功结算的订单数,1人多次订单记为1人', that,{tips: 1,time:100*1000});
-        })
+            var layer = layui.layer
 
-        $('#icon-wenhao_2_1').mouseover(function(){
-            var that = this;
-            layer.tips('筛选时间内，所有结算订单金额之和', that,{tips: 1,time:100*1000});
-        })
-        $('#icon-wenhao_2_2').mouseover(function(){
-            var that = this;
-            layer.tips('筛选时间内，系统所有页面被访问的次数，1个人在统计时间内访问多次记为多次', that,{tips: 1,time:100*1000});
-        })
-        $('#icon-wenhao_2_3').mouseover(function(){
-            var that = this;
-            layer.tips('筛选时间内，结算人数/访客数', that,{tips: 1,time:100*1000});
-        })
-        $('#icon-wenhao_2_4').mouseover(function(){
-            var that = this;
-            layer.tips('筛选时间内，结算金额/结算人数', that,{tips: 1,time:100*1000});
-        })
-        $('#icon-wenhao_2_5').mouseover(function(){
-            var that = this;
-            layer.tips('筛选时间内，结算成功的用户数，一人多次结算记为一人', that,{tips: 1,time:100*1000});
-        })
-        
-        $('.icon-wenhao').mouseout(function(){
-            var that = this;
-            layer.close(layer.index)
-        })
-            
+            $('#icon-wenhao').mouseover(function(){
+                var that = this;
+                layer.tips('0点截至当前时间，web端学生课程被访问的次数，1个人在统计时间内访问多次记为1次', that,{tips: 1,time:100*1000});
+            })
+            $('#icon-wenhao_2').mouseover(function(){
+                var that = this;
+                layer.tips('0点截至当前时间，结算成功的用户数，1人多次结算记为1人', that,{tips: 1,time:100*1000});
+            })
+            $('#icon-wenhao_3').mouseover(function(){
+                var that = this;
+                layer.tips('0点截至当前时间，web端学生课程被访问的次数，1个人在统计时间内访问多次记为多次', that,{tips: 1,time:100*1000});
+            })
+            $('#icon-wenhao_4').mouseover(function(){
+                var that = this;
+                layer.tips('0点截至当前时间，成功结算的订单数,1人多次订单记为1人', that,{tips: 1,time:100*1000});
+            })
+
+            $('#icon-wenhao_2_1').mouseover(function(){
+                var that = this;
+                layer.tips('筛选时间内，所有结算订单金额之和', that,{tips: 1,time:100*1000});
+            })
+            $('#icon-wenhao_2_2').mouseover(function(){
+                var that = this;
+                layer.tips('筛选时间内，web端学生课程被访问的次数，1个人在统计时间内访问多次记为多次', that,{tips: 1,time:100*1000});
+            })
+            $('#icon-wenhao_2_3').mouseover(function(){
+                var that = this;
+                layer.tips('筛选时间内，结算人数/访客数', that,{tips: 1,time:100*1000});
+            })
+            $('#icon-wenhao_2_4').mouseover(function(){
+                var that = this;
+                layer.tips('筛选时间内，结算金额/结算人数', that,{tips: 1,time:100*1000});
+            })
+            $('#icon-wenhao_2_5').mouseover(function(){
+                var that = this;
+                layer.tips('筛选时间内，结算成功的用户数，一人多次结算记为一人', that,{tips: 1,time:100*1000});
+            })
+
+            $('.icon-wenhao').mouseout(function(){
+                var that = this;
+                layer.close(layer.index)
+            })
+
         });
     })
 </script>

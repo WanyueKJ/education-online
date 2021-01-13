@@ -181,44 +181,44 @@
     $(function(){
         $('#icon-wenhao_11').mouseover(function(){
             var that = this;
-            layer.tips('筛选时间内，与前一天对比新增的用户数', that,{tips: 1,time:100*1000});
+            layer.tips('筛选时间内，与前一天对比新增的学生和老师', that,{tips: 1,time:100*1000});
         })
         $('#icon-wenhao_12').mouseover(function(){
             var that = this;
-            layer.tips('筛选时间内， 访问过系统的用户数', that,{tips: 1,time:100*1000});
+            layer.tips('筛选时间内， web端访问过系统课程的学生', that,{tips: 1,time:100*1000});
         })
         $('#icon-wenhao_13').mouseover(function(){
             var that = this;
-            layer.tips('筛选时间内， 访问过系统的用户数', that,{tips: 1,time:100*1000});
+            layer.tips('筛选时间内， 访问过系统的老师和学生', that,{tips: 1,time:100*1000});
         })
         $('#icon-wenhao_14').mouseover(function(){
             var that = this;
-            layer.tips('筛选时间内， 所有的付费用户数', that,{tips: 1,time:100*1000});
+            layer.tips('筛选时间内， 所有的付费学生', that,{tips: 1,time:100*1000});
         })
         $('#icon-wenhao_15').mouseover(function(){
             var that = this;
-            layer.tips('筛选时间内， 所有的付费用户数', that,{tips: 1,time:100*1000});
+            layer.tips('筛选时间内， 所有的付费学生', that,{tips: 1,time:100*1000});
         })
 
         $('#icon-wenhao_1').mouseover(function(){
             var that = this;
-            layer.tips('新付费用户-用户数：筛选时间之前没有在系统付过费，在筛选时间内在系统首次结算的用户数量 <br>老付费用户-用户数：筛选时间内，在系统内有结算，且首次结算是在筛选时间之前的用户数', that,{tips: 1,time:100*1000});
+            layer.tips('新付费用户-用户数：筛选时间之后学生付费用户<br>老付费用户-用户数：筛选时间之前的学生付费用户', that,{tips: 1,time:100*1000});
         })
         $('#icon-wenhao_2').mouseover(function(){
             var that = this;
-            layer.tips('新付费用户-用户数占比：筛选时间内，新付费用户数 / 全部付费用户数 <br>老付费用户-用户数占比：筛选时间内，老付费用户数 / 全部付费用户数', that,{tips: 1,time:100*1000});
+            layer.tips('新付费用户-用户数占比：新付费用户数 / 全部用户数(老师和学生) <br>老付费用户-用户数占比：筛选时间内，老付费用户数 / 全部用户数(老师和学生)', that,{tips: 1,time:100*1000});
         })
         $('#icon-wenhao_3').mouseover(function(){
             var that = this;
-            layer.tips('全部付费用户-客单价：筛选时间内，全部付费用户的结算金额/用户数 <br>新付费用户-客单价：筛选时间内，新付费用户的结算金额/新付费用户数 <br> 老付费用户-客单价：筛选时间内，老付费用户的结算金额/老付费用户数', that,{tips: 1,time:100*1000});
+            layer.tips('全部付费用户-客单价：总学生付费金额/总学生数 <br>新付费用户-客单价：新学生结算金额/老学生数 <br> 老付费用户-客单价：老付费学生结算金额/老学生数', that,{tips: 1,time:100*1000});
         })
         $('#icon-wenhao_4').mouseover(function(){
             var that = this;
-            layer.tips('全部付费用户-结算金额(元)：筛选时间内，全部付费用户的结算金额之和 <br> 新付费用户-结算金额(元)：筛选时间内，新付费用户的结算金额之和老付费用户-结算金额(元)：筛选时间内，老付费用户成功结算订单的金额之和', that,{tips: 1,time:100*1000});
+            layer.tips('全部付费用户-结算金额(元)：全部学生的结算金额之和 <br> 新付费用户-结算金额(元)：新学生的结算金额之和 <br> 老付费用户-结算金额(元)：老学生结算金额之和', that,{tips: 1,time:100*1000});
         })
         $('#icon-wenhao_5').mouseover(function(){
             var that = this;
-            layer.tips('全部付费用户-访问-结算转化率：筛选时间内，全部付费用户数/系统访客数 <br> 新付费用户-访问-结算转化率：筛选时间内，新付费用户数/系统访客数中无购买记录的访客数 <br> 老付费用户-访问-结算转化率：筛选时间内，老付费用户数/访问过系统的付费用户数', that,{tips: 1,time:100*1000});
+            layer.tips('全部付费用户-结算转化率：有付费订单即为100% 否则为0 <br> 新付费用户-结算转化率：有付费订单即为100% 否则为0 <br> 老付费用户-结算转化率：有付费订单即为100% 否则为0', that,{tips: 1,time:100*1000});
         })
 
         $('.icon-wenhao').mouseout(function(){

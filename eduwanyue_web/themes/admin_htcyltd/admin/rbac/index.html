@@ -53,15 +53,11 @@
 										<if condition="$vo['id'] eq 1">
 											<span class="layui-bo layui-bo-small layui-bo-primary layui-btn-disabled">{:lang('ROLE_SETTING')}</span>
 											<div class="new-divider new-divider-vertical"></div>
-											<a class="layui-bo layui-bo-small layui-bo-succes" href="javascript:admin.openIframeLayer('{:url('rbac/member',array('id'=>$vo['id']))}','成员管理',{btn: ['保存','关闭'],area:['640px','50%'],end:function(){location.reload();}});">成员管理</a>
-											<div class="new-divider new-divider-vertical"></div>
 											<span class="layui-bo layui-bo-small layui-bo-primary layui-btn-disabled">{:lang('EDIT')}</span>
 											<div class="new-divider new-divider-vertical"></div>
 											<span class="layui-bo layui-bo-small layui-bo-primary layui-btn-disabled">{:lang('DELETE')}</span>
 											<else />
 											<a class="layui-bo layui-bo-small layui-bo-waring" href="javascript:admin.openIframeLayer('{:url('rbac/authorize',array('id'=>$vo['id']))}','权限管理',{btn: ['保存','关闭'],area:['640px','50%'],end:function(){location.reload();}});">{:lang('ROLE_SETTING')}</a>
-											<div class="new-divider new-divider-vertical"></div>
-											<a class="layui-bo layui-bo-small layui-bo-succes" href="javascript:admin.openIframeLayer('{:url('rbac/member',array('id'=>$vo['id']))}','成员管理',{btn: ['保存','关闭'],area:['640px','50%'],end:function(){location.reload();}});">成员管理</a>
 											<div class="new-divider new-divider-vertical"></div>
 											<a class="layui-bo layui-bo-small layui-bo-checked" href="javascript:admin.openIframeLayer('{:url('rbac/roleedit',array('id'=>$vo['id']))}','编辑',{btn: ['保存','关闭'],area:['640px','50%'],end:function(){location.reload();}});">{:lang('EDIT')}</a>
 											<div class="new-divider new-divider-vertical"></div>

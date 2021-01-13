@@ -147,6 +147,14 @@ class CourseController extends AdminBaseController
         return isset($mode[$k]) ? $mode[$k] : '';
     }
 
+    /* 科目分类 */
+    protected function getClass(){
+        $list = Db::name('course_class')
+            ->order("list_order asc")
+            ->column('*','id');
+        return $list;
+    }
+
     /**
      * 学级分类
      * @return array
@@ -230,6 +238,11 @@ class CourseController extends AdminBaseController
             $map[] = ['gradeid', '=', $gradeid];
         }
 
+        $classid=isset($data['classid']) ? $data['classid']: '';
+        if($classid!=''){
+            $map[]=['classid','=',$classid];
+        }
+
         $paytype = $data['paytype'] ?? '';
         if ($paytype != '') {
             $map[] = ['paytype', '=', $paytype];
@@ -276,6 +289,7 @@ class CourseController extends AdminBaseController
             $this->assign('types', $this->getTypes());
         }
 
+        $this->assign('classs', $this->getClass());
         $this->assign([
             'list'       => $list,
             'page'       => $page,
@@ -392,6 +406,8 @@ class CourseController extends AdminBaseController
         } else {
             $this->assign('types', $this->getTypes());
         }
+
+        $this->assign('classs', $this->getClass());
 
         $this->assign([
             'grade'      => $this->getGradeTwo(),
@@ -627,6 +643,7 @@ class CourseController extends AdminBaseController
         }
 
         $this->assign([
+            'classs'     => $this->getClass(),
             'sort'       => $sort,
             'grade'      => $this->getGradeTwo(),
             'paytypes'   => $this->getPayTypes(),
