@@ -7,20 +7,15 @@
     updateYunData(current_range); //下方运营概况展示框数据
 
     //更新x轴时间单位
-    var arr_x = getTimeX(current_range);
-    getEchartsData(arr_x);//获取并填充数据
+    $.ajax({
+        type: "POST",
+        url: "getlastDate",
+        data: {date: current_range},
+        success:function (data){
+            getEchartsData(data); //获取并填充数据
+        }
+    })
 
-
-    // $("#range-yun-input").change(function () {
-    //     var range = this.value;
-    //     // 切换日期, 调用接口更新下方运营概况展示框数据
-    //     updateYunData(range);
-
-    //     /* 更新echarts数据*/
-    //     arr_x = getTimeX(range); //更新x轴时间单位数组
-    //     getEchartsData(arr_x); //获取并填充数据
-
-    // });
 
     layui.use(['layer', 'laydate'], function() {
         var laydate = layui.laydate;
@@ -32,8 +27,14 @@
                 updateYunData(range);
 
                 /* 更新echarts数据*/
-                arr_x = getTimeX(range); //更新x轴时间单位数组
-                getEchartsData(arr_x); //获取并填充数据
+                $.ajax({
+                    type: "POST",
+                    url: "getlastDate",
+                    data: {date: range},
+                    success:function (data){
+                        getEchartsData(data); //获取并填充数据
+                    }
+                })
             }
           });
 

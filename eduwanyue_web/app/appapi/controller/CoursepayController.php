@@ -67,12 +67,18 @@ class CoursepayController extends HomebaseController {
 				//调试用，写文本函数记录程序运行情况是否正常
 				//logResult("这里写入想要调试的代码变量值，或其他运行的结果记录");
 	
-				$orderinfo=Db::name('course_users')->where("orderno='{$out_trade_no}' and type='1'")->find();
+			//	$orderinfo=Db::name('course_users')->where("orderno='{$out_trade_no}' and type='1'")->find();
+				$map = [
+					['orderno','=',$out_trade_no],
+					['type','=',1],
+				];
+				$orderinfo=Db::name('course_users')->where($map)->find();
 				$this->logali("orderinfo:".json_encode($orderinfo));	
 				if($orderinfo){
                     if($orderinfo['status']==0){
                         /* 更新 订单状态 */
-                        Db::name('course_users')->where("id='{$orderinfo['id']}'")->update(array( "status"=>1,"trade_no"=>$trade_no,"paytime"=>time() ));
+                    //    Db::name('course_users')->where("id='{$orderinfo['id']}'")->update(array( "status"=>1,"trade_no"=>$trade_no,"paytime"=>time() ));
+                        Db::name('course_users')->where("id",$orderinfo['id'])->update(array( "status"=>1,"trade_no"=>$trade_no,"paytime"=>time() ));
 
                         $this->logali("orderno:".$out_trade_no."成功");
                     }else{
@@ -161,13 +167,18 @@ class CoursepayController extends HomebaseController {
 	private function orderServer(){
 		$info = $this -> wxDate;
 		$this->logwx("info:".json_encode($info));
-		$orderinfo=Db::name('course_users')->where("orderno='{$info['out_trade_no']}' and type='2'")->find();
+		$map=[
+			['orderno','=',$info['out_trade_no']],
+			['type','=',2],
+		];
+		$orderinfo=Db::name('course_users')->where($map)->find();
 		//$this->logwx("sql:".M()->getLastSql());
 		$this->logwx("orderinfo:".json_encode($orderinfo));
 		if($orderinfo){
             if($orderinfo['status']==0){
                 /* 更新 订单状态 */
-                Db::name('course_users')->where("id='{$orderinfo['id']}'")->update(array("status"=>1,"trade_no"=>$info['transaction_id'],"paytime"=>time()));
+              //  Db::name('course_users')->where("id='{$orderinfo['id']}'")->update(array("status"=>1,"trade_no"=>$info['transaction_id'],"paytime"=>time()));
+                Db::name('course_users')->where("id",$orderinfo['id'])->update(array("status"=>1,"trade_no"=>$info['transaction_id'],"paytime"=>time()));
                 
                 $this->logwx("orderno:".$out_trade_no.' 支付成功');
             }else{

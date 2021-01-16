@@ -287,7 +287,7 @@ class LoginController extends HomebaseController {
         if(!$ifreg){
             $this->error('该帐号不存在');
         }
-        $result=DB::name('users')->where("id='{$ifreg['id']}'")->setField("user_pass",$user_pass);
+        $result=DB::name('users')->where('id',$ifreg['id'])->setField("user_pass",$user_pass);
         if($result===false){
             $this->error('重置失败，请重试');
         }
@@ -386,7 +386,9 @@ class LoginController extends HomebaseController {
 
     protected function loginByThird($type,$openid,$nickname,$avatar){
         $userinfo=DB::name('users')
-            ->where("openid='{$openid}' and login_type='{$type}'")
+            //->where("openid='{$openid}' and login_type='{$type}'")
+            ->where('openid',$openid)
+            ->where('login_type',$type)
             ->find();
 
         if(!$userinfo){
@@ -502,11 +504,11 @@ class LoginController extends HomebaseController {
         }
 
         DB::name("users")
-            ->where("id={$uid}")
+            ->where("id",$uid)
             ->update(array('last_login_time' => $nowtime, "last_login_ip"=>get_client_ip(0,true),'gradeid'=>$gradeid ));
 
         $isok=DB::name("users_token")
-            ->where("user_id={$uid}")
+            ->where("user_id",$uid)
             ->update(array("token"=>$token, "expire_time"=>$expiretime , "create_time"=>$nowtime ));
         if(!$isok){
             DB::name("users_token")
@@ -521,7 +523,7 @@ class LoginController extends HomebaseController {
 
         setcaches("token_".$uid,$token_info);
         /* 删除PUSH信息 */
-        DB::name("users_pushid")->where("uid={$uid}")->delete();
+        DB::name("users_pushid")->where("uid",$uid)->delete();
 
         return 1;
     }

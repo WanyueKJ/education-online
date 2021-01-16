@@ -1301,5 +1301,13 @@ class MainController extends AdminBaseController
 
     }
 
+    function getlastDate($date)
+    {
 
+        $x_date = [];
+        for ($i = 0; $i < 10; $i++) {
+            array_unshift($x_date, date("Y-m-d", strtotime("-" . ($i * 3) . " days", strtotime($date))));
+        }
+        return $x_date;
+    }
 }

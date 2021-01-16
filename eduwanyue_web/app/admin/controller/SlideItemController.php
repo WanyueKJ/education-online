@@ -274,7 +274,13 @@ class SlideItemController extends AdminBaseController
 			return !1;
 		}
         $key='getSlide_'.$slide_id;
-        $rs=Db::name("slideItem")->field('id,title,image,url')->where("status='1' and slide_id={$slide_id} ")->order("list_order asc")->select()->toArray();
+        //$rs=Db::name("slideItem")->field('id,title,image,url')->where("status='1' and slide_id={$slide_id} ")->order("list_order asc")->select()->toArray();
+		$where=[
+			['status','=','1'],
+			['slide_id','=',$slide_id],
+
+		];
+        $rs=Db::name("slideItem")->field('id,title,image,url')->where($where)->order("list_order asc")->select()->toArray();
 		if($rs){
 			setcaches($key,$rs);
 		}else{

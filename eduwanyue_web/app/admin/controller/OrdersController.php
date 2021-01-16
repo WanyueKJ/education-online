@@ -208,7 +208,7 @@ class OrdersController extends AdminbaseController
     {
         $id = $this->request->param('id', 0, 'intval');
 
-        $rs = DB::name('orders')->where("id={$id}")->delete();
+        $rs = DB::name('orders')->where("id",$id)->delete();
         if ($rs === false) {
             $this->error("删除失败！");
         }

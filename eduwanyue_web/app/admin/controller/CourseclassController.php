@@ -71,7 +71,8 @@ class CourseclassController extends AdminBaseController
         $id   = $this->request->param('id', 0, 'intval');
         
         $data=Db::name('course_class')
-            ->where("id={$id}")
+        //    ->where("id={$id}")
+            ->where('id',$id)
             ->find();
         if(!$data){
             $this->error("信息错误");

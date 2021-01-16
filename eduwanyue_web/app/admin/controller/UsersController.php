@@ -260,7 +260,8 @@ class UsersController extends AdminBaseController
     {
         $id = $this->request->param('id', 0, 'intval');
 
-        $data = UsersModel::where("id={$id}")->find();
+        //$data = UsersModel::where("id={$id}")->find();
+        $data = UsersModel::where('id',$id)->find();
         if (!$data) {
             $this->error("信息错误");
         }

@@ -627,7 +627,8 @@ class CourseController extends AdminBaseController
     {
         $id = $this->request->param('id', 0, 'intval');
 
-        $data = CourseModel::where("id={$id}")->find();
+    //    $data = CourseModel::where("id={$id}")->find();
+        $data = CourseModel::where('id', '=', $id)->find();
         if (!$data) {
             $this->error("信息错误");
         }

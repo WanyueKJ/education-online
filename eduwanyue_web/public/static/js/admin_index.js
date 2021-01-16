@@ -5,33 +5,19 @@
     updateUserData(current_range); //展示框数据
 
     //更新x轴时间单位
-    var arr_x = getTimeX(current_range);
-    getEchartsData(arr_x);//获取并填充数据
+    $.ajax({
+        type: "POST",
+        url: "getlastDate",
+        data: {date: current_range},
+        success:function (data){
+            getEchartsData(data); //获取并填充数据
+        }
+    })
 
     //获取付费用户表格数据
     getPayTableData(current_range);
 
 
-    // $("#range-input").change(function () {
-
-    //     var range = this.value;
-    //     // 切换日期, 调用接口更新展示框数据
-    //     updateUserData(range);
-
-    //     /* 更新echarts数据*/
-    //     arr_x = getTimeX(range); //更新x轴时间单位数组
-    //     getEchartsData(arr_x); //获取并填充数据
-
-    // });
-    
-
-    /*付费用户表格*/
-    // $("#range-pay-input").change(function () {
-    //     var pay_range = this.value;
-    //     //获取付费用户表格数据
-    //     getPayTableData(pay_range);
-
-    // });
     layui.use(['layer', 'laydate'], function() {
         var laydate = layui.laydate;
         laydate.render({
@@ -42,8 +28,14 @@
                 updateUserData(range);
 
                 /* 更新echarts数据*/
-                arr_x = getTimeX(range); //更新x轴时间单位数组
-                getEchartsData(arr_x); //获取并填充数据
+                $.ajax({
+                    type: "POST",
+                    url: "getlastDate",
+                    data: {date: range},
+                    success:function (data){
+                        getEchartsData(data); //获取并填充数据
+                    }
+                })
             }
           });
 

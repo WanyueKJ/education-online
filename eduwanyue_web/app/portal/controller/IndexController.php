@@ -94,7 +94,14 @@ class IndexController extends StudentBaseController
 
 
             //." and name like '%".$keywords."%'"
-            $where = "gradeid=" . $gradeid . " and status>=1 and shelvestime<" . $nowtime;
+        //    $where = "gradeid=" . $gradeid . " and status>=1 and shelvestime<" . $nowtime;
+			
+			$where=[
+				['gradeid','=',$gradeid],
+				['status','>=',1],
+				['shelvestime','<',$nowtime],
+			];
+			
             $list  = CourseModel::where($where)->order('list_order asc,id desc')->limit(8)->select()->toArray();
 
             foreach ($list as $k => $v) {
@@ -126,7 +133,14 @@ class IndexController extends StudentBaseController
             $isMore = 0;
         } else {
             $keywords = '';
-            $list = CourseModel::where('sort = 1 and gradeid = ' . $njid . ' and status >= 1 and shelvestime <' . $nowtime)
+        //    $list = CourseModel::where('sort = 1 and gradeid = ' . $njid . ' and status >= 1 and shelvestime <' . $nowtime)
+		$map = [
+			['sort','=',1],
+			['gradeid','=',$njid],
+			['status','>=',1],
+			['shelvestime','<',$nowtime],
+		];
+            $list = CourseModel::where($map)
                 ->order('list_order asc,id desc')
                 ->limit(8)
                 ->select();
