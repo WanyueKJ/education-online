@@ -180,7 +180,7 @@ class LessionlistController extends StudentBaseController
                 break;
             case 99:
                 //$where .= 'sort != 1';
-				$where[] = ['sort','!=',1];
+				$where[] = ['sort','<>',1];
                 break;
         }
 
