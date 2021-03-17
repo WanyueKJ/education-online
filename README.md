@@ -1,4 +1,4 @@
-<div align=center><img src="https://qiniugw.sdwanyue.com/github_big_logo.png" width="590" height="212"/> </div>
+<div align=center><img src="https://images.gitee.com/uploads/images/2021/0317/095645_f0b60e43_8543696.png" width="590" height="212"/></div>
 
 
 ### 项目说明（如果对你有用，请给个star！）
@@ -15,11 +15,11 @@
 ### Uni-app版地址
    - 接口框架地址: 本项目根目录下phalapi目录
    - 仓库地址: <a target="_blank" href="https://gitee.com/WanYueKeJi/wanyue_education_uniapp">点击此处</a>
-   ![展示图](https://qiniugw.sdwanyue.com/git_eq.png"展示图.png") 
+   ![展示图](https://images.gitee.com/uploads/images/2021/0317/095725_42eaa777_8543696.png "展示图.png") 
    
 ### 项目介绍
 万岳在线教育经过对教育市场的长期调研，综合当下各大线上教培机构对于教育平台的功能需求，着重于用户体验，自主研发了一套集知识付费、直播授课、网校建设等功能为一体的万岳在线教育系统，满足用户对于公开课、大班课、小班课、职业培训等多种线上教学活动的场景需求。
-* 所有使用到的框架或者组件都是基于开源项目，代码保证100%开源。
+* 所有使用到的框架或者组件都是基于开源项目,代码保证100%开源。
 * 系统功能通用，无论是个人还是企业都可以利用该系统快速搭建一个属于自己的在线教育平台。
 
 系统采用TP5.1+Jquery+Bootstrap+Mysql核心技术，系统功能介绍[查看](http://doc.sdwanyue.com/wanyue_open_web/2006714)，专业售后技术团队，让您二开无忧。
@@ -40,8 +40,7 @@
     12.无需安装, clone下来即可直接使用, 完全100%真开源；
 ```
 ### 功能展示
- ![展示图](https://qiniugw.sdwanyue.com/github_big_function_all2.png "展示图.png")
- 
+ ![展示图](https://images.gitee.com/uploads/images/2021/0317/095814_33e79b76_8543696.png "展示图.png")
 
 ### 前台主要功能介绍
 #### 讲师PC端
@@ -138,25 +137,30 @@
   
   
   ### 页面展示
-  
-  ![展示图](https://qiniugw.sdwanyue.com/github_big_function1111.png "展示图.png")
-  ![展示图](https://qiniugw.sdwanyue.com/github_big_function2222.png "展示图.png")
-  ![展示图](https://qiniugw.sdwanyue.com/github_big_function3333.png "展示图.png")
-  
+
+![展示图](https://images.gitee.com/uploads/images/2021/0317/095911_3639d435_8543696.png "function1111.png")  
+![展示图](https://images.gitee.com/uploads/images/2021/0317/095929_e19c2483_8543696.png "function2222.png")
+![展示图](https://images.gitee.com/uploads/images/2021/0317/095940_44e208a1_8543696.png "function3333.png")
   #### 统计页面
-  ![展示图](https://qiniugw.sdwanyue.com/github_big_user_anal.png "展示图.png")
-  ![展示图](https://qiniugw.sdwanyue.com/github_big_商品分析.png "展示图.png")
-  ![展示图](https://qiniugw.sdwanyue.com/github_big_deal_anal.png "展示图.png")
-  ![展示图](https://qiniugw.sdwanyue.com/github_big_data_view.png "展示图.png")
-  
+![展示图](https://images.gitee.com/uploads/images/2021/0317/100022_f1d1018a_8543696.png "user_anal.png")
+![展示图](https://images.gitee.com/uploads/images/2021/0317/100038_94b99a3a_8543696.png "商品分析.png")
+![展示图](https://images.gitee.com/uploads/images/2021/0317/100058_ec97a2f8_8543696.png "deal_anal.png")
+![展示图](https://images.gitee.com/uploads/images/2021/0317/100112_1ab47756_8543696.png "data_view.png")
     
   #### 直播课页面
-  ![展示图](https://qiniugw.sdwanyue.com/github_big_live_student.png "展示图.png")
-  ![展示图](https://qiniugw.sdwanyue.com/github_big_live_yuyin_student.png "展示图.png")
-  
+
+![展示图](https://images.gitee.com/uploads/images/2021/0317/100203_29192e47_8543696.png "live_student.png")
+![展示图](https://images.gitee.com/uploads/images/2021/0317/100218_871f0135_8543696.png "live_yuyin_student.png")
   #### 功能对比
-  ![展示图](https://qiniugw.sdwanyue.com/github_big_gongneng_list2.png "展示图.png")
-  
+
+ ![输入图片说明](https://images.gitee.com/uploads/images/2021/0317/100304_dae45b88_8543696.png "gongneng_list4.png") 
+   ### 开源版使用须知
+    
+   - 允许用于个人学习、教学案例
+    
+   - 开源版不适合商用，商用请购买商业版
+    
+   - 禁止将本项目的代码和资源进行任何形式的出售，产生的一切任何后果责任由侵权者自负
 
 ### 商业合作
 * 如果你想使用功能更完善的教育系统，请联系QQ客服: 2415408120获取专业版
@@ -168,17 +172,20 @@
 ### 联系我们（加客服经理微信或QQ，免费获取sql脚本）
 
 <div style='height: 130px'>
-    <img class="kefu_weixin" style="float:left;" src="https://qiniugw.sdwanyue.com/github_big_weixinlianxi.png" width="602" height="123"/>
+    <img class="kefu_weixin" style="float:left;" src="https://images.gitee.com/uploads/images/2021/0317/100340_bec42d1f_8543696.png" width="602" height="123"/>
     <div style="float:left;">
         <p>QQ：2415408120</p>
         <p>QQ群：995910672</p>
     </div>
 </div>
-<a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=JShAyXeoKqg2lWFEUSElxELImhjeMG4y&jump_from=webapi"><img border="0" src="https://qiniugw.sdwanyue.com/github_big_group_a.png" alt="万岳在线教育讨论群" title="万岳在线教育讨论群"></a> 可加
+<a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=JShAyXeoKqg2lWFEUSElxELImhjeMG4y&jump_from=webapi"><img border="0" src="https://images.gitee.com/uploads/images/2021/0317/100424_072ee536_8543696.png" alt="万岳在线教育讨论群" title="万岳在线教育讨论群"></a> 可加
 
 > QQ群：995910672
 
+<div style="float:left;">
+<p>QQ群入群需验证</p>
+<p>问题：万岳教育后台语言？</p>
+<p>答案：（提示：java  or php）</p>
+</div>
 
-![展示图](https://qiniugw.sdwanyue.com/github_big_公众号.png "展示图.png")
-
-
+![展示图](https://images.gitee.com/uploads/images/2021/0317/100511_29ed24e9_8543696.png "公众号.png")
