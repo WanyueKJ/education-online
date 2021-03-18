@@ -183,10 +183,4 @@
 
 > QQ群：995910672
 
-<div style="float:left;">
-<p>QQ群入群需验证</p>
-<p>问题：万岳教育后台语言？</p>
-<p>答案：（提示：java  or php）</p>
-</div>
-
 ![展示图](https://images.gitee.com/uploads/images/2021/0317/100511_29ed24e9_8543696.png "公众号.png")
