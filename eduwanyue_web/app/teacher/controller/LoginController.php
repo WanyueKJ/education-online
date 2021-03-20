@@ -332,7 +332,7 @@ class LoginController extends HomebaseController
     public function weixin_callback()
     {
         $configpri = getConfigPri();
-        $code      = isset($_GET['code']) ? $_GET['code'] : '';
+        $code      = $_GET['code'] ?? '';
         if ($code != "") {
             $AppID     = $configpri['wx_appid_pc'];
             $AppSecret = $configpri['wx_appsecret_pc'];

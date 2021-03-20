@@ -25,6 +25,7 @@ class Login extends Api
                 'env'      => array('name' => 'env', 'type' => 'string', 'desc' => '环境'),
             ),
 
+
             'getCode' => array(
                 'account' => array('name' => 'account', 'type' => 'string', 'desc' => '手机号码'),
                 'type'    => array('name' => 'type', 'type' => 'int', 'desc' => '类型，0登录1注册2忘记密码'),
@@ -185,7 +186,6 @@ class Login extends Api
 
         /* 发送验证码 */
         $result = \App\sendCode($account, $code);
-
         $currentTime = time();
 
         if ($result['code'] == 0) {

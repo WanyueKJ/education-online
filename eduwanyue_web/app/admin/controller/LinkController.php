@@ -90,7 +90,6 @@ class LinkController extends AdminBaseController
             $this->error($result);
         }
         $linkModel->allowField(true)->save($data);
-
         $this->success("添加成功！", url("Link/index"));
     }
 

@@ -1204,12 +1204,223 @@ namespace App;
 		return $rs;
     }
 
-    
-    
-    
-    
-    
-    
+
+
+    /*
+*生成文字水印资源(粗体)
+* @param string $bigImg 原图地址路径资源
+* @param string $water_text [<水印文字>]
+* @param int $font_size [<字号>]
+* @param array $color_arr 文字 RGB颜色数组[RED GREEN BLUE]
+* @param int $pos_x [<水平偏移量>]
+* @param int $pos_y [<垂直偏移量>]
+* @param int $tilt [<文字的倾斜度, 默认为0>]
+* @return resource $bigImg 新图片资源
+*/
+    function makeTextWater($bigImg, $water_text, $font_size, $color_arr, $pos_x, $pos_y, $tilt=0)
+    {
+        $color = imagecolorallocate($bigImg, $color_arr[0], $color_arr[1], $color_arr[2]);//字体颜色 RGB
+        $font = API_ROOT . '/../public/static/share/fonts/msyhl.ttc';
+        //生成水印文字
+        $water_text = (String)$water_text;
+        for ($i=0; $i<2; $i++) {
+            imagefttext($bigImg, $font_size, $tilt, $pos_x, $pos_y, $color, $font, $water_text);
+            $pos_x++;
+            $pos_y++;
+        }
+
+        return $bigImg;
+    }
+
+
+    /*
+     * @param $imgPath 图片路径
+     * @param $bigImg 背景图资源
+     * @param int $qr_left x坐标
+     * @param int $qr_top y坐标
+     * @return resource $bigImg 合成后的图片资源
+     */
+    function makeAndImg($imgPath, $bigImg, $img_left=0, $img_top = 0) {
+        //小图水印
+        list($imgWeight, $imgHeight) = getimagesize($imgPath);
+        $img = imagecreatefromstring(file_get_contents($imgPath)); //小图地址资源
+
+        // 合并小图和大图
+        imagecopymerge($bigImg, $img, $img_left, $img_top, 0, 0, $imgWeight, $imgHeight, 100);
+
+        return $bigImg;
+    }
+
+
+    /**
+     * 输出图片
+     * @param $s_original 原图资源
+     * @param $new_img 新图路径文件(不带后缀)
+     * @param $val 图片类型
+     * @param $salt string 加密后缀
+     * @return string 新图片路径
+     */
+    function outImage($s_original, $new_img, $val, $salt = '') {
+
+        if (!$salt) {
+            $salt = microtime();
+        }
+        $md5_salt = md5($salt);
+        $jpg = $new_img . $md5_salt . '.jpg';
+        $png = $new_img . $md5_salt . '.png';
+
+        if (file_exists($jpg)) {return $jpg;}
+        if (file_exists($png)) {return $png;}
+
+        switch ($val) {
+            case 1:
+                $new_img_path = $new_img . md5($salt) . '.gif';
+                imagegif($s_original, $new_img_path);
+                break;
+            case 2:
+                $new_img_path = $new_img . md5($salt) . '.jpg';
+                imagejpeg($s_original, $new_img_path);
+                break;
+            case 3:
+                $new_img_path = $new_img . md5($salt) . '.png';
+                imagepng($s_original, $new_img_path);
+                break;
+            default:
+                $new_img_path = '';
+                break;
+        }
+
+        return $new_img_path;
+
+    }
+
+
+    /**
+     * 根据文件类型 创建一个新画布
+     */
+    function imgCreateFrom($img_src, $val){
+        switch($val){
+            case 1 : $img = imagecreatefromgif($img_src);
+                break;
+            case 2 : $img = imagecreatefromjpeg($img_src);
+                break;
+            case 3 : $img = imagecreatefrompng($img_src);
+                break;
+        }
+        return $img;
+
+    }
+
+
+    /**
+     * @param string $url 二维码url地址
+     * @param $matrixPointSize 生成图片大小
+     * @return string
+     */
+    function scerweima($url='', $matrixPointSize = 8.2068965517241379310344827586207, $up_path = ''){
+
+        $filename = $up_path . '/' . md5($url) . '.png';
+        if (file_exists($filename)) {
+            return $filename;
+        }
+
+        require_once API_ROOT . '/../sdk/phpqrcode/phpqrcode.php';
+        if (!is_dir($up_path)) {
+            mkdir($up_path);
+        }
+
+        $value = $url;					//二维码内容
+        $errorCorrectionLevel = 'L';	//容错级别
+
+        //生成二维码图片
+        \QRcode::png($value,$filename , $errorCorrectionLevel, $matrixPointSize, 2);
+
+        return $filename;
+    }
+
+
+
+    /*
+     * 图片等比缩放
+     * @param $src_file
+     * @param $des_w 目标宽
+     * @param $des_h 目标高
+     * @return resource 缩放后的图片资源
+     */
+    function zoomSmall($src_file, $des_w, $des_h, $new_path = '') {
+
+        list($width, $height, $imgTypeNumber) = getimagesize($src_file);
+        //处理图片创建函数和图片输出函数
+        switch ($imgTypeNumber) {
+            case 1://gif
+                $imageCreateFrom = 'imagecreatefromgif';
+                break;
+            case 2://jpg
+                $imageCreateFrom = 'imagecreatefromjpeg';
+                break;
+            case 3://png
+                $imageCreateFrom = 'imagecreatefrompng';
+                break;
+            case 4:  //bmp
+                $imageCreateFrom = 'imagecreatefrombmp';
+                break;
+        }
+
+        $newImg  = imagecreatetruecolor($des_w, $des_h);
+        $white   = imagecolorallocate($newImg, 255,255,255);
+        imagefill($newImg, 0, 0, $white);
+        $img     = $imageCreateFrom($src_file);
+        //缩放
+        imagecopyresampled($newImg, $img, 0, 0, 0, 0, $des_w, $des_h, $width, $height);
+
+        return $newImg; //返回水印资源 不输出图片
+
+    }
+
+
+
+    /**
+     * 圆角
+     * @param $im 缩放后的资源, 先缩放再切圆
+     * @param $new_path 新图路径 不带后缀名
+     * @return 切圆后的图片资源
+     */
+    function zoomImg($im){
+
+        $w = imagesx($im);
+        $h = imagesy($im);
+        $c = imagecolorallocate($im, 255, 0, 0);
+        imagearc($im, $w/2, $h/2, $w, $h, 0, 360, $c);
+        imagefilltoborder($im, 0, 0, $c, $c);
+        imagefilltoborder($im, $w, 0, $c, $c);
+        imagefilltoborder($im, 0, $h, $c, $c);
+        imagefilltoborder($im, $w, $h, $c, $c);
+
+        imagecolortransparent($im, $c);
+
+        return $im;
+    }
+
+
+    /**
+     * 补全富文本中的图片路径或添加居中样式(本地上传时不带域名前缀)
+     * @param string $style 图片样式
+     * @param string $content 富文本内容
+     * @return 拼上图片url前缀后的富文本内容
+     */
+    function replaceImgFromUeditor($style, $content) {
+        $editor_url = "https://" . $_SERVER['SERVER_NAME'];
+
+        //服务器上的图片补全路径地址(src属性为/upload开头的图片)
+        $pregRule = "/<[img|IMG].*?src=[\'|\"](\/upload.*?(?:[\.jpg|\.jpeg|\.png|\.gif|\.bmp]))[\'|\"].*?[\/]?>/";
+        $wholeContent = preg_replace($pregRule, '<img src="' . $editor_url . '${1}" style="'. $style . '">', $content);
+
+        //添加样式
+        $pregRule = "/<[img|IMG].*?src=[\'|\"](.*?(?:[\.jpg|\.jpeg|\.png|\.gif|\.bmp]))[\'|\"].*?[\/]?>/";
+        $wholeContent = preg_replace($pregRule, '<img src="' . '${1}" style="'. $style . '">', $wholeContent);
+
+        return $wholeContent;
+    }
     
     
     

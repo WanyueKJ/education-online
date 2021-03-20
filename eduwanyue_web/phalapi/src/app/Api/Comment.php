@@ -19,6 +19,7 @@ class Comment extends Api {
                 'star' => array('name' => 'star', 'type' => 'int', 'desc' => '星级'),
                 'content' => array('name' => 'content', 'type' => 'string', 'desc' => '内容'),
             ),
+
             'getList' => array(
                 'courseid' => array('name' => 'courseid', 'type' => 'int', 'desc' => '课程ID'),
                 'p' => array('name' => 'p', 'type' => 'int', 'desc' => '页码'),
@@ -41,7 +42,6 @@ class Comment extends Api {
         $courseid = \App\checkNull($this->courseid);
         $star = \App\checkNull($this->star);
         $content = \App\checkNull($this->content);
-        
         $checkToken=\App\checkToken($uid,$token);
 		if($checkToken==700){
 			$rs['code'] = $checkToken;

@@ -32,7 +32,6 @@ class CoursebuyController extends AdminBaseController
         $courseid = $data['courseid'] ?? '0';
         $map[]    = ['courseid', '=', $courseid];
 
-
         $courseinfo = CourseModel::where(['id' => $courseid])->find();
         $this->assign('courseinfo', $courseinfo);
 

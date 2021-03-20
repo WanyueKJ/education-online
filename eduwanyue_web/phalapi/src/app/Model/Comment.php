@@ -19,7 +19,7 @@ class Comment extends NotORM {
         if($p<1){
             $p=1;
         }
-        $nums=20;
+        $nums=40;
         $start=($p-1) * $nums;
 
         $list=\PhalApi\DI()->notorm->course_com

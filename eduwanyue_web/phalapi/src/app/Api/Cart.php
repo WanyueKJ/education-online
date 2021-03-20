@@ -70,6 +70,42 @@ class Cart extends Api {
 		$rs['info']=$paylist;
 		return $rs;
 	}
+
+
+    /**
+     * 购物车数量
+     * @desc 用于获取购物车数量
+     * @return int code 操作码，0表示成功
+     * @return array  info
+     * @return string info[0].nums 数量
+     * @return string msg 提示信息
+     */
+    public function getNums() {
+        $rs = array('code' => 0, 'msg' => '', 'info' => array());
+
+        $uid = \App\checkNull($this->uid);
+        $token = \App\checkNull($this->token);
+
+        $checkToken=\App\checkToken($uid,$token);
+        if($checkToken==700){
+            $rs['code'] = $checkToken;
+            $rs['msg'] = \PhalApi\T('您的登陆状态失效，请重新登陆！');
+            return $rs;
+        }
+
+        $where=[
+            'uid'=>$uid,
+        ];
+        $domain = new Domain_Cart();
+        $nums = $domain->getNums($where);
+
+        $info['nums']=$nums;
+
+        $rs['info'][0]=$info;
+
+        return $rs;
+    }
+
     
     /**
 	 * 下单(不仅限于购物车)

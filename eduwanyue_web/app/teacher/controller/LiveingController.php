@@ -751,7 +751,7 @@ class LiveingController extends TeacherBaseController
             $this->error('您的登陆状态失效，请重新登陆！');
         }
 
-        $file = isset($_FILES['file']) ? $_FILES['file'] : '';
+        $file = $_FILES['file'] ?? '';
         if (!$file) {
             $this->error('请选择课件');
         }

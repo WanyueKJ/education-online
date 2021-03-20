@@ -14,6 +14,8 @@ namespace App\Api;
 use PhalApi\Api;
 use App\Domain\Course as Domain_Course;
 
+header("Access-Control-Allow-Origin: *");
+
 /**
  * 课程
  */
@@ -79,6 +81,14 @@ class Course extends Api
             'setGrade' => array(
                 'gradeid' => array('name' => 'gradeid', 'type' => 'int', 'desc' => '学级分类ID'),
             ),
+            'setLesson' => array(
+                'courseid' => array('name' => 'courseid', 'type' => 'int', 'desc' => '课程ID'),
+                'lessonid' => array('name' => 'lessonid', 'type' => 'int', 'desc' => '课时ID'),
+            ),
+            'getNewsDetail' => array(
+                'newsid' => array('name' => 'newsid', 'type' => 'int', 'desc' => '新闻id'),
+            ),
+
         );
     }
 
@@ -141,6 +151,7 @@ class Course extends Api
             'shelvestime<?' => $nowtime,
             'classid'       => $classid,
             'gradeid'       => $gradeid,
+            'sort != ?'     => 1
         ];
 
         $domain = new Domain_Course();
@@ -533,4 +544,114 @@ class Course extends Api
 
         return $res;
     }
+
+    /**
+     * 我的课程
+     * @desc 用于获取我的课程
+     * @return int code 操作码，0表示成功
+     * @return array info 同其他课程列表
+     * @return string info[].payval
+     * @return string msg 提示信息
+     */
+    public function getMyCourse() {
+        $rs = array('code' => 0, 'msg' => '', 'info' => array());
+
+        $uid=\App\checkNull($this->uid);
+        $token=\App\checkNull($this->token);
+        $type=\App\checkNull($this->type);
+        $keyword=\App\checkNull($this->keyword);
+        $p=\App\checkNull($this->p);
+
+        $checkToken=\App\checkToken($uid,$token);
+        if($checkToken==700){
+            $rs['code'] = $checkToken;
+            $rs['msg'] = \PhalApi\T('您的登陆状态失效，请重新登陆！');
+            return $rs;
+        }
+
+
+        $domain = new Domain_Course();
+        $list = $domain->getMyCourse($uid,$type,$keyword,$p);
+
+        $rs['info']=$list;
+
+        return $rs;
+    }
+
+
+    /**
+     * 更新课时学习进度(UNIAPP端使用)
+     * @desc 用户更新课时进度
+     * @return int code 操作码 0表示成功
+     * @return string msg 提示信息
+     */
+    public function setLesson() {
+        $rs = array('code' => 0, 'msg' => '', 'info' => array());
+
+        $uid = \App\checkNull($this->uid);
+        $token=\App\checkNull($this->token);
+        $courseid = \App\checkNull($this->courseid);
+        $lessonid = \App\checkNull($this->lessonid);
+
+        $checkToken=\App\checkToken($uid,$token);
+        if($checkToken==700){
+            $rs['code'] = $checkToken;
+            $rs['msg'] = \PhalApi\T('您的登陆状态失效，请重新登陆！');
+            return $rs;
+        }
+
+        $domain = new Domain_Course();
+        $res = $domain->setLesson($uid, $courseid, $lessonid);
+
+        return $res;
+    }
+
+    /*
+ * 获取新闻列表
+ * @desc 用于获取新闻列表
+ * @return int code 操作码 0 表示成功
+ * @return array 新闻列表
+ */
+    public function getNews() {
+        $rs = array('code' => 0, 'msg' => '', 'info' => array());
+        $domain = new Domain_Course();
+        $list   = $domain->getNews();
+
+        $rs['info'] = $list;
+
+        return $rs;
+
+    }
+
+
+    /**
+     * 获取新闻详情
+     * @desc 用于获取新闻详情
+     * @return int code 操作码 0 表示成功
+     * @return array 新闻详情
+     */
+    public function getNewsDetail() {
+
+        $rs = array('code' => 0, 'msg' => '', 'info' => array());
+
+        $uid      = \App\checkNull($this->uid);
+        $token    = \App\checkNull($this->token);
+        $newsid = \App\checkNull($this->newsid);
+
+        $checkToken = \App\checkToken($uid, $token);
+        if ($checkToken == 700) {
+            $rs['code'] = $checkToken;
+            $rs['msg']  = \PhalApi\T('您的登陆状态失效，请重新登陆！');
+            return $rs;
+        }
+
+        $domain = new Domain_Course();
+        $rs['info']    = $domain->getNewsDetail($newsid);
+
+        return $rs;
+
+    }
+
+
+
 }

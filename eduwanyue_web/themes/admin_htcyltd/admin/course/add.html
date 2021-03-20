@@ -120,7 +120,7 @@
                             <div class="layui-form-item">
                                 <label for="input-name" class="layui-form-label"><span class="form-required">*</span>内容形式</label>
                                 <div class="layui-input-block">
-                                    <select class="layui-input" name="type" id="type">
+                                    <select class="layui-input" name="type" id="type" lay-filter="type">
                                         <volist name="types" id="v">
                                             <option value="{$key}">{$v}</option>
                                         </volist>
@@ -151,7 +151,7 @@
                         <div class="layui-form-item">
                             <label for="input-name" class="layui-form-label"><span class="form-required">*</span>获取方式</label>
                             <div class="layui-input-block">
-                                <select class="layui-input" name="paytype" id="paytype">
+                                <select class="layui-input" name="paytype" id="paytype" lay-filter="paytype">
                                     <volist name="paytypes" id="v">
                                         <option value="{$key}">{$v}</option>
                                     </volist>
@@ -219,7 +219,7 @@
                         <div class="layui-form-item">
                             <label for="input-name" class="layui-form-label"><span class="form-required">*</span>状态</label>
                             <div class="layui-input-block">
-                                <select class="layui-input" name="status" id="status">
+                                <select class="layui-input" name="status" id="status" lay-filter="status">
                                     <option value="1">立即上架</option>
                                     <option value="-1">暂不上架</option>
                                     <option value="2">定时上架</option>
@@ -341,9 +341,19 @@
             $('#trialval_' + type).show();
         }
 
-        $("#type").on('change', function () {
-            type_change();
-        })
+        // $("#type").on('change', function () {
+        //     type_change();
+        // })
+        layui.use(['layer', 'jquery', 'form'], function () {
+            var layer = layui.layer,
+                $ = layui.jquery,
+                form = layui.form;
+
+            form.on('select(type)', function(data){
+                type_change();
+            });
+        });
+
         type_change();
 
         /* 获取方式处理 */
@@ -364,9 +374,20 @@
             }
         }
 
-        $("#paytype").on('change', function () {
-            paytype_change();
-        })
+        // $("#paytype").on('change', function () {
+        //     paytype_change();
+        // })
+
+        layui.use(['layer', 'jquery', 'form'], function () {
+            var layer = layui.layer,
+                $ = layui.jquery,
+                form = layui.form;
+
+            form.on('select(paytype)', function(data){
+                paytype_change();
+            });
+        });
+
         paytype_change();
 
         /* 试学方式处理 */
@@ -387,6 +408,8 @@
         $("#trialtype").on('change', function () {
             trialtype_change();
         })
+
+
         trialtype_change();
 
 
@@ -400,9 +423,19 @@
             }
         }
 
-        $("#status").on('change', function () {
-            status_change();
-        })
+        // $("#status").on('change', function () {
+        //     status_change();
+        // })
+        layui.use(['layer', 'jquery', 'form'], function () {
+            var layer = layui.layer,
+                $ = layui.jquery,
+                form = layui.form;
+
+            form.on('select(status)', function(data){
+                status_change();
+            });
+        });
+
         status_change();
 
         function getUserList(_this, uid = 0) {
