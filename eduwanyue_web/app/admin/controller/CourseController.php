@@ -267,7 +267,7 @@ class CourseController extends AdminBaseController
 
         $list = CourseModel::where($map)->order("id desc")->paginate(20, false, ['query' => input()]);
 
-        $list->each(function ($v, $k) {
+        $list->each(function ($v) {
 
             $v['userinfo'] = getUserInfo($v['uid']);
             $v['thumb']    = get_upload_path($v['thumb']);
