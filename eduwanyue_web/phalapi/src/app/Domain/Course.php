@@ -57,7 +57,7 @@ class Course {
         if($k==''){
             return $type;
         }
-        return isset($type[$k])? $type[$k] : '' ;
+        return $type[$k] ?? '';
     }
 
     /* 处理课程信息 */
