@@ -94,7 +94,6 @@ class Course {
 
         $paytype=$v['paytype'];
         if($paytype==1){
-            //$payval=number_format($v['payval'],2);
             $payval=$v['payval'];
         }
 
