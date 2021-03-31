@@ -23,8 +23,8 @@ class LoginController extends HomebaseController {
         $rs=['code'=>0,'msg'=>'','info'=>[]];
 
         $data = $this->request->param();
-        $type=isset($data['type']) ? $data['type']: '0';
-        $mobile=isset($data['mobile']) ? $data['mobile']: '';
+        $type= $data['type'] ?? '0';
+        $mobile= $data['mobile'] ?? '';
 
         $mobile=checkNull($mobile);
 
@@ -97,9 +97,9 @@ class LoginController extends HomebaseController {
     public function reg(){
 
         $data = $this->request->param();
-        $name=isset($data['name']) ? $data['name']: '';
-        $pass=isset($data['pass']) ? $data['pass']: '';
-        $code=isset($data['code']) ? $data['code']: '';
+        $name= sql_check($data['name']) ?? '';
+        $pass= sql_check($data['pass']) ?? '';
+        $code= sql_check($data['code']) ?? '';
         $name=checkNull($name);
         $pass=checkNull($pass);
         $code=checkNull($code);
@@ -167,8 +167,8 @@ class LoginController extends HomebaseController {
     public function loginbypass(){
 
         $data = $this->request->param();
-        $name=isset($data['name']) ? $data['name']: '';
-        $pass=isset($data['pass']) ? $data['pass']: '';
+        $name= sql_check($data['name']) ?? '';
+        $pass= sql_check($data['pass']) ?? '';
         $name=checkNull($name);
         $pass=checkNull($pass);
 
@@ -178,7 +178,6 @@ class LoginController extends HomebaseController {
         if($pass==''){
             $this->error('请输入密码');
         }
-
 
         $user_pass=cmf_password($pass);
 
@@ -199,8 +198,8 @@ class LoginController extends HomebaseController {
     public function loginbycode(){
 
         $data = $this->request->param();
-        $name=isset($data['name']) ? $data['name']: '';
-        $code=isset($data['code']) ? $data['code']: '';
+        $name= sql_check($data['name']) ?? '';
+        $code= sql_check($data['code']) ?? '';
         $name=checkNull($name);
         $code=checkNull($code);
 
@@ -239,9 +238,9 @@ class LoginController extends HomebaseController {
     public function forget(){
 
         $data = $this->request->param();
-        $name=isset($data['name']) ? $data['name']: '';
-        $pass=isset($data['pass']) ? $data['pass']: '';
-        $code=isset($data['code']) ? $data['code']: '';
+        $name= sql_check($data['name']) ?? '';
+        $pass= sql_check($data['pass']) ?? '';
+        $code= sql_check($data['code']) ?? '';
         $name=checkNull($name);
         $pass=checkNull($pass);
         $code=checkNull($code);
@@ -256,7 +255,6 @@ class LoginController extends HomebaseController {
         if($pass==''){
             $this->error('请输入密码');
         }
-
 
         if( !isset($_SESSION['forget_account']) || !isset($_SESSION['forget_code']) ){
             $this->error('请先获取验证码');
@@ -297,7 +295,6 @@ class LoginController extends HomebaseController {
     public function logout(){
 
         session('student',null);
-
         $this->success('退出成功');
     }
 
@@ -483,15 +480,12 @@ class LoginController extends HomebaseController {
         $userinfo['gradename'] = $gradename;
         session('student',$userinfo);
 
-
     }
     /* 更新token 登陆信息 */
     protected function updateToken($uid,$token) {
         $nowtime=time();
 
         $expiretime=$nowtime+60*60*24*300;
-
-
 
         $ip = get_client_ip();
         $ipinfo=Db::name('ip_garde')

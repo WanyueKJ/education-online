@@ -1390,8 +1390,22 @@ function curl_get($url, $header = false)
 
     return json_decode($return_str, true);
 }
-    
-    
+
+
+/*
+*对提交的内容进行处理
+*/
+function sql_check($argu)
+{
+    $argu = addslashes($argu);
+    $argu = str_replace("_", "\_", $argu);
+    $argu = str_replace("%", "\%", $argu);
+    $argu = nl2br($argu);
+    $argu= htmlspecialchars($argu);
+    return $argu;
+}
+
+
     
     
     
