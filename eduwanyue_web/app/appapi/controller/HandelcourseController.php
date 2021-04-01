@@ -40,7 +40,6 @@ class HandelcourseController extends HomebaseController
             $islive = hGet('liveing', $v['uid']);
             $stream = $v['uid'] . '_' . $v['id'] . '_0';
             if (!$islive || $stream != $islive) {
-                releaseTask($v['uid'], $v['id']);
                 Db::name("course")->where(['id' => $v['id']])->update(['islive' => 2, 'endtime' => time()]);
             }
 
@@ -80,7 +79,6 @@ class HandelcourseController extends HomebaseController
                 }
 
                 Db::name("course_lesson")->where(['id' => $v['id']])->update($update);
-                releaseTask($v['uid'], $v['courseid'], $v['id']);
             }
 
         });

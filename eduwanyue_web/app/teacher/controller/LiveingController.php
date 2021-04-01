@@ -314,8 +314,6 @@ class LiveingController extends TeacherBaseController
         if ($res === false) {
             $this->error('操作失败，请重试');
         }
-        //发布作业
-        releaseTask($uid, $courseid, $lessonid);
 
         $this->success('操作成功');
     }

@@ -1240,11 +1240,11 @@ function agoraStopRe($channel, $uid, $resourceid, $sid, $token = null, $mode = '
 }
 
 /* 下课时发布作业 */
-function releaseTask($uid, $courseid, $lessonid = 0)
-{
-    Db::name('task')->where([['uid', '=', $uid], ['courseid', '=', $courseid], ['lessonid', '=', $lessonid]])->update(['status' => '1']);
-    return 1;
-}
+//function releaseTask($uid, $courseid, $lessonid = 0)
+//{
+//    Db::name('task')->where([['uid', '=', $uid], ['courseid', '=', $courseid], ['lessonid', '=', $lessonid]])->update(['status' => '1']);
+//    return 1;
+//}
 
 /* 内容形式 */
 function getTypes($k = '')
