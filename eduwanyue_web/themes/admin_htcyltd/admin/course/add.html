@@ -187,35 +187,7 @@
                                 </div>
                             </div>
                         </if>
-                    
-                        <if condition="$sort eq 0">
-                            <div id="paytype_bd" style="display:none;">
-                                <div class="layui-form-item">
-                                    <label for="input-name" class="layui-form-label"><span class="form-required"></span>试学</label>
-                                    <div class="layui-input-block">
-                                        <select class="layui-input" name="trialtype" id="trialtype">
-                                            <volist name="trialtypes" id="v">
-                                                <option value="{$key}">{$v}</option>
-                                            </volist>
-                                        </select>
-                                    </div>
-                                </div>
-                    
-                                <div class="layui-form-item trialtype_bd" id="trialval_2" style="display:none;">
-                                    <label for="input-trialval_2" class="layui-form-label"><span class="form-required">*</span>时间进度</label>
-                                    <div class="layui-input-block">
-                                        <input type="text" class="layui-input" id="input-trialval_2" name="trialval_2">秒 开始的多少秒可看
-                                    </div>
-                                </div>
-                                <div class="layui-form-item trialtype_bd" id="trialval_1" style="display:none;">
-                                    <label for="input-trialval_1" class="layui-form-label"><span class="form-required">*</span>进度</label>
-                                    <div class="layui-input-block">
-                                        <input type="text" class="layui-input" id="input-trialval_1" name="trialval_1">% 范围：1-99
-                                    </div>
-                                </div>
-                            </div>
-                        </if>
-                    
+
                         <div class="layui-form-item">
                             <label for="input-name" class="layui-form-label"><span class="form-required">*</span>状态</label>
                             <div class="layui-input-block">
@@ -233,6 +205,7 @@
                                 <input type="text" class="layui-input js-bootstrap-datetime" id="input-shelvestime" name="shelvestime"
                                        aria-invalid="false" autocomplete="off"> 格式：2020-01-01 00:00:00
                             </div>
+
                         </div>
                     
                         <if condition="$sort eq 2 || $sort eq 3">

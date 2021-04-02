@@ -43,13 +43,10 @@ class LiveingController extends StudentBaseController
 
         $nowtime   = time();
         $times     = 0;
-        $islive    = 0;
-        $isshup    = 0;
         $uuid      = '';
         $roomtoken = '';
         $file_uuid = '';
         $livemode  = '0';
-        $pptindex  = '0';
 
         if ($lessonid > 0) {
             $liveinfo = Db::name("course_lesson")->where(['id' => $lessonid, 'courseid' => $courseid])->find();
