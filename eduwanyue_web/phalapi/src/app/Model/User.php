@@ -15,7 +15,7 @@ class User extends NotORM
     public function getBaseInfo($uid)
     {
         $info = \PhalApi\DI()->notorm->users
-            ->select("id,user_nickname,avatar,avatar_thumb,sex,signature,coin,consumption,birthday,type,school,experience,feature")
+            ->select("id,user_nickname,avatar,avatar_thumb,sex,signature,coin,consumption,birthday,type,school,experience,feature,integral")
             ->where('id=?', $uid)
             ->fetchOne();
         return $info;
