@@ -1397,6 +1397,9 @@ function curl_get($url, $header = false)
 */
 function sql_check($argu)
 {
+    if ($argu == '') {
+        return '';
+    }
     $argu = addslashes($argu);
     $argu = str_replace("_", "\_", $argu);
     $argu = str_replace("%", "\%", $argu);

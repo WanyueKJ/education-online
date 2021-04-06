@@ -283,12 +283,12 @@ class DetailController extends StudentBaseController
         //判断有没有登录
         $this->checkMyLogin();
 
-        $courseid   = $data['courseid'] ?? '';
-        $type       = $data['type'] ?? '';
-        $method     = $data['method'] ?? '0';
-        $totalmoney = $data['totalmoney'] ?? '0';
-        $name       = $data['name'] ?? '购物车购买';
-        $ismaterial = $data['ismaterial'];
+        $courseid   = sql_check($data['courseid']) ?? '';
+        $type       = sql_check($data['type']) ?? '';
+        $method     = sql_check($data['method']) ?? '0';
+        $totalmoney = sql_check($data['totalmoney']) ?? '0';
+        $name       = sql_check($data['name']) ?? '购物车购买';
+        $ismaterial = sql_check($data['ismaterial']) ?? '';
 
         //支付方式
         $configpri    = getConfigPri();
@@ -343,11 +343,11 @@ class DetailController extends StudentBaseController
 
         $uid        = $userinfo['id'];
         $token      = $userinfo['token'];
-        $method     = isset($data['method']) ? $data['method'] : '0';
-        $ismaterial = $data['ismaterial'];
-        $payid      = $data['payid'];
-        $courseid   = $data['courseid'];
-        $type       = $data['type'];
+        $method     = sql_check($data['method']) ?? '0';
+        $ismaterial = sql_check($data['ismaterial']) ?? '';
+        $payid      = sql_check($data['payid']) ?? '0';
+        $courseid   = sql_check($data['courseid']) ?? '0';
+        $type       = sql_check($data['type']) ?? '0';
 
         $addrid = 0;
         if ($ismaterial == 1) {

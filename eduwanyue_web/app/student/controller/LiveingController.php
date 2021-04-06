@@ -31,8 +31,8 @@ class LiveingController extends StudentBaseController
 
         $data = $this->request->param();
 
-        $courseid = $data['courseid'] ?? '0';
-        $lessonid = $data['lessonid'] ?? '0';
+        $courseid = sql_check($data['courseid']) ?? '0';
+        $lessonid = sql_check($data['lessonid']) ?? '0';
 
         $this->checkEnterLive($courseid, $lessonid);
 
@@ -208,8 +208,8 @@ class LiveingController extends StudentBaseController
 
         $data = $this->request->param();
 
-        $courseid = $data['courseid'] ?? '0';
-        $lessonid = $data['lessonid'] ?? '0';
+        $courseid = sql_check($data['courseid']) ?? '0';
+        $lessonid = sql_check($data['lessonid']) ?? '0';
 
         $this->checkEnterLive($courseid, $lessonid);
 
@@ -303,16 +303,16 @@ class LiveingController extends StudentBaseController
             $this->error('您的登陆状态失效，请重新登陆！');
         }
 
-        $liveuid   = $data['liveuid'] ?? '0';
-        $courseid  = $data['courseid'] ?? '0';
-        $lessonid  = $data['lessonid'] ?? '0';
-        $type      = $data['type'] ?? '0';
-        $content   = $data['content'] ?? '';
-        $url       = $data['url'] ?? '';
-        $length    = $data['length'] ?? '0';
-        $toid      = $data['toid'] ?? '0';
-        $status    = $data['status'] ?? '0';
-        $user_type = $data['user_type'] ?? '0';
+        $liveuid   = sql_check($data['liveuid']) ?? '0';
+        $courseid  = sql_check($data['courseid']) ?? '0';
+        $lessonid  = sql_check($data['lessonid']) ?? '0';
+        $type      = sql_check($data['type']) ?? '0';
+        $content   = sql_check($data['content']) ?? '';
+        $url       = sql_check($data['url']) ?? '';
+        $length    = sql_check($data['length']) ?? '0';
+        $toid      = sql_check($data['toid']) ?? '0';
+        $status    = sql_check($data['status']) ?? '0';
+        $user_type = sql_check($data['user_type']) ?? '0';
 
         if ($liveuid < 0 || $courseid < 0) {
             $this->error('信息错误');
@@ -381,11 +381,11 @@ class LiveingController extends StudentBaseController
             $this->error('您的登陆状态失效，请重新登陆！');
         }
 
-        $courseid = $data['courseid'] ?? '0';
-        $lessonid = $data['lessonid'] ?? '0';
-        $type     = $data['type'] ?? '0';
-        $lastid   = $data['lastid'] ?? '0';
-        $liveuid  = $data['liveuid'] ?? '0';
+        $courseid = sql_check($data['courseid']) ?? '0';
+        $lessonid = sql_check($data['lessonid']) ?? '0';
+        $type     = sql_check($data['type']) ?? '0';
+        $lastid   = sql_check($data['lastid']) ?? '0';
+        $liveuid  = sql_check($data['liveuid']) ?? '0';
 
         $where = [
             ['courseid', '=', $courseid],
@@ -453,9 +453,9 @@ class LiveingController extends StudentBaseController
             $this->error('您的登陆状态失效，请重新登陆！');
         }
 
-        $courseid   = $data['courseid'] ?? '0';
-        $lessonid   = $data['lessonid'] ?? '0';
-        $audio_time = $data['audio_time'] ?? '0';
+        $courseid   = sql_check($data['courseid']) ?? '0';
+        $lessonid   = sql_check($data['lessonid']) ?? '0';
+        $audio_time = sql_check($data['audio_time']) ?? '0';
 
         $file = $_FILES['file'];
 
@@ -514,9 +514,9 @@ class LiveingController extends StudentBaseController
             $this->error('您的登陆状态失效，请重新登陆！');
         }
 
-        $courseid = isset($data['courseid']) ? checkNull($data['courseid']) : '0';
-        $lessonid = isset($data['lessonid']) ? checkNull($data['lessonid']) : '0';
-        $liveuid  = isset($data['liveuid']) ? checkNull($data['liveuid']) : '0';
+        $courseid = checkNull($data['courseid']) ?? '0';
+        $lessonid = checkNull($data['lessonid']) ?? '0';
+        $liveuid  = checkNull($data['liveuid']) ?? '0';
         if ($courseid < 1 || $lessonid < 1) {
             $this->error('信息错误');
         }
@@ -550,8 +550,8 @@ class LiveingController extends StudentBaseController
             exit;
         }
 
-        $courseid = isset($data['courseid']) ? checkNull($data['courseid']) : '0';
-        $lessonid = isset($data['lessonid']) ? checkNull($data['lessonid']) : '0';
+        $courseid = checkNull($data['courseid']) ?? '0';
+        $lessonid = checkNull($data['lessonid']) ?? '0';
 
         if ($courseid < 1) {
             $rs['msg'] = '信息错误';
@@ -622,9 +622,9 @@ class LiveingController extends StudentBaseController
             $this->error('您的登陆状态失效，请重新登陆！');
         }
 
-        $courseid = $data['courseid'] ?? '0';
-        $lessonid = $data['lessonid'] ?? '0';
-        $liveuid  = $data['liveuid'] ?? '0';
+        $courseid = sql_check($data['courseid']) ?? '0';
+        $lessonid = sql_check($data['lessonid']) ?? '0';
+        $liveuid  = sql_check($data['liveuid']) ?? '0';
 
         if ($courseid < 1 || $lessonid < 1) {
             $this->error('信息错误');
@@ -701,9 +701,9 @@ class LiveingController extends StudentBaseController
             $this->error('您的登陆状态失效，请重新登陆！');
         }
 
-        $courseid = $data['courseid'] ?? '0';
-        $lessonid = $data['lessonid'] ?? '0';
-        $stream   = $data['stream'] ?? '';
+        $courseid = sql_check($data['courseid']) ?? '0';
+        $lessonid = sql_check($data['lessonid']) ?? '0';
+        $stream   = sql_check($data['stream']) ?? '';
 
 
         if ($courseid < 1 || $lessonid < 1 || $stream == '') {
@@ -822,8 +822,8 @@ class LiveingController extends StudentBaseController
             $this->error('您的登陆状态失效，请重新登陆！');
         }
 
-        $courseid = $data['courseid'] ?? '0';
-        $livemode = $data['livemode'] ?? '0';
+        $courseid = sql_check($data['courseid']) ?? '0';
+        $livemode = sql_check($data['livemode']) ?? '0';
 
         if ($courseid < 1) {
             $this->error('信息错误');
@@ -857,9 +857,9 @@ class LiveingController extends StudentBaseController
             $this->error('您的登陆状态失效，请重新登陆！');
         }
 
-        $courseid    = $data['courseid'] ?? '0';
-        $lessonid    = $data['lessonid'] ?? '0';
-        $activeIndex = $data['activeIndex'] ?? '0';
+        $courseid    = sql_check($data['courseid']) ?? '0';
+        $lessonid    = sql_check($data['lessonid']) ?? '0';
+        $activeIndex = sql_check($data['activeIndex']) ?? '0';
 
         if ($courseid < 1) {
             $this->error('信息错误');
@@ -896,8 +896,8 @@ class LiveingController extends StudentBaseController
             $this->error('您的登陆状态失效，请重新登陆！');
         }
 
-        $courseid = $data['courseid'] ?? '0';
-        $lessonid = $data['lessonid'] ?? '0';
+        $courseid = sql_check($data['courseid']) ?? '0';
+        $lessonid = sql_check($data['lessonid']) ?? '0';
 
         if ($courseid < 1 || $lessonid < 1) {
             $this->error('信息错误');
@@ -1040,9 +1040,9 @@ class LiveingController extends StudentBaseController
 
         $data     = $this->request->param();
         $uid      = session('student.id');
-        $courseid = $data['courseid'];
-        $lessonid = $data['lessonid'];
-        $liveuid  = $data['liveuid'];
+        $courseid = sql_check($data['courseid']) ?? '0';
+        $lessonid = sql_check($data['lessonid']) ?? '0';
+        $liveuid  = sql_check($data['liveuid']) ?? '0';
 
         $where = [
             'uid'      => $uid,
@@ -1069,21 +1069,6 @@ class LiveingController extends StudentBaseController
     {
 
         $data  = $this->request->param();
-        $uid   = session('student.id');
-        $token = session('student.token');
-
-        $courseid  = $data['courseid'];
-        $lessonid  = $data['lessonid'];
-        $liveuid   = $data['liveuid'];
-        $result    = $data['result'];
-        $checkdata = array(
-            'uid'      => $uid,
-            'token'    => $token,
-            'liveuid'  => $liveuid,
-            'courseid' => $courseid,
-            'lessonid' => $lessonid,
-            'result'   => $result,
-        );
 
         $key = '400d069a791d51ada8af3e6c2979bcd7';
         $str = '';

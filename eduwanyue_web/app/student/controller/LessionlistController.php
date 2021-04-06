@@ -364,20 +364,16 @@ class LessionlistController extends StudentBaseController
                 ->select()
                 ->toArray();
 
-
-
             foreach ($list as $k => $v) {
 
                 $courseid_a = $this->handelCourseids($v['courseids']);
                 $isT        = false;
                 foreach ($courseid_a as $ks => $vs) {
 
-                    //    $where = 'id = ' . $vs;
                     $where[]=[
                         'id','=',$vs
                     ];
                     if ($kmid != 0) {
-                        //$where .= ' and classid =' . $kmid;
                         $where[]=[
                             'classid','=',$kmid
                         ];
@@ -438,28 +434,23 @@ class LessionlistController extends StudentBaseController
 
             $nowtime = time();
 
-            //$where = '';
             $where = [];
             switch ($lbid) {
                 case 4:
-                    //$where .= 'sort = 0';
                     $where[]=['sort','=','0'];
                     break;
                 case 1:
-                    //$where .= 'sort = 1';
                     $where[]=['sort','=','1'];
                     break;
                 case 3:
-                    //$where .= 'sort >= 2';
                     $where[]=['sort','>=','2'];
                     break;
             }
 
             if ($kmid != 0) {
-                //$where .= ' and classid =' . $kmid;
                 $where[]=['classid','=',$kmid];
             }
-            //$where .= ' and gradeid=' . $gradeid . ' and status>=1 and shelvestime<' . $nowtime;
+
             $where[]=['gradeid','=',$gradeid];
             $where[]=['status','>=',1];
             $where[]=['shelvestime','<',$nowtime];
@@ -495,11 +486,9 @@ class LessionlistController extends StudentBaseController
         }
 
         $courseid_s = implode(',', $courseid_a);
-        //$where      = "id in ($courseid_s)";
         $where=[
             ['id','in',$courseid_s]
         ];
-        $nowtime = time();
 
         $list = CourseModel::where($where)->order('list_order asc,id desc')->select();
 
