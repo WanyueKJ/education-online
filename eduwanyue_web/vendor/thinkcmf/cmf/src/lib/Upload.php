@@ -128,6 +128,11 @@ class Upload
         if (empty($userId)) {
             $userId = Db::name('user_token')->where('token', $this->request->header('XX-Token'))->field('user_id,token')->value('user_id');
         }
+
+        if (empty($userId)) {//后加 学生token->学生ID
+            $userId = Db::name('users_token')->where('token', session('student.token'))->field('user_id,token')->value('user_id');
+        }
+
         $targetDir = Env::get('runtime_path') . "upload" . DIRECTORY_SEPARATOR . $userId . DIRECTORY_SEPARATOR; // 断点续传 need
         if (!file_exists($targetDir)) {
             mkdir($targetDir, 0777, true);

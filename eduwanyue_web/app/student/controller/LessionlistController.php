@@ -48,7 +48,6 @@ class LessionlistController extends StudentBaseController
                 $njid = $njlist[0]['id'];
             }
         }
-
         $nowtime = time();
         if (isset($data['keywords'])) {
             $keywords = $data['keywords'];
