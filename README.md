@@ -153,7 +153,7 @@
 ![展示图](https://images.gitee.com/uploads/images/2021/0317/100203_29192e47_8543696.png "live_student.png")
 ![展示图](https://images.gitee.com/uploads/images/2021/0317/100218_871f0135_8543696.png "live_yuyin_student.png")
   #### 功能对比
-![展示图](https://images.gitee.com/uploads/images/2021/0322/160655_563d890d_2242923.png "功能对比3(1).png")  
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0409/173014_10c3ce1d_2242923.png "功能对比4(1).png")
  
    ### 开源版使用须知
     
@@ -167,7 +167,7 @@
 * 如果你想使用功能更完善的教育系统，请联系QQ客服: 2415408120获取专业版
 * 如果您想基于教育系统进行定制开发，我们提供有偿定制服务支持！
 * 其他合作模式不限，欢迎来撩！
-* 官网地址：[http://www.sdwanyue.com](http://www.sdwanyue.com)
+* 官网地址：[http://git.sdwanyue.com](http://git.sdwanyue.com)
                 
   
 ### 联系我们（加客服经理微信或QQ，免费获取sql脚本）
@@ -175,7 +175,7 @@
 <div style='height: 130px'>
     <img class="kefu_weixin" style="float:left;" src="https://images.gitee.com/uploads/images/2021/0317/100340_bec42d1f_8543696.png" width="602" height="123"/>
     <div style="float:left;">
-        <p>QQ：2415408120</p>
+        <p>QQ：259603330</p>
         <p>QQ群：995910672</p>
     </div>
 </div>
