@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{$site_info.site_name|default=''}</title>
+<include file="appapi@head"/>
+<link href="__STATIC__/appapi/css/share.css?t=1610105653" rel="stylesheet">
+</head>
+
+<body class="body-white">
+    <div class="share_bd">
+        <div class="share_logo">
+            <img src="/logo_share.png">
+        </div>
+        <div class="share_name">万岳教育机构版</div>
+        <if condition="$userinfo">
+        <div class="share_user">
+            <img src="{$userinfo['avatar']}">
+            <div class="share_user_info">
+                <p class="share_user_info_name">{$userinfo['user_nickname']}</p>
+                <p class="share_user_info_des">邀请您来万岳在线教育系统学习</p>
+            </div>
+        </div>
+        </if>
+        <if condition="$code neq ''">
+        <div class="share_code">邀请码：{$code}</div>
+        </if>
+    </div>
+    <div class="share_btn">
+        <a href="javascript:void(0)" data-type="1">
+            <img src="__STATIC__/appapi/images/share/ios.png"> iPhone下载
+        </a>
+        <a href="javascript:void(0)" data-type="0">
+            <img src="__STATIC__/appapi/images/share/android.png"> Android下载
+        </a>
+    </div>
+    <include file="appapi@scripts"/>
+    <script src="https://res.sharetrace.com/sharetrace.min.js"></script>
+    <script>
+        let sharetrace_key='{$sharetrace_key}';
+        let isInitSuccess =0;
+        const Down={
+            btn:$(".share_btn a"),
+            isok:0,
+            init:function (){
+                let _this=this;
+                _this.isok=1;
+                _this.btn.on('click',function (){
+                    let _that=$(this);
+                    let type=_that.data('type');
+                    if(sharetrace_key!='' && isInitSuccess){
+                        ShareTrace.preDownload(function () {
+                            _this.down(type);
+                        });
+                        return !1;
+                    }
+                    _this.down(type);
+                })
+            },
+            down:function (type=0){
+                if(type==1){
+                    location.href='{$site_info.ipa_url}';
+                }else{
+                    location.href='{$site_info.apk_url}';
+                }
+            }
+        }
+        if( sharetrace_key!=''){
+            //ShareTrace.init(sharetrace_key);
+            ShareTrace.init({
+                appkey: sharetrace_key, // 此值必填
+                param: "{$code}",
+                success: function() {
+                    console.log("init success...");
+                    isInitSuccess=1;
+                    Down.init();
+                },
+                error: function(msg) {
+                    console.log(msg)
+                }
+            });
+            setTimeout(function (){
+                //console.log('5s');
+                if(Down.isok==0){
+                   // console.log('5s-');
+                    Down.init();
+                }
+            },3000);
+        }else{
+            Down.init();
+        }
+
+    </script>
+</body>
+</html>
