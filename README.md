@@ -1,9 +1,8 @@
 <div align=center><img src="https://images.gitee.com/uploads/images/2021/0317/095645_f0b60e43_8543696.png" width="590" height="212"/></div>
 
 
-
 ### 项目说明（如果对你有用，请给个star！）
-##### <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_web/2006714">项目文档</a> |  <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_web/2006716">部署文档</a>  |  <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_web/2107615">常见问题</a>
+##### <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_web/2006714">项目文档</a> |  <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_web/2006716">部署文档</a>  |  <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_web/2107615">常见问题</a> | <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_uniapp/2199269">升级日志</a>
 
 ---
 
@@ -41,7 +40,7 @@
     12.无需安装, clone下来即可直接使用, 完全100%真开源；
 ```
 ### 功能展示
- ![展示图](https://images.gitee.com/uploads/images/2021/0317/095814_33e79b76_8543696.png "展示图.png")
+ ![展示图](https://images.gitee.com/uploads/images/2021/0410/144209_cf74cc99_8162876.png "展示图.png")
 
 ### 前台主要功能介绍
 #### 讲师PC端
@@ -70,9 +69,9 @@
 
 * 精选内容， 
 
-    1.详情页 由上往下依次展示封面图、课程标题，学习人数、主讲老师与辅导老师、课程类型（分为密码、免费、付费三种类型)等
+    1.详情页：由上往下依次展示封面图、课程标题，学习人数、主讲老师与辅导老师、课程类型（分为密码、免费、付费三种类型)等；
     
-    2.查看详情 上部为视频、音频播放区域，视频、音频支持进度条滑动查看，视频可全屏观看，播放区域下方为内容标题、简介、发布时间等信息和详细内容展示（支持图文）
+    2.查看详情：上部为视频、音频播放区域，视频、音频支持进度条滑动查看，视频可全屏观看，可选择倍速播放，并有跑马灯防盗水印，播放区域下方为内容标题、简介、发布时间等信息和详细内容展示（支持图文）。
 
  * 直播课堂，
     
@@ -82,7 +81,11 @@
 * 选课中心，
     
     1.选课中心与app内的选择学习阶段一致，可根据学段、年纪、科目、类别来搜索对应课程
+* 海报分享：
+    1.展示当前平台所有裂变海报活动列表，可查看名称、课程信息、二维码等，分享成功后可获得积分。
 
+* 积分：
+    1.显示用户的积分余额以及积分明细，积分的来源是购买课程返还的积分和下级用户购买课程奖励的积分，积分用途为购买课程时抵扣。
 
 
 
@@ -138,23 +141,20 @@
   
   
   ### 页面展示
-
-![展示图](https://images.gitee.com/uploads/images/2021/0317/095911_3639d435_8543696.png "function1111.png")  
-![展示图](https://images.gitee.com/uploads/images/2021/0317/095929_e19c2483_8543696.png "function2222.png")
-![展示图](https://images.gitee.com/uploads/images/2021/0317/095940_44e208a1_8543696.png "function3333.png")
+![页面展示](https://images.gitee.com/uploads/images/2021/0410/144604_dbc1116f_8162876.png "web详情图2.png")
   #### 统计页面
-![展示图](https://images.gitee.com/uploads/images/2021/0317/100022_f1d1018a_8543696.png "user_anal.png")
-![展示图](https://images.gitee.com/uploads/images/2021/0317/100038_94b99a3a_8543696.png "商品分析.png")
-![展示图](https://images.gitee.com/uploads/images/2021/0317/100058_ec97a2f8_8543696.png "deal_anal.png")
-![展示图](https://images.gitee.com/uploads/images/2021/0317/100112_1ab47756_8543696.png "data_view.png")
+![统计页面](https://images.gitee.com/uploads/images/2021/0410/152726_aba91433_8162876.png "1.png")
+![统计页面](https://images.gitee.com/uploads/images/2021/0410/152741_f4ea0543_8162876.png "2.png")
+![统计页面](https://images.gitee.com/uploads/images/2021/0410/152754_67e056be_8162876.png "3.png")
+![统计页面](https://images.gitee.com/uploads/images/2021/0410/152804_24f0012d_8162876.png "4.png")
     
   #### 直播课页面
 
 ![展示图](https://images.gitee.com/uploads/images/2021/0317/100203_29192e47_8543696.png "live_student.png")
 ![展示图](https://images.gitee.com/uploads/images/2021/0317/100218_871f0135_8543696.png "live_yuyin_student.png")
   #### 功能对比
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0409/173014_10c3ce1d_2242923.png "功能对比4(1).png")
- 
+  ![输入图片说明](https://images.gitee.com/uploads/images/2021/0410/143936_7235ec5f_8162876.png "功能对比4(1).png") 
+  
    ### 开源版使用须知
     
    - 允许用于个人学习、教学案例
@@ -182,5 +182,6 @@
 <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=JShAyXeoKqg2lWFEUSElxELImhjeMG4y&jump_from=webapi"><img border="0" src="https://images.gitee.com/uploads/images/2021/0317/100424_072ee536_8543696.png" alt="万岳在线教育讨论群" title="万岳在线教育讨论群"></a> 可加
 
 > QQ群：995910672
+
 
 ![展示图](https://images.gitee.com/uploads/images/2021/0317/100511_29ed24e9_8543696.png "公众号.png")
