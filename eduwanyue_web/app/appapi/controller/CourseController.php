@@ -55,7 +55,6 @@ class CourseController extends HomebaseController{
 			return $this->fetch(':error');
         }
 
-
 		$this->assign("title",$courseinfo['name']);
 		$this->assign("body",$courseinfo['info']);
 
@@ -209,8 +208,7 @@ class CourseController extends HomebaseController{
 
 		$this->assign("title",$lessoninfo['name']);
 		$this->assign("body",$body);
-        
-        
+
 
 		return $this->fetch();
 	    
@@ -246,8 +244,7 @@ class CourseController extends HomebaseController{
             /* 同一课程下的课时 记一次课程学习数 */
             Db::name('course')->where(["id"=>$courseid])->setInc('views',1);
         }
-        
-        
+
         $isexist=Db::name('course_users')->where(['uid'=>$uid,'courseid'=>$courseid])->find();
         if(!$isexist){
             /*  */
