@@ -173,8 +173,7 @@ class CourseController extends HomebaseController{
 
             return $this->fetch();
         }
-        
-        
+
         $courseid=$lessoninfo['courseid'];
 		$courseinfo=Db::name('course')->field('name,sort,type,paytype')->where(["id"=>$courseid])->find();
 		if(!$courseinfo){

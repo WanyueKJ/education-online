@@ -38,7 +38,6 @@ class PageController extends HomebaseController{
         $this->assign('token', '');
         $this->assign('page', $page);
 
-
         return $this->fetch('detail');
 	}	
     
