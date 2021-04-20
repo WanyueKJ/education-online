@@ -55,7 +55,6 @@ class HandelcourseController extends HomebaseController
         $notime = time();
 
         Db::name("course_lesson")->where([['type', '>=', 4], ['islive', '=', 0], ['starttime', '<=', $notime]])->update(['islive' => 1]);
-
         $where   = [];
         $where[] = ['type', '>=', '4'];
         $where[] = ['islive', '=', '1'];

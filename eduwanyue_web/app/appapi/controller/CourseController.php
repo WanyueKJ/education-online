@@ -23,9 +23,9 @@ class CourseController extends HomebaseController{
 
 	function info(){       
 		$data = $this->request->param();
-        $uid=isset($data['uid']) ? $data['uid']: '';
-        $token=isset($data['token']) ? $data['token']: '';
-        $courseid=isset($data['courseid']) ? $data['courseid']: '';
+        $uid= $data['uid'] ?? '';
+        $token=$data['token'] ?? '';
+        $courseid= $data['courseid'] ?? '';
         $uid=(int)checkNull($uid);
         $courseid=(int)checkNull($courseid);
         $token=checkNull($token);
