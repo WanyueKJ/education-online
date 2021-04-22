@@ -64,9 +64,9 @@ class CourseController extends HomebaseController{
     
     function content(){       
 		$data = $this->request->param();
-        $uid=isset($data['uid']) ? $data['uid']: '';
-        $token=isset($data['token']) ? $data['token']: '';
-        $courseid=isset($data['courseid']) ? $data['courseid']: '';
+        $uid = $data['uid'] ?? '';
+        $token = $data['token'] ?? '';
+        $courseid = $data['courseid'] ?? '';
         $uid=(int)checkNull($uid);
         $courseid=(int)checkNull($courseid);
         $token=checkNull($token);
@@ -134,9 +134,9 @@ class CourseController extends HomebaseController{
 
     function lesson(){       
 		$data = $this->request->param();
-        $uid=isset($data['uid']) ? $data['uid']: '';
-        $token=isset($data['token']) ? $data['token']: '';
-        $lessonid=isset($data['lessonid']) ? $data['lessonid']: '';
+        $uid = $data['uid'] ?? '';
+        $token = $data['token'] ?? '';
+        $lessonid = $data['lessonid'] ?? '';
         $uid=(int)checkNull($uid);
         $lessonid=(int)checkNull($lessonid);
         $token=checkNull($token);
