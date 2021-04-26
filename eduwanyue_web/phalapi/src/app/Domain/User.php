@@ -54,7 +54,7 @@ class User {
         $data=[];
         $info=[];
         /* 头像 */
-        if( isset($fields['avatar']) && $fields['avatar']!=''  ){
+        if($fields['avatar'] ?? ''){
             $avatar_q=$fields['avatar'];
             $uptype=\PhalApi\DI()->config->get('app.uptype');
 			
