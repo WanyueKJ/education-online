@@ -21,12 +21,10 @@ class User {
         $info = $model->getBaseInfo($uid);
         
         if($info){
-            //$birthday=$info['birthday'];
             $info=\App\handleUser($info);
             $info['follows']=\App\getFollowNum($uid);
             $info['fans']=\App\getFansNum($uid);
-            //$info['birthday']=date('Y-m-d',$birthday);
-            
+
             if($info['school']==''){
                 $info['school']='';
             }
@@ -66,7 +64,6 @@ class User {
                 $avatar_thumb=$avatar_q;
             }
             
-
 
             $data['avatar']=$avatar;
             $data['avatar_thumb']=$avatar_thumb;
