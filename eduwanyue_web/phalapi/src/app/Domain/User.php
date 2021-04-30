@@ -75,7 +75,7 @@ class User {
         
         
         /* 昵称 */
-        if( isset($fields['user_nickname']) && $fields['user_nickname']!=''  ){
+        if($fields['user_nickname'] ?? ''){
             $name=$fields['user_nickname'];
             $count=mb_strlen($name);
             if($count>10){
