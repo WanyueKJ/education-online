@@ -156,8 +156,7 @@ class User {
             return $rs; 
         }
         
-        $result = $model->upUserInfo($uid,$data);
-        
+
         \App\delcache("userinfo_".$uid);
         
         $rs['info'][0]=$info;
