@@ -63,7 +63,6 @@ class User {
                 $avatar=$avatar_q;
                 $avatar_thumb=$avatar_q;
             }
-            
 
             $data['avatar']=$avatar;
             $data['avatar_thumb']=$avatar_thumb;
@@ -96,7 +95,7 @@ class User {
         }
         
         /* 生日 年龄 */
-        if( isset($fields['birthday']) && $fields['birthday']!=''  ){
+        if($fields['birthday'] ?? ''){
             $birthday=strtotime($fields['birthday']);
             $age=\App\getAge($birthday);
             
@@ -107,7 +106,7 @@ class User {
         }
         
         /* 性别 */
-        if( isset($fields['sex']) && $fields['sex']!=''  ){
+        if($fields['sex'] ?? ''){
             $sex=$fields['sex'];
             
             $isexist = $model->checkSex($uid);
@@ -155,7 +154,6 @@ class User {
             $rs['msg'] = \PhalApi\T('信息错误');
             return $rs; 
         }
-        
 
         \App\delcache("userinfo_".$uid);
         
