@@ -117,7 +117,7 @@ class User {
         }
         
         /* 签名 */
-        if( isset($fields['signature']) && $fields['signature']!=''  ){
+        if($fields['signature'] ?? ''){
             $signature=$fields['signature'];
             
             $data['signature']=$signature;
@@ -126,7 +126,7 @@ class User {
 
         
         /* 学校 */
-        if( isset($fields['school']) && $fields['school']!=''  ){
+        if($fields['school'] ?? ''){
             $school=$fields['school'];
             
             $data['school']=$school;
@@ -134,7 +134,7 @@ class User {
         }
 		
 		/* 经历 */
-        if( isset($fields['experience']) && $fields['experience']!=''  ){
+        if($fields['experience'] ?? ''){
             $experience=$fields['experience'];
             
             $data['experience']=$experience;
@@ -142,7 +142,7 @@ class User {
         }
 		
 		/* 特点 */
-        if( isset($fields['feature']) && $fields['feature']!=''  ){
+        if($fields['feature'] ?? ''){
             $feature=$fields['feature'];
             
             $data['feature']=$feature;
