@@ -279,7 +279,7 @@ class Cart {
             'prepayid'=>'',
             'timestamp'=>'',
         ];
-        if(!$source){
+        if(!isset($source)){
             if($payid==1){
                 /* 支付宝 */
                 $ali=[
