@@ -50,13 +50,7 @@ class Login {
         
         $model = new Model_Login();
         $info = $model->userLogin($where);
-        
-        // if(!$info){
-            // $rs['code']=1001;	
-            // $rs['msg']=\PhalApi\T('该手机号还未注册');
-			// return $rs;
-        // }
-		
+
 		if(!$info || $info['user_pass']!= \App\setPass($pass)){
 			$rs['code']=1002;	
             $rs['msg']=\PhalApi\T('账号或密码错误');
@@ -111,7 +105,6 @@ class Login {
 			$user_login=$type_a[$type].'_'.$nowtime.rand(100,999);
 
 			if(!$nickname){
-				//$nickname=\PhalApi\T('用户').substr($openid,-3);
 				$nickname='';
 			}
 
