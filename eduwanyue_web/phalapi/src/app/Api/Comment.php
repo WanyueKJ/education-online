@@ -75,8 +75,7 @@ class Comment extends Api {
         
         $domain = new Domain_Comment();
 		$res = $domain->add($data);
-        
-		
+
         return $res;
 	}
     

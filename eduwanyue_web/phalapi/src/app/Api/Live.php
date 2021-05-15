@@ -147,8 +147,7 @@ class Live extends Api {
 			$rs['msg'] = \PhalApi\T('您的登陆状态失效，请重新登陆！');
 			return $rs;
 		}
-        
-        
+
         $domain = new Domain_Live();
 		$res = $domain->enter($uid,$token,$liveuid,$courseid,$lessonid);
 
@@ -174,8 +173,6 @@ class Live extends Api {
         $rs = array('code' => 0, 'msg' => '', 'info' => array());
         
         $liveuid = \App\checkNull($this->liveuid);
-        $courseid = \App\checkNull($this->courseid);
-        $lessonid = \App\checkNull($this->lessonid);
         $stream = \App\checkNull($this->stream);
         $p = \App\checkNull($this->p);
         

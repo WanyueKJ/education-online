@@ -145,7 +145,6 @@ class Course extends Api
         }
 
         $nowtime = time();
-
         $where = [
             'status>=?'     => 1,
             'shelvestime<?' => $nowtime,
@@ -156,7 +155,6 @@ class Course extends Api
 
         $domain = new Domain_Course();
         $list   = $domain->getList($p, $where);
-
         $rs['info'] = $list;
 
         return $rs;
@@ -392,7 +390,6 @@ class Course extends Api
             $rs['msg']  = \PhalApi\T('您的登陆状态失效，请重新登陆！');
             return $rs;
         }
-
 
         $domain = new Domain_Course();
         $list   = $domain->getLessonList($uid, $courseid);

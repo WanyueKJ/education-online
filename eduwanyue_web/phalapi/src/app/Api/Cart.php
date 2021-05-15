@@ -149,8 +149,7 @@ class Cart extends Api {
 			$rs['msg'] = \PhalApi\T('您的登陆状态失效，请重新登陆！');
 			return $rs;
 		}
-        
-		
+
 		$domain = new Domain_Cart();
 		$res = $domain->buy($uid,$payid,$addrid,$method,$goods);
         
