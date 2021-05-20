@@ -8,9 +8,6 @@ use App\Domain\Course as Domain_Course;
 class Login {
 
     public function loginByCode($user_login,$source) {
-        
-        $rs = array('code' => 0, 'msg' => '', 'info' => array());
-        
 
         $where=[
             'user_login = ?'=>$user_login,
@@ -31,8 +28,7 @@ class Login {
             $model = new Model_Login();
             $info = $model->userReg($data);		
         }
-        
-        
+
         $info=$this->handleInfo($info);
   
         return $info;
@@ -42,7 +38,6 @@ class Login {
     public function login($user_login,$pass) {
         
         $rs = array('code' => 0, 'msg' => '', 'info' => array());
-        
 
         $where=[
             'user_login = ?'=>$user_login,
@@ -56,8 +51,7 @@ class Login {
             $rs['msg']=\PhalApi\T('账号或密码错误');
 			return $rs;
 		}
-        
-        
+
         $info=$this->handleInfo($info);
   
         return $info;
