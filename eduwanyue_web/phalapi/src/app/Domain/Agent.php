@@ -102,10 +102,6 @@ class Agent
             return $info;
         }
 
-        /*if($configpri['agent_type']==1){
-            return $info;
-        }*/
-
         $model = new Model_Agent();
 
         $where = ['pid' => $uid];
@@ -113,7 +109,6 @@ class Agent
         if ($nums > 0) {
             return $info;
         }
-
 
         $where = ['uid' => $uid];
         $nums  = $model->getAgentNums($where);
@@ -126,9 +121,6 @@ class Agent
         if ($type == 0) {
             $info['ispop'] = '0';
         }
-        /*if($configpri['agent_must']==1){
-            $info['ismust']='1';
-        }*/
 
         if ($info['ismust'] == 1 && $info['ispop'] == 0) {
             $info['ispop'] = '1';
