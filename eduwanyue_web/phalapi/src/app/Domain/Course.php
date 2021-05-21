@@ -81,13 +81,13 @@ class Course {
 
         /* 直播 */
         if($sort>=2){
-            if($v['islive']==0){
+            if((int)$v['islive'] === 0){
                 $lesson=\App\handelsvctm($v['starttime']);
             }
-            if($v['islive']==1){
+            if((int)$v['islive'] === 1){
                 $lesson='点播视频';
             }
-            if($v['islive']==2){
+            if((int)$v['islive'] === 2){
                 $lesson='点播视频';
             }
         }
@@ -100,7 +100,6 @@ class Course {
         if($paytype==2){
             $payval='密码';
         }
-
 
         $v['payval']=$payval;
         $v['lesson']=$lesson;

@@ -184,15 +184,13 @@ class Login {
 
 		$info=\App\handleUser($info);
 
-        
         \App\delcache('userinfo_'.$info['id']);
         
         $model = new Model_Login();
         $token=md5(md5($info['id'].$info['user_nickname'].time()));
 		$info['token']=$token;
 		$model->updateToken($info['id'],$token);
-        
-        
+
         $rs['info'][0]=$info;
         return $rs;
     }
