@@ -172,14 +172,6 @@ class Course {
             }
         }
 
-        if($paytype==1){
-
-        }
-
-        if($paytype==2){
-
-        }
-
         $info['isbuy']=$ifbuy;
         $info['ifbuy'] = $ifbuy;
         $info['url']=\App\encryption(\App\get_upload_path($info['url']));
