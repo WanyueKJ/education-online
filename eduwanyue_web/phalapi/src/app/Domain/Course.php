@@ -335,7 +335,6 @@ class Course {
             }
         }
 
-
         /* 免费 */
         if($paytype==0){
             return '1';
@@ -429,7 +428,6 @@ class Course {
                 }
                 $v1['status']=$status;
 
-
                 $islast='0';
                 if($lastid==$v1['id']){
                     $islast='1';
@@ -437,13 +435,9 @@ class Course {
 
                 $v1['islast']=$islast;
 
-
-
                 $time='';
                 if($v1['type']>=4){
-                    //if($v1['islive']==0){
                     $time=date('m月d日 H:i',$v1['starttime']);
-                    //}
                 }
                 $v1['time_date']=$time;
                 $v1['url']=\App\encryption(\App\get_upload_path($v1['url']));
