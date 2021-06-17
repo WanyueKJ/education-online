@@ -571,7 +571,6 @@ class Course
             }
 
             $where7_s = implode(' and ', $where7);
-
             $where = $where7_s . ' and ' . $where6;
 
         }
