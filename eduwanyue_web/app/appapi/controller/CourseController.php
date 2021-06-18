@@ -98,9 +98,7 @@ class CourseController extends HomebaseController{
         $isbuy='0';
         
         $sort=$courseinfo['sort'];
-        $type=$courseinfo['type'];
         $paytype=$courseinfo['paytype'];
-        $trialtype=$courseinfo['trialtype'];
         $trialval=$courseinfo['trialval'];
         $per=$trialval;
         if($sort==0){
