@@ -172,8 +172,6 @@ class DetailController extends StudentBaseController
         $sort      = $courseinfo['sort'];
         $type      = $courseinfo['type'];
         $paytype   = $courseinfo['paytype'];
-        $trialtype = $courseinfo['trialtype'];
-        $trialval  = $courseinfo['trialval'];
         if ($sort == 0) {
             $isbuy = 0;
             if ($paytype != 0) {

@@ -206,7 +206,6 @@ class CourseController extends HomebaseController{
 		$this->assign("title",$lessoninfo['name']);
 		$this->assign("body",$body);
 
-
 		return $this->fetch();
 	    
 	}
