@@ -36,7 +36,6 @@ class TeachersController extends StudentBaseController
         }
 
         //查看对应的老师
-    //    $where       = 'signoryid = ' . $classid;
 		$where = [
 			['signoryid','=',$classid],
 		];
