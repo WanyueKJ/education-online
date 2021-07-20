@@ -90,7 +90,6 @@ class LiveingController extends StudentBaseController
                 $this->error('当前非直播课程');
             }
 
-
             $islive = $liveinfo['islive'];
 
             $tutoruid = $liveinfo['tutoruid'];
@@ -232,7 +231,6 @@ class LiveingController extends StudentBaseController
 
         $uuid      = $liveinfo['uuid'];
         $roomtoken = $liveinfo['roomtoken'];
-        $configpri = getConfigPri();
         $info      = [
             'name'          => $liveinfo['name'],
             'uuid'          => $uuid,

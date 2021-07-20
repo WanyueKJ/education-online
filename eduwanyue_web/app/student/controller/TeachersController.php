@@ -40,7 +40,6 @@ class TeachersController extends StudentBaseController
 			['signoryid','=',$classid],
 		];
         $techerslist = $this->GetTeachers(1, $where);
-
         $isMore = 0;
         if (count($techerslist) >= 20) {
             $isMore = 1;
