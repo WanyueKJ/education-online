@@ -132,7 +132,7 @@ class DetailController extends StudentBaseController
     }
 
 
-    /**
+    /*
      * 内容学习页面
      * @return mixed
      */

@@ -147,13 +147,11 @@ class LoginController extends HomebaseController {
             'gradeid'=>0
         );
 
-
         $result=Db::name('users')->insert($default);
 
         if(!$result){
             $this->error('注册失败');
         }
-
 
         $userinfo=Db::name('users')->where(['user_login'=>$name])->find();
 
