@@ -243,7 +243,6 @@ class CourseController extends HomebaseController{
 
         $isexist=Db::name('course_users')->where(['uid'=>$uid,'courseid'=>$courseid])->find();
         if(!$isexist){
-            /*  */
             $status=0;
             $paytype=$course['paytype'];
             if($paytype==0){
