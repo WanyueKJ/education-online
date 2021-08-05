@@ -129,7 +129,7 @@ class LiveController extends TeacherBaseController
             $map[] = ['name', 'like', '%' . $keyword . '%'];
         }
 
-        $list = CourseModel::where($map)->order("id desc")->paginate(20, false, ['query' => input()]);
+        $list = CourseModel::where($map)->order("id desc")->paginate(10, false, ['query' => input()]);
 
         $list->each(function ($v, $k) {
 

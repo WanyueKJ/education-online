@@ -325,7 +325,7 @@ class DetailController extends StudentBaseController
     }
 
 
-    /**
+    /*
      * 支付页面
      * @return mixed
      */
