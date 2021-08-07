@@ -230,7 +230,6 @@ class MineController extends StudentBaseController
     public function addAudio()
     {
         $file = $_FILES['file'];
-        /* var_dump($file); */
         if (!$file) {
             $this->error('请先录制语音');
         }
