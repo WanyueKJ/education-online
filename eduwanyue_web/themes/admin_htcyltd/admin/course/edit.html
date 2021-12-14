@@ -28,7 +28,7 @@
 <body>
 
 <div class="layui-fluid">
-    
+
     <form method="post" class="layui-form js-ajax-form" style="margin-top: 20px;" action="{:url('course/editPost')}">
         <div class="layui-col-md12">
             <div class="layui-card">
@@ -49,7 +49,7 @@
                                 </div>
                             </div>
                         </div>
-                    
+
                         <if condition="$sort neq 0">
                             <div class="layui-form-item">
                                 <label for="input-tutoruid" class="layui-form-label"><span class="form-required"></span>辅导老师ID</label>
@@ -62,7 +62,7 @@
                                 </div>
                             </div>
                         </if>
-                    
+
                         <div class="layui-form-item">
                             <label for="input-name" class="layui-form-label"><span class="form-required">*</span>学级分类</label>
                             <div class="layui-input-block">
@@ -86,14 +86,14 @@
                                 </select>
                             </div>
                         </div>
-                    
+
                         <div class="layui-form-item">
                             <label for="input-name" class="layui-form-label"><span class="form-required">*</span>名称</label>
                             <div class="layui-input-block">
                                 <input type="text" class="layui-input" id="input-name" name="name" value="{$data.name}">
                             </div>
                         </div>
-                    
+
                         <div class="layui-form-item">
                             <label class="layui-form-label"><span class="form-required">*</span>封面</label>
                             <div class="layui-input-block">
@@ -114,14 +114,14 @@
                                 </div>
                             </div>
                         </div>
-                    
+
                         <div class="layui-form-item">
                             <label class="layui-form-label"><span class="form-required"></span>简介</label>
                             <div class="layui-input-block">
                                 <textarea class="layui-input" name="des" style="height: 50px;" maxlength="30">{$data.des}</textarea>最多30个字
                             </div>
                         </div>
-                    
+
                         <if condition="$sort neq 1 && $sort neq 3">
                             <div class="layui-form-item">
                                 <label for="input-name" class="layui-form-label"><span class="form-required">*</span>内容形式</label>
@@ -135,7 +135,7 @@
                                     </select>
                                 </div>
                             </div>
-                    
+
                             <div class="layui-form-item type_bd type_2" style="display:none;">
                                 <label class="layui-form-label"><span class="form-required">*</span>上传视频</label>
                                 <div class="layui-input-block">
@@ -144,7 +144,7 @@
                                     <a href="javascript:uploadOne('文件上传','#js-file-input3','video');">上传文件</a>MP4格式
                                 </div>
                             </div>
-                    
+
                             <div class="layui-form-item type_bd type_3" style="display:none;">
                                 <label class="layui-form-label"><span class="form-required">*</span>上传语音</label>
                                 <div class="layui-input-block">
@@ -153,9 +153,9 @@
                                     <a href="javascript:uploadOne('文件上传','#js-file-input4','audio');">上传文件</a>MP3格式 WAV格式
                                 </div>
                             </div>
-                    
+
                         </if>
-                    
+
                         <div class="layui-form-item">
                             <label for="input-name" class="layui-form-label"><span class="form-required">*</span>获取方式</label>
                             <div class="layui-input-block">
@@ -169,7 +169,7 @@
                                 </select>
                             </div>
                         </div>
-                    
+
                         <div class="layui-form-item" id="paytype_val" style="display:none;">
                             <label for="input-payval" class="layui-form-label"><span class="form-required">*</span>价格/密码</label>
                             <div class="layui-input-block">
@@ -188,7 +188,7 @@
                                     </select>
                                 </div>
                             </div>
-                    
+
                             <div class="layui-form-item">
                                 <label for="input-name" class="layui-form-label"><span class="form-required"></span>课程模式</label>
                                 <div class="layui-input-block">
@@ -203,7 +203,7 @@
                                 </div>
                             </div>
                         </if>
-                    
+
                         <if condition="$sort eq 0">
                             <div id="paytype_bd" style="display:none;">
                                 <div class="layui-form-item">
@@ -218,7 +218,7 @@
                                         </select>
                                     </div>
                                 </div>
-                    
+
                                 <div class="layui-form-item trialtype_bd" id="trialval_2" style="display:none;">
                                     <label for="input-trialval_2" class="layui-form-label"><span class="form-required">*</span>时间进度</label>
                                     <div class="layui-input-block">
@@ -235,7 +235,7 @@
                                 </div>
                             </div>
                         </if>
-                    
+
                         <div class="layui-form-item">
                             <label for="input-name" class="layui-form-label"><span class="form-required">*</span>状态</label>
                             <div class="layui-input-block">
@@ -252,7 +252,7 @@
                                 </select>
                             </div>
                         </div>
-                    
+
                         <div class="layui-form-item status_bd"
                         <if condition="$data['status'] neq 2">style="display:none;"</if>
                         >
@@ -263,7 +263,7 @@
                             00:00:00
                         </div>
                         </div>
-                    
+
                         <if condition="$sort eq 2 || $sort eq 3">
                             <div class="layui-form-item">
                                 <label for="input-starttime" class="layui-form-label"><span class="form-required">*</span>上课时间</label>
@@ -289,7 +289,7 @@
                                 </div>
                             </div>
                         </if>
-                    
+
                         <div class="layui-form-item">
                             <label class="layui-form-label"><span class="form-required">*</span>介绍</label>
                             <div class="layui-input-block">
@@ -297,7 +297,7 @@
                                 学员购买前可看
                             </div>
                         </div>
-                    
+
                         <if condition="$sort eq 0">
                             <div class="layui-form-item">
                                 <label for="input-name" class="layui-form-label"><span class="form-required">*</span>详情</label>
@@ -306,20 +306,20 @@
                                 </div>
                             </div>
                         </if>
-                    
+
                         <div class="layui-form-item">
                             <div class="layui-input-block">
                                 <input type="hidden" name="sort" value="{$sort}"/>
                                 <input type="hidden" name="id" value="{$data.id}"/>
-                                <button type="submit" class="layui-btn js-ajax-submit">{:lang('EDIT')}</button>
+                                <button type="submit" class="layui-btn js-ajax-submit">{:lang('SAVE')}</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-    
+
+
     </form>
 </div>
 
