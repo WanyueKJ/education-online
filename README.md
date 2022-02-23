@@ -1,12 +1,12 @@
 <div align=center><img src="https://images.gitee.com/uploads/images/2021/0317/095645_f0b60e43_8543696.png" width="590" height="212"/></div>
 
 
-### 项目说明（如果对你有用，请给个star！）
-##### <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_web/2006714">项目文档</a> |  <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_web/2006716">部署文档</a>  |  <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_web/2107615">常见问题</a> | <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_uniapp/2199269">升级日志</a>
+### Project Description (If useful to you, please light up the Star in the upper right corner!)
+##### <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_uniapp/2100689">Project documentation</a> | <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_uniapp/2100691">Deployment document</a> | <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_web/2107615">Q&A</a> | <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_uniapp/2199269">The upgrade log</a>
 
 ---
 
-### 系统演示
+### Demo
 - 首页地址: <a target="_blank" href="https://demo.sdwanyue.com">https://demo.sdwanyue.com</a>
 - 学生端地址: <a target="_blank" href="https://demo.sdwanyue.com">https://demo.sdwanyue.com</a> 账号:13800000000 密码:123456
 - 教师端地址: <a target="_blank" href="https://demo.sdwanyue.com/teacher">https://demo.sdwanyue.com/teacher</a> 账号:13866666666 密码:123456
@@ -17,165 +17,181 @@
    - 仓库地址: <a target="_blank" href="https://gitee.com/WanYueKeJi/wanyue_education_uniapp">点击此处</a>
    ![演示图](https://images.gitee.com/uploads/images/2021/0401/155114_9bce1969_8162876.png "app系统演示.png")
    
-### 项目介绍
-万岳在线教育经过对教育市场的长期调研，综合当下各大线上教培机构对于教育平台的功能需求，着重于用户体验，自主研发了一套集知识付费、直播授课、网校建设等功能为一体的万岳在线教育系统，满足用户对于公开课、大班课、小班课、职业培训等多种线上教学活动的场景需求。
-* 所有使用到的框架或者组件都是基于开源项目,代码保证100%开源。
-* 系统功能通用，无论是个人还是企业都可以利用该系统快速搭建一个属于自己的在线教育平台。
+### Project introduction
+Wanyue online education after a long-term investigation of the education market, comprehensive of the current major online education institutions for the functional needs of the education platform, focusing on user experience, independent research and development of a set of knowledge payment, live teaching, online school construction and other functions as one of the Wanyue online education system, Meet the scene requirements of users for various online teaching activities such as open class, large class, small class and vocational training.
+* All frameworks or components used are based on open source projects and the code is guaranteed to be 100% open source.
+* The system functions are universal, both individuals and enterprises can use the system to quickly build an online education platform of their own.
 
-系统采用TP5.1+Jquery+Bootstrap+Mysql核心技术，系统功能介绍[查看](http://doc.sdwanyue.com/wanyue_open_web/2006714)，专业售后技术团队，让您二开无忧。
+系统前端采用uni-app+socket.io+WebRtc核心技术, 接口采用PhalApi框架配合TP5.1框架ThinkCMF,系统功能如下:
 
-### 技术亮点
+### Technical highlights
 ```
-    1.后台应用ThinkCMF快速生成现代化表单； 
-    2.PHPExcel数据导出,导出表格更加美观,可视；
-    3.支持微信/支付宝支付,支付接入更加快捷,简单；
-    4.后台多任务窗口化操作界面；
-    5.内置强大灵活的权限管理；
-    6.内置组合数据,系统配置,管理碎片化数据；
-    7.客户端完善的交互效果和动画；
-    8.高频数据缓存； 
-    9.内置PhalApi接口框架,前后端分离更方便；
-    10.WebSocket长连接减少CPU及内存使用及网络堵塞，减少请求响应时长；
-    11.支持队列降低流量高峰，解除耦合，高可用;
-    12.无需安装, clone下来即可直接使用, 完全100%真开源；
+ 1. Background application ThinkCMF to quickly generate modern forms.
+2.PHPExcel data export, export table more beautiful and visual.
+3. Support wechat/Alipay payment, payment access is faster and simpler.
+4. Background multi-task window.
+5. Built-in powerful and flexible rights management.
+6. Built-in combined data, system configuration, and management of fragmented data.
+7. Perfect interactive effects and animations on the client side.
+8. High-frequency data cache.
+9. Built-in PhalApi interface framework for easy separation of front and back ends.
+10.WebSocket long connection reduces CPU and memory usage, network congestion, and request response time.
+11. Support queue to reduce traffic peak, remove coupling, high availability.
+12. Clone can be used directly without installation, completely 100% true open source.
 ```
-### 功能展示
+### Function display
  ![展示图](https://images.gitee.com/uploads/images/2021/0410/144209_cf74cc99_8162876.png "展示图.png")
 
-### 前台主要功能介绍
-#### 讲师PC端
-* 登录页面，可通过手机号码及验证码或密码进行登录，支持qq、微信帐号登录
-* 首页功能，展示老师头像、名称，我的直播课数量，我的课程数量，常用功能以及常见问题
-* 直播课堂，
+ ### Main Functions
+ #### Lecturer at the PC
+* On the login page, you can use your mobile phone number, verification code or password to log in. You can use QQ or wechat accounts to log in
+* Home page function, showing teacher's picture, name, the number of my live courses, the number of my courses, common functions and frequently asked questions
+* Live classes
 
-    1.语音大班课
-            语音大班课内，讲师可进入课程根据视频和语音对学生进行讲解
-            
-    2.视频大班课
-            视频大班课讲师可以进行开启摄像头、上传ppt图片课件、屏幕共享操作
-* 账号，展示头像、昵称等账号信息，可编辑头像、昵称
+1. Phonetics class
+In the voice class, the lecturer can enter the class and explain to the students according to the video and voice
 
+2. Video classes
+Video class lecturers can enable the camera, upload PPT picture courseware and share the screen
+* Account, display profile picture, nickname and other account information, can be edited profile picture, nickname
+ 
+ 
+ #### Student UNI - APP side
+* home page,
 
-#### 学生PC端
-* 首页，
+1. Search You can search by course or teacher name
 
-    1.搜索 可根据课程、老师名称关键字查询搜索
-    
-    2.轮播图 后台添加的轮播图展示
-    
-    3.直播课堂 直播课展示列表, 直播分为三种类型（语音+视频、语音+音频、语音+ppt+摄像头直播）
+2. Display the rote chart added in the background
 
-    4.精选内容 内容展示列表，包含封面、标题、内容类型（视频、音频、图文）
+3. List of live classes, which can be divided into three types (voice + video, voice + audio, voice + PPT + camera live)
 
-* 精选内容， 
+4. Display list of selected content, including cover, title, content type (video, audio, graphic)
 
-    1.详情页：由上往下依次展示封面图、课程标题，学习人数、主讲老师与辅导老师、课程类型（分为密码、免费、付费三种类型)等；
-    
-    2.查看详情：上部为视频、音频播放区域，视频、音频支持进度条滑动查看，视频可全屏观看，可选择倍速播放，并有跑马灯防盗水印，播放区域下方为内容标题、简介、发布时间等信息和详细内容展示（支持图文）。
+* Selected content,
 
- * 直播课堂，
-    
-    1.语音大班课 
-    
-    2.视频大班课 
+1. Details page: show cover picture, course title, number of students, lecturer and tutor, course type (password, free and paid) from top to bottom;
 
-* 选课中心，
-    
-    1.选课中心与app内的选择学习阶段一致，可根据学段、年纪、科目、类别来搜索对应课程
+2. View details: The upper part is the video and audio playback area, and the progress bar can be sliding to view the video. The video can be viewed in full screen and can be played at double speed, and there is a horse light anti-theft watermark.
 
-* 海报分享：
+* Live classes,
 
-    1.展示当前平台所有裂变海报活动列表，可查看名称、课程信息、二维码等，分享成功后可获得积分。
+1. Phonetics class
 
-* 积分：
+2. Video classes
 
-    1.显示用户的积分余额以及积分明细，积分的来源是购买课程返还的积分和下级用户购买课程奖励的积分，积分用途为购买课程时抵扣。
+* My courses:
 
+1. My courses are consistent with the course selection center in the WEB, so I can search the corresponding courses according to the learning section, age, subject and category.
 
+* the message:
 
-### 后台主要功能介绍
-* 设置
-  
-  1.网站信息 网站的相关信息及SEO设置
-    
-  2.私密设置 配置系统的重要参数（包登录配置、直播配置、云存储设置）
-    
-  3.幻灯片管理 首页轮播banner图管理配置
-  
-  4.上传设置 上传信息相关配置
-  
-  5.文件存储 文件存储信息相关配置
-  
-* 用户管理
-    
-  1.管理组 编辑后台管理员身份及权限等相关配置
-    
-  2.用户列表 平台所有注册用户信息列表，可进行编辑、设置讲师资格、禁用、删除等操作
+1. System message: Students receive the message reminder sent by the system;
 
-  3.教师列表 后台将普通用户设置为讲师的用户显示在此处
-  
-* 插件中心
+2. Course dynamics: Students will receive course information when the subscribed courses are updated;
 
-  1.插件列表 查看编辑应用插件信息
+3. Lecturer dynamics: when the lecturer concerned by students releases a new course or has a new dynamic, they will receive the lecturer dynamic information.
 
-* 内容管理
-    
-  1.文章管理 网站相关文章配置
-  
-  2.分类管理 文章分类管理
-  
-  3.页面管理 联系我们、关于我们等单页内容配置
-    
-* 订单管理 
+* Sharing and credits:
 
-  1.展示用户购买课程后展示的会员名称、购买价格、订单号、需要线下邮寄教材的收货信息与支付方式与状态
+1. Poster sharing: Display the list of all fission poster activities on the current platform. You can view the name, course information, TWO-DIMENSIONAL code, etc., and get points after successful sharing.
 
-* 知识管理
-  
-  1.学级分类 登录页的学习阶段分类，可在后台自行添加
+2. Points: display the balance and details of users' points. The points come from the points returned by purchasing courses and the points awarded by lower-level users for purchasing courses.
 
-  2.付费内容列表 展示添加的所有需要付费/免费的文章内容，可查看平台所有内容信息。
-  
-* 大班课列表
-  
-  1.语音大班课 
-  
-  2.视频大班课 
+* Personal Center:
+
+1. Display students' profile pictures, nicknames and IDS at the top, and pay attention to the lecturer's display.
+
+2. Purchased: shows the live courses and content courses that students have studied or purchased.
+
+3. My integral;
+
+4. Feedback;
+
+About us;
+
+6. Settings: Contact us, version update and clear cache.
+
+### Main functions of the background
+* set
+
+1. Website information Website related information and SEO Settings
+
+2. Private Settings Configure important parameters of the system (package login configuration, live broadcast configuration, cloud storage Settings)
+
+3. Slide management Manage and configure the rotation banner chart of the home page
+
+4. Upload Settings Upload information configurations
+
+5. Configure file storage information
+
+* User management
+
+1. Edit background administrator identities and permissions
+
+2. User List List of all registered users on the platform, which can be edited, qualified, disabled, and deleted
+
+3. In the background of teacher List, the user whose common user is set as lecturer is displayed here
+
+* Plug-in Center
+
+1. Plug-in list View and edit application plug-in information
+
+* Content Management
+
+1. Article management Configuration of related articles on the website
+
+2. Classification management Article classification management
+
+3. Page management Contact us, about us and other single page content configuration
+
+* Order management
+
+1. Display the member name, purchase price, order number, receiving information, payment method and status of offline teaching materials displayed after the user purchases the course
+
+* Knowledge management
+
+1. Learning level Classification The learning level classification of the login page can be added in the background
+
+2. Paid content list displays all the added articles that need to be paid/free, and you can view all the content information of the platform.
+
+* List of large classes
+
+1. Phonetics class
+
+2. Video classes
 
  
   
   
-  ### 页面展示
+  ### The page display
 ![页面展示](https://images.gitee.com/uploads/images/2021/0410/144604_dbc1116f_8162876.png "web详情图2.png")
-  #### 统计页面
+  #### Live course Page
 ![统计页面](https://images.gitee.com/uploads/images/2021/0410/152726_aba91433_8162876.png "1.png")
 ![统计页面](https://images.gitee.com/uploads/images/2021/0410/152741_f4ea0543_8162876.png "2.png")
 ![统计页面](https://images.gitee.com/uploads/images/2021/0410/152754_67e056be_8162876.png "3.png")
 ![统计页面](https://images.gitee.com/uploads/images/2021/0410/152804_24f0012d_8162876.png "4.png")
     
-  #### 直播课页面
+  #### Live course Page
 
 ![展示图](https://images.gitee.com/uploads/images/2021/0317/100203_29192e47_8543696.png "live_student.png")
 ![展示图](https://images.gitee.com/uploads/images/2021/0317/100218_871f0135_8543696.png "live_yuyin_student.png")
-  #### 功能对比
+  #### Functional comparison
   ![输入图片说明](https://images.gitee.com/uploads/images/2021/0410/143936_7235ec5f_8162876.png "功能对比4(1).png") 
   
-   ### 开源版使用须知
+   ### Open Source Edition Usage notes
     
-   - 允许用于个人学习、教学案例
-    
-   - 开源版不适合商用，商用请购买商业版
-    
-   - 禁止将本项目的代码和资源进行任何形式的出售，产生的一切任何后果责任由侵权者自负
+ *  Allowed for personal study and teaching cases
+  * The open source version is not suitable for commercial use. Please purchase the commercial version for commercial use
+  * It is forbidden to sell the code and resources of the project in any form, and the infringer shall be solely responsible for any consequences arising therefrom
 
-### 商业合作
-* 如果你想使用功能更完善的教育系统，请联系QQ客服: 2415408120获取专业版
-* 如果您想基于教育系统进行定制开发，我们提供有偿定制服务支持！
-* 其他合作模式不限，欢迎来撩！
-* 官网地址：[http://git.sdwanyue.com](http://git.sdwanyue.com)
+  ### Business cooperation
+  * If you want to use a more complete education system, please contact QQ customer service: 2770722087 to obtain the professional version
+  * If you want to customize development based on the education system, we provide paid customization service support!
+  * There is no limit to other cooperation modes, welcome to visit!
+  * Official website: [http://git.sdwanyue.com](http://git.sdwanyue.com)
                 
   
-### 联系我们（加客服经理微信或QQ，免费获取sql脚本）
+  ### Contact us (add customer service manager wechat or QQ, free access to THE SQL script)
 
 <div style='height: 130px'>
     <img class="kefu_weixin" style="float:left;" src="https://images.gitee.com/uploads/images/2021/0317/100340_bec42d1f_8543696.png" width="602" height="123"/>
