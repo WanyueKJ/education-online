@@ -56,7 +56,7 @@ Wanyue online education after a long-term investigation of the education market,
 ![展示图](https://images.gitee.com/uploads/images/2021/0317/100203_29192e47_8543696.png "live_student.png")
 ![展示图](https://images.gitee.com/uploads/images/2021/0317/100218_871f0135_8543696.png "live_yuyin_student.png")
   #### Functional comparison
-  ![输入图片说明](https://gitee.com/WanYueKeJi_343188225/wanyue_education_web/raw/master/%E6%95%99%E8%82%B2%E5%8A%9F%E8%83%BD%E8%A1%A8.jpg "功能对比4(1).png") 
+ ![输入图片说明](https://gitee.com/WanYueKeJi_343188225/wanyue_education_web/raw/master/eduwanyue_web/%E6%95%99%E8%82%B2%E5%8A%9F%E8%83%BD%E8%A1%A8.jpg)
   
    ### Open Source Edition Usage notes
     
