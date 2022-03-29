@@ -164,7 +164,7 @@ About us;
   
   
   ### The page display
-![页面展示](https://images.gitee.com/uploads/images/2021/0410/144604_dbc1116f_8162876.png "web详情图2.png")
+![页面展示](https://gitee.com/WanYueKeJi/wanyue_education_web/raw/master/%E8%AF%A6%E6%83%85%E5%9B%BE.png "web详情图2.png")
   #### Live course Page
 ![统计页面](https://images.gitee.com/uploads/images/2021/0410/152726_aba91433_8162876.png "1.png")
 ![统计页面](https://images.gitee.com/uploads/images/2021/0410/152741_f4ea0543_8162876.png "2.png")
