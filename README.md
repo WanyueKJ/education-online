@@ -41,7 +41,10 @@ Wanyue online education after a long-term investigation of the education market,
 ```
  
   ### The page display
-![页面展示](https://gitee.com/WanYueKeJi/wanyue_education_web/raw/master/%E8%AF%A6%E6%83%85%E5%9B%BE.png "web详情图2.png")
+![输入图片说明](https://gitee.com/WanYueKeJi_343188225/wanyue_education_web/raw/master/%E4%B8%87%E5%B2%B3%E5%9C%A8%E7%BA%BF%E6%95%99%E8%82%B2web%E7%AB%AF(%E4%B8%AD%E8%8B%B1%E6%96%87)1.png)
+![输入图片说明](https://gitee.com/WanYueKeJi_343188225/wanyue_education_web/raw/master/%E4%B8%87%E5%B2%B3%E5%9C%A8%E7%BA%BF%E6%95%99%E8%82%B2web%E7%AB%AF(%E4%B8%AD%E8%8B%B1%E6%96%87)2.png)
+![输入图片说明](https://gitee.com/WanYueKeJi_343188225/wanyue_education_web/raw/master/%E4%B8%87%E5%B2%B3%E5%9C%A8%E7%BA%BF%E6%95%99%E8%82%B2web%E7%AB%AF(%E4%B8%AD%E8%8B%B1%E6%96%87)3.png)
+![输入图片说明](https://gitee.com/WanYueKeJi_343188225/wanyue_education_web/raw/master/%E4%B8%87%E5%B2%B3%E5%9C%A8%E7%BA%BF%E6%95%99%E8%82%B2web%E7%AB%AF(%E4%B8%AD%E8%8B%B1%E6%96%87)4.png)
   #### Live course Page
 ![统计页面](https://images.gitee.com/uploads/images/2021/0410/152726_aba91433_8162876.png "1.png")
 ![统计页面](https://images.gitee.com/uploads/images/2021/0410/152741_f4ea0543_8162876.png "2.png")
@@ -53,7 +56,7 @@ Wanyue online education after a long-term investigation of the education market,
 ![展示图](https://images.gitee.com/uploads/images/2021/0317/100203_29192e47_8543696.png "live_student.png")
 ![展示图](https://images.gitee.com/uploads/images/2021/0317/100218_871f0135_8543696.png "live_yuyin_student.png")
   #### Functional comparison
-  ![输入图片说明](https://images.gitee.com/uploads/images/2021/0410/143936_7235ec5f_8162876.png "功能对比4(1).png") 
+  ![输入图片说明](https://gitee.com/WanYueKeJi_343188225/wanyue_education_web/raw/master/%E6%95%99%E8%82%B2%E5%8A%9F%E8%83%BD%E8%A1%A8.jpg "功能对比4(1).png") 
   
    ### Open Source Edition Usage notes
     
