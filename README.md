@@ -6,7 +6,7 @@
 
  
 
-### 重要！重要！请点击上方查看“部署文档”！！！！
+### important! important! Please click above to view the "Deployment Documentation"! ! ! !
 
 
 ------------------------------------------------------------------------
@@ -14,31 +14,42 @@
 
 
 ### 更新说明【更新时间2022年2月21日】
+### Update Instructions [Updated on February 21, 2022]
+
 * 新增新闻资讯功能，后台可以添加图文资讯，前端滚动显示新闻标题，点击后查看资讯
+* New news information function, you can add graphic information in the background, scroll the news title on the front end, click to view the information
 * 新增名师名课功能，前端可以展示入驻的讲师简介，点击可以关注以及查看对应讲师的详细介绍和所属课程
+* Added the function of famous teachers and famous courses. The front-end can display the introduction of the lecturers who have settled in. Click to follow and view the detailed introduction of the corresponding lecturer and the courses they belong to.
 
 
 ### 项目说明及部署文档（如果对你有用，请给个star！）
+### Project description and deployment documentation (if useful to you, please give a star!)
 ##### <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_web/2006714">项目文档</a> |  <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_web/2006716">部署文档</a>  |  <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_web/2107615">常见问题</a> | <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_uniapp/2199269">升级日志</a>
 
 ---
 
 ### 系统演示
-- 首页地址: <a target="_blank" href="https://demo.sdwanyue.com">https://edudemo.sdwanyue.com</a>
-- 学生端地址: <a target="_blank" href="https://demo.sdwanyue.com">https://edudemo.sdwanyue.com</a> 账号:13800000000 密码:123456
-- 教师端地址: <a target="_blank" href="https://demo.sdwanyue.com/teacher">https://edudemo.sdwanyue.com/teacher</a> 账号:13866666666 密码:123456
-- 后台地址: <a target="_blank" href="https://demo.sdwanyue.com/admin">https://edudemo.sdwanyue.com/admin</a> 账号: demo 密码: 123456
+### System demo
+- 首页地址Home address: <a target="_blank" href="https://demo.sdwanyue.com">https://edudemo.sdwanyue.com</a>
+- 学生端地址Student address: <a target="_blank" href="https://demo.sdwanyue.com">https://edudemo.sdwanyue.com</a> 账号:13800000000 密码:123456
+- 教师端地址Teacher's address: <a target="_blank" href="https://demo.sdwanyue.com/teacher">https://edudemo.sdwanyue.com/teacher</a> 账号:13866666666 密码:123456
+- 后台地址Background address: <a target="_blank" href="https://demo.sdwanyue.com/admin">https://edudemo.sdwanyue.com/admin</a> 账号: demo 密码: 123456
 
 
 ### Uni-app版地址
+### Uni-app version address
    - 接口框架地址: 本项目根目录下phalapi目录
+   - Interface framework address: phalapi directory under the root directory of this project
    - 仓库地址: <a target="_blank" href="https://gitee.com/WanYueKeJi/wanyue_education_uniapp">点击此处</a>
    ![演示图](https://images.gitee.com/uploads/images/2021/0401/155114_9bce1969_8162876.png "app系统演示.png")
    
 ### 项目介绍
 万岳在线教育经过对教育市场的长期调研，综合当下各大线上教培机构对于教育平台的功能需求，着重于用户体验，自主研发了一套集知识付费、直播授课、网校建设等功能为一体的万岳在线教育系统，满足用户对于公开课、大班课、小班课、职业培训等多种线上教学活动的场景需求。
+Wanyue Online Education has independently developed a set of functions including knowledge payment, live teaching, online school construction, etc. The integrated Wanyue online education system meets users' needs for various online teaching activities such as open classes, large class classes, small class classes, and vocational training.
 * 所有使用到的框架或者组件都是基于开源项目,代码保证100%开源。
+* All frameworks or components used are based on open source projects, and the code is guaranteed to be 100% open source.
 * 系统功能通用，无论是个人还是企业都可以利用该系统快速搭建一个属于自己的在线教育平台。
+* The functions of the system are universal, and both individuals and enterprises can use the system to quickly build their own online education platform.
 
 系统采用TP5.1+Jquery+Bootstrap+Mysql核心技术，系统功能介绍[查看](http://doc.sdwanyue.com/wanyue_open_web/2006714)，专业售后技术团队，让您二开无忧。
 
@@ -120,18 +131,21 @@
 * 官网地址：[http://git.sdwanyue.com](http://git.sdwanyue.com)
                 
   
-### 联系我们（加客服经理微信或QQ，免费获取sql脚本）
+### 联系我们（加客服经理微信、QQ和邮箱，免费获取sql脚本），邮箱：1532375297@qq.com
+### Contact us (add customer service manager WeChat, QQ and email, get sql script for free), email: 1532375297@qq.com
 
 <div style='height: 130px'>
     <img class="kefu_weixin" style="float:left;" src="https://gitee.com/WanYueKeJi/wanyue_education_uniapp/raw/newone/pages/%E5%BC%A0%E7%9A%93%E5%BC%80%E6%BA%90.png" width="602" height="123"/>
     <div style="float:left;">
         <p>QQ：2770722087</p>
         <p>QQ群：995910672</p>
+        <p>email: 1532375297@qq.com</p>
     </div>
 </div>
 <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=JShAyXeoKqg2lWFEUSElxELImhjeMG4y&jump_from=webapi"><img border="0" src="https://images.gitee.com/uploads/images/2021/0317/100424_072ee536_8543696.png" alt="万岳在线教育讨论群" title="万岳在线教育讨论群"></a> 
 
 ###  开源交流群【加群回答请填写“gitee教育”】
+###  Open source exchange group [Add group answer, please fill in "gitee education"]
 
 > QQ群：995910672
  <img class="kefu_weixin" style="float:left;" src="https://images.gitee.com/uploads/images/2021/0524/181101_c6bda503_2242923.jpeg" width="102" height="102"/>
