@@ -1,0 +1,54 @@
+<include file="public@header"/>
+<style>html {background-color: #ffffff;}</style>
+
+</head>
+<body>
+
+<div class="layui-fluid">
+    <form method="post" class="layui-form js-ajax-form" style="margin-top: 20px;" action="{:url('coursegrade/editPost')}">
+
+        <div class="layui-form-item">
+            <label for="input-name" class="layui-form-label"><span class="form-required">*</span>层级</label>
+            <div class="layui-input-block">
+                <input type="hidden" name="pid" id="pid" value="{$data['pid']}">
+                <select class="layui-input" disabled>
+                    <option value="0">作为一级</option>
+                    <volist name="classs" id="v">
+                        <option value="{$v['id']}"
+                        <eq name="data['pid']" value="$v['id']">selected</eq>
+                        >{$v['name']}</option>
+                    </volist>
+                </select>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label for="input-name" class="layui-form-label"><span class="form-required">*</span>名称</label>
+            <div class="layui-input-block">
+                <input type="text" required lay-verify="required" class="layui-input" id="input-name" name="name"
+                       value="{$data.name}">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <input type="hidden" name="id" value="{$data.id}"/>
+                <button type="submit" id="js-ajax-submit" class="layui-btn js-ajax-submit js-close">{:lang('SAVE')}</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+
+<script src="__STATIC__/js/admin.js"></script>
+<script>
+    (function () {
+        $('.btn-cancel-thumbnail').click(function () {
+            $('#thumbnail-preview').attr('src', '__TMPL__/public/assets/images/default-thumbnail.png');
+            $('#thumbnail').val('');
+        });
+    })()
+</script>
+</body>
+</html>
