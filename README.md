@@ -24,10 +24,10 @@
 ---
 
 ### 系统演示
-- 首页地址: <a target="_blank" href="https://demo.sdwanyue.com">https://demo.sdwanyue.com</a>
-- 学生端地址: <a target="_blank" href="https://demo.sdwanyue.com">https://demo.sdwanyue.com</a> 账号:13800000000 密码:123456
-- 教师端地址: <a target="_blank" href="https://demo.sdwanyue.com/teacher">https://demo.sdwanyue.com/teacher</a> 账号:13866666666 密码:123456
-- 后台地址: <a target="_blank" href="https://demo.sdwanyue.com/admin">https://demo.sdwanyue.com/admin</a> 账号: demo 密码: 123456
+- 首页地址: <a target="_blank" href="https://demo.sdwanyue.com">https://edudemo.sdwanyue.com</a>
+- 学生端地址: <a target="_blank" href="https://demo.sdwanyue.com">https://edudemo.sdwanyue.com</a> 账号:13800000000 密码:123456
+- 教师端地址: <a target="_blank" href="https://demo.sdwanyue.com/teacher">https://edudemo.sdwanyue.com/teacher</a> 账号:13866666666 密码:123456
+- 后台地址: <a target="_blank" href="https://demo.sdwanyue.com/admin">https://edudemo.sdwanyue.com/admin</a> 账号: demo 密码: 123456
 
 
 ### Uni-app版地址
@@ -60,10 +60,8 @@
 
  
   ### 页面展示
-![输入图片说明](https://gitee.com/WanYueKeJi_343188225/wanyue_education_web/raw/master/%E4%B8%87%E5%B2%B3%E5%9C%A8%E7%BA%BF%E6%95%99%E8%82%B2web%E7%AB%AF(%E4%B8%AD%E8%8B%B1%E6%96%87)1.png)
-![输入图片说明](https://gitee.com/WanYueKeJi_343188225/wanyue_education_web/raw/master/%E4%B8%87%E5%B2%B3%E5%9C%A8%E7%BA%BF%E6%95%99%E8%82%B2web%E7%AB%AF(%E4%B8%AD%E8%8B%B1%E6%96%87)2.png)
-![输入图片说明](https://gitee.com/WanYueKeJi_343188225/wanyue_education_web/raw/master/%E4%B8%87%E5%B2%B3%E5%9C%A8%E7%BA%BF%E6%95%99%E8%82%B2web%E7%AB%AF(%E4%B8%AD%E8%8B%B1%E6%96%87)3.png)
-![输入图片说明](https://gitee.com/WanYueKeJi_343188225/wanyue_education_web/raw/master/%E4%B8%87%E5%B2%B3%E5%9C%A8%E7%BA%BF%E6%95%99%E8%82%B2web%E7%AB%AF(%E4%B8%AD%E8%8B%B1%E6%96%87)4.png)
+![输入图片说明](https://github.com/WanyueKJ/Education-online/blob/master/%E4%B8%87%E5%B2%B3%E5%9C%A8%E7%BA%BF%E6%95%99%E8%82%B2web%E7%AB%AF(%E4%B8%AD%E8%8B%B1%E6%96%87).png?raw=true)
+
   #### 统计页面
 ![统计页面](https://images.gitee.com/uploads/images/2021/0410/152726_aba91433_8162876.png "1.png")
 ![统计页面](https://images.gitee.com/uploads/images/2021/0410/152741_f4ea0543_8162876.png "2.png")
