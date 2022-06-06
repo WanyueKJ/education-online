@@ -42,13 +42,13 @@ return array(
      */
     'Qiniu' =>  array(
         //ak
-        'access_key' => '12t2SCvky_ra5nAI3z1jlS4sW1ogpULR-35l73mY',
+        'access_key' => '',
         //sk
-        'secret_key' => 'tWpobkhJIK6uG51BUHLh-YMYH0cOpQycugiCXz4l',
+        'secret_key' => '',
         //存储空间
-        'space_bucket' => 'wyedu',
+        'space_bucket' => '',
         //cdn加速域名 格式：http(s)://a.com
-        'space_host' => 'https://edu-qiniu.sdwanyue.com',
+        'space_host' => '',
         // 上传文件名前缀
         'preffix' => '', 
         //区域上传域名(服务端)  https://developer.qiniu.com/kodo/manual/1671/region-endpoint  非华东需配置
