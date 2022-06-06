@@ -26,6 +26,7 @@ return array(
     'REDIS_AUTH' => "",
     'REDIS_PORT' => "",
     'REDIS_SELECT' => "",
+    /* select 此处可以不填写内容 */
     
     /* 接口签名key */
     'sign_key' => '400d069a791d51ada8af3e6c2979bcd7',
