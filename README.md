@@ -1,7 +1,7 @@
 <div align=center><img src="https://images.gitee.com/uploads/images/2021/0317/095645_f0b60e43_8543696.png" width="590" height="212"/></div>
 <div align="center">
  
-[![](https://img.shields.io/badge/%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3-%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-yellow)](http://doc.sdwanyue.com/wanyue_open_web/2006716)
+[![](https://img.shields.io/badge/%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3-%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-yellow)](https://www.kancloud.cn/wanyuekaiyuan11/wanyue_education/2788919)
 [![](https://img.shields.io/badge/QQ%E7%BE%A4-995910672-green)](https://qm.qq.com/cgi-bin/qm/qr?k=JShAyXeoKqg2lWFEUSElxELImhjeMG4y&jump_from=webapi)
 
  
@@ -27,7 +27,7 @@
 
 ### 项目说明及部署文档（如果对你有用，请给个star！）
 ### Project description and deployment documentation (if useful to you, please give a star!)
-##### <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_web/2006714">项目文档</a> |  <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_web/2006716">部署文档</a>  |  <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_web/2107615">常见问题</a> | <a target="_blank" href="http://doc.sdwanyue.com/wanyue_open_uniapp/2199269">升级日志</a>
+##### <a target="_blank" href="https://www.kancloud.cn/wanyuekaiyuan11/wanyue_education/2788919">项目文档</a> |  <a target="_blank" href="https://www.kancloud.cn/wanyuekaiyuan11/wanyue_education/2788919">部署文档</a>  |  <a target="_blank" href="https://www.kancloud.cn/wanyuekaiyuan11/wanyue_education/2788919">常见问题</a> | <a target="_blank" href="https://www.kancloud.cn/wanyuekaiyuan11/wanyue_education/2788919">升级日志</a>
 
 ---
 
