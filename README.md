@@ -148,8 +148,8 @@ Wanyue Online Education has independently developed a set of functions including
 </div>
 <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=JShAyXeoKqg2lWFEUSElxELImhjeMG4y&jump_from=webapi"><img border="0" src="https://images.gitee.com/uploads/images/2021/0317/100424_072ee536_8543696.png" alt="万岳在线教育讨论群" title="万岳在线教育讨论群"></a> 
 
-###  开源交流群【加群回答请填写“gitee教育”】
-###  Open source exchange group [Add group answer, please fill in "gitee education"]
+###  开源交流群【加群回答请填写“github教育”】
+###  Open source exchange group [Add group answer, please fill in "github education"]
 
 > QQ群：995910672
  <img class="kefu_weixin" style="float:left;" src="https://images.gitee.com/uploads/images/2021/0524/181101_c6bda503_2242923.jpeg" width="102" height="102"/>
