@@ -151,7 +151,7 @@ Wanyue Online Education has independently developed a set of functions including
 ###  开源交流群【加群回答请填写“github教育”】
 ###  Open source exchange group [Add group answer, please fill in "github education"]
 
-> QQ群：995910672
+> QQ群：995910672   681418688
  <img class="kefu_weixin" style="float:left;" src="https://images.gitee.com/uploads/images/2021/0524/181101_c6bda503_2242923.jpeg" width="102" height="102"/>
 >
 
