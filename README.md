@@ -16,14 +16,6 @@
 ### Uniapp front end code【Please click the link to download】
 - 仓库地址Warehouse address: <a target="_blank" href="https://github.com/WanyueKJ/wanyue_online_education_uniapp">[https://github.com/WanyueKJ/wanyue_online_education_uniapp](https://github.com/WanyueKJ/wanyue_online_education_uniapp)</a>
 
-### 更新说明【更新时间2022年2月21日】
-### Update Instructions [Updated on February 21, 2022]
-
-* 新增新闻资讯功能，后台可以添加图文资讯，前端滚动显示新闻标题，点击后查看资讯
-* New news information function, you can add graphic information in the background, scroll the news title on the front end, click to view the information
-* 新增名师名课功能，前端可以展示入驻的讲师简介，点击可以关注以及查看对应讲师的详细介绍和所属课程
-* Added the function of famous teachers and famous courses. The front-end can display the introduction of the lecturers who have settled in. Click to follow and view the detailed introduction of the corresponding lecturer and the courses they belong to.
-
 
 ### 项目说明及部署文档（如果对你有用，请给个star！）
 ### Project description and deployment documentation (if useful to you, please give a star!)
