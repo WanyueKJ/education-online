@@ -114,9 +114,7 @@ Wanyue Online Education has independently developed a set of functions including
    ### 开源版使用须知
     
    - 允许用于个人学习、教学案例
-    
    - 开源版不适合商用，商用请购买商业版
-    
    - 禁止将本项目的代码和资源进行任何形式的出售，产生的一切任何后果责任由侵权者自负
 
 ### 商业用途
