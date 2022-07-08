@@ -46,7 +46,7 @@ Wanyue Online Education has independently developed a set of functions including
 * 系统功能通用，无论是个人还是企业都可以利用该系统快速搭建一个属于自己的在线教育平台。
 * The functions of the system are universal, and both individuals and enterprises can use the system to quickly build their own online education platform.
 
-系统采用TP5.1+Jquery+Bootstrap+Mysql核心技术，系统功能介绍[查看](http://doc.sdwanyue.com/wanyue_open_web/2006714)，专业售后技术团队，让您二开无忧。
+系统采用TP5.1+Jquery+Bootstrap+Mysql核心技术，系统功能介绍查看，专业售后技术团队，让您二开无忧。
 
 ### 技术亮点
 ```
