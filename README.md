@@ -6,7 +6,7 @@
 
  
 
-### important! important! Please click above to view the "Deployment Documentation"! ! ! !
+### important! important! Please click above to view the "Deployment Documentation"! ! ! !   
 
 
 ------------------------------------------------------------------------
@@ -115,7 +115,7 @@ Wanyue Online Education has independently developed a set of functions including
     
    - 允许用于个人学习、教学案例
    - 开源版不适合商用，商用请购买商业版
-   - 禁止将本项目的代码和资源进行任何形式的出售，产生的一切任何后果责任由侵权者自负
+   - 禁止将本项目的代码和资源进行任何形式的出售，产生的一切任何后果责任由侵权者自负。
 
 ### 商业用途
 * 如果你想使用功能更完善的教育系统，请联系QQ客服: 2770722087获取专业版
