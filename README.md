@@ -66,7 +66,7 @@ Wanyue Online Education has independently developed a set of functions including
 
  
   ### 页面展示
-![输入图片说明](https://github.com/WanyueKJ/Education-online/blob/master/%E4%B8%87%E5%B2%B3%E5%9C%A8%E7%BA%BF%E6%95%99%E8%82%B2web%E7%AB%AF(%E4%B8%AD%E8%8B%B1%E6%96%87).png?raw=true)
+![统计页面](https://gitee.com/WanYueKeJi/wanyue_education_web/raw/master/%E4%B8%87%E5%B2%B3%E5%9C%A8%E7%BA%BF%E6%95%99%E8%82%B2web%E7%AB%AF(%E4%B8%AD%E8%8B%B1%E6%96%87)1.png "1.png")
 
   #### 统计页面
 ![统计页面](https://images.gitee.com/uploads/images/2021/0410/152726_aba91433_8162876.png "1.png")
