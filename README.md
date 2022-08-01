@@ -36,7 +36,7 @@
    - 接口框架地址: 本项目根目录下phalapi目录
    - Interface framework address: phalapi directory under the root directory of this project
    - 仓库地址: <a target="_blank" href="https://gitee.com/WanYueKeJi/wanyue_education_uniapp">点击此处</a>
-   ![演示图](https://images.gitee.com/uploads/images/2021/0401/155114_9bce1969_8162876.png "app系统演示.png")
+   ![演示图](https://edu-qiniu.sdwanyue.com/admin/20220801/3b4ca0c273a6c4628cac6117c5cbf41a.png "app系统演示.png")
    
 ### 项目介绍
 万岳在线教育经过对教育市场的长期调研，综合当下各大线上教培机构对于教育平台的功能需求，着重于用户体验，自主研发了一套集知识付费、直播授课、网校建设等功能为一体的万岳在线教育系统，满足用户对于公开课、大班课、小班课、职业培训等多种线上教学活动的场景需求。
@@ -66,7 +66,10 @@ Wanyue Online Education has independently developed a set of functions including
 
  
   ### 页面展示
-![输入图片说明](https://github.com/WanyueKJ/Education-online/blob/master/%E4%B8%87%E5%B2%B3%E5%9C%A8%E7%BA%BF%E6%95%99%E8%82%B2web%E7%AB%AF(%E4%B8%AD%E8%8B%B1%E6%96%87).png?raw=true)
+![输入图片说明](https://edu-qiniu.sdwanyue.com/admin/20220801/bd39bd0b0fe1ceda98544fc59b9f8897.png "1.png")
+![输入图片说明](https://edu-qiniu.sdwanyue.com/admin/20220801/84637bbb6a0302bb5d596bf65b32b579.png "2.png")
+![输入图片说明](https://edu-qiniu.sdwanyue.com/admin/20220801/2393222e6552243f4344156cf3a6cc97.png "3.png")
+![输入图片说明](https://edu-qiniu.sdwanyue.com/admin/20220801/f18f5a7876eba0b7ad0d039bad7e0f35.png "4.png")
 
   #### 统计页面
 ![统计页面](https://images.gitee.com/uploads/images/2021/0410/152726_aba91433_8162876.png "1.png")
