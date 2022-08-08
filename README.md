@@ -127,8 +127,8 @@ Wanyue Online Education has independently developed a set of functions including
 * 官网地址：[http://git.sdwanyue.com](http://git.sdwanyue.com)
                 
   
-### 联系我们（加客服经理微信、QQ和邮箱，免费获取sql脚本），邮箱：1532375297@qq.com
-### Contact us (add customer service manager WeChat, QQ and email, get sql script for free), email: 1532375297@qq.com
+### 联系我们（加客服经理微信、QQ和邮箱，免费获取sql脚本）
+### Contact us (add customer service manager WeChat, QQ and email, get sql script for free)
 
 <div style='height: 130px'>
     <img class="kefu_weixin" style="float:left;" src="https://gitee.com/WanYueKeJi/wanyue_education_uniapp/raw/newone/pages/%E5%BC%A0%E7%9A%93%E5%BC%80%E6%BA%90.png" width="602" height="123"/>
