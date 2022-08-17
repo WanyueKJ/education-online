@@ -39,6 +39,7 @@
    ![演示图](https://edu-qiniu.sdwanyue.com/admin/20220801/3b4ca0c273a6c4628cac6117c5cbf41a.png "app系统演示.png")
    
 ### 项目介绍
+### Project introduction
 万岳在线教育经过对教育市场的长期调研，综合当下各大线上教培机构对于教育平台的功能需求，着重于用户体验，自主研发了一套集知识付费、直播授课、网校建设等功能为一体的万岳在线教育系统，满足用户对于公开课、大班课、小班课、职业培训等多种线上教学活动的场景需求。
 Wanyue Online Education has independently developed a set of functions including knowledge payment, live teaching, online school construction, etc. The integrated Wanyue online education system meets users' needs for various online teaching activities such as open classes, large class classes, small class classes, and vocational training.
 * 所有使用到的框架或者组件都是基于开源项目,代码保证100%开源。
@@ -47,8 +48,10 @@ Wanyue Online Education has independently developed a set of functions including
 * The functions of the system are universal, and both individuals and enterprises can use the system to quickly build their own online education platform.
 
 系统采用TP5.1+Jquery+Bootstrap+Mysql核心技术，系统功能介绍查看，专业售后技术团队，让您二开无忧。
+The system uses TP5.1+Jquery+Bootstrap+Mysql core technology. The system functions are introduced to check, and the professional after-sales technical team will make you carefree.
 
 ### 技术亮点
+### Technical highlights
 ```
     1.后台应用ThinkCMF快速生成现代化表单； 
     2.PHPExcel数据导出,导出表格更加美观,可视；
