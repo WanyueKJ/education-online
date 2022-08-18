@@ -69,19 +69,21 @@ The system uses TP5.1+Jquery+Bootstrap+Mysql core technology. The system functio
 
  
   ### 页面展示
+  ### Page display
 ![输入图片说明](https://edu-qiniu.sdwanyue.com/admin/20220801/bd39bd0b0fe1ceda98544fc59b9f8897.png "1.png")
 ![输入图片说明](https://edu-qiniu.sdwanyue.com/admin/20220801/84637bbb6a0302bb5d596bf65b32b579.png "2.png")
 ![输入图片说明](https://edu-qiniu.sdwanyue.com/admin/20220801/2393222e6552243f4344156cf3a6cc97.png "3.png")
 ![输入图片说明](https://edu-qiniu.sdwanyue.com/admin/20220801/f18f5a7876eba0b7ad0d039bad7e0f35.png "4.png")
 
   #### 统计页面
+  #### Statistics page
 ![统计页面](https://images.gitee.com/uploads/images/2021/0410/152726_aba91433_8162876.png "1.png")
 ![统计页面](https://images.gitee.com/uploads/images/2021/0410/152741_f4ea0543_8162876.png "2.png")
 ![统计页面](https://images.gitee.com/uploads/images/2021/0410/152754_67e056be_8162876.png "3.png")
 ![统计页面](https://images.gitee.com/uploads/images/2021/0410/152804_24f0012d_8162876.png "4.png")
     
   #### 直播课页面
-
+  #### Live class page
 ![展示图](https://images.gitee.com/uploads/images/2021/0317/100203_29192e47_8543696.png "live_student.png")
 ![展示图](https://images.gitee.com/uploads/images/2021/0317/100218_871f0135_8543696.png "live_yuyin_student.png")
 
@@ -124,7 +126,7 @@ The system uses TP5.1+Jquery+Bootstrap+Mysql core technology. The system functio
    - 禁止将本项目的代码和资源进行任何形式的出售，产生的一切任何后果责任由侵权者自负。
 
 ### 商业用途
-* 如果你想使用功能更完善的教育系统，请联系QQ客服: 2770722087获取专业版
+* 如果你想使用功能更完善的教育系统，请联系QQ客服: 2770722087
 * 如果您想基于教育系统进行定制开发，我们提供有偿定制服务支持！
 * 其他合作模式不限，欢迎来撩！
 * 官网地址：[http://git.sdwanyue.com](http://git.sdwanyue.com)
