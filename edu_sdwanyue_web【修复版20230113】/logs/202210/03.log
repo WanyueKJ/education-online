@@ -1,0 +1,10 @@
+---------------------------------------------------------------
+
+[2022-10-03T05:23:44+08:00] 60.211.203.5 GET edudemo.sdwanyue.com/
+[运行时间：0.006553s] [吞吐率：152.60req/s] [内存消耗：771.87kb] [文件加载：103]
+[ error ] [2]session_start(): The session id is too long or contains illegal characters, valid characters are a-z, A-Z, 0-9 and '-,'[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/Session.php:534]
+---------------------------------------------------------------
+
+[2022-10-03T10:47:43+08:00] 175.144.145.99 OPTIONS edudemo.sdwanyue.com/student/Lessionlist/ChooseNj
+[运行时间：0.009559s] [吞吐率：104.61req/s] [内存消耗：797.40kb] [文件加载：103]
+[ error ] [8]未定义数组索引: njid[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/LessionlistController.php:141]

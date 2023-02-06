@@ -1,0 +1,462 @@
+.hideclass {
+	display: none;
+}
+
+.pinglun-icon {
+	width: 30rpx;
+	height: 30rpx;
+}
+
+.share-view {
+	width: 180rpx;
+	height: 60rpx;
+	position: absolute;
+	right: 0rpx;
+	bottom: 140rpx;
+	/*   background: linear-gradient(to right, #FF7C1C, #FF4C2F);
+	   border-radius: 50% 0 0 50% ; */
+}
+
+.share-view-image {
+	width: 180rpx;
+	height: 60rpx;
+	position: absolute;
+	right: 0rpx;
+}
+
+.share-text {
+	position: absolute;
+	height: 60rpx;
+	line-height: 60rpx;
+	color: #FFF000;
+	width: 100%;
+	text-align: center;
+}
+
+.dav {
+	position: absolute;
+	width: 30rpx;
+	height: 30rpx;
+	margin-top: 70rpx;
+	left: 70rpx;
+}
+
+.dav-fudao {
+	position: absolute;
+	width: 30rpx;
+	height: 30rpx;
+	margin-top: 70rpx;
+	margin-left: -20rpx;
+}
+
+/* 直播背景 */
+.live_course_bg_wrap {
+	width: 100%;
+	height: 400rpx;
+	background-color: #000000;
+	position: relative;
+}
+
+.live_course_img_live {
+	width: 100%;
+	height: 100%;
+	linear-gradient: none;
+	-webkit-mask: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.live_course_img {
+	width: 100%;
+	height: 100%;
+	linear-gradient: none;
+	/* -webkit-mask: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+}
+
+.play_tu {
+	display: inline-block;
+	width: 70rpx;
+	height: 70rpx;
+	border-radius: 50%;
+	position: absolute;
+	top: 38%;
+	left: 45%;
+}
+
+.play_tu2 {
+	color: #FFFFFF;
+	display: inline-block;
+	width: 200rpx;
+	height: 100rpx;
+	position: absolute;
+	top: 250rpx;
+	left: 42%;
+}
+
+.page_title {
+	margin-top: 10rpx;
+	overflow: hidden;
+	/* height: 70rpx; */
+	line-height: 1.4em;
+	-webkit-line-clamp: 2;
+	font-weight: bold;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+}
+
+.page_des {
+	font-size: 22rpx;
+	color: #969696;
+	overflow: hidden;
+	/* height: 70rpx; */
+	margin-top: 20rpx;
+	line-height: 1.4em;
+	-webkit-line-clamp: 2;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+}
+
+.play_tu3 {
+	display: inline-block;
+	width: 160rpx;
+	height: 60rpx;
+	line-height: 60rpx;
+	position: absolute;
+	top: calc(50% - 15px);
+	left: calc(50% - 40px);
+	color: #FFFFFF;
+	border: 2rpx solid #FFFFFF;
+	text-align: center;
+}
+
+.play_tu4 {
+	position: absolute;
+	align-items: center;
+	text-align: center;
+	height: 50rpx;
+
+	width: 160rpx;
+
+}
+
+
+/* 滑动页 */
+.course-info-tab {
+	height: 100rpx;
+	border-bottom: 10rpx solid #FAFAFA;
+}
+
+.c-info-tabbar {
+	margin-left: 80rpx !important;
+	margin-right: 80rpx !important;
+}
+
+/* 滑动内容页面 */
+.swiper-box {
+	width: 96%;
+	margin: 0 auto;
+}
+
+.course_tag {
+	display: inline-block;
+	width: 100rpx;
+	height: 30rpx;
+	line-height: 30rpx;
+	text-align: center;
+	border: 2rpx solid #969696;
+	border-radius: 8rpx;
+	margin-left: 10rpx;
+	font-size: smaller;
+	color: #969696;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.course_tag_image {
+	/* #ifdef H5 */
+	margin-top: 15rpx;
+	/* #endif */
+
+	/* #ifndef H5 */
+	margin-top: 13rpx;
+	/* #endif */
+	display: inline-block;
+	width: 100rpx;
+	height: 30rpx;
+}
+
+/* 课程标签 */
+/* .course_tag {
+		margin-left: 10rpx;
+	} */
+
+.rmb_icon {
+	color: #FF1B20;
+}
+
+.free {
+	color: #38DAA6;
+	font-size: small;
+	display: inline-block;
+	height: 100%;
+	line-height: 60rpx;
+}
+
+.pass {
+	color: #4385FF;
+}
+
+.price-wrap-new {
+	font-size: small;
+	color: #FF1B20;
+	display: inline-block;
+	height: 60rpx;
+	line-height: 60rpx;
+	/* width: 100rpx; */
+	/* margin-left: 200rpx; */
+}
+
+.price-wrap {
+	font-size: small;
+	color: #FF1B20;
+	display: inline-block;
+	height: 60rpx;
+	line-height: 60rpx;
+	/* width: 100rpx; */
+	/* margin-left: 200rpx; */
+}
+
+.title_des {
+	display: flex;
+	flex-direction: column;
+}
+
+.price-time-stunum .mianfei {
+	color: #38DAA6 !important;
+}
+
+/* 价格时间学习人数 */
+.price-time-stunum {
+	height: 60rpx;
+}
+
+.jiaocai-image-taocan {
+	width: 20rpx;
+	height: 20rpx;
+	margin-top: 13rpx;
+	margin-left: 10rpx;
+}
+
+.jiaocai-text-taocan {
+	color: #64D3AD;
+	font-size: 10px;
+	margin-top: 5rpx;
+	margin-left: 5rpx;
+}
+
+.jiaocai-image {
+	margin-left: -40rpx;
+	width: 20rpx;
+	height: 20rpx;
+	position: absolute;
+	margin-top: 23rpx;
+}
+
+.jiaocai-text {
+	color: #64D3AD;
+	font-size: 10px;
+	/* margin-top: 2rpx; */
+	margin-left: -15rpx;
+}
+
+.time-wrap {
+	text-align: center;
+	display: inline-block;
+	width: 250rpx;
+	height: 100%;
+	line-height: 60rpx;
+	margin-left: 150rpx;
+	font-size: small;
+	color: #969696;
+}
+
+.stunum-wrap {
+	text-align: right;
+	line-height: 60rpx;
+	position: absolute;
+	right: 20rpx;
+	left: 10rpx;
+	font-size: small;
+	color: #969696;
+}
+
+.about-teacher-wrap {
+	margin-top: 10rpx;
+	height: 210rpx;
+}
+
+.ateacher-list {
+	width: 100%;
+	margin: 30rpx auto 0;
+}
+
+.about-title {
+	font-size: 27rpx;
+	font-weight: bold;
+	margin-top: 20rpx;
+}
+
+.ateacher-item {
+	height: 100rpx;
+	width: 50%;
+	float: left;
+}
+
+.ateacher-img {
+	width: 100rpx;
+	height: 100%;
+	border-radius: 50%;
+	float: left;
+}
+
+.ateacher-info {
+	float: left;
+	height: 100%;
+}
+
+.at-info-item {
+	display: block;
+	margin-left: 20rpx;
+	font-size: 17rpx;
+	color: #969696;
+	margin-top: 10rpx;
+}
+
+/* 老师名 */
+.at-info-name {
+	font-size: 26rpx;
+	color: #000000;
+}
+
+.teacher-arow {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding-left: 50rpx;
+}
+
+.des {
+	width: 96%;
+	margin-left: 0rpx;
+	color: #969696;
+}
+
+/* 直播介绍内容 */
+.alive-info {
+	width: 100%;
+	margin-top: 30rpx;
+	color: #969696;
+}
+
+
+
+/* 进入直播按钮 */
+.inlive-btn {
+	width: 90%;
+	height: 70rpx;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 70rpx;
+	font-size: 28rpx;
+	color: #FFFFFF;
+	border-radius: 8rpx;
+	position: fixed;
+	bottom: 10rpx;
+	left: calc(4.8%);
+	background-color: #38DAA6;
+}
+
+.extension-zhe-content-type-li-img {
+	width: 80rpx;
+	height: 80rpx;
+}
+
+.extension-zhe-content-type-li-text {
+	font-size: 26rpx;
+}
+
+.extension-zhe-content-type-li {
+	flex: 1;
+	text-align: center;
+}
+
+.extension-zhe-content-type {
+	display: flex;
+	width: 100%;
+	margin-top: 40rpx;
+}
+
+.extension-zhe-content-tips-img {
+	float: right;
+	width: 56rpx;
+	height: 56rpx;
+	position: absolute;
+	right: 18rpx;
+}
+
+.extension-zhe-content-tips {
+	text-align: center;
+	margin-top: 20rpx;
+	font-size: 30rpx;
+}
+
+.shixue {
+	position: absolute;
+	right: 20rpx;
+	bottom: 220rpx;
+	width: 80rpx;
+	height: 80rpx;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	border: 1rpx solid #F5F5F5;
+}
+
+.shixue_image {
+	width: 30rpx;
+	height: 30rpx;
+	margin-top: 15rpx;
+	margin-left: 25rpx;
+	background-color: #FFFFFFF;
+}
+
+.shixue_text {
+	color: #38DAA6;
+	font-size: 17rpx;
+	text-align: center;
+	width: 100%;
+	height: 20rpx;
+	margin-top: -15rpx;
+	background-color: #FFFFFFF;
+}
+
+.extension-zhe {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.extension-zhe-content {
+	position: absolute;
+	background: #fff;
+	width: 100%;
+	height: 300rpx;
+	bottom: 0;
+	border-radius: 10rpx 10rpx 0 0;
+	clear: both;
+	overflow: hidden;
+}

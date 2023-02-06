@@ -1,0 +1,10 @@
+---------------------------------------------------------------
+
+[2022-09-27T10:29:59+08:00] 27.201.199.9 GET edudemo.sdwanyue.com/student/lessionlist/index
+[运行时间：0.014118s] [吞吐率：70.83req/s] [内存消耗：1,060.54kb] [文件加载：107]
+[ error ] [8]未定义变量: classList[/www/wwwroot/edudemo.sdwanyue.com/data/runtime/temp/77cf0fba818208b1e4fbba87894bb0b3.php:364]
+---------------------------------------------------------------
+
+[2022-09-27T10:31:25+08:00] 27.201.199.9 GET edudemo.sdwanyue.com/student/lessionlist/index
+[运行时间：0.014016s] [吞吐率：71.35req/s] [内存消耗：1,062.19kb] [文件加载：107]
+[ error ] [8]未定义变量: classList[/www/wwwroot/edudemo.sdwanyue.com/data/runtime/temp/77cf0fba818208b1e4fbba87894bb0b3.php:364]

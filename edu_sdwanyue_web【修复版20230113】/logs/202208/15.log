@@ -1,0 +1,15 @@
+---------------------------------------------------------------
+
+[2022-08-15T03:26:14+08:00] 207.46.13.202 GET edudemo.sdwanyue.com/student/press/read/id/14.html
+[运行时间：0.009958s] [吞吐率：100.42req/s] [内存消耗：772.00kb] [文件加载：93]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]
+---------------------------------------------------------------
+
+[2022-08-15T09:18:11+08:00] 61.151.207.117 GET edudemo.sdwanyue.com/student/Login/loginbypass
+[运行时间：0.009238s] [吞吐率：108.25req/s] [内存消耗：742.68kb] [文件加载：91]
+[ error ] [8]未定义数组索引: name[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/LoginController.php:170]
+---------------------------------------------------------------
+
+[2022-08-15T14:27:43+08:00] 123.119.234.219 GET edudemo.sdwanyue.com/portal/admin_article/edit/id/null
+[运行时间：0.011394s] [吞吐率：87.77req/s] [内存消耗：825.91kb] [文件加载：101]
+[ error ] [0]致命错误: Call to a member function categories() on null[/www/wwwroot/edudemo.sdwanyue.com/app/portal/controller/AdminArticleController.php:195]

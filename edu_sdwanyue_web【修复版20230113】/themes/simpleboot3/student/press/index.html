@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{$site_info.site_name|default=''}</title>
+    <include file="public@head"/>
+    <include file="student/public@head"/>
+    <link href="__STATIC__/layui/css/layui.css" rel="stylesheet" type="text/css">
+    <link href="__STATIC__/student/css/press/index.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<include file="student/public@header"/>
+<include file="student/public@grade"/>
+<include file="student/public@login"/>
+
+<div class="container_v2 press_list">
+    <div class="main">
+        <div class="title">
+            <span>新闻咨询</span>
+        </div>
+
+        <div class="list">
+            <volist name="newsList" id="value">
+                <a class="item" href="{:url('student/Press/read',['id'=>$value.id])}">
+                    <div class="left">
+                        <div class="img" style="background-image: url({$value.thumb})">
+
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="top">
+                            <span>{$value.title}</span>
+                        </div>
+                        <div class="middle">
+                            <span>{$value.add_time}</span>
+
+                            <span style="display: none;">
+                                <img src="/static/student/images/common/hits.png" alt="">
+                                <span>0</span>
+
+                            </span>
+
+                            <span style="display: none;">
+                                <img src="/static/student/images/common/zan.png" alt="">
+                                <span>0</span>
+                            </span>
+                        </div>
+                        <div class="bottom">
+                            <span>
+                                {$value.des}
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </volist>
+
+            <a class="page">
+                {$newsList->render()}
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<include file="student/public@footer"/>
+<include file="student/public@scripts"/>
+</body>
+<script src="__STATIC__/student/js/press/index.js"></script>
+</html>

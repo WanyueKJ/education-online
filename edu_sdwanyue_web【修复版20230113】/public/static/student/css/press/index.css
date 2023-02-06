@@ -1,0 +1,155 @@
+.press_list {
+
+}
+
+span {
+    display: inline-block;
+}
+
+.press_list > .main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.press_list > .main > .title {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.press_list > .main > .title > span {
+    font-size: 40px;
+    font-weight: 700;
+    color: #323232;
+    display: inline-block;
+}
+
+.press_list > .main > .list {
+    margin-bottom: 25px;
+}
+
+.press_list > .main > .list > .item {
+    display: flex;
+    display: -webkit-flex;
+    background-color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.press_list > .main > .list > .item > .left {
+    width: 400px;
+    height: 230px;
+}
+
+.press_list > .main > .list > .item > .left > .img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.press_list > .main > .list > .item > .right {
+    padding: 0 25px;
+    width: calc(100% - 450px);
+    box-shadow: 3px 5px 10px 5px #ececec;
+}
+
+.press_list > .main > .list > .item > .right > .top {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.press_list > .main > .list > .item > .right > .top > span {
+    line-height: 60px;
+}
+
+.press_list > .main > .list > .item > .right > .middle {
+    font-size: 16px;
+    font-weight: 500;
+    color: #9e9e9e;
+}
+
+.press_list > .main > .list > .item > .right > .middle > span {
+    margin-right: 25px;
+}
+
+.press_list > .main > .list > .item > .right > .middle > span {
+    display: inline-block;
+}
+
+.press_list > .main > .list > .item > .right > .middle > span > img {
+    vertical-align: -1px;
+}
+
+.press_list > .main > .list > .item > .right > .bottom {
+    font-size: 18px;
+    font-weight: 400;
+    color: #a4a4a4;
+    line-height: 27px;
+}
+
+.press_list > .main > .list > .item > .right > .bottom > span {
+    margin-top: 25px;
+}
+
+.page {
+    text-align: center;
+}
+
+.layui-laypage .layui-laypage-curr .layui-laypage-em {
+    background-color: #38DAA6;
+}
+
+.layui-laypage a {
+    margin: 0 5px;
+}
+
+.layui-laypage a, .layui-laypage span {
+    margin: 0 5px;
+}
+
+
+.press_read {
+
+padding-top: 80px;
+
+min-height: calc( 100% - 380px );
+}
+
+.press_read > .main {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.press_read > .main > .title {
+    font-size: 27px;
+    font-weight: 700;
+    color: #323232;
+    text-align: center;
+}
+
+.press_read > .main > .other {
+    text-align: center;
+    font-size: 16px;
+    margin: 25px 0;
+}
+
+.press_read > .main > .other > span {
+    margin: 0 10px;
+}
+
+.press_read > .main > .other span {
+    display: inline-block;
+    color: #CAC9CB;
+}
+
+.click_like {
+    cursor: pointer;
+}
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}

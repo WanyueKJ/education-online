@@ -1,0 +1,15 @@
+---------------------------------------------------------------
+
+[2022-11-25T05:15:30+08:00] 202.189.7.99 GET edudemo.sdwanyue.com:443/
+[运行时间：0.008779s] [吞吐率：113.91req/s] [内存消耗：778.40kb] [文件加载：103]
+[ error ] [2]session_start(): The session id is too long or contains illegal characters, valid characters are a-z, A-Z, 0-9 and '-,'[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/Session.php:534]
+---------------------------------------------------------------
+
+[2022-11-25T15:43:38+08:00] 40.77.167.16 GET edudemo.sdwanyue.com/student/press/read/id/5.html
+[运行时间：0.016324s] [吞吐率：61.26req/s] [内存消耗：815.73kb] [文件加载：103]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]
+---------------------------------------------------------------
+
+[2022-11-25T16:25:28+08:00] 207.46.13.82 GET edudemo.sdwanyue.com/student/press/read/id/10.html
+[运行时间：0.009989s] [吞吐率：100.11req/s] [内存消耗：814.23kb] [文件加载：103]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]

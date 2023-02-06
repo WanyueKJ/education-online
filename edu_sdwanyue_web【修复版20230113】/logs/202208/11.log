@@ -1,0 +1,10 @@
+---------------------------------------------------------------
+
+[2022-08-11T09:52:33+08:00] 106.34.149.100 POST edudemo.sdwanyue.com/student/Login/loginbypass
+[运行时间：0.005406s] [吞吐率：184.98req/s] [内存消耗：764.24kb] [文件加载：91]
+[ error ] [8]未定义数组索引: name[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/LoginController.php:170]
+---------------------------------------------------------------
+
+[2022-08-11T09:55:05+08:00] 106.34.149.100 POST edudemo.sdwanyue.com/student/Login/loginbypass
+[运行时间：0.005436s] [吞吐率：183.96req/s] [内存消耗：765.45kb] [文件加载：91]
+[ error ] [8]未定义数组索引: name[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/LoginController.php:170]

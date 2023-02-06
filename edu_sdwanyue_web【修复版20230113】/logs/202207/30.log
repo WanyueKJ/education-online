@@ -1,0 +1,20 @@
+---------------------------------------------------------------
+
+[2022-07-30T19:34:12+08:00] 40.77.189.14 GET edudemo.sdwanyue.com/student/Lessionlist/ChooseNj
+[运行时间：0.008541s] [吞吐率：117.08req/s] [内存消耗：756.91kb] [文件加载：93]
+[ error ] [8]未定义数组索引: njid[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/LessionlistController.php:141]
+---------------------------------------------------------------
+
+[2022-07-30T19:42:45+08:00] 40.77.167.11 GET edudemo.sdwanyue.com/student/press/read/id/9.html
+[运行时间：0.009301s] [吞吐率：107.51req/s] [内存消耗：762.71kb] [文件加载：93]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]
+---------------------------------------------------------------
+
+[2022-07-30T22:03:28+08:00] 171.15.166.112 GET edudemo.sdwanyue.com/admin/main/dealanalysis.html
+[运行时间：0.068642s] [吞吐率：14.57req/s] [内存消耗：1,283.70kb] [文件加载：96]
+[ error ] [2]rmdir(/www/wwwroot/edudemo.sdwanyue.com/data/runtime/cache/30): No such file or directory[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkcmf/cmf-extend/src/dir/Dir.php:461]
+---------------------------------------------------------------
+
+[2022-07-30T22:37:11+08:00] 185.191.171.40 GET edudemo.sdwanyue.com/student/press/read/id/14.html
+[运行时间：0.011980s] [吞吐率：83.47req/s] [内存消耗：762.95kb] [文件加载：93]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]

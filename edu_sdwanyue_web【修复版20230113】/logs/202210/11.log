@@ -1,0 +1,20 @@
+---------------------------------------------------------------
+
+[2022-10-11T09:34:46+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.008215s] [吞吐率：121.73req/s] [内存消耗：481.46kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-11T09:34:52+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.002415s] [吞吐率：414.05req/s] [内存消耗：481.47kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-11T09:34:53+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.003313s] [吞吐率：301.84req/s] [内存消耗：481.47kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-11T20:09:53+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/student/press/read/id/18.html
+[运行时间：0.013395s] [吞吐率：74.65req/s] [内存消耗：810.57kb] [文件加载：103]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]

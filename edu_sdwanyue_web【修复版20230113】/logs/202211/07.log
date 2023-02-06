@@ -1,0 +1,85 @@
+---------------------------------------------------------------
+
+[2022-11-07T00:38:30+08:00] 49.74.121.123 POST edudemo.sdwanyue.com/admin/coursegrade/addpost.html
+[运行时间：0.033331s] [吞吐率：30.00req/s] [内存消耗：775.44kb] [文件加载：93]
+[ error ] [0]MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.[/www/wwwroot/edudemo.sdwanyue.com/app/redis.php:37]
+---------------------------------------------------------------
+
+[2022-11-07T01:19:23+08:00] 120.235.231.50 POST edudemo.sdwanyue.com/teacher/login/loginbypass
+[运行时间：0.028089s] [吞吐率：35.60req/s] [内存消耗：843.60kb] [文件加载：106]
+[ error ] [0]MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.[/www/wwwroot/edudemo.sdwanyue.com/app/redis.php:37]
+---------------------------------------------------------------
+
+[2022-11-07T01:19:46+08:00] 120.235.231.50 POST edudemo.sdwanyue.com/teacher/login/loginbypass
+[运行时间：0.022860s] [吞吐率：43.74req/s] [内存消耗：843.62kb] [文件加载：106]
+[ error ] [0]MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.[/www/wwwroot/edudemo.sdwanyue.com/app/redis.php:37]
+---------------------------------------------------------------
+
+[2022-11-07T01:19:49+08:00] 120.235.231.50 POST edudemo.sdwanyue.com/teacher/login/loginbypass
+[运行时间：0.022857s] [吞吐率：43.75req/s] [内存消耗：843.59kb] [文件加载：106]
+[ error ] [0]MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.[/www/wwwroot/edudemo.sdwanyue.com/app/redis.php:37]
+---------------------------------------------------------------
+
+[2022-11-07T02:05:57+08:00] 120.231.13.83 POST edudemo.sdwanyue.com/teacher/login/loginbypass
+[运行时间：0.025990s] [吞吐率：38.48req/s] [内存消耗：843.60kb] [文件加载：106]
+[ error ] [0]MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.[/www/wwwroot/edudemo.sdwanyue.com/app/redis.php:37]
+---------------------------------------------------------------
+
+[2022-11-07T02:05:58+08:00] 120.231.13.83 POST edudemo.sdwanyue.com/teacher/login/loginbypass
+[运行时间：0.021971s] [吞吐率：45.51req/s] [内存消耗：843.60kb] [文件加载：106]
+[ error ] [0]MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.[/www/wwwroot/edudemo.sdwanyue.com/app/redis.php:37]
+---------------------------------------------------------------
+
+[2022-11-07T09:46:10+08:00] 113.246.209.11 POST edudemo.sdwanyue.com/student/Login/loginbypass
+[运行时间：0.029393s] [吞吐率：34.02req/s] [内存消耗：843.05kb] [文件加载：99]
+[ error ] [0]MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.[/www/wwwroot/edudemo.sdwanyue.com/app/redis.php:37]
+---------------------------------------------------------------
+
+[2022-11-07T09:46:10+08:00] 113.246.209.11 POST edudemo.sdwanyue.com/student/Login/loginbypass
+[运行时间：0.029441s] [吞吐率：33.97req/s] [内存消耗：842.98kb] [文件加载：99]
+[ error ] [0]MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.[/www/wwwroot/edudemo.sdwanyue.com/app/redis.php:37]
+---------------------------------------------------------------
+
+[2022-11-07T09:46:10+08:00] 113.246.209.11 POST edudemo.sdwanyue.com/student/Login/loginbypass
+[运行时间：0.030053s] [吞吐率：33.27req/s] [内存消耗：843.02kb] [文件加载：99]
+[ error ] [0]MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.[/www/wwwroot/edudemo.sdwanyue.com/app/redis.php:37]
+---------------------------------------------------------------
+
+[2022-11-07T09:46:10+08:00] 113.246.209.11 POST edudemo.sdwanyue.com/student/Login/loginbypass
+[运行时间：0.030625s] [吞吐率：32.65req/s] [内存消耗：842.97kb] [文件加载：99]
+[ error ] [0]MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.[/www/wwwroot/edudemo.sdwanyue.com/app/redis.php:37]
+---------------------------------------------------------------
+
+[2022-11-07T09:46:15+08:00] 113.246.209.11 POST edudemo.sdwanyue.com/student/Login/loginbypass
+[运行时间：0.026957s] [吞吐率：37.10req/s] [内存消耗：843.03kb] [文件加载：99]
+[ error ] [0]MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.[/www/wwwroot/edudemo.sdwanyue.com/app/redis.php:37]
+---------------------------------------------------------------
+
+[2022-11-07T09:46:16+08:00] 113.246.209.11 POST edudemo.sdwanyue.com/student/Login/loginbypass
+[运行时间：0.023849s] [吞吐率：41.93req/s] [内存消耗：843.05kb] [文件加载：99]
+[ error ] [0]MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.[/www/wwwroot/edudemo.sdwanyue.com/app/redis.php:37]
+---------------------------------------------------------------
+
+[2022-11-07T09:46:16+08:00] 113.246.209.11 POST edudemo.sdwanyue.com/student/Login/loginbypass
+[运行时间：0.042891s] [吞吐率：23.31req/s] [内存消耗：843.00kb] [文件加载：99]
+[ error ] [0]MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.[/www/wwwroot/edudemo.sdwanyue.com/app/redis.php:37]
+---------------------------------------------------------------
+
+[2022-11-07T09:46:24+08:00] 113.246.209.11 POST edudemo.sdwanyue.com/teacher/login/loginbypass
+[运行时间：0.030081s] [吞吐率：33.24req/s] [内存消耗：843.55kb] [文件加载：106]
+[ error ] [0]MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.[/www/wwwroot/edudemo.sdwanyue.com/app/redis.php:37]
+---------------------------------------------------------------
+
+[2022-11-07T09:46:26+08:00] 113.246.209.11 POST edudemo.sdwanyue.com/teacher/login/loginbypass
+[运行时间：0.035724s] [吞吐率：27.99req/s] [内存消耗：843.55kb] [文件加载：106]
+[ error ] [0]MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.[/www/wwwroot/edudemo.sdwanyue.com/app/redis.php:37]
+---------------------------------------------------------------
+
+[2022-11-07T09:46:36+08:00] 113.246.209.11 POST edudemo.sdwanyue.com/teacher/login/loginbypass
+[运行时间：0.028332s] [吞吐率：35.30req/s] [内存消耗：843.55kb] [文件加载：106]
+[ error ] [0]MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.[/www/wwwroot/edudemo.sdwanyue.com/app/redis.php:37]
+---------------------------------------------------------------
+
+[2022-11-07T09:46:37+08:00] 113.246.209.11 POST edudemo.sdwanyue.com/teacher/login/loginbypass
+[运行时间：0.025862s] [吞吐率：38.67req/s] [内存消耗：843.60kb] [文件加载：106]
+[ error ] [0]MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.[/www/wwwroot/edudemo.sdwanyue.com/app/redis.php:37]

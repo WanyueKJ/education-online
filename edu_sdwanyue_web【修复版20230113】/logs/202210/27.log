@@ -1,0 +1,5 @@
+---------------------------------------------------------------
+
+[2022-10-27T13:32:13+08:00] 14.106.225.43 POST edudemo.sdwanyue.com/portal/admin_article/addpost.html
+[运行时间：0.127338s] [吞吐率：7.85req/s] [内存消耗：1,213.98kb] [文件加载：129]
+[ error ] [2]DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 2[/www/wwwroot/edudemo.sdwanyue.com/vendor/electrolinux/phpquery/phpQuery/phpQuery/DOMDocumentWrapper.php:200]

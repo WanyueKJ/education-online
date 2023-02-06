@@ -1,0 +1,35 @@
+---------------------------------------------------------------
+
+[2022-07-27T06:39:35+08:00] 116.179.32.198 GET edudemo.sdwanyue.com/student/press/read/id/16.html
+[运行时间：0.010714s] [吞吐率：93.34req/s] [内存消耗：745.16kb] [文件加载：93]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]
+---------------------------------------------------------------
+
+[2022-07-27T06:46:49+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/student/press/read/id/16.html
+[运行时间：0.008633s] [吞吐率：115.83req/s] [内存消耗：745.84kb] [文件加载：93]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]
+---------------------------------------------------------------
+
+[2022-07-27T07:12:11+08:00] 185.191.171.3 GET edudemo.sdwanyue.com/student/press/read/id/9.html
+[运行时间：0.009142s] [吞吐率：109.38req/s] [内存消耗：745.19kb] [文件加载：93]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]
+---------------------------------------------------------------
+
+[2022-07-27T10:01:12+08:00] 40.77.167.11 GET edudemo.sdwanyue.com/student/press/read/id/9.html
+[运行时间：0.009118s] [吞吐率：109.67req/s] [内存消耗：745.48kb] [文件加载：93]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]
+---------------------------------------------------------------
+
+[2022-07-27T10:27:16+08:00] 207.46.13.202 GET edudemo.sdwanyue.com/student/press/read/id/17.html
+[运行时间：0.008887s] [吞吐率：112.52req/s] [内存消耗：745.50kb] [文件加载：93]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]
+---------------------------------------------------------------
+
+[2022-07-27T21:11:22+08:00] 207.46.13.4 GET edudemo.sdwanyue.com/student/press/read/id/11.html
+[运行时间：0.009132s] [吞吐率：109.51req/s] [内存消耗：746.21kb] [文件加载：93]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]
+---------------------------------------------------------------
+
+[2022-07-27T21:42:57+08:00] 175.11.217.136 GET edudemo.sdwanyue.com/student/Login/loginbypass
+[运行时间：0.005728s] [吞吐率：174.58req/s] [内存消耗：801.70kb] [文件加载：98]
+[ error ] [8]未定义数组索引: name[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/LoginController.php:170]

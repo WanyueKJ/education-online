@@ -1,0 +1,1020 @@
+2022-11-06 22:12:19|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:20|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:21|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:21|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:21|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:21|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:22|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:22|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:25|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:25|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:26|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:26|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:26|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:27|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:27|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:29|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:29|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:30|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:30|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:30|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:30|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:31|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:31|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:31|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:31|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:31|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:32|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:32|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:32|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:32|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:33|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:33|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:35|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_27')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_27')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13800000000', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:43|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:43|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:44|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:12:48|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_13866666666', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_13866666666', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:12:49|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_13866666666', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_13866666666', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:12:49|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_13866666666', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_13866666666', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:12:50|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_13866666666', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_13866666666', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:12:50|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_13866666666', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_13866666666', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:12:50|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_13866666666', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_13866666666', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:12:50|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_13866666666', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_13866666666', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:12:51|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_13866666666', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_13866666666', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:12:55|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_13866666666', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_13866666666', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:12:56|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_13866666666', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_13866666666', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:12:56|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_13866666666', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_13866666666', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:13:24|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_13607475785', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_13607475785', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:16:04|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:16:05|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:16:06|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:16:17|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_13600000000', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_13600000000', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:16:49|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_13607475785', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_13607475785', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:17:00|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:01|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:01|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:01|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:01|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:02|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:02|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:02|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:02|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:03|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:03|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:03|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:03|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:03|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:04|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:04|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:04|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:04|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:04|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:05|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:05|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:05|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:05|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:05|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:06|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:06|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:06|ERROR|App.Login.Login|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:62
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(62): Redis->del('userinfo_1')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(188): App\delcache('userinfo_1')
+#2 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Domain/Login.php(56): App\Domain\Login->handleInfo(Array)
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(327): App\Domain\Login->login('13866666666', '123456')
+#4 [internal function]: App\Api\Login->login()
+#5 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#6 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2022-11-06 22:17:25|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_13866666666', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_13866666666', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:17:26|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_13866666666', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_13866666666', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:17:26|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_13866666666', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_13866666666', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:17:46|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_13607475785', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_13607475785', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:06|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:07|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:07|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:08|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:08|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:10|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:10|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:11|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:11|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:11|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:11|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:11|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:12|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:12|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:12|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:12|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:12|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:13|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:13|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:13|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:13|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:14|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:14|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:14|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_15711449029', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_15711449029', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:22:33|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_13600000000', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_13600000000', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:26:49|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_13607475785', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_13607475785', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
+2022-11-06 22:28:34|ERROR|App.Login.GetCode|RedisException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. in /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php:40
+Stack trace:
+#0 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/redis.php(40): Redis->set('sms_13607475785', '{"login_account...')
+#1 /www/wwwroot/edudemo.sdwanyue.com/phalapi/src/app/Api/Login.php(283): App\setcaches('sms_13607475785', Array, 360)
+#2 [internal function]: App\Api\Login->getCode()
+#3 /www/wwwroot/edudemo.sdwanyue.com/phalapi/vendor/phalapi/kernal/src/PhalApi.php(53): call_user_func(Array)
+#4 /www/wwwroot/edudemo.sdwanyue.com/public/api/index.php(9): PhalApi\PhalApi->response()
+#5 {main}
