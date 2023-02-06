@@ -1,0 +1,79 @@
+<include file="public@header"/>
+<style>
+    html{background-color:#fff;}
+</style>
+</head>
+<body>
+<div class="layui-card-body js-check-wrap">
+    <form action="{:url('hook/pluginListOrder')}" method="post" class="js-ajax-form">
+        <php>
+            $types = ["1"=>'系统钩子','2'=>'应用钩子','3'=>'模板钩子','4'=>'后台模板钩子'];
+            $status=array("1"=>'开启',"0"=>'禁用',"3"=>'未安装');
+        </php>
+        <div class="table-actions">
+            <button type="submit" class="layui-btn layui-btn-sm js-ajax-submit">{:lang('SORT')}</button>
+        </div>
+        <table class="layui-table" lay-even lay-skin="nob" lay-size="lg">
+            <colgroup>
+                <col width="100">
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col width="150">
+            </colgroup>
+            <thead>
+            <tr>
+                <th>排序</th>
+                <th>插件名称</th>
+                <th>插件标识</th>
+                <th>钩子</th>
+                <th>描述</th>
+                <th>作者</th>
+                <th>状态</th>
+                <th>{:lang('ACTIONS')}</th>
+            </tr>
+            </thead>
+            <tbody>
+            <foreach name="plugins" item="vo">
+                <tr>
+                    <td><input name="list_orders[{$vo.hook_plugin_id}]" type="text" size="3" value="{$vo.list_order}"
+                               class="input input-order"></td>
+                    <td>{$vo.title}</td>
+                    <td>{$vo.name}</td>
+                    <td>{$vo.hooks|default=''}</td>
+                    <td>{$vo.description}</td>
+                    <td>{$vo.author}</td>
+                    <td>{$status[$vo['hook_plugin_status']]}</td>
+                    <td>
+                        <if condition="$vo['status']==3">
+                            <a href="{:url('plugin/install',array('name'=>$vo['name']))}" class="nobtn js-ajax-dialog-btn"
+                               data-msg="确定安装该插件吗？">安装</a>
+                            <else/>
+                            <div class="new-divider new-divider-vertical"></div>
+                            <php>$config=json_decode($vo['config'],true);</php>
+                            <if condition="!empty($config)">
+                                <a class="nobtn" href="{:url('plugin/setting',array('id'=>$vo['id']))}">设置</a> |
+                                <else/>
+                                <a class="nobtn disabled" href="javascript:;">设置</a> |
+                            </if>
+                            <div class="new-divider new-divider-vertical"></div>
+                            <if condition="!empty($vo['has_admin'])">
+                                <a class="nobtn" href="javascript:parent.openapp('{:cmf_plugin_url($vo['name'].'://AdminIndex/index')}','plugin_{$vo.name}','{$vo.title}')">管理</a>|
+                                <else/>
+                                <a class="nobtn disabled" href="javascript:;">管理</a>
+                            </if>
+
+                        </if>
+                    </td>
+                </tr>
+            </foreach>
+            </tbody>
+        </table>
+    </form>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>

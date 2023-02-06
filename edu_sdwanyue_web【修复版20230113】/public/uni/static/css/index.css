@@ -1,0 +1,110 @@
+
+/************* 首页样式 ***********/
+
+/* 总包装 */
+	.index-all-wrap {
+		width: 94%;
+		margin: 0 auto;
+	}
+	
+	.check_class {
+		width: 150rpx;	
+		display: inline-block;
+		margin-right: -20rpx;
+	}
+	
+	.gouwuche {
+		display: inline-block;	
+		margin-left: 15rpx;
+	}
+	
+	/* 首页轮播图 */
+	.index-banner-wrap {
+		width: 100%;
+		height: 220rpx;
+		margin: 0 auto;
+	}
+	/* .index-banner-wrap .check_class {
+		width: 100%;
+		height: 310rpx;
+		margin: 0 auto;
+	}
+	 */
+	
+	.index-banner image {
+		width: 100%;
+		height: 100%;
+		border-radius: 12rpx;
+	}
+	
+	
+	/* 课程标签 */
+	.index-course-wrap {
+		height: 185rpx;	
+		padding-top: 25rpx;
+		padding-left: 4rpx;
+		/* #ifdef APP-PLUS */
+		margin-top: 20rpx;
+		/* #endif */
+	}
+	
+	.scroll-view_H {
+		width: 100%;
+	    white-space:nowrap;
+	}
+	
+	/deep/.uni-scroll-view::-webkit-scrollbar {
+		/* 隐藏滚动条，但依旧具备可以滚动的功能 */
+		display: none
+	}
+	
+	.course-item {
+		width: 100rpx;
+		height: 184rpx;
+		margin-right: 48rpx;
+		display: inline-block;
+	}
+	
+	.course-item:last-child {
+		margin-right: 0;
+	}
+	
+	.course-item image {
+		display: block;
+		width: 100%;
+		height: 89rpx;
+		border-radius: 50%;
+	}
+	
+	.course-item text {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.listline{
+		width: 100%;
+		height: 2rpx;
+		background-color: #F5F5F5;
+		
+	}
+	/* 课程列表外包装 */
+	.course-list-wrap .course-wrap {
+		width: 98%;
+		/* margin: 20rpx auto 100rpx; */
+		/* padding: 20rpx 0; */
+		padding-top: 20rpx;
+		/* box-shadow: 0rpx 0rpx 4rpx 2rpx rgba(0, 0, 0, 0.1); */
+		border-radius: 10rpx;
+		
+	}
+	
+	.course-list-wrap .course-wrap .live-list:last-child {
+		margin-bottom: 0;
+		
+	}
+	
+	
+	
+	
+	
+	

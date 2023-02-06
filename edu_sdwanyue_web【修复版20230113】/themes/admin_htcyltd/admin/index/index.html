@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <meta charset="utf-8">
+    <title>{$configpub['site_name']} {:lang('ADMIN_CENTER')}</title>
+    <meta name="description" content="This is page-header (.page-header &gt; h1)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- HTML5 shim for IE8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    <link href="__STATIC__/font-awesome/css/font-awesome.min.css?page=index" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="__TMPL__/public/layuiadmin/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="__TMPL__/public/layuiadmin/style/admin.css" media="all">
+    <link rel="stylesheet" href="__TMPL__/public/layuiadmin/layui/css/icon.css">
+    <script>
+        //全局变量
+        var GV = {
+            HOST: "{$_SERVER['HTTP_HOST']|default=''}",
+            ROOT: "__ROOT__/",
+            WEB_ROOT: "__WEB_ROOT__/",
+            JS_ROOT: "static/js/"
+        };
+    </script>
+
+
+
+    <php>$submenus=$menus;</php>
+    <php>function getsubmenu($submenus){</php>
+    <notempty name="submenus">
+        <php>foreach($submenus as $menu){</php>
+        <li data-name="{$menu.icon|default='component'}" class="layui-nav-item">
+            <php>
+                $menu_name=lang($menu['lang']);
+                $menu_name=$menu['lang']==$menu_name?$menu['name']:$menu_name;
+            </php>
+            <php>if(empty($menu['items'])){</php>
+            <a lay-href="{$menu.url}" lay-tips="{$menu_name}" lay-direction="2">
+                <i class="layui-icon {$menu.icon|default='component'}"></i>
+                <cite>{$menu_name}</cite>
+            </a>
+            <php>}else{</php>
+            <a href="javascript:;" lay-tips="{$menu_name}" lay-direction="2">
+                <i class="layui-icon {$menu.icon|default='component'}"></i>
+                <cite>{$menu_name}</cite>
+            </a>
+            <dl class="layui-nav-child">
+                <php>getsubmenu1($menu['items'])</php>
+            </dl>
+            <php>}</php>
+        </li>
+        <php>}</php>
+    </notempty>
+    <php>}</php>
+    <php>function getsubmenu1($submenus){</php>
+    <php>foreach($submenus as $menu){</php>
+    <php>
+        $menu_name=lang($menu['lang']);
+        $menu_name=$menu['lang']==$menu_name?$menu['name']:$menu_name;
+    </php>
+    <php>if(empty($menu['items'])){</php>
+    <dd data-name="{$menu_name}">
+        <a lay-href="{$menu.url}" id="{$menu.id}" title="{$menu_name}">{$menu_name}</a>
+    </dd>
+    <php>}else{</php>
+    <dd data-name="{$menu_name}">
+        <a href="javascript:;" id="{$menu.id}" title="{$menu_name}">{$menu_name}</a>
+        <dl class="layui-nav-child">
+            <php>getsubmenu2($menu['items'])</php>
+        </dl>
+    </dd>
+    <php>}</php>
+    <php>}}</php>
+    <php>function getsubmenu2($submenus){foreach($submenus as $menu){</php>
+    <php>
+        $menu_name=lang($menu['lang']);
+        $menu_name=$menu['lang']==$menu_name?$menu['name']:$menu_name;
+    </php>
+    <dd data-name="{$menu_name}"><a lay-href="{$menu.url}" id="{$menu.id}" title="{$menu_name}">{$menu_name}</a></dd>
+    <php>}}</php>
+
+    <style>
+        .layui-side-menu .layui-nav .layui-nav-item a{
+            padding-left: 40px;
+            padding-right: 0;
+        }
+        .layui-side-menu .layui-nav{
+            width: 170px;
+        }
+        .layui-side-menu .layui-side-scroll{
+            width: 170px;
+
+        }
+        .layui-layout-admin .layui-logo{
+            width: 170px;
+        }
+
+    </style>
+
+</head>
+<body class="layui-layout-body">
+<div id="LAY_app">
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+            <!-- 头部区域 -->
+            <ul class="layui-nav layui-layout-left">
+                <li class="layui-nav-item layadmin-flexible" lay-unselect>
+                    <a href="javascript:;" layadmin-event="flexible" title="侧边伸缩">
+                        <i class="layui-icon layui-icon-shrink-right" id="LAY_app_flexible"></i>
+                    </a>
+                </li>
+                <li class="layui-nav-item layui-hide-xs" lay-unselect>
+                    <a href="__ROOT__/" target="_blank" title="{:lang('WEBSITE_HOME_PAGE')}">
+                        <i class="layui-icon layui-icon-website"></i>
+                    </a>
+                </li>
+                <li class="layui-nav-item" lay-unselect>
+                    <a href="javascript:;" layadmin-event="refresh" title="刷新">
+                        <i class="layui-icon layui-icon-refresh-3"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right" lay-filter="layadmin-layout-right">
+
+                <li class="layui-nav-item" lay-tips="回收站" lay-direction="3" lay-unselect>
+                    <if condition="cmf_auth_check(cmf_get_current_admin_id(),'admin/RecycleBin/index')">
+                        <a lay-href="{:url('admin/RecycleBin/index')}" layadmin-event="index_recycle" lay-text="回收站">
+                            <i class="layui-icon layui-icon-delete"></i>
+                        </a>
+                    </if>
+                </li>
+                <li class="layui-nav-item" lay-tips="{:lang('ADMIN_MENU_INDEX')}" lay-direction="3" lay-unselect>
+                    <if condition="APP_DEBUG">
+                        <a lay-href="{:url('admin/Menu/index')}" layadmin-event="index_menu" lay-text="{:lang('ADMIN_MENU_INDEX')}">
+                            <i class="icon-icon layui-icon-md-crop"></i>
+                        </a>
+                    </if>
+                </li>
+                <li class="layui-nav-item" lay-tips="{:lang('ADMIN_SETTING_CLEARCACHE')}" lay-direction="3" lay-unselect>
+                    <if condition="cmf_auth_check(cmf_get_current_admin_id(),'admin/Setting/clearcache')">
+                        <a href="javascript:admin.openIframeLayer('{:url('admin/Setting/clearcache')}','清除缓存',{skin: 'layer-ext',area:['300px','100px'],end:function(){location.reload();}});" layadmin-event="{:lang('ADMIN_SETTING_CLEARCACHE')}" lay-text="{:lang('ADMIN_SETTING_CLEARCACHE')}">
+                            <i class="layui-icon layui-icon-align-left"></i>
+                        </a>
+                    </if>
+                </li>
+                <li class="layui-nav-item" lay-tips="资源管理" lay-direction="3" lay-unselect>
+                    <if condition="cmf_auth_check(cmf_get_current_admin_id(),'user/AdminAsset/index')">
+                        <a lay-href="{:url('user/AdminAsset/index')}" layadmin-event="userAdminAssetindex" lay-text="资源管理"">
+                        <i class="layui-icon layui-icon-file"></i>
+                        </a>
+                    </if>
+                </li>
+
+                <li class="layui-nav-item layui-hide-xs" lay-unselect>
+                    <a href="javascript:;" layadmin-event="fullscreen">
+                        <i class="layui-icon layui-icon-screen-full"></i>
+                    </a>
+                </li>
+                <li class="layui-nav-item" lay-unselect style="margin-right:10px;">
+                    <a href="javascript:;">
+                        <if condition="isset($admin['avatar']) && $admin['avatar']">
+                            <img class="nav-user-photo" width="30" height="30" src="{:cmf_get_user_avatar_url($admin['avatar'])}" alt="{$admin.user_login}" class="layui-circle">
+                            <else />
+                            <img class="layui-circle" width="30" height="30" src="__TMPL__/public/layuiadmin/layui/images/tx.jpg" alt="{$admin.user_login|default=''}">
+                        </if>
+                        <cite>{:lang('WELCOME_USER',array('user_nickname' => empty($admin['user_nickname'] )? $admin['user_login'] : $admin['user_nickname']))}</cite>
+                    </a>
+                    <dl style="min-width:auto;" class="layui-nav-child">
+                        <dd><a lay-href="{:url('setting/site')}">{:lang('ADMIN_SETTING_SITE')}</a></dd>
+                        <dd><a lay-href="{:url('user/userinfo')}">{:lang('ADMIN_USER_USERINFO')}</a></dd>
+                        <dd><a lay-href="{:url('setting/password')}">{:lang('ADMIN_SETTING_PASSWORD')}</a></dd>
+                        <hr>
+                        <dd style="text-align: center;"><a href="{:url('Public/logout')}">{:lang('LOGOUT')}</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item layui-hide-xs" lay-unselect="">
+                    <a href="javascript:;" layadmin-event="theme">
+                        <i class="layui-icon layui-icon-more-vertical"></i></a>
+                </li>
+            </ul>
+        </div>
+        <!-- 侧边菜单 -->
+        <div class="layui-side layui-side-menu">
+            <div class="layui-side-scroll">
+                <div class="layui-logo" lay-href="{:url('admin/Main/index')}">
+                    <a href="{:url('admin/index/index')}"><span>{$configpub['site_name']}</span></a>
+                </div>
+                <ul class="layui-nav layui-nav-tree arrow3" lay-shrink="all" id="LAY-system-side-menu" lay-filter="layadmin-system-side-menu">
+                    {:getsubmenu($submenus)}
+                </ul>
+            </div>
+        </div>
+        <!-- 页面标签 -->
+        <div class="layadmin-pagetabs" id="LAY_app_tabs">
+            <div class="layui-icon layadmin-tabs-control layui-icon-prev" layadmin-event="leftPage"></div>
+            <div class="layui-icon layadmin-tabs-control layui-icon-next" layadmin-event="rightPage"></div>
+            <div class="layui-icon layadmin-tabs-control layui-icon-down layadmin-tabs-control-bg">
+                <ul class="layui-nav layadmin-tabs-select " lay-filter="layadmin-pagetabs-nav">
+                    <li class="layui-nav-item" lay-unselect>
+                        <a href="javascript:;"></a>
+                        <dl class="layui-nav-child layui-anim-fadein ">
+                            <dd layadmin-event="closeThisTabs"><a href="javascript:;">关闭当前标签页</a></dd>
+                            <dd layadmin-event="closeOtherTabs"><a href="javascript:;">关闭其它标签页</a></dd>
+                            <dd layadmin-event="closeAllTabs"><a href="javascript:;">关闭全部标签页</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="layui-tab" lay-unauto lay-allowClose="true" lay-filter="layadmin-layout-tabs">
+                <ul class="layui-tab-title" id="LAY_app_tabsheader">
+                    <li lay-id="{:url('admin/Main/index')}" lay-attr="{:url('admin/Main/index')}" class="layui-this"><i class="layui-icon layui-icon-home"></i></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 主体内容 -->
+        <div class="layui-body" id="LAY_app_body">
+            <div class="layadmin-tabsbody-item layui-show">
+                <iframe src="{:url('admin/Main/index')}" frameborder="0" class="layadmin-iframe"></iframe>
+            </div>
+        </div>
+        <!-- 辅助元素，一般用于移动设备下遮罩 -->
+        <div class="layadmin-body-shade" layadmin-event="shade"></div>
+    </div>
+</div>
+
+<script src="__TMPL__/public/layuiadmin/layui/layui.js"></script>
+<script src="__TMPL__/public/assets/js/jquery-1.10.2.min.js"></script>
+<script src="__TMPL__/public/assets/js/bootstrap.min.js"></script>
+<script src="__STATIC__/js/admin.js"></script>
+<script src="__TMPL__/public/assets/simpleboot3/js/adminindex.js"></script>
+
+<script>
+    layui.config({
+        base: '__TMPL__/public/layuiadmin/' //静态资源所在路径
+    }).extend({
+        index: 'lib/index' //主入口模块
+    }).use('index');
+</script>
+
+</body>
+</html>

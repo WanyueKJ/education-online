@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="my_html">
+<head>
+    <meta charset="UTF-8">
+    <title>{$site_info.site_name|default=''}</title>
+
+    <link rel="stylesheet" href="__STATIC__/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__STATIC__/student/css/mine/index.css">
+    <include file="public@head"/>
+    <include file="student/public@head"/>
+
+</head>
+<body class="my_body">
+
+<include file="student/public@header"/>
+<include file="student/public@grade"/>
+<include file="student/public@login"/>
+
+<div class="my_container">
+    <include file="student/mine/public@left"/>
+
+
+    <div class="my_right">
+        <div class="my_right_top">
+            <div class="my_right_title">已购买</div>
+        </div>
+        <div class="my_right_button">
+
+
+            <div class="my_content kc">
+                <div class="packs">
+                    <ul>
+                        <volist name="$lists" id="item">
+                            <li>
+                                <if condition="$item.sort eq 0">
+                                    <a href="/student/detail/substance?id={$item.id}">
+                                        <div class="content">
+                                            <div class="top"
+                                                style="background: url({$item.thumb}) no-repeat;background-size: cover;">
+                                                <div class="tip">内容</div>
+                                            </div>
+                                            <div class="title">{$item.name}</div>
+                                            <div class="information">
+                                                <text class="text1">{$item.lesson}</text>
+                                            </div>
+                                            <div class="bottom">
+                                                <img class="img1" src="{$item.avatar}">
+                                                <span>{$item.user_nickname}</span>
+                                                <if condition="$item.paytype eq 0">
+                                                    <text class="mian">免费</text>
+                                                </if>
+                                                <if condition="$item.paytype eq 1">
+                                                    <text class="money">已付费</text>
+                                                </if>
+                                                <if condition="$item.paytype eq 2">
+                                                    <text class="mi">密码</text>
+                                                </if>  
+                                            </div>
+                                        </div>
+                                    </a>
+                                <elseif condition="$item.sort eq 1"/>
+                                    <a href="/student/detail/class?id={$item.id}">
+                                        <div class="content">
+                                            <div class="top"
+                                                style="background: url({$item.thumb}) no-repeat;background-size: cover;">
+                                                <div class="tip">课程</div>
+                                            </div>
+                                            <div class="title">{$item.name}</div>
+                                            <div class="information">
+                                                <text class="text1">{$item.lesson}</text>
+                                            </div>
+                                            <div class="bottom">
+                                                <img class="img1" src="{$item.avatar}">
+                                                <span>{$item.user_nickname}</span>
+                                                <if condition="$item.paytype eq 0">
+                                                    <text class="mian">免费</text>
+                                                </if>
+                                                <if condition="$item.paytype eq 1">
+                                                    <text class="money">已付费</text>
+                                                </if>
+                                                <if condition="$item.paytype eq 2">
+                                                    <text class="mi">密码</text>
+                                                </if>  
+                                            </div>
+                                        </div>
+                                    </a>
+                                <else/>
+                                    <a href="/student/detail/live?id={$item.id}">
+                                        <div class="content">
+                                            <div class="top"
+                                                style="background: url({$item.thumb}) no-repeat;background-size: cover;">
+                                                <div class="tip">直播</div>
+                                            </div>
+                                            <div class="title">{$item.name}</div>
+                                            <div class="information">
+                                                <text class="text1">{$item.lesson}</text>
+                                            </div>
+                                            <div class="bottom">
+                                                <img class="img1" src="{$item.avatar}">
+                                                <span>{$item.user_nickname}</span>
+                                                <if condition="$item.paytype eq 0">
+                                                    <text class="mian">免费</text>
+                                                </if>
+                                                <if condition="$item.paytype eq 1">
+                                                    <text class="money">已付费</text>
+                                                </if>
+                                                <if condition="$item.paytype eq 2">
+                                                    <text class="mi">密码</text>
+                                                </if>  
+                                            </div>
+                                        </div>
+                                    </a>
+                                </if>
+                            </li>
+                        </volist>
+                    </ul>
+
+                    <if condition="$isMore eq 1">
+                        <div class="look_more"><a style="color:#9e9a9a" href="javacript:void(0);">查看更多...</a></div>
+                    </if>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<include file="student/public@footer"/>
+<include file="student/public@scripts"/>
+
+<script>
+    var page = 1;//全部页码
+</script>
+
+<script src="__STATIC__/student/js/mine/index.js"></script>
+
+</body>
+</html>

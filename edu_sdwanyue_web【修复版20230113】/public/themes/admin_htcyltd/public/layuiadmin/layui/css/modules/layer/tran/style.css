@@ -1,0 +1,5 @@
+/*透明皮肤*/
+body .layer-ext-yourskin .layui-layer-title{display: none;}
+body .layui-layer{background-color: transparent !important;box-shadow:none;}
+body .layui-layer-iframe{background-color: transparent !important;box-shadow:none;border-radius: 6px;box-shadow: 0 4px 12px rgba(0,0,0,.15);}
+body .layer-ext-yourskin .layui-layer-setwin{display: none;}

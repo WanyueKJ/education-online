@@ -1,0 +1,68 @@
+<link href="__STATIC__/layui/css/layui.css" rel="stylesheet" type="text/css">
+<link href="__STATIC__/teacher/css/question.css?t=1598586067" rel="stylesheet" type="text/css">
+
+<div class="question_select">
+    <div class="question_select_t">
+        <span>题目选择</span>
+        <span class="question_select_close"></span>
+    </div>
+    <div class="question_select_b">
+        <div class="question_select_btn" data-type="0">上传题目</div>
+        <div class="question_select_btn" data-type="1">题库选题</div>
+    </div>
+</div>
+<div class="question_show">
+    <div class="question_show_bd hidescroll">
+        <ul>
+        </ul>
+    </div>
+</div>
+
+<div class="question">
+    <div class="question_bd">
+        <div class="question_t">
+            <span>添加题目</span>
+            <span class="question_t_close"></span>
+        </div>
+        <div class="question_m">
+            <div class="question_m_l">
+                <div class="question_total">所有题目  <span>0</span></div>
+                <div class="question_c_l hidescroll">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="question_m_r">
+                <div class="question_m_t">
+                    <select id="q_type">
+                        <option value="">全部题型</option>
+                        <option value="0">判断</option>
+                        <option value="1">单选</option>
+                        <option value="2">定项多选</option>
+                        <option value="5">不定项多选</option>
+                        <option value="4">填空</option>
+                        <option value="3">简答</option>
+                    </select>
+                    <input id="q_name" placeholder="搜索题目名称">
+                    <span class="q_search"></span>
+                </div>
+                <div class="question_m_m hidescroll">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="question_m_b">
+                    <div class="checkall">
+                        <input type="checkbox" name="checkall" value="1" id="checkall">
+                        <label for="checkall"></label> 全选
+                    </div>
+                    <div class="q_page" id="q_page"></div>
+                </div>
+            </div>
+        </div>
+        <div class="question_b">
+            <span id="js_q_add">确认选择</span>
+        </div>
+    </div>
+</div>
+<script src="__STATIC__/layui/layui.js"></script>
+<script src="__STATIC__/teacher/js/question.js?t=1598691542"></script>

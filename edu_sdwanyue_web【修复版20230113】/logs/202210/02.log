@@ -1,0 +1,10 @@
+---------------------------------------------------------------
+
+[2022-10-02T14:39:43+08:00] 40.77.189.215 GET edudemo.sdwanyue.com/student/Lessionlist/ChooseNj
+[运行时间：0.010138s] [吞吐率：98.64req/s] [内存消耗：797.59kb] [文件加载：103]
+[ error ] [8]未定义数组索引: njid[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/LessionlistController.php:141]
+---------------------------------------------------------------
+
+[2022-10-02T20:40:15+08:00] 27.115.124.38 GET edudemo.sdwanyue.com/student/detail/class
+[运行时间：0.011529s] [吞吐率：86.74req/s] [内存消耗：797.79kb] [文件加载：103]
+[ error ] [8]未定义数组索引: id[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/DetailController.php:71]

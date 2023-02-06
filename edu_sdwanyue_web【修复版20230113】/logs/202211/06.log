@@ -1,0 +1,40 @@
+---------------------------------------------------------------
+
+[2022-11-06T04:10:00+08:00] 180.101.244.15 GET edudemo.sdwanyue.com/student/Lessionlist/ChooseNj
+[运行时间：0.010909s] [吞吐率：91.67req/s] [内存消耗：799.20kb] [文件加载：103]
+[ error ] [8]未定义数组索引: njid[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/LessionlistController.php:141]
+---------------------------------------------------------------
+
+[2022-11-06T04:10:16+08:00] 59.83.208.103 GET edudemo.sdwanyue.com/student/Lessionlist/ChooseNj
+[运行时间：0.010785s] [吞吐率：92.72req/s] [内存消耗：799.21kb] [文件加载：103]
+[ error ] [8]未定义数组索引: njid[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/LessionlistController.php:141]
+---------------------------------------------------------------
+
+[2022-11-06T04:11:06+08:00] 220.196.160.101 GET edudemo.sdwanyue.com/student/Lessionlist/ChooseNj
+[运行时间：0.010855s] [吞吐率：92.12req/s] [内存消耗：799.21kb] [文件加载：103]
+[ error ] [8]未定义数组索引: njid[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/LessionlistController.php:141]
+---------------------------------------------------------------
+
+[2022-11-06T04:12:23+08:00] 180.101.245.246 GET edudemo.sdwanyue.com/student/Lessionlist/ChooseNj
+[运行时间：0.010374s] [吞吐率：96.40req/s] [内存消耗：799.21kb] [文件加载：103]
+[ error ] [8]未定义数组索引: njid[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/LessionlistController.php:141]
+---------------------------------------------------------------
+
+[2022-11-06T04:15:25+08:00] 180.101.244.11 GET edudemo.sdwanyue.com/student/Lessionlist/ChooseNj
+[运行时间：0.011307s] [吞吐率：88.44req/s] [内存消耗：799.21kb] [文件加载：103]
+[ error ] [8]未定义数组索引: njid[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/LessionlistController.php:141]
+---------------------------------------------------------------
+
+[2022-11-06T04:15:37+08:00] 180.101.244.14 GET edudemo.sdwanyue.com/student/Lessionlist/ChooseNj
+[运行时间：0.011190s] [吞吐率：89.37req/s] [内存消耗：799.21kb] [文件加载：103]
+[ error ] [8]未定义数组索引: njid[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/LessionlistController.php:141]
+---------------------------------------------------------------
+
+[2022-11-06T04:18:39+08:00] 180.101.245.248 GET edudemo.sdwanyue.com/student/Lessionlist/ChooseNj
+[运行时间：0.010254s] [吞吐率：97.52req/s] [内存消耗：799.21kb] [文件加载：103]
+[ error ] [8]未定义数组索引: njid[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/LessionlistController.php:141]
+---------------------------------------------------------------
+
+[2022-11-06T22:32:37+08:00] 118.81.184.5 POST edudemo.sdwanyue.com/student/Login/loginbypass
+[运行时间：0.027911s] [吞吐率：35.83req/s] [内存消耗：844.11kb] [文件加载：99]
+[ error ] [0]MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.[/www/wwwroot/edudemo.sdwanyue.com/app/redis.php:37]

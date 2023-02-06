@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$site_info.site_name|default=''}</title>
+    <include file="public@head"/>
+    <include file="teacher/public@head"/>
+    <link href="__STATIC__/teacher/css/account.css?t=1587548987" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="t_contain">
+        <include file="teacher/public@header"/>
+        <div class="t_contain_bd">
+            <include file="teacher/public@left_menu"/>
+            <div class="t_right">
+                <div class="a_bd">
+                    <div class="a_bd_t">账号详情</div>
+                    <div class="a_bd_c">
+                        <div class="a_bd_c_t">个人信息</div>
+                        <div class="a_bd_c_line">
+                            <div class="a_bd_c_line_l">头像</div>
+                            <div class="a_bd_c_line_c"><img src="{$userinfo['avatar']}" id="js_avatar"></div>
+                            <div class="a_bd_c_line_r"><span id="js_m_avatar">更换</span></div>
+                        </div>
+                        <div class="a_bd_c_line">
+                            <div class="a_bd_c_line_l">昵称</div>
+                            <div class="a_bd_c_line_c">{$userinfo['user_nickname']}</div>
+                            <div class="a_bd_c_line_r"><span id="js_m_name">修改</span></div>
+                        </div>
+                        <!-- <div class="a_bd_c_line">
+                            <div class="a_bd_c_line_l">手机号</div>
+                            <div class="a_bd_c_line_c">{$userinfo['mobile']}</div>
+                            <div class="a_bd_c_line_r"><span id="js_m_mobile">修改</span></div>
+                        </div>
+                        <div class="a_bd_c_line">
+                            <div class="a_bd_c_line_l">密码</div>
+                            <div class="a_bd_c_line_c">************</div>
+                            <div class="a_bd_c_line_r"><span id="js_m_pass">修改密码</span></div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="upload" style="display:none;"></div>
+    </div>
+    <include file="teacher/public@footer"/>
+    <include file="teacher/public@scripts"/>
+    <script src="__STATIC__/teacher/js/account.js?t=1587548987"></script>
+</body>
+</html>

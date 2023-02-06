@@ -1,0 +1,15 @@
+---------------------------------------------------------------
+
+[2022-08-16T00:42:04+08:00] 124.223.175.160 GET edudemo.sdwanyue.com/A/t/tpl/admin.html
+[运行时间：0.024374s] [吞吐率：41.03req/s] [内存消耗：843.59kb] [文件加载：96]
+[ error ] [0]模板文件不存在:/www/wwwroot/edudemo.sdwanyue.com/themes/simpleboot3/portal/list.html[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/view/driver/Think.php:86]
+---------------------------------------------------------------
+
+[2022-08-16T21:36:20+08:00] 207.46.13.91 GET edudemo.sdwanyue.com/student/press/read/id/7.html
+[运行时间：0.008694s] [吞吐率：115.02req/s] [内存消耗：770.38kb] [文件加载：93]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]
+---------------------------------------------------------------
+
+[2022-08-16T21:47:14+08:00] 207.46.13.91 GET edudemo.sdwanyue.com/student/press/read/id/7.html
+[运行时间：0.009894s] [吞吐率：101.07req/s] [内存消耗：772.87kb] [文件加载：93]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]

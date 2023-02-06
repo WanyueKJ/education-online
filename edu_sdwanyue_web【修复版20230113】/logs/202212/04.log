@@ -1,0 +1,10 @@
+---------------------------------------------------------------
+
+[2022-12-04T00:15:13+08:00] 66.249.79.193 GET edudemo.sdwanyue.com/student/press/read/id/7.html
+[运行时间：0.012145s] [吞吐率：82.34req/s] [内存消耗：822.55kb] [文件加载：103]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]
+---------------------------------------------------------------
+
+[2022-12-04T05:12:31+08:00] 40.77.167.11 GET edudemo.sdwanyue.com/student/press/read/id/24.html
+[运行时间：0.011758s] [吞吐率：85.05req/s] [内存消耗：822.39kb] [文件加载：103]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]

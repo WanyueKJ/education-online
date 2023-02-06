@@ -1,0 +1,171 @@
+<include file="public@header"/>
+
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+<META HTTP-EQUIV="expires" CONTENT="0">
+
+<link rel="stylesheet" href="__STATIC__/css/iconfont.css">
+<link rel="stylesheet" href="__STATIC__/css/main.css">
+<link rel="stylesheet" href="__TMPL__/public/assets/css/animation.css">
+
+<style type="text/css">
+    .bd_deal_echarts {
+        width: 50%;
+        float: left;
+    }
+
+    .wrapper-info:after {
+        content: '';
+        display: block;
+        width: 0px;
+        height: 0px;
+        clear: left;
+    }
+
+    .right_table {
+        width: 48%;
+        float: left;
+    }
+
+    .right_table table {
+        width: 100%;
+    }
+
+    .right_table table tr td,
+    .right_table table tr th {
+        color: #969696;
+        text-align: right;
+    }
+
+    .right_table table tr th {
+        color: #000000;
+    }
+
+    .right_table table tr td:nth-child(1) {
+        text-align: left;
+    }
+
+</style>
+
+
+</head>
+
+<!--交易分析-->
+<body>
+<div class="wrap">
+
+    <div class="statistics basic">
+        <div class="bd">
+            <div class="bd_title">
+                <div class="dropdown">
+                    <div class="dropdown_list">
+                        <ul class="layui-nav" id="tabHeader">
+                            <li data-type="1" class="layui-nav-item">
+                                <a href="{:url('admin/main/dataview')}">数据概况</a>
+                            </li>
+                            <li data-type="2" class="layui-nav-item <if condition="$focus_flag == 'deal_anal'">focus_li</if>"  >
+                                <a href="{:url('admin/main/dealanalysis')}">交易分析</a>
+                            </li>
+                            <li data-type="3" class="layui-nav-item">
+                                <a href="{:url('admin/main/goodsanalysis')}">商品分析</a>
+                            </li>
+                            <li data-type="4" class="layui-nav-item">
+                                <a href="{:url('admin/main/index')}">用户分析</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="data_select">
+                    <h4>交易构成</h4>
+                    <div id="search-date">
+                        <span class="iconfont icon-riqi"></span>
+                        <input id="range-input" type="text" name="range"
+                               value="{:date('Y-m-d',time())}">
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper-info clear">
+
+                <!--左上方echarts统计区域 交易构成-->
+                <div class="bd_deal_echarts">
+                    <div class="echarts-wrap">
+                        <div id="echarts_basic" style="min-width:600px;height:300px;"></div>
+                    </div>
+
+                </div>
+
+                <!--右上方统计表格(老付费用户 新付费用户)-->
+                <div class="right_table clear">
+                    <table class="layui-table table table-hover table-bordered pay-users">
+                        <thead>
+                        <tr>
+                            <th align="center"></th>
+                            <th align="center">结算金额(元)</th>
+                            <th align="center">较前一月涨幅</th>
+                            <th align="center">用户数</th>
+                            <th align="center">较前一月涨幅</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>老付费用户</td>
+                                <td class="user-num-all">0</td>
+                                <td><span class="ratio-all">0</span>%</td>
+                                <td class="unit-price-all">0</td>
+                                <td><span class="settlement-rate-all">0</span>%</td>
+                            </tr>
+                            <tr>
+                                <td>新付费用户</td>
+                                <td class="user-num-new">0</td>
+                                <td><span class="ratio-new">0</span>%</td>
+                                <td class="unit-price-new">0</td>
+                                <td><span class="settlement-rate-new">0</span>%</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+
+
+            <!-- 订单金额分布echarts图-->
+            <div class="target">
+                <div class="data_select">
+                    <h4>订单金额分布</h4>
+                </div>
+                <div id="echarts_trade_no" style="min-width:300px;height:300px;"></div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<script src="__STATIC__/js/admin.js"></script>
+<script src="__STATIC__/js/echarts/echarts.min.js"></script>
+<script src="__STATIC__/js/deal_analysis.js"></script>
+<script>
+    window.onresize = () => {
+        let barchart2 = echarts.getInstanceByDom(document.getElementById('echarts_trade_no'));
+        barchart2.resize();
+
+        let barchart3 = echarts.getInstanceByDom(document.getElementById('echarts_basic'));
+        barchart3.resize();
+    }
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+

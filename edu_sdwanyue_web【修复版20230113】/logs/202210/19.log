@@ -1,0 +1,355 @@
+---------------------------------------------------------------
+
+[2022-10-19T07:24:53+08:00] 220.181.108.80 GET edudemo.sdwanyue.com/student/press/read/id/27.html
+[运行时间：0.029108s] [吞吐率：34.35req/s] [内存消耗：810.66kb] [文件加载：103]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]
+---------------------------------------------------------------
+
+[2022-10-19T11:02:13+08:00] 59.83.208.105 GET edudemo.sdwanyue.com/student/Lessionlist/ChooseNj
+[运行时间：0.033114s] [吞吐率：30.20req/s] [内存消耗：799.21kb] [文件加载：103]
+[ error ] [8]未定义数组索引: njid[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/LessionlistController.php:141]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:04+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.029410s] [吞吐率：34.00req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:04+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.031806s] [吞吐率：31.44req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:04+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.032952s] [吞吐率：30.35req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:04+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.002726s] [吞吐率：366.86req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:04+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.005628s] [吞吐率：177.69req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:04+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.017813s] [吞吐率：56.14req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.017499s] [吞吐率：57.15req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.020928s] [吞吐率：47.78req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.033107s] [吞吐率：30.21req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.015272s] [吞吐率：65.48req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.005408s] [吞吐率：184.91req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.011158s] [吞吐率：89.62req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.005105s] [吞吐率：195.89req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.017339s] [吞吐率：57.67req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.012709s] [吞吐率：78.69req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.023250s] [吞吐率：43.01req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.003881s] [吞吐率：257.67req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.009789s] [吞吐率：102.16req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.004233s] [吞吐率：236.23req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.011881s] [吞吐率：84.17req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.010030s] [吞吐率：99.70req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.003158s] [吞吐率：316.65req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.004684s] [吞吐率：213.48req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.009841s] [吞吐率：101.62req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.002907s] [吞吐率：343.99req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/sendCourse
+[运行时间：0.003392s] [吞吐率：294.81req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.002124s] [吞吐率：470.79req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.002128s] [吞吐率：469.95req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.004881s] [吞吐率：204.88req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.003608s] [吞吐率：277.16req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.002713s] [吞吐率：368.60req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.007166s] [吞吐率：139.55req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.010266s] [吞吐率：97.41req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.004208s] [吞吐率：237.64req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.010111s] [吞吐率：98.90req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.005780s] [吞吐率：173.01req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.014251s] [吞吐率：70.17req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.029227s] [吞吐率：34.21req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.002886s] [吞吐率：346.49req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.015688s] [吞吐率：63.74req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.008218s] [吞吐率：121.68req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.022668s] [吞吐率：44.11req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.005153s] [吞吐率：194.05req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/sendCourse
+[运行时间：0.008714s] [吞吐率：114.76req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.027104s] [吞吐率：36.90req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.002089s] [吞吐率：478.69req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.005254s] [吞吐率：190.33req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:07+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.002088s] [吞吐率：478.97req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:08+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.002619s] [吞吐率：381.82req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:09+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.001798s] [吞吐率：556.20req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:18+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.002241s] [吞吐率：446.25req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:22+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.002522s] [吞吐率：396.51req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:23+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.005584s] [吞吐率：179.08req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:27+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.001938s] [吞吐率：516.03req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:28+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.002013s] [吞吐率：496.78req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:30+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.004267s] [吞吐率：234.36req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:31+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.002542s] [吞吐率：393.43req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:32+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.002024s] [吞吐率：494.03req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:33+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.002562s] [吞吐率：390.31req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:34+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.002609s] [吞吐率：383.29req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:34+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.007138s] [吞吐率：140.09req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:35+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.002227s] [吞吐率：449.02req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:36+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.002307s] [吞吐率：433.47req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:38+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.002090s] [吞吐率：478.42req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:42+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.002069s] [吞吐率：483.33req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:43+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.002442s] [吞吐率：409.52req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:44+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.002763s] [吞吐率：361.92req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T16:49:44+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.003416s] [吞吐率：292.73req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-10-19T20:56:48+08:00] 116.179.32.81 GET edudemo.sdwanyue.com/student/press/read/id/29.html
+[运行时间：0.012676s] [吞吐率：78.89req/s] [内存消耗：803.77kb] [文件加载：103]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]

@@ -1,0 +1,195 @@
+/* 评价样式 */
+.pingjialine {
+	width: 100%;
+	height: 2rpx;
+	background-color: #F5F5F5;
+
+}
+.new_line{
+	background-color: #F5F5F5;
+	height: 1rpx;
+	width: 100%;
+}
+.pingjia-title {
+	font-size: small;
+	color: #64D3AD;
+	border: 2rpx solid #64D3AD;
+	border-radius: 25rpx;
+	width: 110rpx;
+	height: 40rpx;
+	position: absolute;
+	right: 20rpx;
+	text-align: center;
+	top: 10rpx;
+	padding-bottom: 5rpx;
+}
+
+.star-wrap {
+/* 	width: 100%;
+	float: right; */
+	
+	position: absolute;
+	
+	
+}
+
+.pingjia-star {
+	color: #E1E1E1;
+	margin-right: 12rpx;
+}
+
+.com-list-wrap {
+	margin-top: 20rpx;
+	color: #969696;
+	
+}
+.com-item-wrap{
+	height: auto;
+}
+.pingjia-all-star {
+	width: 100%;
+	
+}
+
+.score {
+	font-size: 26rpx;
+}
+
+/**清除浮动 **/
+.com-user-star {
+	display: flex;
+	align-items: center;
+	margin-top: 20rpx;
+	height: auto;
+	
+}
+
+.com-user-star::after {
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	clear: both;
+	visibility: hidden;
+
+}
+
+.com-user-avatar {
+	width: 86rpx;
+	height: 86rpx;
+	border-radius: 50%;
+
+}
+
+.com-user-nickname {
+	float: left;
+	width: 65%;
+	height: 100%;
+	margin-left: 14rpx;
+	white-space: nowrap;
+	color: #000000;
+	
+}
+
+.com-user-des{
+	float: left;
+	width: 65%;
+	height: auto;
+	margin-left: 14rpx;
+	white-space: nowrap;
+	font-size: smaller;
+	height: 60rpx;
+	line-height: 60rpx;
+	margin-top: -10rpx;
+}
+
+.checkstar {
+	color: #FFC822;
+}
+
+.com-time {
+	text-align: right;
+	position: absolute;
+	right: 20rpx;
+	margin-top: 25rpx;
+	font-size: smaller;
+}
+
+.com-content-kong {
+	padding-left: 12%;
+	margin-left: 20rpx;
+	margin-right: 10rpx;
+	height: 30rpx;
+	margin-top: -10rpx;
+}
+.com-content {
+	padding-left: 12%;
+	margin-left: 20rpx;
+	margin-right: 10rpx;
+	height: auto;
+	margin-top: -10rpx;
+}
+
+.new1 {
+	display: flex;
+	flex-direction: row;
+	height: auto;
+}
+.new2{
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	
+}
+
+.pinglun-icon2 {
+	width: 30rpx;
+	height: 30rpx;
+
+}
+
+.list-star-wrap {
+
+	width: 200rpx;	
+	position: absolute;
+	right: 10rpx;
+	float: right;
+	display: flex;
+	flex-direction: row-reverse;
+
+}
+
+/* 空空 */
+.kong-ping-txt {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 800rpx;
+	
+}
+
+.kong-info {
+	width: 200rpx;
+	height: 200rpx;
+	text-align: center;
+	margin-left: calc(50% - 50px);
+	margin-top: 100rpx;
+}
+
+.xiepingjia {
+	display: flex;
+	flex-direction: row;
+}
+
+.kong-ping-img {
+	width: 100rpx;
+	height: 100rpx;
+}
+
+.kong-ping-txt {
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #969696;
+	font-size: 18rpx;
+}

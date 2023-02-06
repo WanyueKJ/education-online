@@ -1,0 +1,15 @@
+---------------------------------------------------------------
+
+[2022-08-18T15:28:21+08:00] 27.201.199.9 GET edudemo.sdwanyue.com/student/lessionlist/index
+[运行时间：0.061190s] [吞吐率：16.34req/s] [内存消耗：1,049.30kb] [文件加载：107]
+[ error ] [8]未定义变量: lbid[/www/wwwroot/edudemo.sdwanyue.com/data/runtime/temp/77cf0fba818208b1e4fbba87894bb0b3.php:303]
+---------------------------------------------------------------
+
+[2022-08-18T15:42:50+08:00] 27.201.199.9 GET edudemo.sdwanyue.com/student/lessionlist/index
+[运行时间：0.011306s] [吞吐率：88.45req/s] [内存消耗：855.31kb] [文件加载：103]
+[ error ] [8]未定义变量: xdlist[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/LessionlistController.php:38]
+---------------------------------------------------------------
+
+[2022-08-18T21:28:57+08:00] 116.179.32.141 GET edudemo.sdwanyue.com/student/press/read/id/18.html
+[运行时间：0.010119s] [吞吐率：98.82req/s] [内存消耗：803.72kb] [文件加载：103]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]

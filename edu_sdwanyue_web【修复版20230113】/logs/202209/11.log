@@ -1,0 +1,25 @@
+---------------------------------------------------------------
+
+[2022-09-11T23:27:54+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：36.076228s] [吞吐率：0.03req/s] [内存消耗：792.34kb] [文件加载：100]
+[ error ] [2]PDO::prepare(): MySQL server has gone away[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:734]
+---------------------------------------------------------------
+
+[2022-09-11T23:27:54+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：36.088132s] [吞吐率：0.03req/s] [内存消耗：792.35kb] [文件加载：100]
+[ error ] [2]PDO::prepare(): MySQL server has gone away[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:734]
+---------------------------------------------------------------
+
+[2022-09-11T23:27:54+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.170505s] [吞吐率：5.86req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-09-11T23:28:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upLessonLive
+[运行时间：0.002573s] [吞吐率：388.69req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]
+---------------------------------------------------------------
+
+[2022-09-11T23:28:05+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/appapi/Handelcourse/upCourseLive
+[运行时间：0.001994s] [吞吐率：501.47req/s] [内存消耗：464.76kb] [文件加载：59]
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/www/wwwroot/edudemo.sdwanyue.com/vendor/thinkphp/library/think/db/Connection.php:528]

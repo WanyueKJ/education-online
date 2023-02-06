@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$site_info.site_name|default=''}</title>
+    <include file="public@head"/>
+    <include file="teacher/public@head"/>
+    <link href="__STATIC__/teacher/css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="t_contain">
+        <include file="teacher/public@header"/>
+        <div class="t_contain_bd">
+            <include file="teacher/public@left_menu"/>
+            <div class="t_right clearfix">
+                <div class="index_top">
+                    <div class="t_bd">
+                        <div class="t_bd_t">我的大班课</div>
+                        <div class="t_bd_d">{$live_nums}</div>
+                    </div>
+                </div>
+                <div class="index_bottom">
+                    <div class="index_left">
+                        <div class="i_l_t">常用功能</div>
+                        <div class="i_l_bd">
+                            <ul>
+                                <li>
+                                    <a href="/teacher/live/index">
+                                    <div class="li_img">
+                                        <img src="__STATIC__/teacher/images/index/live.png">
+                                    </div>
+                                    <div class="li_t">
+                                        我的大班课
+                                    </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="/home/article/detail">
+                                    <div class="li_img">
+                                        <img src="__STATIC__/teacher/images/index/help.png">
+                                    </div>
+                                    <div class="li_t">
+                                        帮助中心
+                                    </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="index_right">
+                        <div class="i_r_t">常见问题</div>
+                        <div class="i_r_list">
+                            <ul>
+                                <volist name="list" id="v">
+                                <li><a href="/home/article/detail?id={$v['id']}" target="_blank">{$v['post_title']}</a></li>
+                                </volist>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <include file="teacher/public@footer"/>
+    <include file="teacher/public@scripts"/>
+</body>
+</html>

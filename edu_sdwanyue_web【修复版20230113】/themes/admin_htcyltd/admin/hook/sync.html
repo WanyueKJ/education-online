@@ -1,0 +1,29 @@
+<include file="public@header"/>
+<style>
+    html{background-color:transparent;}
+</style>
+</head>
+<body>
+<script src="__STATIC__/js/admin.js"></script>
+<script src="__TMPL__/public/layuiadmin/layui/layui.js"></script>
+<script>
+    layui.use('layer', function(){
+        var layer = layui.layer;
+        layer.ready(function(){
+            layer.msg('<i class="layui-icon layui-icon-loading layui-icon layui-anim layui-anim-rotate layui-anim-loop"></i>  正在同步钩子...', {
+                time: 1500
+            }, function(){
+                layer.msg('<i class="layui-icon layui-icon-ok"></i>  同步成功');
+                time: 1500
+            });
+        });
+    });
+</script>
+<script>
+    var closeTimeout = setTimeout(function () {
+        var index = parent.layer.getFrameIndex(window.name);
+        parent.layer.close(index); //新增layer执行关闭
+    }, 4000);
+</script>
+</body>
+</html>

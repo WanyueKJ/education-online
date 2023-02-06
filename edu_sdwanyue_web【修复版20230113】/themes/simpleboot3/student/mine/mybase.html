@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="my_html">
+<head>
+    <meta charset="UTF-8">
+    <title>{$site_info.site_name|default=''}</title>
+
+    <link rel="stylesheet" href="__STATIC__/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__STATIC__/student/css/mine/index.css">
+    <include file="public@head"/>
+    <include file="student/public@head"/>
+
+</head>
+<body class="my_body">
+
+<include file="student/public@header"/>
+<include file="student/public@grade"/>
+<include file="student/public@login"/>
+
+<div class="my_container">
+    <include file="student/mine/public@left"/>
+
+
+    <div class="my_right">
+        <div class="my_right_top">
+            <div class="my_right_title">账号设置</div>
+        </div>
+        <div class="my_right_button">
+            <div class="usermess_tip">
+                <text>个人信息</text>
+                <div class="heng"></div>
+            </div>
+
+            <div class="usermess_info">
+                <div class="text">头像：</div>
+                <img class="chooseimg" src="__STATIC__/student/images/mine/image.png">
+                <div class="tips">上传真实头像有助于老师更快的记住你</div>
+            </div>
+            <div class="usermess_name">
+                <div class="text">昵称：</div>
+                <input name="user_nickname" class="inputname" value="{$baseinfo['user_nickname']}" placeholder="输入昵称" />
+            </div>
+
+            <button class="save">保存</button>
+        </div>
+
+        <div id="upload" style="display:none;"></div>
+    </div>
+</div>
+
+<include file="student/public@footer"/>
+<include file="student/public@scripts"/>
+
+<script>
+    var avatar = '';//头像地址
+    var user_nickname = "{$baseinfo['user_nickname']}";//昵称
+</script>
+
+<script src="__STATIC__/student/js/mine/index.js"></script>
+
+</body>
+</html>

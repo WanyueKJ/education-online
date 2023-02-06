@@ -1,0 +1,165 @@
+<include file="public@header"/>
+<link rel="stylesheet" type="text/css" href="__TMPL__/public/layuiadmin/tags/css/tags.css" />
+</head>
+<body>
+<div class="layui-fluid wrap js-check-wrap">
+    <div class="layui-row">
+        <div class="layui-page-header">
+            <div class="layui-card">
+                <div class="layui-page-header-content">
+                    <div class="layui-card-body">
+                        <div class="layui-ui-page-header-title" >
+                            {:lang('ADMIN_SETTING_UPLOAD')}<span class="layui-badge-rim page-content">设置网站的上传文件的格式及内存大小</span>
+                        </div>
+                    </div>
+                    <div class="layui-tab layui-tab-brief">
+                        <ul class="layui-tab-title">
+                            <li class="layui-this">{:lang('ADMIN_SETTING_UPLOAD')}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-page-content">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <form method="post" class="layui-form js-ajax-form" role="form" action="{:url('setting/uploadPost')}" wid110>
+                        <div class="layui-tab-content">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">最大同时上传文件数</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" class="layui-input" name="max_files" title="最大同时上传文件数" placeholder="最大同时上传文件数"
+                                           value="{$upload_setting.max_files|default=20}">
+                                </div>
+                                <div class="layui-form-mid layui-word-aux">多文件上传时,用户能最大同时上传文件数,默认20个</div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">文件分块上传分块大小</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" class="layui-input" name="chunk_size" title="文件分块上传分块大小KB,1M=1024KB"
+                                           placeholder="文件分块上传分块大小KB,1M=1024KB" value="{$upload_setting.chunk_size|default=512}">
+                                </div>
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block">
+                                        文件上传采用分块上传,文件分块大小默认512KB,可以根据服务器最大上传限制设置此数值
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">图片文件</label>
+                                <div class="layui-input-block">
+                                    <div class="layui-inline layui-col-md1">
+                                        <input type="text" class="layui-input" name="file_types[image][upload_max_filesize]"
+                                               title="允许上传大小KB,1M=1024KB" placeholder="允许上传大小KB,1M=1024KB"
+                                               value="{$upload_setting.file_types.image.upload_max_filesize|default=10240}">
+                                    </div>
+                                    <div class="layui-inline layui-col-md9">
+                                        <input type="text" class="layui-input js-tags-input"
+                                               name="file_types[image][extensions]"
+                                               title="扩展名,以英文逗号分隔"
+                                               placeholder="扩展名,以英文逗号分隔"
+                                               value="{$upload_setting.file_types.image.extensions|default='jpg,jpeg,png,gif,bmp'}">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block">
+                                        允许上传大小默认为10240KB,1M=1024KB，允许上传格式默认为jpg,jpeg,png,gif,bmp
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">视频文件</label>
+                                <div class="layui-input-block">
+                                    <div class="layui-inline layui-col-md1">
+                                        <input type="text" class="layui-input"
+                                               name="file_types[video][upload_max_filesize]"
+                                               title="允许上传大小KB,1M=1024KB"
+                                               placeholder="允许上传大小KB,1M=1024KB"
+                                               value="{$upload_setting.file_types.video.upload_max_filesize|default=10240}">
+                                    </div>
+                                    <div class="layui-inline layui-col-md9">
+                                        <input type="text" class="layui-input js-tags-input"
+                                               name="file_types[video][extensions]"
+                                               title="扩展名,以英文逗号分隔"
+                                               placeholder="扩展名,以英文逗号分隔"
+                                               value="{$upload_setting.file_types.video.extensions|default='mp4,avi,wmv,rm,rmvb,mkv'}">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block">
+                                        允许上传大小默认为102400KB,1M=1024KB，允许上传格式默认为mp4,avi,wmv,rm,rmvb,mkv
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">音频文件</label>
+                                <div class="layui-input-block">
+                                    <div class="layui-inline layui-col-md1">
+                                        <input type="text" class="layui-input"
+                                               name="file_types[audio][upload_max_filesize]"
+                                               title="允许上传大小KB,1M=1024KB"
+                                               placeholder="允许上传大小KB,1M=1024KB"
+                                               value="{$upload_setting.file_types.audio.upload_max_filesize|default=10240}">
+                                    </div>
+                                    <div class="layui-inline layui-col-md9">
+                                        <input type="text" class="layui-input js-tags-input"
+                                               name="file_types[audio][extensions]"
+                                               title="扩展名,以英文逗号分隔"
+                                               placeholder="扩展名,以英文逗号分隔"
+                                               value="{$upload_setting.file_types.audio.extensions|default='mp3,wma,wav'}">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block">
+                                        允许上传大小默认为10240KB,1M=1024KB，允许上传格式默认为mp3,wma,wav
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">附件</label>
+                                <div class="layui-input-block">
+                                    <div class="layui-inline layui-col-md1">
+                                        <input type="text" class="layui-input" name="file_types[file][upload_max_filesize]"
+                                               title="允许上传大小KB,1M=1024KB" placeholder="允许上传大小KB,1M=1024KB"
+                                               value="{$upload_setting.file_types.file.upload_max_filesize|default=10240}">
+                                    </div>
+                                    <div class="layui-inline layui-col-md9">
+                                        <input type="text" class="layui-input js-tags-input"
+                                               name="file_types[file][extensions]"
+                                               title="扩展名,以英文逗号分隔"
+                                               placeholder="扩展名,以英文逗号分隔"
+                                               value="{$upload_setting.file_types.file.extensions|default='txt,pdf,doc,docx,xls,xlsx,ppt,pptx,zip,rar'}">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block">
+                                        允许上传大小默认为10240KB,1M=1024KB，允许上传格式默认为除以上文档类型以外的其它常用文件,如：txt,pdf,doc,docx,xls,xlsx,ppt,pptx,zip,rar
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <div class="layui-input-block">
+                                    <button type="submit" class="layui-btn js-ajax-submit">{:lang('SAVE')}</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+<script src="__TMPL__/public/layuiadmin/tags/js/tags.js"></script>
+<script type="text/javascript">
+    // 标签
+    if($('.js-tags-input')[0]) {
+        $('.js-tags-input').tagsInput({
+            defaultText: '添加标签',
+            removeWithBackspace: true,
+            delimiter: [',']
+        });
+    }
+</script>
+</body>
+</html>

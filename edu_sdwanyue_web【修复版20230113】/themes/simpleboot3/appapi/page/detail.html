@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$page.post_title}</title>
+    <include file="appapi@head"/>
+    <link href="__STATIC__/appapi/css/page.css?t=1556176544" rel="stylesheet" type="text/css">
+</head>
+<body>
+     <!-- <div class="title"> -->
+        <!-- {$page.post_title} -->
+     <!-- </div> -->
+     
+     <div class="content">
+        {$page.post_content|default=''}
+     </div>
+     
+     <include file="appapi@footer"/>
+     <include file="appapi@scripts"/>
+</body>
+</html>

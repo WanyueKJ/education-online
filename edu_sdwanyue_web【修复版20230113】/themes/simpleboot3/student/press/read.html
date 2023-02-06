@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{$site_info.site_name|default=''}</title>
+    <include file="public@head"/>
+    <include file="student/public@head"/>
+    <link href="__STATIC__/student/css/press/index.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<include file="student/public@header"/>
+<include file="student/public@grade"/>
+<include file="student/public@login"/>
+
+
+<div class="container_v2 press_read">
+    <div class="main">
+        <div class="title">
+            <span>{$info.name}</span>
+        </div>
+        <div class="other">
+            <span style="display: none;">
+                <span>发布来源: </span>
+                <span>{$site_info.site_name|default=''}</span>
+            </span>
+
+            <span style="display: none;">
+                <span>时间: </span>
+                <span>{$info.add_time}</span>
+            </span>
+
+            <span style="display: none;">
+                <span>
+                    <img src="/static/student/images/common/hits.png" alt="">
+                </span>
+                <span>0</span>
+            </span>
+
+
+            <span class="click_like" style="display: none;">
+                <span>
+                    <img src="/static/student/images/common/zan.png" alt="">
+                </span>
+                <span class="number">0</span>
+            </span>
+
+            <input type="hidden" name="id" value="{$info.id}">
+
+        </div>
+
+        <div class="detail">
+            {$info.content}
+
+        </div>
+    </div>
+</div>
+
+
+<include file="student/public@footer"/>
+<include file="student/public@scripts"/>
+</body>
+<script src="__STATIC__/student/js/press/index.js"></script>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "domain",
+  "main": "index.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/leogiese/domain",
+  "authors": [
+    "leogiese <leogiese0@gmail.com>"
+  ],
+  "description": "domain for javascript",
+  "keywords": [
+    "cqrs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

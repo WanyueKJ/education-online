@@ -1,0 +1,25 @@
+---------------------------------------------------------------
+
+[2022-08-17T03:26:03+08:00] 207.46.13.91 GET edudemo.sdwanyue.com/student/press/read/id/12.html
+[运行时间：0.009896s] [吞吐率：101.05req/s] [内存消耗：771.53kb] [文件加载：93]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]
+---------------------------------------------------------------
+
+[2022-08-17T05:30:09+08:00] 66.249.79.196 GET edudemo.sdwanyue.com/student/press/read/id/19.html
+[运行时间：0.009158s] [吞吐率：109.20req/s] [内存消耗：771.80kb] [文件加载：93]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]
+---------------------------------------------------------------
+
+[2022-08-17T07:44:28+08:00] 207.46.13.91 GET edudemo.sdwanyue.com/student/press/read/id/12.html
+[运行时间：0.008371s] [吞吐率：119.46req/s] [内存消耗：771.54kb] [文件加载：93]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]
+---------------------------------------------------------------
+
+[2022-08-17T07:48:55+08:00] 40.77.167.11 GET edudemo.sdwanyue.com/student/press/read/id/13.html
+[运行时间：0.008816s] [吞吐率：113.43req/s] [内存消耗：771.52kb] [文件加载：93]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]
+---------------------------------------------------------------
+
+[2022-08-17T13:51:42+08:00] 27.201.199.9 GET edudemo.sdwanyue.com/
+[运行时间：0.039117s] [吞吐率：25.56req/s] [内存消耗：1,274.95kb] [文件加载：119]
+[ error ] [8]Use of undefined constant lessList - assumed 'lessList'[/www/wwwroot/edudemo.sdwanyue.com/data/runtime/temp/7527f363adcaf08912da4bd40606f8dd.php:424]

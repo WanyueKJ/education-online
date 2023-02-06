@@ -1,0 +1,307 @@
+<include file="public@header"/>
+<link rel="stylesheet" href="__TMPL__/public/assets/css/animation.css">
+</head>
+<body>
+
+<div class="layui-fluid">
+    <div class="layui-row">
+        <div class="layui-page-header">
+            <div class="layui-card">
+                <div class="layui-page-header-content">
+                    <div class="layui-card-body">
+                        <div class="layui-ui-page-header-title" >
+                            {:lang('ADMIN_SETTING_SITE')}<span class="layui-badge-rim page-content">设置网站的数据参数及其它设置</span>
+                        </div>
+                    </div>
+                    <div class="layui-tab layui-tab-brief">
+                        <ul class="layui-tab-title layui-nav" id="tabHeader">
+                            <li class="layui-this layui-nav-item">登录配置</li>
+                            <li class="layui-nav-item">支付配置</li>
+                            <li class="layui-nav-item">直播配置</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-page-content">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <form class="layui-form js-ajax-form" role="form" action="{:url('setting/configpripost')}" method="post" wid110>
+                        <div class="layui-tab-content" id="tabBody">
+
+                            <div class="layui-tab-item layui-show">
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">登录方式</label>
+                                    <div class="layui-input-block">
+                                        <php>
+                                            $QQ='QQ';
+                                            $wx='wx';
+                                        </php>
+
+                                        <input type="checkbox" name="login_type[]" value="QQ" title="QQ" lay-skin="primary" <in value="$config['login_type']" name="QQ">checked="checked"</in>>
+
+                                        <input type="checkbox" name="login_type[]" value="wx" title="微信" lay-skin="primary" <in value="$config['login_type']" name="wx">checked="checked"</in>>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="layui-form-item" style="display:none;">
+                                    <label class="layui-form-label">分享方式</label>
+                                    <div class="layui-input-block">
+                                        <php>
+                                            $share_qq='qq';
+                                            $share_qzone='qzone';
+                                            $share_wx='wx';
+                                            $share_wchat='wchat';
+                                        </php>
+                                        <label class="checkbox-inline"><input type="checkbox" value="qq" name="share_type[]" <in value="$config['share_type']" name="share_qq">checked="checked"</in>>QQ</label>
+                                        <label class="checkbox-inline"><input type="checkbox" value="qzone" name="share_type[]" <in value="$config['share_type']" name="share_qzone">checked="checked"</in>>QQ空间</label>
+                                        <label class="checkbox-inline"><input type="checkbox" value="wx" name="share_type[]" <in value="$config['share_type']" name="share_wx">checked="checked"</in>>微信</label>
+                                        <label class="checkbox-inline"><input type="checkbox" value="wchat" name="share_type[]" <in value="$config['share_type']" name="share_wchat">checked="checked"</in>>微信朋友圈</label>
+                                        
+                                    </div>
+                                </div>
+        
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">验证码开关</label>
+                                    <div class="layui-input-block">
+                                        <select class="layui-input" name="options[sendcode_switch]">
+                                            <option value="0">关闭</option>
+                                            <option value="1" <eq name="config['sendcode_switch']" value="1">selected</eq>>开启</option>
+                                        </select>
+                                        验证码开关,关闭后不再发送真实验证码，采用默认验证码123456
+                                    </div>
+                                </div>
+                                
+                                  <div class="layui-form-item">
+                                    <label for="input-tx_api_secretid" class="layui-form-label">腾讯云-API密钥-SecretId</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-tx_api_secretid" name="options[tx_api_secretid]" value="{$config['tx_api_secretid']|default=''}"> 腾讯云API密钥ID
+                                    </div>
+                                </div>
+                                
+                                <div class="layui-form-item">
+                                    <label for="input-tx_api_secretkey" class="layui-form-label">腾讯云-API密钥-SecretKey</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-tx_api_secretkey" name="options[tx_api_secretkey]" value="{$config['tx_api_secretkey']|default=''}"> 腾讯云API密钥
+                                    </div>
+                                </div>
+                                
+                                <div class="layui-form-item">
+                                    <label for="input-tx_sms_sdkappid" class="layui-form-label">腾讯云-短信应用SDKAppid</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-tx_sms_sdkappid" name="options[tx_sms_sdkappid]" value="{$config['tx_sms_sdkappid']|default=''}"> 腾讯云短信APPID
+                                    </div>
+                                </div>
+                                
+                                <div class="layui-form-item">
+                                    <label for="input-tx_sms_sign" class="layui-form-label">腾讯云-短信签名</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-tx_sms_sign" name="options[tx_sms_sign]" value="{$config['tx_sms_sign']|default=''}"> 腾讯云短信签名
+                                    </div>
+                                </div>
+                                
+                                <div class="layui-form-item">
+                                    <label for="input-tx_sms_tempid" class="layui-form-label">腾讯云-短信模板ID</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-tx_sms_tempid" name="options[tx_sms_tempid]" value="{$config['tx_sms_tempid']|default=''}"> 腾讯云短信模板ID
+                                    </div>
+                                </div>
+                                
+                                <!-- <div class="layui-form-item">
+                                    <label for="input-ccp_sid" class="layui-form-label">容联云ACCOUNT SID</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-ccp_sid" name="options[ccp_sid]" value="{$config['ccp_sid']|default=''}">  短信验证码 
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label for="input-ccp_token" class="layui-form-label">容联云AUTH TOKEN</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-ccp_token" name="options[ccp_token]" value="{$config['ccp_token']|default=''}">  短信验证码 
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label for="input-ccp_appid" class="layui-form-label">容联云应用APPID</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-ccp_appid" name="options[ccp_appid]" value="{$config['ccp_appid']|default=''}">  短信验证码 
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label for="input-ccp_tempid" class="layui-form-label">容联云短信模板ID</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-ccp_tempid" name="options[ccp_tempid]" value="{$config['ccp_tempid']|default=''}">  短信验证码 
+                                    </div>
+                                </div> -->
+                                
+                                <div class="layui-form-item">
+                                    <label for="input-wx_appid_pc" class="layui-form-label">PC-微信登录appid</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-wx_appid_pc" name="options[wx_appid_pc]" value="{$config['wx_appid_pc']|default=''}">  PC 微信登录appid（微信开放平台网页应用 APPID） 
+                                    </div>
+                                </div>
+                                
+                                <div class="layui-form-item">
+                                    <label for="input-wx_appsecret_pc" class="layui-form-label">PC-微信登录appsecret</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-wx_appsecret_pc" name="options[wx_appsecret_pc]" value="{$config['wx_appsecret_pc']|default=''}">  PC 微信登录appsecret（微信开放平台网页应用 AppSecret） 
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block">
+                                        <button type="submit" class="layui-btn js-ajax-submit" data-refresh="1">
+                                            {:lang('SAVE')}
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="layui-tab-item">
+                                <div class="layui-form-item">
+                                    <label for="input-aliapp_partner" class="layui-form-label">支付宝合作者身份ID</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-aliapp_partner" name="options[aliapp_partner]" value="{$config['aliapp_partner']|default=''}"> 
+                                    </div>
+                                </div>
+                                
+                                <div class="layui-form-item">
+                                    <label for="input-aliapp_seller_id" class="layui-form-label">支付宝帐号</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-aliapp_seller_id" name="options[aliapp_seller_id]" value="{$config['aliapp_seller_id']|default=''}">
+                                    </div>
+                                </div>
+                                
+                                <div class="layui-form-item layui-form-text">
+                                    <label for="input-aliapp_key" class="layui-form-label">支付宝开发者密钥</label>
+                                    <div class="layui-input-block">
+                                        <textarea class="layui-textarea" id="input-aliapp_key" name="options[aliapp_key]" >{$config.aliapp_key|default=''}</textarea> 密钥使用PKCS8版本
+                                    </div>
+                                </div>
+                                
+                                <div class="layui-form-item">
+                                    <label for="input-wx_mchid" class="layui-form-label">微信商户号mchid</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-wx_mchid" name="options[wx_mchid]" value="{$config['wx_mchid']|default=''}"> 微信商户号mchid（微信开放平台移动应用 对应的微信商户 商户号mchid）
+                                    </div>
+                                </div>
+                                
+                                <div class="layui-form-item">
+                                    <label for="input-wx_key" class="layui-form-label">微信密钥key</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-wx_key" name="options[wx_key]" value="{$config['wx_key']|default=''}"> 微信密钥key（微信开放平台移动应用 对应的微信商户 密钥key）
+                                    </div>
+                                </div>
+        
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">PC-支付宝开关</label>
+                                    <div class="layui-input-block">
+                                        <select class="layui-input" name="options[alipc_switch]">
+                                            <option value="0">关闭</option>
+                                            <option value="1" <eq name="config['alipc_switch']" value="1">selected</eq>>开启</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label for="input-aliapp_check" class="layui-form-label">PC-支付宝MD5秘钥</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-aliapp_check" name="options[aliapp_check]" value="{$config['aliapp_check']|default=''}">
+                                    </div>
+                                </div>
+        
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">PC-微信开关</label>
+                                    <div class="layui-input-block">
+                                        <select class="layui-input" name="options[wxpc_switch]">
+                                            <option value="0">关闭</option>
+                                            <option value="1" <eq name="config['wxpc_switch']" value="1">selected</eq>>开启</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label for="input-pc_wx_appid" class="layui-form-label">PC-支付-微信公众平台AppID</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-pc_wx_appid" name="options[pc_wx_appid]" value="{$config['pc_wx_appid']|default=''}">
+                                    </div>
+                                </div>
+                                
+                                <div class="layui-form-item">
+                                    <label for="input-pc_wx_appsecret" class="layui-form-label">PC-支付-微信公众平台appsecret</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-pc_wx_appsecret" name="options[pc_wx_appsecret]" value="{$config['pc_wx_appsecret']|default=''}">
+                                    </div>
+                                </div>
+                                
+                                <div class="layui-form-item">
+                                    <label for="input-pc_wx_mchid" class="layui-form-label">PC-微信公众号-商户号mchid</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-pc_wx_mchid" name="options[pc_wx_mchid]" value="{$config['pc_wx_mchid']|default=''}"> 微信商户号mchid（微信公众号 对应的微信商户 商户号mchid）
+                                    </div>
+                                </div>
+                                
+                                <div class="layui-form-item">
+                                    <label for="input-pc_wx_key" class="layui-form-label">PC-微信公众号-微信商户号密钥key</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-pc_wx_key" name="options[pc_wx_key]" value="{$config['pc_wx_key']|default=''}"> 微信密钥key（微信公众号 对应的微信商户 密钥key）
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block">
+                                        <button type="submit" class="layui-btn js-ajax-submit" data-refresh="0">
+                                            {:lang('SAVE')}
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="layui-tab-item">
+                                <div class="layui-form-item">
+                                    <label for="input-chatserver" class="layui-form-label">聊天服务器带端口</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-chatserver" name="options[chatserver]" value="{$config['chatserver']|default=''}">  格式：http://域名(:端口) 或者 http://IP(:端口)
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label for="input-sound_appid" class="layui-form-label">声网Appid</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-sound_appid"  name="options[sound_appid]" value="{$config['sound_appid']|default=''}">
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <label for="agora-api_id" class="layui-form-label">声网api 客户ID</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="agora-api_id"  name="options[agora_api_id]" value="{$config['agora_api_id']|default=''}">
+                                        声网后台 ->右上角->RESTful API
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <label for="input-agora_api_key" class="layui-form-label">声网api 客户证书</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" id="input-agora_api_key" name="options[agora_api_key]" value="{$config['agora_api_key']|default=''}">声网后台 ->右上角->RESTful API
+                                    </div>
+                                </div>
+                                <p style="width:1117px;margin-left: 140px; font-weight:bold;">
+                                    注: 此站为演示站, 请勿修改此直播配置. 若想自行修改, 可下载完整代码包搭建即可.
+                                </p>
+
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block">
+                                        <button type="submit" class="layui-btn js-ajax-submit" data-refresh="0">
+                                            {:lang('SAVE')}
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="__STATIC__/js/wind.js"></script>
+<script src="__STATIC__/js/admin.js"></script>
+
+</body>
+</html>

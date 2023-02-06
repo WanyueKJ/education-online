@@ -1,0 +1,61 @@
+<include file="public@header" />
+</head>
+<body>
+<div class="layui-fluid">
+	<div class="layui-card">
+		<div class="layui-tab layui-tab-brief">
+			<ul class="layui-tab-title">
+				<li class="layui-this"><a href="{:url('user/userinfo')}">{:lang('ADMIN_USER_USERINFO')}</a></li>
+				<li><a href="{:url('setting/password')}">{:lang('ADMIN_SETTING_PASSWORD')}</a></li>
+			</ul>
+			<form class="form-horizontal js-ajax-form margin-top-20" role="form" method="post" action="{:url('User/userinfoPost')}">
+				<div class="layui-tab-content">
+					<div class="layui-form-item">
+						<label for="input-user-nickname" class="layui-form-label">{:lang('NICKNAME')}</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input" id="input-user-nickname" name="user_nickname" value="{$user_nickname}">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label for="input-gender" class="layui-form-label">{:lang('GENDER')}</label>
+						<div class="layui-input-block">
+							<select class="layui-input" name="sex" id="input-gender">
+								<php>$sexs=array("0"=>lang('GENDER_SECRECY'),"1"=>lang('MALE'),"2"=>lang('FEMALE'));</php>
+								<foreach name="sexs" item="vo">
+									<php>$sexselected=$key==$sex?"selected":"";</php>
+									<option value="{$key}" {$sexselected}>{$vo}</option>
+								</foreach>
+							</select>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label for="input-birthday" class="layui-form-label">{:lang('BIRTHDAY')}</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input" id="input-birthday" name="birthday" value="{:date('Y-m-d',$birthday)}" placeholder="2013-01-04">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label for="input-user_url" class="layui-form-label">{:lang('WEBSITE')}</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input" id="input-user_url" name="user_url" value="{$user_url}" placeholder="http://thinkcmf.com">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label for="input-signature" class="layui-form-label">{:lang('SIGNATURE')}</label>
+						<div class="layui-input-block">
+							<textarea class="layui-input" id="input-signature" name="signature" placeholder="{:lang('SIGNATURE')}">{$signature}</textarea>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<div class="layui-input-block">
+							<button type="submit" class="layui-btn js-ajax-submit">{:lang('SAVE')}</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+---------------------------------------------------------------
+
+[2022-10-18T12:18:30+08:00] 120.53.224.156 GET edudemo.sdwanyue.com/student/press/read/id/15.html
+[运行时间：0.015742s] [吞吐率：63.52req/s] [内存消耗：811.39kb] [文件加载：103]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]

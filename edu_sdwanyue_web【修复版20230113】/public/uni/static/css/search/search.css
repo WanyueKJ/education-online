@@ -1,0 +1,214 @@
+.s-all-wrap {
+	position: relative;
+}
+
+.search-all-wrap {
+	margin-top: 10rpx;
+	width: 100%;
+	height: 65rpx;
+	line-height: 65rpx;
+}
+.search-wrap {
+	width: 80%;
+	height: 100%;
+	line-height: 65rpx;
+	border-radius: 30rpx;
+	margin-left: 20rpx;
+	padding-left: 20rpx;
+	background-color: #F5F5F5;
+	float: left;
+}
+
+.search-wrap text,
+.search-wrap input {
+	float: left;
+	background-color: #F5F5F5;
+	height: 100%;
+	padding: 0;
+}
+
+.search-wrap text {
+	margin-right: 20rpx;
+	color: #C7C7C7;
+}
+
+.search-wrap input {
+	width: 70%;
+}
+
+.reset-search {
+	width: 10%;
+	margin-left: 20rpx;
+	float: left;
+	color: #64D3AD;
+}
+
+/* 显示搜索结果区域 */
+.search-history {
+	margin-top: 70rpx;
+	display: none;
+}
+
+.showsearch {
+	display: block;
+}
+
+.search-title-wrap {
+	width: 95%;
+	margin: 0 auto;
+	padding-left: 5%;
+	height: 80rpx;
+}
+
+.search-title-wrap .s-teacher-title,
+.search-title-wrap .s-course-title {
+	font-weight: bold;
+	font-size: 28rpx;
+}
+
+.teachername {
+	color: #000000;
+	margin-left: 20rpx;
+	height: 100rpx;
+	line-height: 100rpx;
+}
+
+/* 老师搜索结果 */
+.search-teacher-info {
+	width: 100%;
+	margin: 0 auto 50rpx;
+}
+
+.search_home {
+	float: left;
+	margin-left: 5rpx;
+	margin-top: 16rpx;
+	width: 35rpx;
+	height: 35rpx;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+}
+
+.line {
+	background-color: #F5F5F5;
+	height: 2rpx;
+	width: 98%;
+	left: calc(1%);
+	margin-top: 10rpx;
+}
+
+.s-more-view {
+	float: right;
+	margin-top: 10rpx;
+	margin-right: 30rpx;
+	font-size: smaller;
+	color: #969696;
+
+}
+
+/* 教师头像 */
+.search-teacher-item {
+	width: 100%;
+	height: 100rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20rpx;
+}
+
+.back_image {
+	width: 30rpx;
+	height: 30rpx;
+	position: absolute;
+	right: 30rpx;
+	margin-top: 20rpx;
+}
+
+.teacher-avatar {
+	width: 90rpx;
+	height: 90rpx;
+	margin-left: 30rpx;
+	border-radius: 50%;
+}
+
+.teacher-inner-arow {
+	position: absolute;
+	right: 40rpx;
+}
+
+/* page{
+	background-color: #F5F5F5;
+} */
+/* 直播/内容列表 */
+.search-course-info {
+	margin-left: calc(2%);
+	width: 96%;
+	margin-top: 20rpx;
+	/* margin: 0 auto; */
+}
+
+.live-list {
+	margin-top: -20rpx;
+}
+
+/* 直播/内容列表标题 */
+
+
+
+/* 价格 */
+.live-teacher-price {
+	display: flex;
+
+}
+
+
+
+.free {
+	color: #64D3AD;
+}
+
+.numPrice {
+	color: #FF1B20;
+
+}
+
+.pass {
+	color: #4385FF;
+}
+
+
+
+
+.numPrice text {
+	color: #FF1B20;
+}
+
+
+
+.xiangziwrap {
+	margin-top: calc(50%);
+	position: relative;
+	left: calc(50% - 80px);
+	/* top: calc(50%); */
+	width: 300rpx;
+	height: 100rpx;
+}
+
+.xiangzi {
+	margin-left: 100rpx;
+	width: 100rpx;
+	height: 100rpx;
+}
+
+.xiangzi_txt {
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-size: 18rpx;
+	color: #C7C7C7;
+}

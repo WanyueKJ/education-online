@@ -1,0 +1,5 @@
+---------------------------------------------------------------
+
+[2022-12-07T10:33:27+08:00] 171.43.159.170 GET edudemo.sdwanyue.com/appapi/page/detail?id=73
+[运行时间：0.054811s] [吞吐率：18.24req/s] [内存消耗：990.34kb] [文件加载：109]
+[ error ] [8]未定义变量: uid[/www/wwwroot/edudemo.sdwanyue.com/data/runtime/temp/9d6d5ea11a9501c70affe1650ebf9b0d.php:39]

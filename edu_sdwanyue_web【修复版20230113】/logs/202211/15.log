@@ -1,0 +1,30 @@
+---------------------------------------------------------------
+
+[2022-11-15T09:47:43+08:00] 185.191.171.21 GET edudemo.sdwanyue.com/student/press/read/id/30.html
+[运行时间：0.010684s] [吞吐率：93.60req/s] [内存消耗：811.13kb] [文件加载：103]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]
+---------------------------------------------------------------
+
+[2022-11-15T11:29:45+08:00] 180.101.245.250 GET edudemo.sdwanyue.com/student/Lessionlist/ChooseNj
+[运行时间：0.008745s] [吞吐率：114.35req/s] [内存消耗：799.63kb] [文件加载：103]
+[ error ] [8]未定义数组索引: njid[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/LessionlistController.php:141]
+---------------------------------------------------------------
+
+[2022-11-15T11:33:19+08:00] 180.101.244.14 GET edudemo.sdwanyue.com/student/Lessionlist/ChooseNj
+[运行时间：0.008690s] [吞吐率：115.08req/s] [内存消耗：799.63kb] [文件加载：103]
+[ error ] [8]未定义数组索引: njid[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/LessionlistController.php:141]
+---------------------------------------------------------------
+
+[2022-11-15T11:34:58+08:00] 220.196.160.45 GET edudemo.sdwanyue.com/student/Lessionlist/ChooseNj
+[运行时间：0.008223s] [吞吐率：121.61req/s] [内存消耗：799.63kb] [文件加载：103]
+[ error ] [8]未定义数组索引: njid[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/LessionlistController.php:141]
+---------------------------------------------------------------
+
+[2022-11-15T16:48:16+08:00] 185.191.171.16 GET edudemo.sdwanyue.com/student/press/read/id/5.html
+[运行时间：0.010990s] [吞吐率：90.99req/s] [内存消耗：803.09kb] [文件加载：103]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]
+---------------------------------------------------------------
+
+[2022-11-15T19:29:21+08:00] 185.191.171.16 GET edudemo.sdwanyue.com/student/press/read/id/9.html
+[运行时间：0.011568s] [吞吐率：86.44req/s] [内存消耗：803.09kb] [文件加载：103]
+[ error ] [8]未定义数组索引: addtime[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/PressController.php:50]

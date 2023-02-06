@@ -1,0 +1,5 @@
+---------------------------------------------------------------
+
+[2022-10-25T16:56:26+08:00] 27.115.124.38 GET edudemo.sdwanyue.com/student/detail/class
+[运行时间：0.011031s] [吞吐率：90.65req/s] [内存消耗：798.48kb] [文件加载：103]
+[ error ] [8]未定义数组索引: id[/www/wwwroot/edudemo.sdwanyue.com/app/student/controller/DetailController.php:71]

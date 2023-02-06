@@ -1,0 +1,88 @@
+<include file="public@header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li ><a href="{:url('users/index',['type'=>'0'])}">列表</a></li>
+			<li class="active"><a >{:lang('ADD')}</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form margin-top-20" action="{:url('users/addPost')}">
+
+            <div class="form-group">
+				<label for="input-user_login" class="col-sm-2 control-label"><span class="form-required">*</span>手机号</label>
+				<div class="col-md-6 col-sm-10">
+					<input type="text" class="form-control" id="input-user_login" name="user_login">
+				</div>
+			</div>
+            
+            <div class="form-group">
+				<label for="input-user_pass" class="col-sm-2 control-label"><span class="form-required">*</span>密码</label>
+				<div class="col-md-6 col-sm-10">
+					<input type="password" class="form-control" id="input-user_pass" name="user_pass">6-12位字母数字组合
+				</div>
+			</div>
+            
+            <div class="form-group">
+				<label for="input-user_nickname" class="col-sm-2 control-label"><span class="form-required">*</span>昵称</label>
+				<div class="col-md-6 col-sm-10">
+					<input type="text" class="form-control" id="input-user_nickname" name="user_nickname">
+				</div>
+			</div>
+            
+            
+            <div class="form-group">
+				<label for="input-user_login" class="col-sm-2 control-label">头像</label>
+				<div class="col-md-6 col-sm-10">
+					<input type="hidden" name="avatar" id="thumbnail" value="">
+                    <a href="javascript:uploadOneImage('图片上传','#thumbnail');">
+                        <img src="__TMPL__/public/assets/images/default-thumbnail.png"
+                                 id="thumbnail-preview"
+                                 style="cursor: pointer;max-width:100px;max-height:100px;"/>
+                    </a>
+                    <input type="button" class="btn btn-sm btn-cancel-thumbnail" value="取消图片"> 建议尺寸： 600 X 600
+				</div>
+			</div>
+            
+            <div class="form-group" id="">
+				<label for="input-swf" class="col-sm-2 control-label">头像小图</label>
+				<div class="col-md-6 col-sm-10">
+                    <input type="hidden" name="avatar_thumb" id="thumbnail2" value="">
+                    <a href="javascript:uploadOneImage('图片上传','#thumbnail2');">
+                        <img src="__TMPL__/public/assets/images/default-thumbnail.png"
+                                 id="thumbnail2-preview"
+                                 style="cursor: pointer;max-width:100px;max-height:100px;"/>
+                    </a>
+                    <input type="button" class="btn btn-sm btn-cancel-thumbnail2" value="取消图片"> 分享用 建议尺寸： 100 X 100 必须小于 200 X 200
+				</div>
+			</div>
+            
+            <div class="form-group">
+                <label for="input-maintain_switch" class="col-sm-2 control-label">性别</label>
+                <div class="col-md-6 col-sm-10">
+                    <select class="form-control" name="sex">
+                        <option value="1">男</option>
+                        <option value="2">女</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- <div class="form-group">
+				<label for="input-swftime" class="col-sm-2 control-label">个性签名</label>
+				<div class="col-md-6 col-sm-10">
+					<textarea class="form-control" id="input-signature" name="signature" ></textarea>
+				</div>
+			</div> -->
+            
+            
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-primary js-ajax-submit">{:lang('ADD')}</button>
+					<a class="btn btn-default" href="javascript:history.back(-1);">{:lang('BACK')}</a>
+				</div>
+			</div>
+            
+		</form>
+	</div>
+	<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>
