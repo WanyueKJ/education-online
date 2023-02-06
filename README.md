@@ -11,14 +11,16 @@
 
 ------------------------------------------------------------------------
 </div>
+
+
 ### 20230206更新说明
 ### 20230206 update description
--升级声网sdk
--Upgrade the sound network sdk
--修复搜索课程展示
--Repair search course display
--升级首页界面设计
--Upgrade homepage interface design
+- 升级声网sdk
+- Upgrade the sound network sdk
+- 修复搜索课程展示
+- Repair search course display
+- 升级首页界面设计
+- Upgrade homepage interface design
 
 
 ### UNIAPP前端代码仓库【请点击链接，进行下载】
