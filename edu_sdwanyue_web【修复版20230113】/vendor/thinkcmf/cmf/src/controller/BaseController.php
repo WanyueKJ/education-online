@@ -26,10 +26,6 @@ class BaseController extends Controller
         $this->app     = Container::get('app');
         $this->request = $this->app['request'];
 
-        if (!cmf_is_installed() && $this->request->module() != 'install') {
-            return $this->redirect(cmf_get_root() . '/?s=install');
-        }
-
         $this->_initializeView();
         $this->view = View::init(Config::get('template.'));
 
