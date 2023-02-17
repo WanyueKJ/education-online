@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$">
-      <excludeFolder url="file://$MODULE_DIR$/eduwanyue_web/vendor/composer" />
-      <excludeFolder url="file://$MODULE_DIR$/eduwanyue_web/vendor/electrolinux/phpquery" />
-      <excludeFolder url="file://$MODULE_DIR$/eduwanyue_web/vendor/ezyang/htmlpurifier" />
-      <excludeFolder url="file://$MODULE_DIR$/eduwanyue_web/vendor/mindplay/annotations" />
-      <excludeFolder url="file://$MODULE_DIR$/eduwanyue_web/vendor/phpmailer/phpmailer" />
-      <excludeFolder url="file://$MODULE_DIR$/eduwanyue_web/vendor/phpqrcode/bindings" />
-      <excludeFolder url="file://$MODULE_DIR$/eduwanyue_web/vendor/phpqrcode/cache" />
-      <excludeFolder url="file://$MODULE_DIR$/eduwanyue_web/vendor/phpqrcode/tools" />
-      <excludeFolder url="file://$MODULE_DIR$/eduwanyue_web/vendor/thinkcmf/cmf" />
-      <excludeFolder url="file://$MODULE_DIR$/eduwanyue_web/vendor/thinkcmf/cmf-api" />
-      <excludeFolder url="file://$MODULE_DIR$/eduwanyue_web/vendor/thinkcmf/cmf-app" />
-      <excludeFolder url="file://$MODULE_DIR$/eduwanyue_web/vendor/thinkcmf/cmf-extend" />
-      <excludeFolder url="file://$MODULE_DIR$/eduwanyue_web/vendor/thinkphp/lang" />
-      <excludeFolder url="file://$MODULE_DIR$/eduwanyue_web/vendor/thinkphp/library" />
-      <excludeFolder url="file://$MODULE_DIR$/eduwanyue_web/vendor/thinkphp/tpl" />
-      <excludeFolder url="file://$MODULE_DIR$/eduwanyue_web/vendor/topthink/think-captcha" />
-      <excludeFolder url="file://$MODULE_DIR$/eduwanyue_web/vendor/topthink/think-helper" />
-      <excludeFolder url="file://$MODULE_DIR$/eduwanyue_web/vendor/topthink/think-image" />
-      <excludeFolder url="file://$MODULE_DIR$/eduwanyue_web/vendor/topthink/think-installer" />
-    </content>
+    <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
