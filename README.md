@@ -150,9 +150,11 @@ The system uses TP5.1+Jquery+Bootstrap+Mysql core technology. The system functio
 <div style='height: 130px'>
     <img class="kefu_weixin" style="float:left;" src="https://gitee.com/WanYueKeJi/wanyue_education_uniapp/raw/newone/pages/%E5%BC%A0%E7%9A%93%E5%BC%80%E6%BA%90.png" width="602" height="123"/>
     <div style="float:left;">
-        <p>QQ：2770722087</p>
-        <p>QQ群：995910672</p>
-        <p>QQ群：681418688</p
+            <p>QQ：2770722087</p>
+            <p>Skype:  live:1532375297</p>
+            <p>Q群：995910672</p>
+            <p>Q群：681418688</p>
+            <p>QQ邮箱：1532375297@qq.com</p>
     </div>
 </div>
 <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=JShAyXeoKqg2lWFEUSElxELImhjeMG4y&jump_from=webapi"><img border="0" src="https://images.gitee.com/uploads/images/2021/0317/100424_072ee536_8543696.png" alt="万岳在线教育讨论群" title="万岳在线教育讨论群"></a> 
