@@ -21,26 +21,6 @@
       <path value="$PROJECT_DIR$/vendor/topthink/think-installer" />
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/electrolinux/phpquery" />
-      <path value="$PROJECT_DIR$/eduwanyue_web/vendor/topthink/think-captcha" />
-      <path value="$PROJECT_DIR$/eduwanyue_web/vendor/topthink/think-helper" />
-      <path value="$PROJECT_DIR$/eduwanyue_web/vendor/topthink/think-image" />
-      <path value="$PROJECT_DIR$/eduwanyue_web/vendor/topthink/think-installer" />
-      <path value="$PROJECT_DIR$/eduwanyue_web/vendor/thinkphp/lang" />
-      <path value="$PROJECT_DIR$/eduwanyue_web/vendor/thinkphp/library" />
-      <path value="$PROJECT_DIR$/eduwanyue_web/vendor/thinkphp/tpl" />
-      <path value="$PROJECT_DIR$/eduwanyue_web/vendor/thinkcmf/cmf-api" />
-      <path value="$PROJECT_DIR$/eduwanyue_web/vendor/thinkcmf/cmf-app" />
-      <path value="$PROJECT_DIR$/eduwanyue_web/vendor/thinkcmf/cmf-extend" />
-      <path value="$PROJECT_DIR$/eduwanyue_web/vendor/phpqrcode/cache" />
-      <path value="$PROJECT_DIR$/eduwanyue_web/vendor/phpqrcode/tools" />
-      <path value="$PROJECT_DIR$/eduwanyue_web/vendor/thinkcmf/cmf" />
-      <path value="$PROJECT_DIR$/eduwanyue_web/vendor/phpmailer/phpmailer" />
-      <path value="$PROJECT_DIR$/eduwanyue_web/vendor/phpqrcode/bindings" />
-      <path value="$PROJECT_DIR$/eduwanyue_web/vendor/ezyang/htmlpurifier" />
-      <path value="$PROJECT_DIR$/eduwanyue_web/vendor/mindplay/annotations" />
-      <path value="$PROJECT_DIR$/eduwanyue_web/vendor/composer" />
-      <path value="$PROJECT_DIR$/eduwanyue_web/vendor/electrolinux/phpquery" />
     </include_path>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="7" />
 </project>
