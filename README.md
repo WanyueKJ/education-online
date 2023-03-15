@@ -47,7 +47,7 @@
    - 接口框架地址: 本项目根目录下phalapi目录
    - Interface framework address: phalapi directory under the root directory of this project
    - 仓库地址: <a target="_blank" href="https://gitee.com/WanYueKeJi/wanyue_education_uniapp">点击此处</a>
-   ![演示图](https://edu-qiniu.sdwanyue.com/admin/20220801/3b4ca0c273a6c4628cac6117c5cbf41a.png "app系统演示.png")
+   ![演示图](https://edu-qiniu.sdwanyue.com/admin/20230315/cf4cb6ec71a675b8c36cbc85512c4eec.png "app系统演示.png")
    
 ### 项目介绍
 ### Project introduction
